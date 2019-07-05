@@ -11,9 +11,7 @@ GameObject:
   - component: {fileID: 2081077486515209729}
   - component: {fileID: 2081077486515209728}
   - component: {fileID: 2081077486515209731}
-  - component: {fileID: 2081077486515209730}
-  - component: {fileID: 4931930482139276967}
-  - component: {fileID: 9018627156116401511}
+  - component: {fileID: 5386063144154938804}
   - component: {fileID: 1151877619861304346}
   m_Layer: 2
   m_Name: ChihuahuaGun
@@ -103,7 +101,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2081077486515209730
+--- !u!114 &5386063144154938804
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,38 +110,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2081077486515209742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84fbf7f4815bab547b6e27591b6332be, type: 3}
+  m_Script: {fileID: 11500000, guid: f686cd33820bba4488591b7b31123d55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &4931930482139276967
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2081077486515209742}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.53333336, y: 0.53333336, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &9018627156116401511
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2081077486515209742}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &1151877619861304346
 MonoBehaviour:
   m_ObjectHideFlags: 0
