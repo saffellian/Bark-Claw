@@ -1,0 +1,109 @@
+fileFormatVersion: 2
+guid: d20dba6702adaba46aac32f4daa25fc2
+timeCreated: 1477058871
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Lobby_ChairCushion
+    100002: Lobby_Chairwood
+    100004: Lobby_SofaWood
+    100006: Lobby_TableGlass
+    100008: Lobby_TableWood
+    100010: LobbyChair
+    100012: LobbySofa
+    100014: //RootNode
+    100016: LobbySofaCushion
+    100018: LobbyTable
+    400000: Lobby_ChairCushion
+    400002: Lobby_Chairwood
+    400004: Lobby_SofaWood
+    400006: Lobby_TableGlass
+    400008: Lobby_TableWood
+    400010: LobbyChair
+    400012: LobbySofa
+    400014: //RootNode
+    400016: LobbySofaCushion
+    400018: LobbyTable
+    2300000: Lobby_ChairCushion
+    2300002: Lobby_Chairwood
+    2300004: Lobby_SofaWood
+    2300006: Lobby_TableGlass
+    2300008: Lobby_TableWood
+    2300010: LobbySofaCushion
+    3300000: Lobby_ChairCushion
+    3300002: Lobby_Chairwood
+    3300004: Lobby_SofaWood
+    3300006: Lobby_TableGlass
+    3300008: Lobby_TableWood
+    3300010: LobbySofaCushion
+    4300000: LobbySofaCushion
+    4300002: Lobby_SofaWood
+    4300004: Lobby_ChairCushion
+    4300006: Lobby_Chairwood
+    4300008: Lobby_TableWood
+    4300010: Lobby_TableGlass
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

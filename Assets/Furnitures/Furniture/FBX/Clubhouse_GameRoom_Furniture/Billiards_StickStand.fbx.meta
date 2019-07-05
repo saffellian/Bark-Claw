@@ -1,0 +1,98 @@
+fileFormatVersion: 2
+guid: d62346adb41b6f144b50a43f2636cc04
+timeCreated: 1476962575
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Billiard_Stick2
+    100002: Billiard_Stick3
+    100004: Billiard_Stick4
+    100006: Billiard_Stick5
+    100008: //RootNode
+    100010: BRoom_StickAreaStand
+    400000: Billiard_Stick2
+    400002: Billiard_Stick3
+    400004: Billiard_Stick4
+    400006: Billiard_Stick5
+    400008: //RootNode
+    400010: BRoom_StickAreaStand
+    2300000: Billiard_Stick2
+    2300002: Billiard_Stick3
+    2300004: Billiard_Stick4
+    2300006: Billiard_Stick5
+    2300008: BRoom_StickAreaStand
+    3300000: Billiard_Stick2
+    3300002: Billiard_Stick3
+    3300004: Billiard_Stick4
+    3300006: Billiard_Stick5
+    3300008: BRoom_StickAreaStand
+    4300000: Billiard_Stick4
+    4300002: Billiard_Stick5
+    4300004: Billiard_Stick2
+    4300006: Billiard_Stick3
+    4300008: BRoom_StickAreaStand
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

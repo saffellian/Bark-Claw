@@ -1,0 +1,148 @@
+fileFormatVersion: 2
+guid: 515f9071cb5713a49a123dc7b90474fc
+timeCreated: 1478515975
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: BBQ_Table 1
+    100004: Totlot_BBQGrill_1
+    100006: Totlot_BBQGrill_2
+    100008: Totlot_BBQGrillKebab_1
+    100010: Totlot_BBQGrillKebab_10
+    100012: Totlot_BBQGrillKebab_11
+    100014: Totlot_BBQGrillKebab_12
+    100016: Totlot_BBQGrillKebab_2
+    100018: Totlot_BBQGrillKebab_3
+    100020: Totlot_BBQGrillKebab_4
+    100022: Totlot_BBQGrillKebab_5
+    100024: Totlot_BBQGrillKebab_6
+    100026: Totlot_BBQGrillKebab_7
+    100028: Totlot_BBQGrillKebab_8
+    100030: Totlot_BBQGrillKebab_9
+    400000: //RootNode
+    400002: BBQ_Table 1
+    400004: Totlot_BBQGrill_1
+    400006: Totlot_BBQGrill_2
+    400008: Totlot_BBQGrillKebab_1
+    400010: Totlot_BBQGrillKebab_10
+    400012: Totlot_BBQGrillKebab_11
+    400014: Totlot_BBQGrillKebab_12
+    400016: Totlot_BBQGrillKebab_2
+    400018: Totlot_BBQGrillKebab_3
+    400020: Totlot_BBQGrillKebab_4
+    400022: Totlot_BBQGrillKebab_5
+    400024: Totlot_BBQGrillKebab_6
+    400026: Totlot_BBQGrillKebab_7
+    400028: Totlot_BBQGrillKebab_8
+    400030: Totlot_BBQGrillKebab_9
+    2300000: BBQ_Table 1
+    2300002: Totlot_BBQGrill_1
+    2300004: Totlot_BBQGrill_2
+    2300006: Totlot_BBQGrillKebab_1
+    2300008: Totlot_BBQGrillKebab_10
+    2300010: Totlot_BBQGrillKebab_11
+    2300012: Totlot_BBQGrillKebab_12
+    2300014: Totlot_BBQGrillKebab_2
+    2300016: Totlot_BBQGrillKebab_3
+    2300018: Totlot_BBQGrillKebab_4
+    2300020: Totlot_BBQGrillKebab_5
+    2300022: Totlot_BBQGrillKebab_6
+    2300024: Totlot_BBQGrillKebab_7
+    2300026: Totlot_BBQGrillKebab_8
+    2300028: Totlot_BBQGrillKebab_9
+    3300000: BBQ_Table 1
+    3300002: Totlot_BBQGrill_1
+    3300004: Totlot_BBQGrill_2
+    3300006: Totlot_BBQGrillKebab_1
+    3300008: Totlot_BBQGrillKebab_10
+    3300010: Totlot_BBQGrillKebab_11
+    3300012: Totlot_BBQGrillKebab_12
+    3300014: Totlot_BBQGrillKebab_2
+    3300016: Totlot_BBQGrillKebab_3
+    3300018: Totlot_BBQGrillKebab_4
+    3300020: Totlot_BBQGrillKebab_5
+    3300022: Totlot_BBQGrillKebab_6
+    3300024: Totlot_BBQGrillKebab_7
+    3300026: Totlot_BBQGrillKebab_8
+    3300028: Totlot_BBQGrillKebab_9
+    4300000: BBQ_Table
+    4300002: Totlot_BBQGrill_1
+    4300004: Totlot_BBQGrill_2
+    4300006: Totlot_BBQGrillKebab_6
+    4300008: Totlot_BBQGrillKebab_5
+    4300010: Totlot_BBQGrillKebab_4
+    4300012: Totlot_BBQGrillKebab_3
+    4300014: Totlot_BBQGrillKebab_2
+    4300016: Totlot_BBQGrillKebab_1
+    4300018: Totlot_BBQGrillKebab_7
+    4300020: Totlot_BBQGrillKebab_8
+    4300022: Totlot_BBQGrillKebab_9
+    4300024: Totlot_BBQGrillKebab_10
+    4300026: Totlot_BBQGrillKebab_11
+    4300028: Totlot_BBQGrillKebab_12
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

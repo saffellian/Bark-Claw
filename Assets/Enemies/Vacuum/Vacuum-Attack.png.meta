@@ -1,0 +1,331 @@
+fileFormatVersion: 2
+guid: eda3c9286d3919b4a8186eacd61f61f9
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Vacuum-Attack_0
+    21300002: Vacuum-Attack_1
+    21300004: Vacuum-Attack_2
+    21300006: Vacuum-Attack_3
+    21300008: Vacuum-Attack_4
+    21300010: Vacuum-Attack_5
+    21300012: Vacuum-Attack_6
+    21300014: Vacuum-Attack_7
+    21300016: Vacuum-Attack_8
+    21300018: Vacuum-Attack_9
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 60
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Vacuum-Attack_0
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 32
+        width: 66
+        height: 64
+      alignment: 9
+      pivot: {x: 0.57393163, y: 0.49999905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be74bdf8e1b38d54b80f3f911dd15add
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vacuum-Attack_1
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 33
+        width: 66
+        height: 64
+      alignment: 9
+      pivot: {x: 0.6182903, y: 0.46950263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5afa32b31344c8f419fce83e62430656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vacuum-Attack_2
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 32
+        width: 66
+        height: 64
+      alignment: 9
+      pivot: {x: 0.57393163, y: 0.4847507}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d865c91aa9b1a6d48b9ced0b6341cb39
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vacuum-Attack_4
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 31
+        width: 68
+        height: 64
+      alignment: 9
+      pivot: {x: 0.55740535, y: 0.5304955}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1767ea7666b29d8488ac68733104a835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vacuum-Attack_5
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 32
+        width: 73
+        height: 65
+      alignment: 9
+      pivot: {x: 0.58021104, y: 0.51501256}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38117488e766e9049a26fc13857db7ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vacuum-Attack_6
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 34
+        width: 83
+        height: 62
+      alignment: 9
+      pivot: {x: 0.52351546, y: 0.49999937}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e94e24288ece04ab5f90669517a520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vacuum-Attack_7
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 31
+        width: 95
+        height: 66
+      alignment: 9
+      pivot: {x: 0.47945493, y: 0.5147845}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f179a6a270cb245b7b2bf9cebe2a28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vacuum-Attack_8
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 32
+        width: 73
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5534735, y: 0.51478577}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fffb7288c53936244b98f3a943c89abb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vacuum-Attack_9
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 31
+        width: 73
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5534735, y: 0.5145644}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d5e6da4a221ce42a547f093fd59253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vacuum-Attack_3
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 30
+        width: 70
+        height: 68
+      alignment: 9
+      pivot: {x: 0.5697074, y: 0.54305255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a497ccb7bce1c42b9c6f6de1227028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 27e54e2ec6039934299792976a8013fb
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

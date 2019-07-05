@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: cacb9d5f0428da641a557c6b2be0b133
+timeCreated: 1477113504
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: BedSet8_BedCusion
+    100002: BedSet8_BedWood
+    100004: BedSet8_Bench
+    100006: BedSet8_Bench 1
+    100008: BedSet8_BenchWood
+    100010: BedSet8_BookLeft
+    100012: BedSet8_BookRight
+    100014: BedSet8_Carpet
+    100016: BedSet8_Chair
+    100018: BedSet8_Chair 1
+    100020: BedSet8_ChairMetal
+    100022: BedSet8_ChairPillow
+    100024: BedSet8_Cushion
+    100026: BedSet8_Drawer1
+    100028: BedSet8_Drawer2
+    100030: BedSet8_DrawerL
+    100032: BedSet8_DrawerMetalL
+    100034: BedSet8_DrawerMetalR
+    100036: BedSet8_DrawerR
+    100038: BedSet8_LongPillow
+    100040: BedSet8_Pillow
+    100042: BedSet8_Pillows
+    100044: BedSet8_Wood
+    100046: //RootNode
+    400000: BedSet8_BedCusion
+    400002: BedSet8_BedWood
+    400004: BedSet8_Bench
+    400006: BedSet8_Bench 1
+    400008: BedSet8_BenchWood
+    400010: BedSet8_BookLeft
+    400012: BedSet8_BookRight
+    400014: BedSet8_Carpet
+    400016: BedSet8_Chair
+    400018: BedSet8_Chair 1
+    400020: BedSet8_ChairMetal
+    400022: BedSet8_ChairPillow
+    400024: BedSet8_Cushion
+    400026: BedSet8_Drawer1
+    400028: BedSet8_Drawer2
+    400030: BedSet8_DrawerL
+    400032: BedSet8_DrawerMetalL
+    400034: BedSet8_DrawerMetalR
+    400036: BedSet8_DrawerR
+    400038: BedSet8_LongPillow
+    400040: BedSet8_Pillow
+    400042: BedSet8_Pillows
+    400044: BedSet8_Wood
+    400046: //RootNode
+    2300000: BedSet8_BedCusion
+    2300002: BedSet8_Bench 1
+    2300004: BedSet8_BenchWood
+    2300006: BedSet8_BookLeft
+    2300008: BedSet8_BookRight
+    2300010: BedSet8_Carpet
+    2300012: BedSet8_Chair 1
+    2300014: BedSet8_ChairMetal
+    2300016: BedSet8_ChairPillow
+    2300018: BedSet8_Cushion
+    2300020: BedSet8_DrawerL
+    2300022: BedSet8_DrawerMetalL
+    2300024: BedSet8_DrawerMetalR
+    2300026: BedSet8_DrawerR
+    2300028: BedSet8_LongPillow
+    2300030: BedSet8_Pillow
+    2300032: BedSet8_Wood
+    3300000: BedSet8_BedCusion
+    3300002: BedSet8_Bench 1
+    3300004: BedSet8_BenchWood
+    3300006: BedSet8_BookLeft
+    3300008: BedSet8_BookRight
+    3300010: BedSet8_Carpet
+    3300012: BedSet8_Chair 1
+    3300014: BedSet8_ChairMetal
+    3300016: BedSet8_ChairPillow
+    3300018: BedSet8_Cushion
+    3300020: BedSet8_DrawerL
+    3300022: BedSet8_DrawerMetalL
+    3300024: BedSet8_DrawerMetalR
+    3300026: BedSet8_DrawerR
+    3300028: BedSet8_LongPillow
+    3300030: BedSet8_Pillow
+    3300032: BedSet8_Wood
+    4300000: BedSet8_Carpet
+    4300002: BedSet8_Cushion
+    4300004: BedSet8_Bench
+    4300006: BedSet8_BenchWood
+    4300008: BedSet8_BookLeft
+    4300010: BedSet8_DrawerMetalL
+    4300012: BedSet8_DrawerL
+    4300014: BedSet8_DrawerMetalR
+    4300016: BedSet8_DrawerR
+    4300018: BedSet8_BookRight
+    4300020: BedSet8_Chair
+    4300022: BedSet8_ChairPillow
+    4300024: BedSet8_ChairMetal
+    4300026: BedSet8_BedCusion
+    4300028: BedSet8_Wood
+    4300030: BedSet8_Pillow
+    4300032: BedSet8_LongPillow
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

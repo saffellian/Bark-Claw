@@ -1,0 +1,124 @@
+fileFormatVersion: 2
+guid: 16b145a52528bec44bb257941a073e1b
+timeCreated: 1477113503
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: BedSet1_BackWall
+    100002: BedSet1_Carpet
+    100004: BedSet1_Chair
+    100006: BedSet1_Cushion
+    100008: BedSet1_Illumination
+    100010: BedSet1_Sheet
+    100012: BedSet1_Wall
+    100014: BedSet1_Wood
+    100016: BedSet1_WoodWall
+    100018: //RootNode
+    100020: Bedset_1_BackWall
+    100022: BedSet_1_BedWood
+    100024: BedSet_1_MatressPillows
+    400000: BedSet1_BackWall
+    400002: BedSet1_Carpet
+    400004: BedSet1_Chair
+    400006: BedSet1_Cushion
+    400008: BedSet1_Illumination
+    400010: BedSet1_Sheet
+    400012: BedSet1_Wall
+    400014: BedSet1_Wood
+    400016: BedSet1_WoodWall
+    400018: //RootNode
+    400020: Bedset_1_BackWall
+    400022: BedSet_1_BedWood
+    400024: BedSet_1_MatressPillows
+    2300000: BedSet1_BackWall
+    2300002: BedSet1_Carpet
+    2300004: BedSet1_Chair
+    2300006: BedSet1_Cushion
+    2300008: BedSet1_Illumination
+    2300010: BedSet1_Sheet
+    2300012: BedSet1_Wall
+    2300014: BedSet1_Wood
+    2300016: BedSet1_WoodWall
+    3300000: BedSet1_BackWall
+    3300002: BedSet1_Carpet
+    3300004: BedSet1_Chair
+    3300006: BedSet1_Cushion
+    3300008: BedSet1_Illumination
+    3300010: BedSet1_Sheet
+    3300012: BedSet1_Wall
+    3300014: BedSet1_Wood
+    3300016: BedSet1_WoodWall
+    4300000: BedSet1_Carpet
+    4300002: BedSet1_Chair
+    4300004: BedSet1_Sheet
+    4300006: BedSet1_Cushion
+    4300008: BedSet1_Wood
+    4300010: BedSet1_WoodWall
+    4300012: BedSet1_Wall
+    4300014: BedSet1_BackWall
+    4300016: BedSet1_Illumination
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

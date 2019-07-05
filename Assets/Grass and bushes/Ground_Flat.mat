@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Ground_Flat
+  m_Shader: {fileID: 4800000, guid: 4b9ef46e7cd994342842fb23766c67e2, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BlurAdd:
+        m_Texture: {fileID: 8400000, guid: c1e92acf9010bef439c2e4e3470fad17, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Diffuse:
+        m_Texture: {fileID: 2800000, guid: 9ea1ff65cb1cc574099800adc2af624d, type: 3}
+        m_Scale: {x: 15, y: 15}
+        m_Offset: {x: 0, y: 0}
+    - _node_2251:
+        m_Texture: {fileID: 2800000, guid: bdd9d040506670d4fb6a6d1b3e2141f1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _AmbientLight: 5
+    - _Cutoff: 0.5
+    - _DiffuseLight: 3
+    - _DiffuseLight_copy: 0
+    - _Light: 0.98
+    - _node_3867: 0
+    m_Colors: []

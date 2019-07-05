@@ -1,0 +1,169 @@
+fileFormatVersion: 2
+guid: fa233a9514ba9aa40b06854038f32746
+timeCreated: 1476962575
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Ball1
+    100002: Ball10
+    100004: Ball11
+    100006: Ball2
+    100008: Ball3
+    100010: Ball4
+    100012: Ball5
+    100014: Ball6
+    100016: Ball7
+    100018: Ball8
+    100020: Ball9
+    100022: Billiard_Metal
+    100024: Billiard_Stick1
+    100026: Billiard_Stick2
+    100028: Billiard_Stick3
+    100030: Billiard_Table
+    100032: Billiard_Wood
+    100034: BilliardBalls
+    100036: Billiards_GreenBoard
+    100038: //RootNode
+    100040: CueBall
+    100042: CueSticks
+    400000: Ball1
+    400002: Ball10
+    400004: Ball11
+    400006: Ball2
+    400008: Ball3
+    400010: Ball4
+    400012: Ball5
+    400014: Ball6
+    400016: Ball7
+    400018: Ball8
+    400020: Ball9
+    400022: Billiard_Metal
+    400024: Billiard_Stick1
+    400026: Billiard_Stick2
+    400028: Billiard_Stick3
+    400030: Billiard_Table
+    400032: Billiard_Wood
+    400034: BilliardBalls
+    400036: Billiards_GreenBoard
+    400038: //RootNode
+    400040: CueBall
+    400042: CueSticks
+    2300000: Ball1
+    2300002: Ball10
+    2300004: Ball11
+    2300006: Ball2
+    2300008: Ball3
+    2300010: Ball4
+    2300012: Ball5
+    2300014: Ball6
+    2300016: Ball7
+    2300018: Ball8
+    2300020: Ball9
+    2300022: Billiard_Metal
+    2300024: Billiard_Stick1
+    2300026: Billiard_Stick2
+    2300028: Billiard_Stick3
+    2300030: Billiard_Wood
+    2300032: Billiards_GreenBoard
+    2300034: CueBall
+    3300000: Ball1
+    3300002: Ball10
+    3300004: Ball11
+    3300006: Ball2
+    3300008: Ball3
+    3300010: Ball4
+    3300012: Ball5
+    3300014: Ball6
+    3300016: Ball7
+    3300018: Ball8
+    3300020: Ball9
+    3300022: Billiard_Metal
+    3300024: Billiard_Stick1
+    3300026: Billiard_Stick2
+    3300028: Billiard_Stick3
+    3300030: Billiard_Wood
+    3300032: Billiards_GreenBoard
+    3300034: CueBall
+    4300000: Billiard_Stick1
+    4300002: Billiard_Stick2
+    4300004: Billiard_Stick3
+    4300006: Billiards_GreenBoard
+    4300008: Billiard_Wood
+    4300010: Billiard_Metal
+    4300012: Ball1
+    4300014: Ball2
+    4300016: Ball3
+    4300018: Ball4
+    4300020: Ball5
+    4300022: Ball6
+    4300024: Ball8
+    4300026: Ball9
+    4300028: Ball7
+    4300030: Ball11
+    4300032: CueBall
+    4300034: Ball10
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
