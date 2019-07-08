@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: fb66d71b03830bd49b7121500bf1e03d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Squirrel-Explotion_0
+    21300002: Squirrel-Explotion_1
+    21300004: Squirrel-Explotion_2
+    21300006: Squirrel-Explotion_3
+    21300008: Squirrel-Explotion_4
+    21300010: Squirrel-Explotion_5
+    21300012: Squirrel-Explotion_6
+    21300014: Squirrel-Explotion_7
+    21300016: Squirrel-Explotion_8
+    21300018: Squirrel-Explotion_9
+    21300020: Squirrel-Explotion_10
+    21300022: Squirrel-Explotion_11
+    21300024: Squirrel-Explotion_12
+    21300026: Squirrel-Explotion_13
+    21300028: Squirrel-Explotion_14
+    21300030: Squirrel-Explotion_15
+    21300032: Squirrel-Explotion_16
+    21300034: Squirrel-Explotion_17
+    21300036: Squirrel-Explotion_18
+    21300038: Squirrel-Explotion_19
+    21300040: Squirrel-Explotion_20
+    21300042: Squirrel-Explotion_21
+    21300044: Squirrel-Explotion_22
+    21300046: Squirrel-Explotion_23
+    21300048: Squirrel-Explotion_24
+    21300050: Squirrel-Explotion_25
+    21300052: Squirrel-Explotion_26
+    21300054: Squirrel-Explotion_27
+    21300056: Squirrel-Explotion_28
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Squirrel-Explotion_0
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 11
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeeeb98f2ced026469c1431cebba18e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel-Explotion_1
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 11
+        width: 127
+        height: 134
+      alignment: 9
+      pivot: {x: 0.48473328, y: 0.2612598}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0109c8c6b7bcc9d4ebb4c08ae03b5aaa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel-Explotion_2
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 9
+        width: 127
+        height: 136
+      alignment: 9
+      pivot: {x: 0.50763327, y: 0.22912973}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c374962788ecb74fb0bfb14dd7804c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel-Explotion_3
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 9
+        width: 147
+        height: 137
+      alignment: 9
+      pivot: {x: 0.47361994, y: 0.2589923}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2331133b34f081648acf104aff96df45
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel-Explotion_4
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 11
+        width: 164
+        height: 143
+      alignment: 9
+      pivot: {x: 0.50591075, y: 0.20849313}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb70862880dc4a048827155d5b733109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel-Explotion_5
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 11
+        width: 164
+        height: 143
+      alignment: 9
+      pivot: {x: 0.50591075, y: 0.20849313}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6199aa5543d161744bb354a2822204a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel-Explotion_6
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 11
+        width: 169
+        height: 141
+      alignment: 9
+      pivot: {x: 0.50591075, y: 0.20849313}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d398290437bf943b087e357107e58c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel-Explotion_7
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 12
+        width: 169
+        height: 142
+      alignment: 9
+      pivot: {x: 0.50591075, y: 0.20849313}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965cd09370e72734cbf7c42534dfc07f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Squirrel-Explotion_8
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 12
+        width: 177
+        height: 142
+      alignment: 9
+      pivot: {x: 0.50591075, y: 0.20849313}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50391189617e7ad489742f3756267a23
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b2fa0e916570c434883839cc051c36a0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

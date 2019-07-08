@@ -1,0 +1,1606 @@
+fileFormatVersion: 2
+guid: 1e8d3a0ce216ada45b97941e4824fa7f
+timeCreated: 1511709164
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Crystal_0
+    21300002: Crystal_1
+    21300004: Crystal_2
+    21300006: Crystal_3
+    21300008: Crystal_4
+    21300010: Crystal_5
+    21300012: Crystal_6
+    21300014: Crystal_7
+    21300016: Crystal_8
+    21300018: Crystal_9
+    21300020: Crystal_10
+    21300022: Crystal_11
+    21300024: Crystal_12
+    21300026: Crystal_13
+    21300028: Crystal_14
+    21300030: Crystal_15
+    21300032: Crystal_16
+    21300034: Crystal_17
+    21300036: Crystal_18
+    21300038: Crystal_19
+    21300040: Crystal_20
+    21300042: Crystal_21
+    21300044: Crystal_22
+    21300046: Crystal_23
+    21300048: Crystal_24
+    21300050: Crystal_25
+    21300052: Crystal_26
+    21300054: Crystal_27
+    21300056: Crystal_28
+    21300058: Crystal_29
+    21300060: Crystal_30
+    21300062: Crystal_31
+    21300064: Crystal_32
+    21300066: Crystal_33
+    21300068: Crystal_34
+    21300070: Crystal_35
+    21300072: Crystal_36
+    21300074: Crystal_37
+    21300076: Crystal_38
+    21300078: Crystal_39
+    21300080: Crystal_40
+    21300082: Crystal_41
+    21300084: Crystal_42
+    21300086: Crystal_43
+    21300088: Crystal_44
+    21300090: Crystal_45
+    21300092: Crystal_46
+    21300094: Crystal_47
+    21300096: Crystal_48
+    21300098: Crystal_49
+    21300100: Crystal_50
+    21300102: Crystal_51
+    21300104: Crystal_52
+    21300106: Crystal_53
+    21300108: Crystal_54
+    21300110: Crystal_55
+    21300112: Crystal_56
+    21300114: Crystal_57
+    21300116: Crystal_58
+    21300118: Crystal_59
+    21300120: Crystal_60
+    21300122: Crystal_61
+    21300124: Crystal_62
+    21300126: Crystal_63
+    21300128: Crystal_64
+    21300130: Crystal_65
+    21300132: Crystal_66
+    21300134: Crystal_67
+    21300136: Crystal_68
+    21300138: Crystal_69
+    21300140: Crystal_70
+    21300142: Crystal_71
+    21300144: Crystal_72
+    21300146: Crystal_73
+    21300148: Crystal_74
+    21300150: Crystal_75
+    21300152: Crystal_76
+    21300154: Crystal_77
+    21300156: Crystal_78
+    21300158: Crystal_79
+    21300160: Crystal_80
+    21300162: Crystal_81
+    21300164: Crystal_82
+    21300166: Crystal_83
+    21300168: Crystal_84
+    21300170: Crystal_85
+    21300172: Crystal_86
+    21300174: Crystal_87
+    21300176: Crystal_88
+    21300178: Crystal_89
+    21300180: Crystal_90
+    21300182: Crystal_91
+    21300184: Crystal_92
+    21300186: Crystal_93
+    21300188: Crystal_94
+    21300190: Crystal_95
+    21300192: Crystal_96
+    21300194: Crystal_97
+    21300196: Crystal_98
+    21300198: Crystal_99
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 18
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Crystal_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 91
+        width: 11
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 92
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_2
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 92
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_3
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 92
+        width: 9
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_4
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 92
+        width: 8
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_5
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 92
+        width: 7
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 92
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_7
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 92
+        width: 13
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_8
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 92
+        width: 10
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_9
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 92
+        width: 9
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_10
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 92
+        width: 16
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 79
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 79
+        width: 7
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_13
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 79
+        width: 6
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_14
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 79
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_15
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 79
+        width: 9
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_16
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 79
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_17
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 79
+        width: 8
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_18
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 79
+        width: 10
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 79
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_20
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 79
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_21
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 79
+        width: 8
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_22
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 79
+        width: 7
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_23
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 79
+        width: 10
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 65
+        width: 11
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_25
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 66
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_26
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 66
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_27
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 66
+        width: 9
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_28
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 66
+        width: 8
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_29
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 66
+        width: 7
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_30
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 66
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_31
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 66
+        width: 13
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_32
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 66
+        width: 10
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_33
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 66
+        width: 9
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_34
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 66
+        width: 16
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_35
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 53
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_36
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 53
+        width: 7
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_37
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 53
+        width: 6
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_38
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 53
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_39
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 53
+        width: 9
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_40
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 53
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_41
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 53
+        width: 8
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_42
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 53
+        width: 10
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_43
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 53
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_44
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 53
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_45
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 53
+        width: 8
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_46
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 53
+        width: 7
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_47
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 53
+        width: 10
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_48
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 39
+        width: 11
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_49
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 40
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_50
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 40
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_51
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 40
+        width: 9
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_52
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 40
+        width: 8
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_53
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 40
+        width: 7
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_54
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 40
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_55
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 40
+        width: 13
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_56
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 40
+        width: 10
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_57
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 40
+        width: 9
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_58
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 40
+        width: 16
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_59
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 27
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_60
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 27
+        width: 7
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_61
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 27
+        width: 6
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_62
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 27
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_63
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 27
+        width: 9
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_64
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 27
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_65
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 27
+        width: 8
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_66
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 27
+        width: 10
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_67
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 27
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_68
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 27
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_69
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 27
+        width: 8
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_70
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 27
+        width: 7
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_71
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 27
+        width: 10
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_72
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 13
+        width: 11
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_73
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 14
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_74
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 14
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_75
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 14
+        width: 9
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_76
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 14
+        width: 8
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_77
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 14
+        width: 7
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_78
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 14
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_79
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 14
+        width: 13
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_80
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 14
+        width: 10
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_81
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 14
+        width: 9
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_82
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 14
+        width: 16
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_83
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_84
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1
+        width: 7
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_85
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1
+        width: 6
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_86
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_87
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1
+        width: 9
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_88
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 1
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_89
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1
+        width: 8
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_90
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 1
+        width: 10
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_91
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1
+        width: 11
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_92
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_93
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1
+        width: 8
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_94
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1
+        width: 7
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_95
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1
+        width: 10
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_96
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1
+        width: 17
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_97
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 27
+        width: 17
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_98
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 53
+        width: 17
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Crystal_99
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 79
+        width: 17
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

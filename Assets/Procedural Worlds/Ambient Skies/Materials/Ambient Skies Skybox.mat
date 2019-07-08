@@ -56,7 +56,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Tex:
-        m_Texture: {fileID: 8900000, guid: 732bf467ea0068b4ba73e12f003bb745, type: 3}
+        m_Texture: {fileID: 8900000, guid: 9cfc39646bec2c54a86aa61869ede547, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -65,7 +65,7 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Exposure: 1.02
+    - _Exposure: 1.2
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -74,7 +74,7 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Rotation: 135
+    - _Rotation: 330
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -90,4 +90,4 @@ Material:
     - _GroundColor: {r: 0.6627451, g: 0.7607843, b: 0.8980392, a: 1}
     - _SkyTint: {r: 0.5019608, g: 0.5019608, b: 0.5019608, a: 1}
     - _SunTint: {r: 1, g: 1, b: 1, a: 1}
-    - _Tint: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 0}
+    - _Tint: {r: 0.3529412, g: 0.3529412, b: 0.3529412, a: 1}

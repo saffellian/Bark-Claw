@@ -1,0 +1,1546 @@
+fileFormatVersion: 2
+guid: 4b60eda74734f4f49ab0a5a18805f7ee
+timeCreated: 1511710436
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Statue 0
+    21300002: Statue 1
+    21300004: Statue 2
+    21300006: Statue 3
+    21300008: Statue 4
+    21300010: Statue 5
+    21300012: Flowerbed 0
+    21300014: Flowerbed 2
+    21300016: Flowerbed 4
+    21300018: Flowerbed 6
+    21300020: Fountain 0
+    21300022: Fountain 1
+    21300024: Fountain 2
+    21300026: Hotdog 0
+    21300028: Hamburger 0
+    21300030: Icecream 0
+    21300032: Statue 6
+    21300034: Flowerbed 1
+    21300036: Flowerbed 3
+    21300038: Flowerbed 5
+    21300040: Flowerbed 7
+    21300042: Tree 0
+    21300044: Tree 1
+    21300046: Tree 2
+    21300048: Tree 3
+    21300050: Tree 4
+    21300052: Tree 5
+    21300054: Traffic Light 0
+    21300056: Traffic Light 1
+    21300058: Traffic Light 2
+    21300060: Traffic Light 3
+    21300062: Traffic Light 4
+    21300064: Billboard 0
+    21300066: Billboard 2
+    21300068: Billboard 3
+    21300070: Hotdog 1
+    21300072: Hamburger 1
+    21300074: Icecream 1
+    21300076: Traffic Light 5
+    21300078: Billboard 1
+    21300080: Guardrail 13
+    21300082: MailBox 0
+    21300084: MailBox 1
+    21300086: Hotdog 2
+    21300088: Hamburger 2
+    21300090: Icecream 2
+    21300092: Telegraph Pole 0
+    21300094: Street Lamp 0
+    21300096: Street Lamp 2
+    21300098: Street Lamp 4
+    21300100: Telegraph Pole 2
+    21300102: Dustbin 5
+    21300104: Box 3
+    21300106: Barricade 5
+    21300108: Barricade 6
+    21300110: Barricade 7
+    21300112: Telephone booth 0
+    21300114: Telephone booth 1
+    21300116: Guardrail 14
+    21300118: Dustbin 4
+    21300120: Barricade 2
+    21300122: Barricade 3
+    21300124: Barricade 4
+    21300126: Guardrail 12
+    21300128: Guardrail 0
+    21300130: Guardrail 2
+    21300132: Guardrail 6
+    21300134: Box 1
+    21300136: Box 0
+    21300138: Dustbin 0
+    21300140: Dustbin 1
+    21300142: Dustbin 2
+    21300144: Dustbin 3
+    21300146: Barricade 0
+    21300148: Barricade 1
+    21300150: Chair 0
+    21300152: Chair 1
+    21300154: Guardrail 1
+    21300156: Guardrail 3
+    21300158: Guardrail 5
+    21300160: Guardrail 7
+    21300162: Guardrail 8
+    21300164: Guardrail 9
+    21300166: Guardrail 10
+    21300168: Guardrail 11
+    21300170: Telegraph Pole 1
+    21300172: Street Lamp 1
+    21300174: Street Lamp 3
+    21300176: Street Lamp 5
+    21300178: Telegraph Pole 4
+    21300180: Telegraph Pole 3
+    21300182: Telegraph Pole 5
+    21300184: Vending Machine
+    21300186: Box 4
+    21300188: Guardrail 4
+    21300190: Box 2
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 18
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Barricade 0
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 60
+        width: 8
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Barricade 1
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 60
+        width: 8
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Barricade 2
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 74
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Barricade 3
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 74
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Barricade 4
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 74
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Barricade 5
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 87
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Barricade 6
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 87
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Barricade 7
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 87
+        width: 5
+        height: 12
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Billboard 0
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 134
+        width: 35
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Billboard 1
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 100
+        width: 35
+        height: 33
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Billboard 2
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 105
+        width: 22
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Billboard 3
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 111
+        width: 24
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Box 0
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 82
+        width: 18
+        height: 5
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Box 1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 82
+        width: 12
+        height: 5
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Box 2
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 84
+        width: 13
+        height: 3
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Box 3
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 90
+        width: 11
+        height: 9
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Box 4
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 88
+        width: 7
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Chair 0
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 60
+        width: 36
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Chair 1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 60
+        width: 8
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Dustbin 0
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 60
+        width: 10
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Dustbin 1
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 60
+        width: 10
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Dustbin 2
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 60
+        width: 10
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Dustbin 3
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 60
+        width: 11
+        height: 14
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Dustbin 4
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 75
+        width: 11
+        height: 14
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Dustbin 5
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 78
+        width: 32
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Flowerbed 0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 161
+        width: 25
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Flowerbed 1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 144
+        width: 25
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Flowerbed 2
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 161
+        width: 25
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Flowerbed 3
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 144
+        width: 25
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Flowerbed 4
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 161
+        width: 29
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Flowerbed 5
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 144
+        width: 29
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Flowerbed 6
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 161
+        width: 29
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Flowerbed 7
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 144
+        width: 29
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Fountain 0
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 144
+        width: 25
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Fountain 1
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 144
+        width: 25
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Fountain 2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 144
+        width: 25
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Guardrail 0
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 74
+        width: 23
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Guardrail 1
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 60
+        width: 23
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Guardrail 2
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 74
+        width: 23
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Guardrail 3
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 60
+        width: 23
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Guardrail 4
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 72
+        width: 5
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Guardrail 5
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 60
+        width: 5
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Guardrail 6
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 72
+        width: 7
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Guardrail 7
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 60
+        width: 7
+        height: 11
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Guardrail 8
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 60
+        width: 7
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Guardrail 9
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 60
+        width: 7
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Guardrail 10
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 60
+        width: 7
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Guardrail 11
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 60
+        width: 7
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Guardrail 12
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 78
+        width: 22
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Guardrail 13
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 96
+        width: 22
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Guardrail 14
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 87
+        width: 22
+        height: 8
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Hamburger 0
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 144
+        width: 29
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Hamburger 1
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 116
+        width: 29
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Hamburger 2
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 88
+        width: 29
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Hotdog 0
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 144
+        width: 36
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Hotdog 1
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 116
+        width: 36
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Hotdog 2
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 88
+        width: 36
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Icecream 0
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 144
+        width: 18
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Icecream 1
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 116
+        width: 18
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Icecream 2
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 88
+        width: 18
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MailBox 0
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 91
+        width: 11
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MailBox 1
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 91
+        width: 12
+        height: 19
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Statue 0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 144
+        width: 15
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Statue 1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 144
+        width: 16
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Statue 2
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 144
+        width: 14
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Statue 3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 144
+        width: 14
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Statue 4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 144
+        width: 16
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Statue 5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 161
+        width: 14
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Statue 6
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 144
+        width: 14
+        height: 16
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Street Lamp 0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 60
+        width: 16
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Street Lamp 1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1
+        width: 22
+        height: 58
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Street Lamp 2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 60
+        width: 8
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Street Lamp 3
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1
+        width: 10
+        height: 58
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Street Lamp 4
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 60
+        width: 15
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Street Lamp 5
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1
+        width: 20
+        height: 58
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Telegraph Pole 0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 60
+        width: 13
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Telegraph Pole 1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 16
+        height: 58
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Telegraph Pole 2
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 60
+        width: 94
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Telegraph Pole 3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1
+        width: 100
+        height: 58
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Telegraph Pole 4
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1
+        width: 31
+        height: 58
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Telegraph Pole 5
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1
+        width: 165
+        height: 58
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Telephone booth 0
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 78
+        width: 10
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Telephone booth 1
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 78
+        width: 11
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Traffic Light 0
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 101
+        width: 32
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Traffic Light 1
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 100
+        width: 25
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Traffic Light 2
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 100
+        width: 7
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Traffic Light 3
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 100
+        width: 7
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Traffic Light 4
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 122
+        width: 7
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Traffic Light 5
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 100
+        width: 7
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Tree 0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 101
+        width: 7
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Tree 1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 101
+        width: 9
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Tree 2
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 101
+        width: 12
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Tree 3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 101
+        width: 10
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Tree 4
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 101
+        width: 37
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Tree 5
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 101
+        width: 37
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Vending Machine
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 60
+        width: 16
+        height: 30
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
