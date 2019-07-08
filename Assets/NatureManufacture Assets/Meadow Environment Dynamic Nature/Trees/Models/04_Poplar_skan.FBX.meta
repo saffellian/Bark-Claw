@@ -1,0 +1,182 @@
+fileFormatVersion: 2
+guid: aa040970f08693e41910f1b92814249e
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: 04_Poplar_skan_Poplar_04_leaves_LOD0
+    100004: 04_Poplar_skan_Poplar_04_leaves_LOD1
+    100006: 04_Poplar_skan_Poplar_04_leaves_LOD2
+    100008: 04_Poplar_skan_Poplar_04_leaves_LOD3
+    100010: 04_Poplar_skan_Poplar_04_leaves_LOD4
+    100012: 04_Poplar_skan_Poplar_04_roots_LOD0
+    100014: 04_Poplar_skan_Poplar_04_roots_LOD1
+    100016: 04_Poplar_skan_Poplar_04_roots_LOD2
+    100018: 04_Poplar_skan_Poplar_04_roots_LOD3
+    100020: 04_Poplar_skan_Poplar_04_roots_LOD4
+    100022: 04_Poplar_skan_Poplar_04_trunk_LOD0
+    100024: 04_Poplar_skan_Poplar_04_trunk_LOD1
+    100026: 04_Poplar_skan_Poplar_04_trunk_LOD2
+    100028: 04_Poplar_skan_Poplar_04_trunk_LOD3
+    100030: 04_Poplar_skan_Poplar_04_trunk_LOD4
+    400000: //RootNode
+    400002: 04_Poplar_skan_Poplar_04_leaves_LOD0
+    400004: 04_Poplar_skan_Poplar_04_leaves_LOD1
+    400006: 04_Poplar_skan_Poplar_04_leaves_LOD2
+    400008: 04_Poplar_skan_Poplar_04_leaves_LOD3
+    400010: 04_Poplar_skan_Poplar_04_leaves_LOD4
+    400012: 04_Poplar_skan_Poplar_04_roots_LOD0
+    400014: 04_Poplar_skan_Poplar_04_roots_LOD1
+    400016: 04_Poplar_skan_Poplar_04_roots_LOD2
+    400018: 04_Poplar_skan_Poplar_04_roots_LOD3
+    400020: 04_Poplar_skan_Poplar_04_roots_LOD4
+    400022: 04_Poplar_skan_Poplar_04_trunk_LOD0
+    400024: 04_Poplar_skan_Poplar_04_trunk_LOD1
+    400026: 04_Poplar_skan_Poplar_04_trunk_LOD2
+    400028: 04_Poplar_skan_Poplar_04_trunk_LOD3
+    400030: 04_Poplar_skan_Poplar_04_trunk_LOD4
+    2100000: M_Poplar_trunk
+    2100002: M_Poplar_leaves
+    2300000: 04_Poplar_skan_Poplar_04_leaves_LOD0
+    2300002: 04_Poplar_skan_Poplar_04_leaves_LOD1
+    2300004: 04_Poplar_skan_Poplar_04_leaves_LOD2
+    2300006: 04_Poplar_skan_Poplar_04_leaves_LOD3
+    2300008: 04_Poplar_skan_Poplar_04_leaves_LOD4
+    2300010: 04_Poplar_skan_Poplar_04_roots_LOD0
+    2300012: 04_Poplar_skan_Poplar_04_roots_LOD1
+    2300014: 04_Poplar_skan_Poplar_04_roots_LOD2
+    2300016: 04_Poplar_skan_Poplar_04_roots_LOD3
+    2300018: 04_Poplar_skan_Poplar_04_roots_LOD4
+    2300020: 04_Poplar_skan_Poplar_04_trunk_LOD0
+    2300022: 04_Poplar_skan_Poplar_04_trunk_LOD1
+    2300024: 04_Poplar_skan_Poplar_04_trunk_LOD2
+    2300026: 04_Poplar_skan_Poplar_04_trunk_LOD3
+    2300028: 04_Poplar_skan_Poplar_04_trunk_LOD4
+    3300000: 04_Poplar_skan_Poplar_04_leaves_LOD0
+    3300002: 04_Poplar_skan_Poplar_04_leaves_LOD1
+    3300004: 04_Poplar_skan_Poplar_04_leaves_LOD2
+    3300006: 04_Poplar_skan_Poplar_04_leaves_LOD3
+    3300008: 04_Poplar_skan_Poplar_04_leaves_LOD4
+    3300010: 04_Poplar_skan_Poplar_04_roots_LOD0
+    3300012: 04_Poplar_skan_Poplar_04_roots_LOD1
+    3300014: 04_Poplar_skan_Poplar_04_roots_LOD2
+    3300016: 04_Poplar_skan_Poplar_04_roots_LOD3
+    3300018: 04_Poplar_skan_Poplar_04_roots_LOD4
+    3300020: 04_Poplar_skan_Poplar_04_trunk_LOD0
+    3300022: 04_Poplar_skan_Poplar_04_trunk_LOD1
+    3300024: 04_Poplar_skan_Poplar_04_trunk_LOD2
+    3300026: 04_Poplar_skan_Poplar_04_trunk_LOD3
+    3300028: 04_Poplar_skan_Poplar_04_trunk_LOD4
+    4300000: 04_Poplar_skan_Poplar_04_trunk_LOD4
+    4300002: 04_Poplar_skan_Poplar_04_trunk_LOD3
+    4300004: 04_Poplar_skan_Poplar_04_trunk_LOD2
+    4300006: 04_Poplar_skan_Poplar_04_trunk_LOD1
+    4300008: 04_Poplar_skan_Poplar_04_trunk_LOD0
+    4300010: 04_Poplar_skan_Poplar_04_roots_LOD4
+    4300012: 04_Poplar_skan_Poplar_04_roots_LOD3
+    4300014: 04_Poplar_skan_Poplar_04_roots_LOD2
+    4300016: 04_Poplar_skan_Poplar_04_roots_LOD1
+    4300018: 04_Poplar_skan_Poplar_04_roots_LOD0
+    4300020: 04_Poplar_skan_Poplar_04_leaves_LOD4
+    4300022: 04_Poplar_skan_Poplar_04_leaves_LOD3
+    4300024: 04_Poplar_skan_Poplar_04_leaves_LOD2
+    4300026: 04_Poplar_skan_Poplar_04_leaves_LOD1
+    4300028: 04_Poplar_skan_Poplar_04_leaves_LOD0
+    7400000: Take 001
+    9500000: //RootNode
+    20500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Poplar_leaves
+    second: {fileID: 2100000, guid: 037319069b2689349b65ebecb77d328a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Poplar_trunk
+    second: {fileID: 2100000, guid: 213343827a8b5674c850217fb77590fe, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.125
+    - 0.0625
+    - 0.03125
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
