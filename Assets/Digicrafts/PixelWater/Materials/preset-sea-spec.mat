@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: preset-sea-spec
-  m_Shader: {fileID: 4800000, guid: 4a5b7fa268e844b45ae3c50e8af808a4, type: 3}
+  m_Shader: {fileID: 4800000, guid: 58e22af0e244c4aa793b44c51345c426, type: 3}
   m_ShaderKeywords: _PIXELATE_ON
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
