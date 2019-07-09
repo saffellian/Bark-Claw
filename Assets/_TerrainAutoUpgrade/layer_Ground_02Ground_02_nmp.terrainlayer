@@ -6,11 +6,11 @@ TerrainLayer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: layer_TexturesCom_RockSharp0092_23_seamless_STexturesCom_RockSharp0092_23_seamless_S_NRM(25.000,25.000)(0.000,0.000)(0.000,0.000,0.000),0.000,0.000
-  m_DiffuseTexture: {fileID: 2800000, guid: a8a90092d48085e409a3691bf3cd5d1f, type: 3}
-  m_NormalMapTexture: {fileID: 2800000, guid: 228d4c07127d8554aabcdb6e3b75662c, type: 3}
+  m_Name: layer_Ground_02Ground_02_nmp
+  m_DiffuseTexture: {fileID: 2800000, guid: 5c15c78050a67e14ab9a364d95dce663, type: 3}
+  m_NormalMapTexture: {fileID: 2800000, guid: fda22388331e1844bac751e9179688b3, type: 3}
   m_MaskMapTexture: {fileID: 0}
-  m_TileSize: {x: 25, y: 25}
+  m_TileSize: {x: 15, y: 15}
   m_TileOffset: {x: 0, y: 0}
   m_Specular: {r: 0, g: 0, b: 0, a: 0}
   m_Metallic: 0
