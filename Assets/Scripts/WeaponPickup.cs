@@ -8,7 +8,7 @@ public class WeaponPickup : MonoBehaviour
     
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && GetComponent<Renderer>().isVisible)
         {
             other.transform.parent.GetComponent<PlayerInventory>().TryAddItem(itemPrefab, true);
             Destroy(gameObject);
