@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class SceneHandler : MonoBehaviour
 {
     [SerializeField] private GameObject loadingCanvas;
+    [SerializeField] private RectTransform barBackground, barForeground;
     
     public void ChangeScene(string scene)
     {
@@ -13,9 +14,9 @@ public class SceneHandler : MonoBehaviour
 
     public void ChangeSceneAsync(string scene)
     {
-        if (loadingCanvas == null)
+        if (!(loadingCanvas || barBackground || barForeground))
         {
-            Debug.LogWarning("Loading Canvas is not linked. Unable to load level asynchronously.");
+            Debug.LogWarning("Loading Canvas components not linked. Unable to load level asynchronously.");
             return;
         }
 
@@ -24,11 +25,21 @@ public class SceneHandler : MonoBehaviour
 
     private IEnumerator LoadScene(AsyncOperation operation)
     {
-        Debug.Log("started");
-        while (!operation.isDone)
+        operation.allowSceneActivation = false;
+        float progress;
+        float width = barBackground.rect.width;
+        float y = barForeground.offsetMax.y;
+        loadingCanvas.SetActive(true);
+        while (operation.progress < 0.9f)
         {
-            Debug.Log(operation.progress);
-            yield return null;
+            yield return new WaitForEndOfFrame();
+            progress = Mathf.Clamp01(operation.progress / 0.9f);
+            //Debug.Log(progress);
+            barForeground.offsetMax = new Vector2(-(width - (width * progress)), y);
         }
+        
+        barForeground.offsetMax = new Vector2(0, y);
+        yield return new WaitForSeconds(3);
+        operation.allowSceneActivation = true;
     }
 }
