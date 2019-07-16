@@ -26,38 +26,6 @@ public class SettingsMenu : MonoBehaviour
     private GameObject calledBy = null;
     private Scene currentScene;
 
-    void Start()
-    {
-//        resolutions = Screen.resolutions;
-//        
-//        resolutionDropdown.ClearOptions();
-//        
-//        List<string> options = new List<string>();
-//
-//        int currentRes = 0;
-//        for (int i = 0; i < resolutions.Length; i++)
-//        {
-//            options.Add(resolutions[i].width + "x" + resolutions[i].height);
-//
-//            if (resolutions[i].width == Screen.currentResolution.width &&
-//                resolutions[i].height == Screen.currentResolution.height)
-//            {
-//                currentRes = i;
-//            }
-//        }
-//        
-//        resolutionDropdown.AddOptions(options);
-//        resolutionDropdown.value = currentRes;
-//        resolutionDropdown.RefreshShownValue();
-//        
-//        resolutionDropdown.onValueChanged.AddListener(delegate { SetResolution(resolutionDropdown.value); });
-//        effectsSlider.onValueChanged.AddListener(delegate { SetEffectsVolume(effectsSlider.value); });
-//        musicSlider.onValueChanged.AddListener(delegate { SetMusicVolume(musicSlider.value); });
-//        mouseSlider.onValueChanged.AddListener(delegate { SetMouseSensitivity(mouseSlider.value); });
-//        postProcessingToggle.onValueChanged.AddListener(delegate { SetActivePostProcessing(postProcessingToggle.isOn); });
-//        initialized = true;
-    }
-
     private void OnEnable()
     {
         currentScene = SceneManager.GetActiveScene();
@@ -96,12 +64,6 @@ public class SettingsMenu : MonoBehaviour
         {
             LoadSettings();
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void SetMusicVolume(float volume)
