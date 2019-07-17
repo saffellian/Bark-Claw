@@ -99,7 +99,10 @@ public class SettingsMenu : MonoBehaviour
     private void SetActivePostProcessing(bool enable)
     {
         PlayerPrefs.SetInt(PlayerPrefKeys.POST_PROC, enable ? 1 : 0);
-        SettingsLoader.Instance.UpdateSettings(currentScene);
+        if (SettingsLoader.Instance)
+        {
+            SettingsLoader.Instance.UpdateSettings(currentScene);
+        }
     }
 
     private void SetResolution(int index)

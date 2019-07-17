@@ -42,7 +42,7 @@ public class PausedMenu: MonoBehaviour
 
     public void OpenSettings()
     {
-        settingCanvas.SetActive(true);
+        settingCanvas.GetComponent<SettingsMenu>()?.ActivateOverlay(gameObject);
         gameObject.SetActive(false);
     }
     
