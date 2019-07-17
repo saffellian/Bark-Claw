@@ -130,7 +130,7 @@ Material:
     - _Reflection: 0.18
     - _RefrDistort: 0.92
     - _Resolution: 17.77
-    - _Scale: 2
+    - _Scale: 0.5
     - _Shininess: 0.85
     - _Size: 7.3
     - _Size2: 10
