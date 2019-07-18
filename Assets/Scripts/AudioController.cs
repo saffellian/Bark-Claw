@@ -3,10 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.Design.Serialization;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioController : MonoBehaviour
 {
+    [Serializable]
+    public struct LevelAudio
+    {
+        public string levelName;
+        public AudioClip audioClip;
+    }
+    
     public static AudioController Instance;
+
+    [SerializeField] private List<LevelAudio> levelMusic = new List<LevelAudio>();
 
     private AudioSource musicSource, effectsSource;
     
@@ -25,9 +35,26 @@ public class AudioController : MonoBehaviour
         
         DontDestroyOnLoad(gameObject);
 
+        SceneManager.sceneLoaded += OnSceneLoaded;
         AudioSource[] sources = GetComponents<AudioSource>();
         musicSource = sources[0];
         effectsSource = sources[1];
+
+        StartCoroutine(InitMusic());
+    }
+
+    private IEnumerator InitMusic()
+    {
+        yield return new WaitUntil(() => SettingsLoader.Instance && SettingsLoader.Instance.menuInitialized);
+        foreach (LevelAudio la in levelMusic)
+        {
+            if (la.levelName == SceneManager.GetActiveScene().name && musicSource.clip != la.audioClip)
+            {
+                musicSource.clip = la.audioClip;
+                musicSource.Play();
+                break;
+            }
+        }
     }
 
     // Update is called once per frame
@@ -36,6 +63,19 @@ public class AudioController : MonoBehaviour
         
     }
 
+    private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
+    {
+        foreach (LevelAudio la in levelMusic)
+        {
+            if (la.levelName == SceneManager.GetActiveScene().name && musicSource.clip != la.audioClip)
+            {
+                musicSource.clip = la.audioClip;
+                musicSource.Play();
+                break;
+            }
+        }
+    }
+    
     public void PlayOneShot(AudioClip clip, float volume)
     {
         effectsSource.PlayOneShot(clip, volume);

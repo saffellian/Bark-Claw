@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
 public class SettingsLoader : MonoBehaviour
 {
     public static SettingsLoader Instance;
+
+    public bool menuInitialized = false;
     
     // Start is called before the first frame update
     void Start()
@@ -57,6 +59,7 @@ public class SettingsLoader : MonoBehaviour
         yield return new WaitUntil(() => AudioController.Instance);
         AudioController.Instance.SetMusicVolume(PlayerPrefs.GetFloat(PlayerPrefKeys.MUSIC_VOLUME, 0));
         AudioController.Instance.SetEffectsVolume(PlayerPrefs.GetFloat(PlayerPrefKeys.SFX_VOLUME, 0));
+        menuInitialized = true;
     }
 
     private void LoadSettingsScene()

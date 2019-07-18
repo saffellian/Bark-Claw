@@ -30,19 +30,18 @@ public class SettingsMenu : MonoBehaviour
     {
         currentScene = SceneManager.GetActiveScene();
         
-        resolutions = Screen.resolutions;
-        
+        resolutions = Screen.resolutions.Select(res => new Resolution {width = res.width, height = res.height}).Distinct().ToArray();
+
         resolutionDropdown.ClearOptions();
         
         List<string> options = new List<string>();
 
-        int currentRes = 0;
+        int currentRes = 1;
         for (int i = 0; i < resolutions.Length; i++)
         {
             options.Add(resolutions[i].width + "x" + resolutions[i].height);
-
-            if (resolutions[i].width == Screen.currentResolution.width &&
-                resolutions[i].height == Screen.currentResolution.height)
+            
+            if (resolutions[i].width == Screen.width && resolutions[i].height == Screen.height)
             {
                 currentRes = i;
             }
@@ -108,9 +107,12 @@ public class SettingsMenu : MonoBehaviour
     private void SetResolution(int index)
     {
         Resolution res = resolutions[index];
-        Screen.SetResolution(res.width, res.height, Screen.fullScreen);
-        PlayerPrefs.SetInt(PlayerPrefKeys.RES_WIDTH, Screen.currentResolution.width);
-        PlayerPrefs.SetInt(PlayerPrefKeys.RES_HEIGHT, Screen.currentResolution.height);
+        if (Screen.height != res.height || Screen.width != res.width)
+        {
+            Screen.SetResolution(res.width, res.height, Screen.fullScreen);
+        }
+        PlayerPrefs.SetInt(PlayerPrefKeys.RES_WIDTH, Screen.width);
+        PlayerPrefs.SetInt(PlayerPrefKeys.RES_HEIGHT, Screen.height);
     }
 
     public void LoadSettings()
@@ -126,8 +128,8 @@ public class SettingsMenu : MonoBehaviour
         postProcessingToggle.isOn = PlayerPrefs.GetInt(PlayerPrefKeys.POST_PROC, 1) == 1;
 
         int height, width, index = 0;
-        height = PlayerPrefs.GetInt(PlayerPrefKeys.RES_HEIGHT, 1080);
-        width = PlayerPrefs.GetInt(PlayerPrefKeys.RES_WIDTH, 1920);
+        height = PlayerPrefs.GetInt(PlayerPrefKeys.RES_HEIGHT, Screen.height);
+        width = PlayerPrefs.GetInt(PlayerPrefKeys.RES_WIDTH, Screen.width);
 
         yield return new WaitUntil(() => initialized);
         for (int i = 0; i < resolutions.Length; i++)
@@ -139,11 +141,12 @@ public class SettingsMenu : MonoBehaviour
         }
 
         resolutionDropdown.value = index;
+        resolutionDropdown.RefreshShownValue();
 
-        if (Screen.currentResolution.height != height || Screen.currentResolution.width != width)
-        {
-            Screen.SetResolution(width, height, Screen.fullScreen);
-        }
+//        if (Screen.height != height || Screen.width != width)
+//        {
+//            Screen.SetResolution(width, height, Screen.fullScreen);
+//        }
     }
 
     public void ActivateOverlay(GameObject callingObject)
