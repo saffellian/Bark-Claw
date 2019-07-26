@@ -10,6 +10,7 @@ using UnityEngine.Experimental.UIElements;
 using UnityEngine.UI;
 using UnityEngine.Rendering.PostProcessing;
 using UnityStandardAssets.CrossPlatformInput;
+using Button = UnityEngine.UI.Button;
 using Slider = UnityEngine.UI.Slider;
 using Toggle = UnityEngine.UI.Toggle;
 
@@ -19,6 +20,7 @@ public class SettingsMenu : MonoBehaviour
     public Slider effectsSlider, musicSlider, mouseSlider;
     public TMP_InputField mouseTextField;
     public Dropdown resolutionDropdown;
+    public Button applyButton;
     public Toggle postProcessingToggle;
 
     private Resolution[] resolutions;
@@ -43,6 +45,7 @@ public class SettingsMenu : MonoBehaviour
             
             if (resolutions[i].width == Screen.width && resolutions[i].height == Screen.height)
             {
+                Debug.Log(i);
                 currentRes = i;
             }
         }
@@ -50,8 +53,12 @@ public class SettingsMenu : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentRes;
         resolutionDropdown.RefreshShownValue();
-        
-        resolutionDropdown.onValueChanged.AddListener(delegate { SetResolution(resolutionDropdown.value); });
+
+        resolutionDropdown.onValueChanged.AddListener(delegate { applyButton.interactable = true; });
+        applyButton.onClick.AddListener(delegate { 
+            SetResolution(resolutionDropdown.value);
+            applyButton.interactable = false;
+        });
         effectsSlider.onValueChanged.AddListener(delegate { SetEffectsVolume(effectsSlider.value); });
         musicSlider.onValueChanged.AddListener(delegate { SetMusicVolume(musicSlider.value); });
         mouseSlider.onValueChanged.AddListener(delegate { SetMouseSensitivity(mouseSlider.value); });
@@ -117,36 +124,10 @@ public class SettingsMenu : MonoBehaviour
 
     public void LoadSettings()
     {
-        StartCoroutine(ProcessSettings());
-    }
-
-    private IEnumerator ProcessSettings()
-    {
         musicSlider.value = PlayerPrefs.GetFloat(PlayerPrefKeys.MUSIC_VOLUME, 0);
         effectsSlider.value = PlayerPrefs.GetFloat(PlayerPrefKeys.SFX_VOLUME, 0);
         mouseSlider.value = PlayerPrefs.GetFloat(PlayerPrefKeys.MOUSE_SENS, 1);
         postProcessingToggle.isOn = PlayerPrefs.GetInt(PlayerPrefKeys.POST_PROC, 1) == 1;
-
-        int height, width, index = 0;
-        height = PlayerPrefs.GetInt(PlayerPrefKeys.RES_HEIGHT, Screen.height);
-        width = PlayerPrefs.GetInt(PlayerPrefKeys.RES_WIDTH, Screen.width);
-
-        yield return new WaitUntil(() => initialized);
-        for (int i = 0; i < resolutions.Length; i++)
-        {
-            if (resolutions[i].width == width && resolutions[i].height == height)
-            {
-                index = i;
-            }
-        }
-
-        resolutionDropdown.value = index;
-        resolutionDropdown.RefreshShownValue();
-
-//        if (Screen.height != height || Screen.width != width)
-//        {
-//            Screen.SetResolution(width, height, Screen.fullScreen);
-//        }
     }
 
     public void ActivateOverlay(GameObject callingObject)
