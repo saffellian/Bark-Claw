@@ -1,0 +1,311 @@
+fileFormatVersion: 2
+guid: 794d444785d9fb1498ab1fdfa7889916
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: CatBlack-Explotion_0
+    21300002: CatBlack-Explotion_1
+    21300004: CatBlack-Explotion_2
+    21300006: CatBlack-Explotion_3
+    21300008: CatBlack-Explotion_4
+    21300010: CatBlack-Explotion_5
+    21300012: CatBlack-Explotion_6
+    21300014: CatBlack-Explotion_7
+    21300016: CatBlack-Explotion_8
+    21300018: CatBlack-Explotion_9
+    21300020: CatBlack-Explotion_10
+    21300022: CatBlack-Explotion_11
+    21300024: CatBlack-Explotion_12
+    21300026: CatBlack-Explotion_13
+    21300028: CatBlack-Explotion_14
+    21300030: CatBlack-Explotion_15
+    21300032: CatBlack-Explotion_16
+    21300034: CatBlack-Explotion_17
+    21300036: CatBlack-Explotion_18
+    21300038: CatBlack-Explotion_19
+    21300040: CatBlack-Explotion_20
+    21300042: CatBlack-Explotion_21
+    21300044: CatBlack-Explotion_22
+    21300046: CatBlack-Explotion_23
+    21300048: CatBlack-Explotion_24
+    21300050: CatBlack-Explotion_25
+    21300052: CatBlack-Explotion_26
+    21300054: CatBlack-Explotion_27
+    21300056: CatBlack-Explotion_28
+    21300058: CatBlack-Explotion_29
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CatBlack-Explotion_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 5
+        width: 147
+        height: 82
+      alignment: 9
+      pivot: {x: 0.49030596, y: 0.3088355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1462ad03047fb4f8efa773e74ba08d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatBlack-Explotion_1
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 5
+        width: 147
+        height: 82
+      alignment: 9
+      pivot: {x: 0.5096944, y: 0.31752476}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c380f37407d5cf543ab385e79f050e58
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatBlack-Explotion_2
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 4
+        width: 147
+        height: 82
+      alignment: 9
+      pivot: {x: 0.5145413, y: 0.29145712}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce3a55aaac52c5d44b1f4a30bbf6c997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatBlack-Explotion_3
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 4
+        width: 147
+        height: 82
+      alignment: 9
+      pivot: {x: 0.5145413, y: 0.27407852}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b387e2c4821754ab7e92458dfb4e40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatBlack-Explotion_4
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 4
+        width: 147
+        height: 82
+      alignment: 9
+      pivot: {x: 0.5048471, y: 0.30014637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6919704b807074897bc85c9408e382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatBlack-Explotion_5
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 4
+        width: 147
+        height: 82
+      alignment: 9
+      pivot: {x: 0.5, y: 0.2827678}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3781c87c72d5e743a24a8c4c73e48dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatBlack-Explotion_6
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 4
+        width: 147
+        height: 82
+      alignment: 9
+      pivot: {x: 0.4951529, y: 0.2653892}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079b9b0a87bd5c44690caf9bc6ae3f80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatBlack-Explotion_7
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 4
+        width: 147
+        height: 82
+      alignment: 9
+      pivot: {x: 0.49030578, y: 0.24801064}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b620a58aa619b1c45843a5dff22df7ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c1335dd2d1e78a641894695546af24cb
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

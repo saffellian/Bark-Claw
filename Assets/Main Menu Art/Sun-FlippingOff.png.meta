@@ -1,0 +1,456 @@
+fileFormatVersion: 2
+guid: 4324eba6107bc154da9b4b256e4de6f1
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sun-FlippingOff_0
+    21300002: Sun-FlippingOff_1
+    21300004: Sun-FlippingOff_2
+    21300006: Sun-FlippingOff_3
+    21300008: Sun-FlippingOff_4
+    21300010: Sun-FlippingOff_5
+    21300012: Sun-FlippingOff_6
+    21300014: Sun-FlippingOff_7
+    21300016: Sun-FlippingOff_8
+    21300018: Sun-FlippingOff_9
+    21300020: Sun-FlippingOff_10
+    21300022: Sun-FlippingOff_11
+    21300024: Sun-FlippingOff_12
+    21300026: Sun-FlippingOff_13
+    21300028: Sun-FlippingOff_14
+    21300030: Sun-FlippingOff_15
+    21300032: Sun-FlippingOff_16
+    21300034: Sun-FlippingOff_17
+    21300036: Sun-FlippingOff_18
+    21300038: Sun-FlippingOff_19
+    21300040: Sun-FlippingOff_20
+    21300042: Sun-FlippingOff_21
+    21300044: Sun-FlippingOff_22
+    21300046: Sun-FlippingOff_23
+    21300048: Sun-FlippingOff_24
+    21300050: Sun-FlippingOff_25
+    21300052: Sun-FlippingOff_26
+    21300054: Sun-FlippingOff_27
+    21300056: Sun-FlippingOff_28
+    21300058: Sun-FlippingOff_29
+    21300060: Sun-FlippingOff_30
+    21300062: Sun-FlippingOff_31
+    21300064: Sun-FlippingOff_32
+    21300066: Sun-FlippingOff_33
+    21300068: Sun-FlippingOff_34
+    21300070: Sun-FlippingOff_35
+    21300072: Sun-FlippingOff_36
+    21300074: Sun-FlippingOff_37
+    21300076: Sun-FlippingOff_38
+    21300078: Sun-FlippingOff_39
+    21300080: Sun-FlippingOff_40
+    21300082: Sun-FlippingOff_41
+    21300084: Sun-FlippingOff_42
+    21300086: Sun-FlippingOff_43
+    21300088: Sun-FlippingOff_44
+    21300090: Sun-FlippingOff_45
+    21300092: Sun-FlippingOff_46
+    21300094: Sun-FlippingOff_47
+    21300096: Sun-FlippingOff_48
+    21300098: Sun-FlippingOff_49
+    21300100: Sun-FlippingOff_50
+    21300102: Sun-FlippingOff_51
+    21300104: Sun-FlippingOff_52
+    21300106: Sun-FlippingOff_53
+    21300108: Sun-FlippingOff_54
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1.6
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sun-FlippingOff_0
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 101
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352e4b78f2f034d4ca79a01f809e5b1b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun-FlippingOff_1
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 101
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4555245425dcb6c4c88edc83b942d551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun-FlippingOff_2
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 101
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f492eeb1d9526e24cafb4aa3e9386159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun-FlippingOff_3
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 101
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 230f985203a25b54baff1f91885584aa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun-FlippingOff_4
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 101
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a689c49169a49f45823c007f6214bcb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun-FlippingOff_5
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 101
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87422003d85cb5046959aeb3d4a697c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun-FlippingOff_6
+      rect:
+        serializedVersion: 2
+        x: 1718
+        y: 101
+        width: 74
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b91dba63c95b484fa52f48179f860b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun-FlippingOff_7
+      rect:
+        serializedVersion: 2
+        x: 1986
+        y: 101
+        width: 73
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df38701b0b42d8346be1f344bedf18a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun-FlippingOff_8
+      rect:
+        serializedVersion: 2
+        x: 2254
+        y: 101
+        width: 73
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09672c6c070651347830cc52db5a6c1f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun-FlippingOff_9
+      rect:
+        serializedVersion: 2
+        x: 2522
+        y: 101
+        width: 73
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260024af808ef2d49b8ba7dcc2e98f15
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun-FlippingOff_10
+      rect:
+        serializedVersion: 2
+        x: 2790
+        y: 101
+        width: 73
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb8c6c7fc3506c447a3d2b5b5bf69314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun-FlippingOff_11
+      rect:
+        serializedVersion: 2
+        x: 3058
+        y: 101
+        width: 77
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb012d948bd3be4c87fecab4c7a5d67
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun-FlippingOff_12
+      rect:
+        serializedVersion: 2
+        x: 3326
+        y: 101
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b842e03308179345a060b24e5a1ba30
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sun-FlippingOff_13
+      rect:
+        serializedVersion: 2
+        x: 3594
+        y: 101
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4473ebbda30b354eac571c25ae2fef8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: aa55a7152c3931b4a910f30731869596
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
