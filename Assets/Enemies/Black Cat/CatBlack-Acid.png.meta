@@ -1,0 +1,296 @@
+fileFormatVersion: 2
+guid: 7b58fd622ea4ce145bd10c14014887b7
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: CatBlack-Acid_0
+    21300002: CatBlack-Acid_1
+    21300004: CatBlack-Acid_2
+    21300006: CatBlack-Acid_3
+    21300008: CatBlack-Acid_4
+    21300010: CatBlack-Acid_5
+    21300012: CatBlack-Acid_6
+    21300014: CatBlack-Acid_7
+    21300016: CatBlack-Acid_8
+    21300018: CatBlack-Acid_9
+    21300020: CatBlack-Acid_10
+    21300022: CatBlack-Acid_11
+    21300024: CatBlack-Acid_12
+    21300026: CatBlack-Acid_13
+    21300028: CatBlack-Acid_14
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CatBlack-Acid_0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 5
+        width: 67
+        height: 53
+      alignment: 9
+      pivot: {x: 0.5000001, y: 0.45966882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f5f3bee4a7e9548a2c55c2d8d234ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatBlack-Acid_1
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 4
+        width: 67
+        height: 53
+      alignment: 9
+      pivot: {x: 0.50000024, y: 0.47311214}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752d5056241c48b428387b7c84251b5c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatBlack-Acid_2
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 4
+        width: 67
+        height: 53
+      alignment: 9
+      pivot: {x: 0.4893653, y: 0.4596683}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d995db28c322d449ccda9cbc4bf3ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatBlack-Acid_3
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 5
+        width: 67
+        height: 53
+      alignment: 9
+      pivot: {x: 0.5, y: 0.45966882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c12c6853bb4554e813370531fa25e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatBlack-Acid_4
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 4
+        width: 67
+        height: 53
+      alignment: 9
+      pivot: {x: 0.5106347, y: 0.4462245}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d6d57b9d74f5134db9041649ee91043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatBlack-Acid_5
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 4
+        width: 67
+        height: 53
+      alignment: 9
+      pivot: {x: 0.5106347, y: 0.4462245}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4dd89260b83ab468a14e590a859465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatBlack-Acid_6
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 4
+        width: 67
+        height: 53
+      alignment: 9
+      pivot: {x: 0.5000009, y: 0.4596683}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32662b6299e6f34e99ed44266d3e97e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CatBlack-Acid_7
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 4
+        width: 67
+        height: 53
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47311214}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ef687628b4ae24aafbc7fdc89c6910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c341d26708ce38147967bfe3dc5ae4ab
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

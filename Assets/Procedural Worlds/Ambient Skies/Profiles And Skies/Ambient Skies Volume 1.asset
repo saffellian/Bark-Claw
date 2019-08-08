@@ -1903,7 +1903,7 @@ MonoBehaviour:
     cascadeCount: 3
     enableSunDisk: 1
   - name: User
-    assetName: Sky05High
+    assetName: Sky06High
     profileIndex: 9
     lightRotation: 133
     isPWProfile: 0
@@ -1978,11 +1978,11 @@ MonoBehaviour:
     showSettings: 0
     useSkies: 1
     skyboxTint: {r: 0.3529412, g: 0.3529412, b: 0.3529412, a: 1}
-    customSkybox: {fileID: 8900000, guid: 9cfc39646bec2c54a86aa61869ede547, type: 3}
-    skyboxExposure: 1.2
-    skyboxGroundIntensity: 1
-    skyboxRotation: 330
-    skyboxPitch: 50
+    customSkybox: {fileID: 8900000, guid: fca1d28dbd0e38544b6851073f73e017, type: 3}
+    skyboxExposure: 1.11
+    skyboxGroundIntensity: 1.54
+    skyboxRotation: 71
+    skyboxPitch: 163
     shadowStrength: 1
     indirectLightMultiplier: 1
     sunColor: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
