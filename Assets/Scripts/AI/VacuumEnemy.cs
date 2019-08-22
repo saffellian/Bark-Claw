@@ -94,7 +94,10 @@ public class VacuumEnemy : MonoBehaviour, IEnemy
                 // apply damage to player
                 audioSource.PlayOneShot(attackSound);
                 animator.SetTrigger("Attack");
-                PlayerHealth.Instance.ApplyDamage(attackDamage);
+                if (Physics.CheckSphere(transform.position, 1, 1 << LayerMask.NameToLayer("Player")))
+                {
+                    PlayerHealth.Instance.ApplyDamage(attackDamage);
+                }
             }
             yield return new WaitForSeconds(attackDelay); // delay between attacks
             yield return new WaitForEndOfFrame();
@@ -109,11 +112,14 @@ public class VacuumEnemy : MonoBehaviour, IEnemy
         audioSource.PlayOneShot(deathSound);
         animator.SetTrigger("Death");
         yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsName("Dead"));
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 
     public void ApplyDamage(int amount)
     {
+        if (health <= 0)
+            return;
+
         health -= amount;
 
         if (health <= 0)

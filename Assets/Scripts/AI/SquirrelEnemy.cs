@@ -20,10 +20,11 @@ public class SquirrelEnemy : MonoBehaviour, IEnemy
     [SerializeField] private int health;
     [Header("Attack")]
     [SerializeField] private float attackDistance;
-    [SerializeField] private int attackDamage = 5;
     [SerializeField] private float attackDelay;
     [SerializeField] private float attackStrafeDistance, attackStrafeDepth, attackStrafeWidth;
     [SerializeField] private AudioClip attackSound;
+    [SerializeField] private GameObject projectile;
+    [SerializeField] private Transform projectileSpawn;
     [Header("Patrol")]
     [SerializeField] private MeshFilter patrolRegion;
     [SerializeField] private float patrolSpeed;
@@ -122,8 +123,11 @@ public class SquirrelEnemy : MonoBehaviour, IEnemy
             {
                 agent.isStopped = true;
                 animator.SetTrigger("Attack");
-                // throw acorn
-                // acorn collision applies damage to player
+                yield return new WaitForSeconds(0.3f); // delay to line up animation
+                // spawn and shoot acorn
+                Rigidbody obj = Instantiate(projectile, projectileSpawn.position, Quaternion.identity).GetComponent<Rigidbody>();
+                obj.AddForce((GameObject.Find("FirstPersonCharacter").transform.position - transform.position).normalized * 20, ForceMode.Impulse);
+                
                 yield return new WaitForSeconds(attackDelay);
                 agent.isStopped = false;
             }
@@ -144,7 +148,7 @@ public class SquirrelEnemy : MonoBehaviour, IEnemy
         animator.SetTrigger(deathType.ToString());
         yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsName("Dead"));
         
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
     
     #if UNITY_EDITOR
@@ -172,6 +176,9 @@ public class SquirrelEnemy : MonoBehaviour, IEnemy
 
     public void ApplyDamage(int amount)
     {
+        if (health <= 0)
+            return;
+
         health -= amount;
 
         if (health <= 0)

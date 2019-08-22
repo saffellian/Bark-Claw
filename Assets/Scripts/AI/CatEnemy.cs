@@ -127,7 +127,10 @@ public class CatEnemy : MonoBehaviour, IEnemy
                 agent.isStopped = true;
                 animator.SetTrigger("Attack");
                 audioSource.PlayOneShot(attackSound);
-                PlayerHealth.Instance.ApplyDamage(attackDamage);
+                if (Physics.CheckSphere(transform.position, 2, 1 << LayerMask.NameToLayer("Player")))
+                {
+                    PlayerHealth.Instance.ApplyDamage(attackDamage);
+                }
             }
             yield return new WaitForSeconds(attackDelay); // delay between attacks
             agent.isStopped = false;
@@ -166,11 +169,14 @@ public class CatEnemy : MonoBehaviour, IEnemy
             }
         }
 
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 
     public void ApplyDamage(int amount)
     {
+        if (health <= 0)
+            return;
+        
         health -= amount;
 
         if (health <= 0)

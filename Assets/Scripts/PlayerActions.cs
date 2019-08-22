@@ -7,10 +7,13 @@ public class PlayerActions : MonoBehaviour
 {
     private FirstPersonController fpController;
     private Animator animator;
+    private bool canAttack = true;
+    
+    
     // Start is called before the first frame update
     void Start()
     {
-        fpController = GameObject.FindObjectOfType<FirstPersonController>();
+        fpController = FindObjectOfType<FirstPersonController>();
         animator = GetComponent<Animator>();
     }
 
@@ -19,9 +22,27 @@ public class PlayerActions : MonoBehaviour
     {
         animator.SetBool("IsMoving", fpController.HasMovement());
 
-        if (Input.GetMouseButtonDown(0))
+        if (canAttack && Input.GetMouseButtonDown(0))
         {
+            canAttack = false;
             animator.SetTrigger("Action");
+            GameObject obj = GameObject.Find("AttackCollider");
+            Collider[] hits = Physics.OverlapBox(obj.transform.position, obj.GetComponent<Collider>().bounds.extents);
+            if (hits.Length > 0)
+            {
+                foreach (Collider c in hits)
+                {
+                    if (c.CompareTag("Enemy"))
+                    {
+                        c.GetComponent<IEnemy>().ApplyDamage(20);
+                    }
+                }
+            }
         }
+    }
+
+    public void ActionComplete()
+    {
+        canAttack = true;
     }
 }
