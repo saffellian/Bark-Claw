@@ -114,10 +114,10 @@ TextureImporter:
       name: Ammo_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 78
-        width: 33
-        height: 33
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,7 +125,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ffe94f29a0ba1b4e924b303c45d2c01
+      spriteID: 9cbce3d6572a843408adf5e12ee87c15
       vertices: []
       indices: 
       edges: []
@@ -134,10 +134,10 @@ TextureImporter:
       name: Ammo_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 79
-        width: 33
-        height: 33
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,7 +145,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51569b3cd823438489c4077724250e0c
+      spriteID: a81c8cdb6c529394ea9cb4d6419dbe2a
       vertices: []
       indices: 
       edges: []
@@ -154,10 +154,10 @@ TextureImporter:
       name: Ammo_2
       rect:
         serializedVersion: 2
-        x: 144
-        y: 79
-        width: 33
-        height: 33
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,7 +165,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8164204cd362b7240aab8cfdefd07463
+      spriteID: e86f320eaaf1fcf4f874438c6e6e810b
       vertices: []
       indices: 
       edges: []
@@ -174,10 +174,10 @@ TextureImporter:
       name: Ammo_3
       rect:
         serializedVersion: 2
-        x: 208
-        y: 78
-        width: 33
-        height: 33
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,7 +185,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac767fa4cfe3c8a46bb1c0f21f385cab
+      spriteID: b2229e1f3d9897b498abccd7b1bb0112
       vertices: []
       indices: 
       edges: []
@@ -194,10 +194,10 @@ TextureImporter:
       name: Ammo_4
       rect:
         serializedVersion: 2
-        x: 16
-        y: 14
-        width: 33
-        height: 33
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,7 +205,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bacfcbfabb7e6d14a9cab6b0226652db
+      spriteID: 410383dd77cb3dc40921ac9f0a27329c
       vertices: []
       indices: 
       edges: []

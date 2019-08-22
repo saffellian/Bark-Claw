@@ -129,18 +129,18 @@ TextureImporter:
       name: Health_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 74
-        width: 41
-        height: 29
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48d1212d424e83b4b94da924f6ad5a39
+      spriteID: f1ef4bfccc64c814ea7684bf03e9989c
       vertices: []
       indices: 
       edges: []
@@ -149,18 +149,18 @@ TextureImporter:
       name: Health_1
       rect:
         serializedVersion: 2
-        x: 77
-        y: 74
-        width: 41
-        height: 29
-      alignment: 9
-      pivot: {x: 0.4779756, y: 0.5}
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8735e6acce681c43b38c25f8c035c46
+      spriteID: 1c4874d21f09c894f9e81cecda625d6a
       vertices: []
       indices: 
       edges: []
@@ -169,18 +169,18 @@ TextureImporter:
       name: Health_2
       rect:
         serializedVersion: 2
-        x: 140
-        y: 74
-        width: 41
-        height: 29
-      alignment: 9
-      pivot: {x: 0.5036707, y: 0.5}
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89256b405054a9c4d93eb63851d0f1d7
+      spriteID: 02929c786f61ca54c9c5e0d4441e8bd2
       vertices: []
       indices: 
       edges: []
@@ -189,18 +189,18 @@ TextureImporter:
       name: Health_3
       rect:
         serializedVersion: 2
-        x: 204
-        y: 74
-        width: 41
-        height: 29
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 084d29a0b71370447a084a170ed556b8
+      spriteID: 613a87682d08adb4d880734df0a12be5
       vertices: []
       indices: 
       edges: []
@@ -209,18 +209,18 @@ TextureImporter:
       name: Health_4
       rect:
         serializedVersion: 2
-        x: 12
-        y: 10
-        width: 41
-        height: 29
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b94003dabdd32945b06ba344ea25f7a
+      spriteID: 9a1903bd1560d35479d1be29ddf2709d
       vertices: []
       indices: 
       edges: []
@@ -229,18 +229,58 @@ TextureImporter:
       name: Health_5
       rect:
         serializedVersion: 2
-        x: 76
-        y: 10
-        width: 41
-        height: 29
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 369d4559ba3a31a4b968c1e38ac53084
+      spriteID: 14ac801d7ea69584a984a7ad7905fbcc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b61b277047c57d40a00ab8859233f8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a04bd24de11b44bb8aace13a44f4bc
       vertices: []
       indices: 
       edges: []

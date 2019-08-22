@@ -117,10 +117,10 @@ TextureImporter:
       name: DogHeadLook_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 76
-        width: 29
-        height: 44
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,7 +128,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40f6ab02692b8884eb541a8168336db1
+      spriteID: c1d890116da4cfa4980bc983f9d80c99
       vertices: []
       indices: 
       edges: []
@@ -137,10 +137,10 @@ TextureImporter:
       name: DogHeadLook_1
       rect:
         serializedVersion: 2
-        x: 83
-        y: 76
-        width: 25
-        height: 44
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,7 +148,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73ea0a11d16144d4ea001820d5bcd646
+      spriteID: 88ba2380d67f7c7429db12b533c0cb55
       vertices: []
       indices: 
       edges: []
@@ -157,10 +157,10 @@ TextureImporter:
       name: DogHeadLook_2
       rect:
         serializedVersion: 2
-        x: 148
-        y: 76
-        width: 26
-        height: 44
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,7 +168,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90e268dc15ec56e44a93382d17ed7ccc
+      spriteID: c36b300bfc26f5440b6eb75954514fc0
       vertices: []
       indices: 
       edges: []
@@ -177,10 +177,10 @@ TextureImporter:
       name: DogHeadLook_3
       rect:
         serializedVersion: 2
-        x: 208
-        y: 76
-        width: 28
-        height: 44
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,7 +188,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7147704e81ca70e4a8a7a7f9a850acf2
+      spriteID: 09535bf1c2119f94fa978e88a2e3a5e8
       vertices: []
       indices: 
       edges: []
@@ -197,10 +197,10 @@ TextureImporter:
       name: DogHeadLook_4
       rect:
         serializedVersion: 2
-        x: 16
-        y: 12
-        width: 29
-        height: 44
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,7 +208,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e740de98784b6654993c2745544b768d
+      spriteID: c1d55e312ba5eb34f9526b819d422e42
       vertices: []
       indices: 
       edges: []
@@ -217,10 +217,10 @@ TextureImporter:
       name: DogHeadLook_5
       rect:
         serializedVersion: 2
-        x: 84
-        y: 12
-        width: 24
-        height: 44
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,7 +228,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d99f98f3d3a4954488dac39f23f05f6f
+      spriteID: 7205c427bacbe3440822ec0b1d580574
       vertices: []
       indices: 
       edges: []
@@ -237,10 +237,10 @@ TextureImporter:
       name: DogHeadLook_6
       rect:
         serializedVersion: 2
-        x: 146
-        y: 12
-        width: 26
-        height: 44
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,7 +248,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63227d9ae090d4f4e8ffcd861eba4d7b
+      spriteID: 4b8a95a2622af7b4eb186cc4d19e87a6
       vertices: []
       indices: 
       edges: []
@@ -257,10 +257,10 @@ TextureImporter:
       name: DogHeadLook_7
       rect:
         serializedVersion: 2
-        x: 212
-        y: 12
-        width: 24
-        height: 44
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,7 +268,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8129a6daadb1544693541489956bf5f
+      spriteID: 1587c1640f96f8249921fabcc6d5a37f
       vertices: []
       indices: 
       edges: []

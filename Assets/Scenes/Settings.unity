@@ -2786,6 +2786,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apply Button
       objectReference: {fileID: 0}
+    - target: {fileID: 7976948165764340588, guid: fa2a3198d86346c4ea27d03085742415,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976948165764340588, guid: fa2a3198d86346c4ea27d03085742415,
+        type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1280
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976948165764340588, guid: fa2a3198d86346c4ea27d03085742415,
+        type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 720
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976948165764340588, guid: fa2a3198d86346c4ea27d03085742415,
+        type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976948165764340588, guid: fa2a3198d86346c4ea27d03085742415,
+        type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6836809735744057406, guid: fa2a3198d86346c4ea27d03085742415,
         type: 3}
       propertyPath: m_CullTransparentMesh
