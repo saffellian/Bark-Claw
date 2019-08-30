@@ -5,6 +5,8 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class PlayerActions : MonoBehaviour
 {
+    [SerializeField] private int attackDamage = 10;
+    
     private FirstPersonController fpController;
     private Animator animator;
     private bool canAttack = true;
@@ -26,23 +28,27 @@ public class PlayerActions : MonoBehaviour
         {
             canAttack = false;
             animator.SetTrigger("Action");
-            GameObject obj = GameObject.Find("AttackCollider");
-            Collider[] hits = Physics.OverlapBox(obj.transform.position, obj.GetComponent<Collider>().bounds.extents);
-            if (hits.Length > 0)
-            {
-                foreach (Collider c in hits)
-                {
-                    if (c.CompareTag("Enemy"))
-                    {
-                        c.GetComponent<IEnemy>().ApplyDamage(20);
-                    }
-                }
-            }
         }
     }
 
     public void ActionComplete()
     {
         canAttack = true;
+    }
+
+    public void ActionAttack()
+    {
+        GameObject obj = GameObject.Find("AttackCollider");
+        Collider[] hits = Physics.OverlapBox(obj.transform.position, obj.GetComponent<Collider>().bounds.extents);
+        if (hits.Length > 0)
+        {
+            foreach (Collider c in hits)
+            {
+                if (c.CompareTag("Enemy"))
+                {
+                    c.GetComponent<IEnemy>().ApplyDamage(attackDamage);
+                }
+            }
+        }
     }
 }

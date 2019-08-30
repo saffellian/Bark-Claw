@@ -71,12 +71,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
             
-            if (Time.timeScale != 0)//CrossPlatformInputManager.GetButtonDown("Fire1"));
-            {
-                //m_PlayerInventory.PerformInventoryAction(PlayerInventory.InventoryAction.Attack);
-                //m_FPAnimator.SetTrigger("Claw");
-            }
-            
             if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
             {
                 StartCoroutine(m_JumpBob.DoBobCycle());

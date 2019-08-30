@@ -126,6 +126,7 @@ public class SquirrelEnemy : MonoBehaviour, IEnemy
                 yield return new WaitForSeconds(0.3f); // delay to line up animation
                 // spawn and shoot acorn
                 Rigidbody obj = Instantiate(projectile, projectileSpawn.position, Quaternion.identity).GetComponent<Rigidbody>();
+                obj.GetComponent<Projectile>().SetSpawnFrom(gameObject);
                 obj.AddForce((GameObject.Find("FirstPersonCharacter").transform.position - transform.position).normalized * 20, ForceMode.Impulse);
                 
                 yield return new WaitForSeconds(attackDelay);

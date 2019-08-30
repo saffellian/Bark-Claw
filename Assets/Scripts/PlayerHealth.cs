@@ -1,7 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using AppStoreModel;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour

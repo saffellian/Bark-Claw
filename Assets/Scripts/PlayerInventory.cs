@@ -38,6 +38,9 @@ public class PlayerInventory : MonoBehaviour
 
     private void Update()
     {
+        if (Time.timeScale == 0)
+            return;
+        
         int previousIndex = inventoryIndex;
         
         if (Input.GetAxis("Mouse ScrollWheel") > 0)

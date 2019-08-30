@@ -83,18 +83,23 @@ public class VacuumEnemy : MonoBehaviour, IEnemy
         agent.speed = attackSpeed;
         while (Vector3.Distance(transform.position, player.transform.position) < chaseDistance)
         {
-            if (Vector3.Distance(transform.position, player.transform.position) > 1.5f)
+            if (Vector3.Distance(transform.position, player.transform.position) > 1.75f)
             {
-                agent.destination = player.transform.position;
+                NavMeshHit hit;
+                if (NavMesh.SamplePosition(player.transform.position, out hit, 1f, NavMesh.AllAreas))
+                {
+                    agent.destination = Vector3.LerpUnclamped(player.transform.position, hit.position, 1.7f);
+                    Debug.DrawLine(agent.destination, agent.destination + Vector3.up, Color.red, 100, false);
+                }
             }
 
-            yield return new WaitUntil(() => !agent.hasPath || Vector3.Distance(transform.position, player.transform.position) < 1.5f);
-            if (Vector3.Distance(transform.position, player.transform.position) < 1.5f)
+            yield return new WaitUntil(() => !agent.hasPath || agent.isPathStale);
+            if (Vector3.Distance(transform.position, player.transform.position) < 1.75f)
             {
                 // apply damage to player
                 audioSource.PlayOneShot(attackSound);
                 animator.SetTrigger("Attack");
-                if (Physics.CheckSphere(transform.position, 1, 1 << LayerMask.NameToLayer("Player")))
+                if (Physics.CheckSphere(transform.position, 2, 1 << LayerMask.NameToLayer("Player")))
                 {
                     PlayerHealth.Instance.ApplyDamage(attackDamage);
                 }
