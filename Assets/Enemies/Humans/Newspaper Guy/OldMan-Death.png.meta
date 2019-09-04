@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 37
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -82,7 +82,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 12
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -118,18 +118,38 @@ TextureImporter:
       name: OldMan-Death_0
       rect:
         serializedVersion: 2
-        x: 47
+        x: 35
         y: 4
         width: 60
         height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.556651, y: 0.49999988}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d7c80eac9a11724ca7cf5ec0bf6373e
+      spriteID: f5cfa68a406344f4288bc9d8fa06aeea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldMan-Death_1
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 4
+        width: 63
+        height: 63
+      alignment: 9
+      pivot: {x: 0.5685316, y: 0.49999976}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a56f3ab2c758e458674abc3032c338
       vertices: []
       indices: 
       edges: []
@@ -138,18 +158,38 @@ TextureImporter:
       name: OldMan-Death_2
       rect:
         serializedVersion: 2
-        x: 121
+        x: 206
         y: 4
         width: 60
         height: 63
       alignment: 9
-      pivot: {x: 0.75051934, y: 0.51522905}
+      pivot: {x: 0.55056655, y: 0.4995414}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6d2b3f3f064b1547ab79b478d9dc27c
+      spriteID: 4ceadbc9b8650134b81c394fd9a1d124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OldMan-Death_3
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 4
+        width: 60
+        height: 63
+      alignment: 9
+      pivot: {x: 0.55863243, y: 0.49999}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf1f3c7cbc84574590f3dd18aa6ce8f
       vertices: []
       indices: 
       edges: []
@@ -158,18 +198,18 @@ TextureImporter:
       name: OldMan-Death_4
       rect:
         serializedVersion: 2
-        x: 206
+        x: 377
         y: 4
-        width: 60
+        width: 63
         height: 63
       alignment: 9
-      pivot: {x: 0.82514215, y: 0.51015264}
+      pivot: {x: 0.5586, y: 0.49999}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76b10f18746a0754bad13d558dcb9a36
+      spriteID: 60fec6a80515bb14b951791e25ccf068
       vertices: []
       indices: 
       edges: []
@@ -178,58 +218,18 @@ TextureImporter:
       name: OldMan-Death_5
       rect:
         serializedVersion: 2
-        x: 291
+        x: 462
         y: 4
-        width: 60
+        width: 63
         height: 63
       alignment: 9
-      pivot: {x: 0.7078781, y: 0.49999988}
+      pivot: {x: 0.61675686, y: 0.5050763}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 041c2fdaeeb231546a835135d9ed9672
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OldMan-Death_6
-      rect:
-        serializedVersion: 2
-        x: 372
-        y: 4
-        width: 68
-        height: 63
-      alignment: 9
-      pivot: {x: 0.72574973, y: 0.5050763}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d48f4754e8ed2749a148381b6ef9687
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OldMan-Death_7
-      rect:
-        serializedVersion: 2
-        x: 454
-        y: 4
-        width: 76
-        height: 63
-      alignment: 9
-      pivot: {x: 0.7440667, y: 0.50507534}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: adc03f90f211dda418b23fed423a8d26
+      spriteID: 31ea66bb32169cb4c8777686f62f7c54
       vertices: []
       indices: 
       edges: []
