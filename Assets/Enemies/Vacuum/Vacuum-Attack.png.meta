@@ -81,7 +81,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: 4
     textureCompression: 1
@@ -121,10 +121,10 @@ TextureImporter:
         serializedVersion: 2
         x: 56
         y: 32
-        width: 66
-        height: 64
+        width: 78
+        height: 68
       alignment: 9
-      pivot: {x: 0.57393163, y: 0.49999905}
+      pivot: {x: 0.5, y: 0.47129753}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -141,10 +141,10 @@ TextureImporter:
         serializedVersion: 2
         x: 216
         y: 33
-        width: 66
-        height: 64
+        width: 78
+        height: 68
       alignment: 9
-      pivot: {x: 0.6182903, y: 0.46950263}
+      pivot: {x: 0.52502286, y: 0.47129753}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -159,12 +159,12 @@ TextureImporter:
       name: Vacuum-Attack_2
       rect:
         serializedVersion: 2
-        x: 383
+        x: 382
         y: 32
-        width: 66
-        height: 64
+        width: 78
+        height: 68
       alignment: 9
-      pivot: {x: 0.57393163, y: 0.4847507}
+      pivot: {x: 0.5238855, y: 0.47129753}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -180,11 +180,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 548
-        y: 31
-        width: 68
-        height: 64
+        y: 32
+        width: 78
+        height: 68
       alignment: 9
-      pivot: {x: 0.55740535, y: 0.5304955}
+      pivot: {x: 0.50735945, y: 0.47129753}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -201,10 +201,10 @@ TextureImporter:
         serializedVersion: 2
         x: 709
         y: 32
-        width: 73
-        height: 65
+        width: 78
+        height: 68
       alignment: 9
-      pivot: {x: 0.58021104, y: 0.51501256}
+      pivot: {x: 0.5426761, y: 0.47129753}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -221,10 +221,10 @@ TextureImporter:
         serializedVersion: 2
         x: 870
         y: 34
-        width: 83
-        height: 62
+        width: 78
+        height: 68
       alignment: 9
-      pivot: {x: 0.52351546, y: 0.49999937}
+      pivot: {x: 0.56105, y: 0.47129753}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -241,10 +241,10 @@ TextureImporter:
         serializedVersion: 2
         x: 1032
         y: 31
-        width: 95
-        height: 66
+        width: 78
+        height: 68
       alignment: 9
-      pivot: {x: 0.47945493, y: 0.5147845}
+      pivot: {x: 0.60457045, y: 0.47129753}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -261,10 +261,10 @@ TextureImporter:
         serializedVersion: 2
         x: 1365
         y: 32
-        width: 73
-        height: 66
+        width: 78
+        height: 68
       alignment: 9
-      pivot: {x: 0.5534735, y: 0.51478577}
+      pivot: {x: 0.5534735, y: 0.47129753}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -280,11 +280,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1201
-        y: 31
-        width: 73
-        height: 67
+        y: 33
+        width: 78
+        height: 68
       alignment: 9
-      pivot: {x: 0.5534735, y: 0.5145644}
+      pivot: {x: 0.5534735, y: 0.47129753}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,12 +299,12 @@ TextureImporter:
       name: Vacuum-Attack_3
       rect:
         serializedVersion: 2
-        x: 1530
-        y: 30
-        width: 70
+        x: 1529
+        y: 32
+        width: 78
         height: 68
       alignment: 9
-      pivot: {x: 0.5697074, y: 0.54305255}
+      pivot: {x: 0.5321718, y: 0.47129753}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

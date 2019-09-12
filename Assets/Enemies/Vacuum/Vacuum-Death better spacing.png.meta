@@ -130,18 +130,18 @@ TextureImporter:
       name: Vacuum-Death better spacing_0
       rect:
         serializedVersion: 2
-        x: 56
-        y: 29
-        width: 67
-        height: 67
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 28
+        y: 31
+        width: 135
+        height: 125
+      alignment: 9
+      pivot: {x: 0.49999994, y: 0.21950616}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73c338bed6ac0f44e922462b782c7450
+      spriteID: fd461b87b5162a24fbb6a7bfece7285b
       vertices: []
       indices: 
       edges: []
@@ -150,18 +150,18 @@ TextureImporter:
       name: Vacuum-Death better spacing_1
       rect:
         serializedVersion: 2
-        x: 219
-        y: 32
-        width: 73
-        height: 61
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 189
+        y: 31
+        width: 135
+        height: 125
+      alignment: 9
+      pivot: {x: 0.49999994, y: 0.21950616}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93e9831fcc8b4294ea93f708e04ef920
+      spriteID: c26a5fca0b8bcf7488bfd3e2b6d92754
       vertices: []
       indices: 
       edges: []
@@ -170,18 +170,18 @@ TextureImporter:
       name: Vacuum-Death better spacing_2
       rect:
         serializedVersion: 2
-        x: 376
+        x: 355
         y: 31
-        width: 86
-        height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 135
+        height: 125
+      alignment: 9
+      pivot: {x: 0.49999994, y: 0.21950616}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e56584bb1ef2d9498a8fa669f8b3301
+      spriteID: 153cddde5d49c3a42946d8503560775f
       vertices: []
       indices: 
       edges: []
@@ -190,18 +190,18 @@ TextureImporter:
       name: Vacuum-Death better spacing_3
       rect:
         serializedVersion: 2
-        x: 538
-        y: 32
-        width: 102
-        height: 74
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 525
+        y: 29
+        width: 135
+        height: 125
+      alignment: 9
+      pivot: {x: 0.49999994, y: 0.21950616}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89b83a1ea5a540645a62cbb2d1c6b5eb
+      spriteID: fb84ac7636e542841a935d1d47844f01
       vertices: []
       indices: 
       edges: []
@@ -210,18 +210,18 @@ TextureImporter:
       name: Vacuum-Death better spacing_4
       rect:
         serializedVersion: 2
-        x: 692
-        y: 32
-        width: 115
-        height: 92
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 678
+        y: 30
+        width: 135
+        height: 125
+      alignment: 9
+      pivot: {x: 0.49999994, y: 0.21950616}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dca78f667034884c98682c6ff8106d9
+      spriteID: 09031e3126b5f6b4f9321c61d0339ab0
       vertices: []
       indices: 
       edges: []
@@ -230,18 +230,18 @@ TextureImporter:
       name: Vacuum-Death better spacing_5
       rect:
         serializedVersion: 2
-        x: 858
-        y: 9
-        width: 116
+        x: 842
+        y: 29
+        width: 135
         height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.49999994, y: 0.21950616}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: febdbc6449be0b24bb5cdd8b268eafec
+      spriteID: bac9de54146b1f94d88171cc1b2b7e32
       vertices: []
       indices: 
       edges: []
@@ -251,17 +251,37 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1009
-        y: 22
+        y: 29
         width: 135
-        height: 82
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 125
+      alignment: 9
+      pivot: {x: 0.49999994, y: 0.21950616}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ecec17fd47e0dc4fae6905a167cf744
+      spriteID: 20834a948bd106d4bbedc3a2b9967c41
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vacuum-Death better spacing_7
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 31
+        width: 135
+        height: 125
+      alignment: 9
+      pivot: {x: 0.60388637, y: 0.20080665}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348c1ac2be77bcb4c9ad03200707e68a
       vertices: []
       indices: 
       edges: []
@@ -270,18 +290,58 @@ TextureImporter:
       name: Vacuum-Death better spacing_8
       rect:
         serializedVersion: 2
-        x: 1145
-        y: 32
-        width: 114
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1302
+        y: 31
+        width: 135
+        height: 125
+      alignment: 9
+      pivot: {x: 0.60388637, y: 0.21950616}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63b95713ed46a334887fa97bfaeafb9f
+      spriteID: c3dc353cf39f8a542a31ef29e4276a40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vacuum-Death better spacing_9
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 31
+        width: 135
+        height: 125
+      alignment: 9
+      pivot: {x: 0.60388637, y: 0.2475556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4da59d273540b4b9c45f4eaec24118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vacuum-Death better spacing_10
+      rect:
+        serializedVersion: 2
+        x: 1623
+        y: 31
+        width: 135
+        height: 125
+      alignment: 9
+      pivot: {x: 0.65582955, y: 0.2475556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e7cd4ed469b7ff459af317b9f5ba281
       vertices: []
       indices: 
       edges: []
@@ -290,78 +350,18 @@ TextureImporter:
       name: Vacuum-Death better spacing_11
       rect:
         serializedVersion: 2
-        x: 1308
-        y: 32
-        width: 116
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5465503404827ca4d8568c276b4b3c9d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vacuum-Death better spacing_13
-      rect:
-        serializedVersion: 2
-        x: 1472
+        x: 1794
         y: 31
-        width: 120
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 135
+        height: 125
+      alignment: 9
+      pivot: {x: 0.5952293, y: 0.2475556}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ac2a76be0f2f544ab60be3ea336aea0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vacuum-Death better spacing_14
-      rect:
-        serializedVersion: 2
-        x: 1633
-        y: 32
-        width: 115
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0e57cf779f6b5494c8cb1aaeed62966f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vacuum-Death better spacing_15
-      rect:
-        serializedVersion: 2
-        x: 1798
-        y: 31
-        width: 116
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 236f328be06709544bfae20b50a5cdc2
+      spriteID: 8c5632dccce319644a317762373fc190
       vertices: []
       indices: 
       edges: []
