@@ -19,7 +19,7 @@ public class AnimationDelay : MonoBehaviour
     IEnumerator DelayedAnimation()
     {
         yield return new WaitForSeconds(startDelay);
-        animator.Play("DOg-Strumming_0");
+        animator.SetTrigger("Start");
     }
 
 }

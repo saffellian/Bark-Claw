@@ -1,11 +1,13 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
-interface IEnemy
+public abstract class Enemy : MonoBehaviour
 {
-    IEnumerator BrainLogic();
-    IEnumerator Patrol();
-    IEnumerator Attack();
-    IEnumerator Death();
-    void ApplyDamage(int amount);
+    protected abstract IEnumerator BrainLogic();
+    protected abstract IEnumerator Patrol();
+    protected abstract IEnumerator Attack();
+    protected abstract IEnumerator Death();
+    public abstract void ApplyDamage(int amount);
+    protected abstract void PlayerDied();
 }

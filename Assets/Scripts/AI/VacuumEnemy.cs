@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent), typeof(AudioSource), typeof(Animator))]
-public class VacuumEnemy : MonoBehaviour, IEnemy
+public class VacuumEnemy : Enemy
 {
     [Header("General")]
     [SerializeField] private int health;
@@ -32,6 +32,7 @@ public class VacuumEnemy : MonoBehaviour, IEnemy
     // Start is called before the first frame update
     void Start()
     {
+        PlayerHealth.Instance.playerDeath.AddListener(PlayerDied);
         player = GameObject.Find("FPSController");
         agent = GetComponent<NavMeshAgent>();
         audioSource = GetComponent<AudioSource>();
@@ -42,7 +43,7 @@ public class VacuumEnemy : MonoBehaviour, IEnemy
         StartCoroutine(BrainLogic());
     }
     
-    public IEnumerator BrainLogic()
+    protected override IEnumerator BrainLogic()
     {
         while (gameObject.activeInHierarchy)
         {
@@ -51,7 +52,7 @@ public class VacuumEnemy : MonoBehaviour, IEnemy
         }
     }
 
-    public IEnumerator Patrol()
+    protected override IEnumerator Patrol()
     {
         animator.SetTrigger("Walk");
         int i = 0;
@@ -78,7 +79,7 @@ public class VacuumEnemy : MonoBehaviour, IEnemy
         } while (!visible);
     }
 
-    public IEnumerator Attack()
+    protected override IEnumerator Attack()
     {
         agent.speed = attackSpeed;
         while (Vector3.Distance(transform.position, player.transform.position) < chaseDistance)
@@ -111,7 +112,7 @@ public class VacuumEnemy : MonoBehaviour, IEnemy
         agent.speed = patrolSpeed;
     }
 
-    public IEnumerator Death()
+    protected override IEnumerator Death()
     {
         audioSource.Stop();
         audioSource.PlayOneShot(deathSound);
@@ -120,7 +121,13 @@ public class VacuumEnemy : MonoBehaviour, IEnemy
         //Destroy(gameObject);
     }
 
-    public void ApplyDamage(int amount)
+    protected override void PlayerDied()
+    {
+        StopAllCoroutines();
+        agent.isStopped = true;
+    }
+
+    public override void ApplyDamage(int amount)
     {
         if (health <= 0)
             return;

@@ -240,7 +240,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void RotateView()
         {
-            if (Time.timeScale == 0)
+            if (Time.timeScale == 0 || !PlayerHealth.Instance.IsAlive())
             {
                 m_MouseLook.UpdateCursorLock();
                 return;
@@ -264,6 +264,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 return;
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
+        }
+
+        public void SetCursorLock(bool value)
+        {
+            m_MouseLook.SetCursorLock(value);
         }
 
         public bool HasMovement()
