@@ -169,7 +169,7 @@ MonoBehaviour:
   m_UpdateType: 0
   m_MoveSpeed: 1
   m_TurnSpeed: 1.5
-  m_TurnSmoothing: 0
+  m_TurnSmoothing: 0.1
   m_TiltMax: 75
   m_TiltMin: 45
   m_LockCursor: 0
