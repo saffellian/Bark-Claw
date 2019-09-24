@@ -2,12 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
+using UnityEditor.Experimental.UIElements.GraphView;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(NavMeshAgent), typeof(AudioSource), typeof(Animator))]
-public class SquirrelEnemy : MonoBehaviour, IEnemy
+public class SquirrelEnemy : Enemy
 {
     private enum DeathType
     {
@@ -45,6 +46,7 @@ public class SquirrelEnemy : MonoBehaviour, IEnemy
     // Start is called before the first frame update
     void Start()
     {
+        PlayerHealth.Instance.playerDeath.AddListener(PlayerDied);
         player = GameObject.Find("FPSController");
         agent = GetComponent<NavMeshAgent>();
         audioSource = GetComponent<AudioSource>();
@@ -55,7 +57,7 @@ public class SquirrelEnemy : MonoBehaviour, IEnemy
         StartCoroutine(PatrolAudio());
     }
     
-    public IEnumerator BrainLogic()
+    protected override IEnumerator BrainLogic()
     {
         while (gameObject.activeInHierarchy)
         {
@@ -64,7 +66,7 @@ public class SquirrelEnemy : MonoBehaviour, IEnemy
         }
     }
 
-    public IEnumerator Patrol()
+    protected override IEnumerator Patrol()
     {
         animator.SetTrigger("Walk");
         int i = 0;
@@ -101,7 +103,7 @@ public class SquirrelEnemy : MonoBehaviour, IEnemy
         }
     }
 
-    public IEnumerator Attack()
+    protected override IEnumerator Attack()
     {
         audioSource.clip = attackSound;
         Vector3 forwardDir, horizontalDir, centerPos;
@@ -115,8 +117,30 @@ public class SquirrelEnemy : MonoBehaviour, IEnemy
             centerPos = player.transform.position + ((transform.position - player.transform.position).normalized * attackStrafeDistance);
             centerPos = new Vector3(centerPos.x, 0, centerPos.z);
             Vector3[] points = {centerPos + forwardDir + horizontalDir, centerPos - forwardDir - horizontalDir};
-            
-            agent.destination = new Vector3(Random.Range(points[0].x, points[1].x), 0, Random.Range(points[0].z, points[1].z));
+
+            Vector3 samplePoint = new Vector3(Random.Range(points[0].x, points[1].x), 0, Random.Range(points[0].z, points[1].z));
+            NavMeshPath path = new NavMeshPath();
+            if (agent.CalculatePath(samplePoint, path) && path.status == NavMeshPathStatus.PathComplete) // check if agent can get to point
+            {
+                agent.destination = samplePoint;
+            }
+            else if (agent.CalculatePath(Vector3.LerpUnclamped(samplePoint, player.transform.position, 2), path) && path.status == NavMeshPathStatus.PathComplete) // test opposite direction
+            {
+                agent.destination = Vector3.LerpUnclamped(samplePoint, player.transform.position, 2);
+            }
+            else // fall back to finding a random point in a circular region near the squirrel
+            {
+                Vector2 rand;
+                do
+                {
+                    rand = Random.insideUnitCircle * attackStrafeWidth;
+                    samplePoint = new Vector3(rand.x, 0, rand.y) + transform.position;
+                    yield return new WaitForEndOfFrame();
+                } while (!agent.CalculatePath(samplePoint, path) && path.status == NavMeshPathStatus.PathComplete);
+
+                agent.destination = samplePoint;
+            }
+
             yield return new WaitUntil(() => (!agent.pathPending && agent.remainingDistance < 0.5f));
             
             if (Vector3.Distance(transform.position, player.transform.position) < attackDistance)
@@ -141,7 +165,7 @@ public class SquirrelEnemy : MonoBehaviour, IEnemy
         audioSource.clip = null;
     }
 
-    public IEnumerator Death()
+    protected override IEnumerator Death()
     {
         yield return null;
         audioSource.Stop();
@@ -150,6 +174,12 @@ public class SquirrelEnemy : MonoBehaviour, IEnemy
         yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsName("Dead"));
         
         //Destroy(gameObject);
+    }
+
+    protected override void PlayerDied()
+    {
+        StopAllCoroutines();
+        agent.isStopped = true;
     }
     
     #if UNITY_EDITOR
@@ -175,7 +205,7 @@ public class SquirrelEnemy : MonoBehaviour, IEnemy
     }
     #endif
 
-    public void ApplyDamage(int amount)
+    public override void ApplyDamage(int amount)
     {
         if (health <= 0)
             return;

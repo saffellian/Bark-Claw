@@ -24,7 +24,7 @@ public class PlayerActions : MonoBehaviour
     {
         animator.SetBool("IsMoving", fpController.HasMovement());
 
-        if (canAttack && Input.GetMouseButtonDown(0))
+        if (PlayerHealth.Instance.IsAlive() && canAttack && Input.GetMouseButtonDown(0))
         {
             canAttack = false;
             animator.SetTrigger("Action");
@@ -46,7 +46,7 @@ public class PlayerActions : MonoBehaviour
             {
                 if (c.CompareTag("Enemy"))
                 {
-                    c.GetComponent<IEnemy>().ApplyDamage(attackDamage);
+                    c.GetComponent<Enemy>().ApplyDamage(attackDamage);
                 }
             }
         }

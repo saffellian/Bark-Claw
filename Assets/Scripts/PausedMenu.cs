@@ -10,11 +10,8 @@ public class PausedMenu: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (PlayerHealth.Instance.IsAlive() && Input.GetKeyDown(KeyCode.Escape))
         {
-
-
             if (GameIsPaused)
             {
                 Resume();
