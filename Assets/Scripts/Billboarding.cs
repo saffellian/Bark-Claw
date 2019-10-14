@@ -5,6 +5,7 @@ using System.Collections;
 public class Billboarding : MonoBehaviour
 {
     public Camera m_Camera;
+    public bool unlockHorizontalAxes = false;
 
     private void Start()
     {
@@ -19,5 +20,10 @@ public class Billboarding : MonoBehaviour
     {
         transform.LookAt(transform.position + m_Camera.transform.rotation * Vector3.forward,
             m_Camera.transform.rotation * Vector3.up);
+
+        if (!unlockHorizontalAxes)
+        {
+            transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+        }
     }
 }

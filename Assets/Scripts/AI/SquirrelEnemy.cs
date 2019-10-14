@@ -171,9 +171,6 @@ public class SquirrelEnemy : Enemy
         audioSource.Stop();
         audioSource.PlayOneShot(deathSound);
         animator.SetTrigger(deathType.ToString());
-        yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsName("Dead"));
-        
-        //Destroy(gameObject);
     }
 
     protected override void PlayerDied()
@@ -218,5 +215,18 @@ public class SquirrelEnemy : Enemy
             StopAllCoroutines();
             StartCoroutine(Death());
         }
+    }
+
+    public override void InstantDeath(bool explode)
+    {
+        if (health <= 0)
+            return;
+
+        health = 0;
+        agent.isStopped = true;
+        StopAllCoroutines();
+        if (explode)
+            deathType = DeathType.Explosion;
+        StartCoroutine(Death());
     }
 }

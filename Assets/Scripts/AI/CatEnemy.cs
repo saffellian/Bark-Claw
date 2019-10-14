@@ -174,8 +174,6 @@ public class CatEnemy : Enemy
                 Instantiate(drop, transform.position, Quaternion.identity);
             }
         }
-
-        //Destroy(gameObject);
     }
 
     protected override void PlayerDied()
@@ -197,5 +195,18 @@ public class CatEnemy : Enemy
             StopAllCoroutines();
             StartCoroutine(Death());
         }
+    }
+
+    public override void InstantDeath(bool explode)
+    {
+        if (health <= 0)
+            return;
+
+        health = 0;
+        agent.isStopped = true;
+        StopAllCoroutines();
+        if (explode)
+            deathType = DeathType.Explosion;
+        StartCoroutine(Death());
     }
 }

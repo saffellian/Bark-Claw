@@ -114,11 +114,10 @@ public class VacuumEnemy : Enemy
 
     protected override IEnumerator Death()
     {
+        yield return null;
         audioSource.Stop();
         audioSource.PlayOneShot(deathSound);
         animator.SetTrigger("Death");
-        yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsName("Dead"));
-        //Destroy(gameObject);
     }
 
     protected override void PlayerDied()
@@ -140,5 +139,16 @@ public class VacuumEnemy : Enemy
             StopAllCoroutines();
             StartCoroutine(Death());
         }
+    }
+
+    public override void InstantDeath(bool explode)
+    {
+        if (health <= 0)
+            return;
+
+        health = 0;
+        agent.isStopped = true;
+        StopAllCoroutines();
+        StartCoroutine(Death());
     }
 }

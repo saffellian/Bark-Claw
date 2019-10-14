@@ -44,6 +44,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
         private bool animationMovement = false;
+        private Vector3 m_Impact = Vector3.zero;
 
         // Use this for initialization
         private void Start()
@@ -83,7 +84,17 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_MoveDir.y = 0f;
             }
 
+            if (m_Impact.magnitude > 0.2f)
+                m_CharacterController.Move(m_Impact * Time.deltaTime);
+
+            m_Impact = Vector3.Lerp(m_Impact, Vector3.zero, 5 * Time.deltaTime);
+
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
+        }
+
+        public void AddImpact(Vector3 impact)
+        {
+            m_Impact += impact / GetComponent<Rigidbody>().mass;
         }
 
 
