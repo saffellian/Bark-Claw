@@ -1,0 +1,293 @@
+fileFormatVersion: 2
+guid: c9352e89022ec3d4d8c70f6cdb1c14f5
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: WienerDog-BrownShoot_0
+    21300002: WienerDog-BrownShoot_1
+    21300004: WienerDog-BrownShoot_2
+    21300006: WienerDog-BrownShoot_3
+    21300008: WienerDog-BrownShoot_4
+    21300010: WienerDog-BrownShoot_5
+    21300012: WienerDog-BrownShoot_6
+    21300014: WienerDog-BrownShoot_7
+    21300016: WienerDog-BrownShoot_8
+    21300018: WienerDog-BrownShoot_9
+    21300020: WienerDog-BrownShoot_10
+    21300022: WienerDog-BrownShoot_11
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WienerDog-BrownShoot_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 5
+        width: 42
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9ed02123152244ba8f2356092a8c77
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WienerDog-BrownShoot_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 5
+        width: 42
+        height: 64
+      alignment: 9
+      pivot: {x: 0.548039, y: 0.48423725}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10ad7083b7caffc4c8134ef54d0b1cc7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WienerDog-BrownShoot_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 5
+        width: 42
+        height: 64
+      alignment: 9
+      pivot: {x: 0.52401954, y: 0.50394076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72182ec0997b494f88b234e476ba9e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WienerDog-BrownShoot_3
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 5
+        width: 42
+        height: 64
+      alignment: 9
+      pivot: {x: 0.55404335, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b736ed7d36931a043a681f3075985edc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WienerDog-BrownShoot_8
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 5
+        width: 42
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5420336, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 271979a09bbc04f4db10ad60f150ad96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WienerDog-BrownShoot_9
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 5
+        width: 42
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5420343, y: 0.51576287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c782b4c8f11bc24190d0f0a5e0899ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WienerDog-BrownShoot_10
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 5
+        width: 42
+        height: 64
+      alignment: 9
+      pivot: {x: 0.57205635, y: 0.51970357}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22b4ed1142eaf140a8c3a3ebf5752ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WienerDog-BrownShoot_11
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 5
+        width: 42
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5660535, y: 0.47241515}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae813d3fa69c1b489b3e093c631747b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4b0bacc510adeae4f8d8a7d39b86c334
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

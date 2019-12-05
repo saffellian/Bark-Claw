@@ -1,0 +1,17 @@
+Furniture_Mega_Pack contains the following folder
+- Furniture
+- Prefabs
+- Scene
+
+The Furniture folder consists of the following folders
+- FBX		- Consists of all the source fbx files used for assets
+- Materials 	- Consists of all the material for Modern Furniture used in the pack
+- PNG_Textures 	- Consists of all the Original PNG texture maps for Modern Furniture used in the pack
+- Textures 		- Consists of all the texture maps for Modern Furniture used in the pack
+
+Prefabs
+- Includes Prefabs of Furniture Mega Pack
+
+Scene
+- W266_ReflectionProbes - Consists of all the Reflection Probes/Cubemaps for Modern Furniture used in the pack
+- Also includes a save file of Furniture Mega Pack
