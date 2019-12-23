@@ -85,6 +85,7 @@ public class PlayerInventory : MonoBehaviour
 
         if (replaceHeldItem)
         {
+            inventory[inventoryIndex].SetActive(false);
             inventory[inventoryIndex] = Instantiate(newItem, gameObject.transform.GetChild(0));
             UpdateItem();
             // code will need to be added if the item being replaced needs to be dropped
@@ -96,6 +97,7 @@ public class PlayerInventory : MonoBehaviour
             {
                 if (inventory[i] == defaultItem)
                 {
+                    inventory[i].SetActive(false);
                     inventory[i] = Instantiate(newItem, gameObject.transform.GetChild(0));
                     UpdateItem();
                     found = true;

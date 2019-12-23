@@ -29,6 +29,11 @@ public class PlayerActions : MonoBehaviour
             canAttack = false;
             animator.SetTrigger("Action");
         }
+
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.Equals))
+            Debug.Break();
+#endif
     }
 
     public void ActionComplete()

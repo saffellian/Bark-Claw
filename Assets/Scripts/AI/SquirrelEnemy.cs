@@ -8,7 +8,7 @@ using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(NavMeshAgent), typeof(AudioSource), typeof(Animator))]
-public class SquirrelEnemy : Enemy
+public class SquirrelEnemy : Enemy2
 {
     private enum DeathType
     {
@@ -150,7 +150,7 @@ public class SquirrelEnemy : Enemy
                 yield return new WaitForSeconds(0.3f); // delay to line up animation
                 // spawn and shoot acorn
                 Rigidbody obj = Instantiate(projectile, projectileSpawn.position, Quaternion.identity).GetComponent<Rigidbody>();
-                obj.GetComponent<Projectile>().SetSpawnFrom(gameObject);
+                //obj.GetComponent<Projectile>().SetSpawnFrom(gameObject);
                 obj.AddForce((GameObject.Find("FirstPersonCharacter").transform.position - transform.position).normalized * 20, ForceMode.Impulse);
                 
                 yield return new WaitForSeconds(attackDelay);

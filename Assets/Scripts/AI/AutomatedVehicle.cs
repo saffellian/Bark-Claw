@@ -38,7 +38,6 @@ public class AutomatedVehicle : MonoBehaviour
     {
         if (other.transform.CompareTag("Player") && other.relativeVelocity.magnitude > damageMagnitude)
         {
-            Debug.Log(other.transform.name);
             Rigidbody rb = other.rigidbody;
             Vector3 dir = (other.contacts[0].point - transform.position);
             other.transform.GetComponent<FirstPersonController>().AddImpact(dir*knockbackForce);
@@ -48,7 +47,7 @@ public class AutomatedVehicle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemy") && Mathf.Abs(Vector3.Angle(transform.forward, (other.transform.position - transform.position))) < 30)
+        if (other.GetComponent<Enemy>() && Mathf.Abs(Vector3.Angle(transform.forward, (other.transform.position - transform.position))) < 30)
         {
             other.GetComponent<Enemy>().InstantDeath(true);
         }

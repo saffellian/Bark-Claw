@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine;
 
-public abstract class Enemy : MonoBehaviour
+public abstract class Enemy2 : MonoBehaviour
 {
     protected abstract IEnumerator BrainLogic();
     protected abstract IEnumerator Patrol();

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1488357550}
   - component: {fileID: 1488357547}
   - component: {fileID: 1488357549}
+  - component: {fileID: 7061337241988010776}
   m_Layer: 0
   m_Name: Cat_Enemy
   m_TagString: Enemy
@@ -117,6 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Camera: {fileID: 0}
+  unlockHorizontalAxes: 0
 --- !u!82 &1488357548
 AudioSource:
   m_ObjectHideFlags: 0
@@ -276,3 +278,38 @@ NavMeshAgent:
   m_BaseOffset: 1.0166667
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &7061337241988010776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201296538092977366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6b56ed7a728d7847b358d5e689c1f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyType: 0
+  health: 50
+  attackDistance: 20
+  chaseDistance: 25
+  attackDamage: 5
+  attackSpeed: 5
+  attackDelay: 1.5
+  attackStrafeDistance: 0
+  attackStrafeDepth: 0
+  attackStrafeWidth: 0
+  attackSound: {fileID: 8300000, guid: 73c011e0a0eae384aadfee6bfc1fab99, type: 3}
+  projectile: {fileID: 0}
+  projectileSpawn: {fileID: 0}
+  patrolType: 1
+  patrolRegion: {fileID: 0}
+  patrolPoints: []
+  patrolSpeed: 3
+  patrolAudio:
+  - {fileID: 8300000, guid: 8326144e88c72a447931e27eb814966f, type: 3}
+  - {fileID: 8300000, guid: f689ddf0119eb3149b55124912bf2e5c, type: 3}
+  - {fileID: 8300000, guid: b346a85cb4d0bfe49974441e8b001ba4, type: 3}
+  deathSound: {fileID: 8300000, guid: 960e8797a7fa6664fab7fabfd03ccbd7, type: 3}
+  itemDrops: []

@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent(typeof(NavMeshAgent), typeof(AudioSource), typeof(Animator))]
-public class VacuumEnemy : Enemy
+public class VacuumEnemy : Enemy2
 {
     [Header("General")]
     [SerializeField] private int health;

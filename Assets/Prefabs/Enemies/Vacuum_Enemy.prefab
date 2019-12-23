@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3794113648905337934}
   - component: {fileID: 3794113648905337937}
   - component: {fileID: 2785668718322647914}
+  - component: {fileID: 2879070224335056286}
   - component: {fileID: 1320087296}
   - component: {fileID: 1320087297}
   m_Layer: 0
@@ -117,6 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Camera: {fileID: 0}
+  unlockHorizontalAxes: 0
 --- !u!195 &3794113648905337937
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -146,7 +148,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3794113648905337930}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9266c07129a9d1f4dba6227ab2ae164d, type: 3}
   m_Name: 
@@ -163,6 +165,39 @@ MonoBehaviour:
   - {fileID: 0}
   patrolSpeed: 2
   patrolSound: {fileID: 8300000, guid: 8087943edf9e7014e903d0d32e952a7d, type: 3}
+  deathSound: {fileID: 8300000, guid: 655f1c92db3bfba4895b10407db81bbc, type: 3}
+--- !u!114 &2879070224335056286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3794113648905337930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6b56ed7a728d7847b358d5e689c1f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyType: 0
+  health: 100
+  attackDistance: 10
+  chaseDistance: 20
+  attackDamage: 5
+  attackSpeed: 6
+  attackDelay: 2
+  attackStrafeDistance: 0
+  attackStrafeDepth: 0
+  attackStrafeWidth: 0
+  attackSound: {fileID: 8300000, guid: 38dd09fd715b0ab4b80267f0672815e8, type: 3}
+  projectile: {fileID: 0}
+  projectileSpawn: {fileID: 0}
+  patrolType: 0
+  patrolRegion: {fileID: 0}
+  patrolPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  patrolSpeed: 2
+  patrolAudio: []
   deathSound: {fileID: 8300000, guid: 655f1c92db3bfba4895b10407db81bbc, type: 3}
 --- !u!82 &1320087296
 AudioSource:

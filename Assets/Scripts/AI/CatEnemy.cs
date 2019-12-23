@@ -6,7 +6,7 @@ using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(NavMeshAgent), typeof(AudioSource), typeof(Animator))]
-public class CatEnemy : Enemy
+public class CatEnemy : Enemy2
 {
     [Serializable]
     struct ItemDrop

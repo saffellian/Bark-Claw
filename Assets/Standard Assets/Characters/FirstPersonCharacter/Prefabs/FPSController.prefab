@@ -268,6 +268,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3576c07f69fa0dd4f91afa8e1a358614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerDeath:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   health: 100
 --- !u!114 &1210232009
 MonoBehaviour:
@@ -781,7 +786,7 @@ PrefabInstance:
     - target: {fileID: 5228107159009644576, guid: f7803b91a95914e45a7982d8f2a73bfa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.016
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5228107159009644576, guid: f7803b91a95914e45a7982d8f2a73bfa,
         type: 3}

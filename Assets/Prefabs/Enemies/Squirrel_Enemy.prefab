@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 341286044}
   - component: {fileID: 341286041}
   - component: {fileID: 341286043}
+  - component: {fileID: 7874199085888570803}
   m_Layer: 0
   m_Name: Squirrel_Enemy
   m_TagString: Enemy
@@ -118,6 +119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Camera: {fileID: 0}
+  unlockHorizontalAxes: 0
 --- !u!82 &341286042
 AudioSource:
   m_ObjectHideFlags: 0
@@ -235,14 +237,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451875161031178215}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1d8d68adfeb3b04b9ada72d436862bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
   attackDistance: 20
-  attackDamage: 5
   attackDelay: 0.75
   attackStrafeDistance: 10
   attackStrafeDepth: 3
@@ -280,6 +281,38 @@ NavMeshAgent:
   m_BaseOffset: 1.0666667
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &7874199085888570803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451875161031178215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6b56ed7a728d7847b358d5e689c1f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyType: 1
+  health: 50
+  attackDistance: 20
+  chaseDistance: 0
+  attackDamage: 5
+  attackSpeed: 0
+  attackDelay: 0.75
+  attackStrafeDistance: 10
+  attackStrafeDepth: 3
+  attackStrafeWidth: 5
+  attackSound: {fileID: 8300000, guid: ff6c0ce69db419742a59beebc7d30b7a, type: 3}
+  projectile: {fileID: 6596927309470718997, guid: 21e7c78d201513944b31b9daff4d999a,
+    type: 3}
+  projectileSpawn: {fileID: 9155426358905334832}
+  patrolType: 1
+  patrolRegion: {fileID: 0}
+  patrolPoints: []
+  patrolSpeed: 2
+  patrolAudio: []
+  deathSound: {fileID: 8300000, guid: 2bb978f7bcdb2f948a9ec319dbbbe0ca, type: 3}
 --- !u!1 &8170947641737257467
 GameObject:
   m_ObjectHideFlags: 0
