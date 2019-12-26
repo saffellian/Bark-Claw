@@ -1,24 +1,13 @@
 fileFormatVersion: 2
-guid: 388eca1a444ec7642851abaa40d62560
+guid: 5e64f96e43575414184d93ee6b46f4ef
 TextureImporter:
   fileIDToRecycleName:
-    21300000: WienerDog-GreenShoot_0
-    21300002: WienerDog-GreenShoot_1
-    21300004: WienerDog-GreenShoot_2
-    21300006: WienerDog-GreenShoot_3
-    21300008: WienerDog-GreenShoot_4
-    21300010: WienerDog-GreenShoot_5
-    21300012: WienerDog-GreenShoot_6
-    21300014: WienerDog-GreenShoot_7
-    21300016: WienerDog-GreenShoot_8
-    21300018: WienerDog-GreenShoot_9
-    21300020: WienerDog-GreenShoot_10
-    21300022: WienerDog-GreenShoot_11
-    21300024: WienerDog-GreenShoot_12
-    21300026: WienerDog-GreenShoot_13
-    21300028: WienerDog-GreenShoot_14
-    21300030: WienerDog-GreenShoot_15
-    21300032: WienerDog-GreenShoot_16
+    21300000: H-Walk Right_0
+    21300002: H-Walk Right_1
+    21300004: H-Walk Right_2
+    21300006: H-Walk Right_3
+    21300008: H-Walk Right_4
+    21300010: H-Walk Right_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -53,7 +42,7 @@ TextureImporter:
     mipBias: -100
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -62,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 250
+  spritePixelsToUnits: 28
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,161 +112,121 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WienerDog-GreenShoot_0
+      name: H-Walk Right_0
       rect:
         serializedVersion: 2
-        x: 169
-        y: 5
-        width: 42
-        height: 64
-      alignment: 9
-      pivot: {x: 0.58406794, y: 0.50000006}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93854ab4041863d4990c0ad7aa7586f9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WienerDog-GreenShoot_7
-      rect:
-        serializedVersion: 2
-        x: 330
-        y: 5
-        width: 42
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5420329, y: 0.51970357}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11bdbe50b34dac646a1a88a1f9d267e8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WienerDog-GreenShoot_9
-      rect:
-        serializedVersion: 2
-        x: 382
-        y: 5
-        width: 42
-        height: 64
-      alignment: 9
-      pivot: {x: 0.57205856, y: 0.50000006}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9590b2ff71382bd48ac4d6caad7511a6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WienerDog-GreenShoot_10
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 5
-        width: 42
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5180147, y: 0.49605936}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed7865ade97305e4eaaadf61f0fd2ac4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WienerDog-GreenShoot_11
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 5
-        width: 42
-        height: 64
+        x: 72
+        y: 6
+        width: 30
+        height: 31
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e6e53f8690125a46995db86136809c4
+      spriteID: 50aa24c0ceb556640a2bc75aa70f6bb3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WienerDog-GreenShoot_12
+      name: H-Walk Right_1
       rect:
         serializedVersion: 2
-        x: 116
-        y: 5
-        width: 42
-        height: 64
-      alignment: 9
-      pivot: {x: 0.50600505, y: 0.50394076}
+        x: 210
+        y: 6
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c256678a34b40dc4da6187f8062fd8df
+      spriteID: 97258e5287a8698498f08189f858326b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WienerDog-GreenShoot_13
+      name: H-Walk Right_2
       rect:
         serializedVersion: 2
-        x: 223
-        y: 5
-        width: 42
-        height: 64
-      alignment: 9
-      pivot: {x: 0.57806325, y: 0.47241515}
+        x: 349
+        y: 6
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a61ad43f0b55d8f48b97f29cc5122b83
+      spriteID: e2c7e9a3b54f3e24e8120b354ade3643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WienerDog-GreenShoot_16
+      name: H-Walk Right_3
       rect:
         serializedVersion: 2
-        x: 278
-        y: 5
-        width: 42
-        height: 74
-      alignment: 9
-      pivot: {x: 0.51801336, y: 0.4352449}
+        x: 486
+        y: 6
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dc6696006d3f8a43bd128a49aa6eeda
+      spriteID: cf6c7f32cc3d4ab49abcda1c50457053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H-Walk Right_4
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 6
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046a7e07458309f47ad837a7b53c822e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H-Walk Right_5
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 6
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a87923ac5b37c478b25b31829473c3
       vertices: []
       indices: 
       edges: []
@@ -285,7 +234,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c0a44a28cb219c1478a9c77c6626d284
+    spriteID: 607efe0a55c9f9a439b1fef3b2c9bf12
     vertices: []
     indices: 
     edges: []

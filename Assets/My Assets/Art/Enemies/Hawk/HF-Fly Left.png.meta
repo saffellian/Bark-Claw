@@ -1,24 +1,13 @@
 fileFormatVersion: 2
-guid: 388eca1a444ec7642851abaa40d62560
+guid: 4435329cc3fae664382828d5b62d92aa
 TextureImporter:
   fileIDToRecycleName:
-    21300000: WienerDog-GreenShoot_0
-    21300002: WienerDog-GreenShoot_1
-    21300004: WienerDog-GreenShoot_2
-    21300006: WienerDog-GreenShoot_3
-    21300008: WienerDog-GreenShoot_4
-    21300010: WienerDog-GreenShoot_5
-    21300012: WienerDog-GreenShoot_6
-    21300014: WienerDog-GreenShoot_7
-    21300016: WienerDog-GreenShoot_8
-    21300018: WienerDog-GreenShoot_9
-    21300020: WienerDog-GreenShoot_10
-    21300022: WienerDog-GreenShoot_11
-    21300024: WienerDog-GreenShoot_12
-    21300026: WienerDog-GreenShoot_13
-    21300028: WienerDog-GreenShoot_14
-    21300030: WienerDog-GreenShoot_15
-    21300032: WienerDog-GreenShoot_16
+    21300000: HF-Fly Left_0
+    21300002: HF-Fly Left_1
+    21300004: HF-Fly Left_2
+    21300006: HF-Fly Left_3
+    21300008: HF-Fly Left_4
+    21300010: HF-Fly Left_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -62,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 250
+  spritePixelsToUnits: 28
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,161 +112,121 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WienerDog-GreenShoot_0
+      name: HF-Fly Left_0
       rect:
         serializedVersion: 2
-        x: 169
-        y: 5
-        width: 42
-        height: 64
-      alignment: 9
-      pivot: {x: 0.58406794, y: 0.50000006}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93854ab4041863d4990c0ad7aa7586f9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WienerDog-GreenShoot_7
-      rect:
-        serializedVersion: 2
-        x: 330
-        y: 5
-        width: 42
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5420329, y: 0.51970357}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11bdbe50b34dac646a1a88a1f9d267e8
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WienerDog-GreenShoot_9
-      rect:
-        serializedVersion: 2
-        x: 382
-        y: 5
-        width: 42
-        height: 64
-      alignment: 9
-      pivot: {x: 0.57205856, y: 0.50000006}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9590b2ff71382bd48ac4d6caad7511a6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WienerDog-GreenShoot_10
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 5
-        width: 42
-        height: 64
-      alignment: 9
-      pivot: {x: 0.5180147, y: 0.49605936}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ed7865ade97305e4eaaadf61f0fd2ac4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WienerDog-GreenShoot_11
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 5
-        width: 42
-        height: 64
+        x: 34
+        y: 8
+        width: 37
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e6e53f8690125a46995db86136809c4
+      spriteID: bc285a6474eb6ee4cba6451e94ebc0ff
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WienerDog-GreenShoot_12
+      name: HF-Fly Left_1
       rect:
         serializedVersion: 2
-        x: 116
-        y: 5
-        width: 42
-        height: 64
-      alignment: 9
-      pivot: {x: 0.50600505, y: 0.50394076}
+        x: 166
+        y: 10
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c256678a34b40dc4da6187f8062fd8df
+      spriteID: 37cfa7910212619429a43741ff5171bc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WienerDog-GreenShoot_13
+      name: HF-Fly Left_2
       rect:
         serializedVersion: 2
-        x: 223
-        y: 5
-        width: 42
-        height: 64
-      alignment: 9
-      pivot: {x: 0.57806325, y: 0.47241515}
+        x: 288
+        y: 8
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a61ad43f0b55d8f48b97f29cc5122b83
+      spriteID: 75c26a1bee88932419db58957679df95
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WienerDog-GreenShoot_16
+      name: HF-Fly Left_3
       rect:
         serializedVersion: 2
-        x: 278
+        x: 415
         y: 5
-        width: 42
-        height: 74
-      alignment: 9
-      pivot: {x: 0.51801336, y: 0.4352449}
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dc6696006d3f8a43bd128a49aa6eeda
+      spriteID: f391d1ccd6dbc0249bf64dd8983bb032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HF-Fly Left_4
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 6
+        width: 47
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba64136c103ac146ad692c00e481a29
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HF-Fly Left_5
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 7
+        width: 55
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df211f5c993797848bf8ac88e5813e48
       vertices: []
       indices: 
       edges: []
@@ -285,7 +234,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c0a44a28cb219c1478a9c77c6626d284
+    spriteID: 8fe47648b58428b4c8ba009f6b304a42
     vertices: []
     indices: 
     edges: []

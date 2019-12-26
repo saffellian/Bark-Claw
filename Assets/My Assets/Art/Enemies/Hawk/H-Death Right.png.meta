@@ -1,24 +1,26 @@
 fileFormatVersion: 2
-guid: 388eca1a444ec7642851abaa40d62560
+guid: a5aa7e022b6014c48ae446f56924e4c1
 TextureImporter:
   fileIDToRecycleName:
-    21300000: WienerDog-GreenShoot_0
-    21300002: WienerDog-GreenShoot_1
-    21300004: WienerDog-GreenShoot_2
-    21300006: WienerDog-GreenShoot_3
-    21300008: WienerDog-GreenShoot_4
-    21300010: WienerDog-GreenShoot_5
-    21300012: WienerDog-GreenShoot_6
-    21300014: WienerDog-GreenShoot_7
-    21300016: WienerDog-GreenShoot_8
-    21300018: WienerDog-GreenShoot_9
-    21300020: WienerDog-GreenShoot_10
-    21300022: WienerDog-GreenShoot_11
-    21300024: WienerDog-GreenShoot_12
-    21300026: WienerDog-GreenShoot_13
-    21300028: WienerDog-GreenShoot_14
-    21300030: WienerDog-GreenShoot_15
-    21300032: WienerDog-GreenShoot_16
+    21300000: H-Death Right_0
+    21300002: H-Death Right_1
+    21300004: H-Death Right_2
+    21300006: H-Death Right_3
+    21300008: H-Death Right_4
+    21300010: H-Death Right_5
+    21300012: H-Death Right_6
+    21300014: H-Death Right_7
+    21300016: H-Death Right_8
+    21300018: H-Death Right_9
+    21300020: H-Death Right_10
+    21300022: H-Death Right_11
+    21300024: H-Death Right_12
+    21300026: H-Death Right_13
+    21300028: H-Death Right_14
+    21300030: H-Death Right_15
+    21300032: H-Death Right_16
+    21300034: H-Death Right_17
+    21300036: H-Death Right_18
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -62,7 +64,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 250
+  spritePixelsToUnits: 28
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,161 +125,141 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WienerDog-GreenShoot_0
+      name: H-Death Right_0
       rect:
         serializedVersion: 2
-        x: 169
+        x: 29
         y: 5
-        width: 42
-        height: 64
+        width: 125
+        height: 45
       alignment: 9
-      pivot: {x: 0.58406794, y: 0.50000006}
+      pivot: {x: 0.5, y: 0.38583165}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93854ab4041863d4990c0ad7aa7586f9
+      spriteID: a4ec70db3b0277d48a8771576efa54f8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WienerDog-GreenShoot_7
+      name: H-Death Right_2
       rect:
         serializedVersion: 2
-        x: 330
-        y: 5
-        width: 42
-        height: 64
+        x: 163
+        y: 6
+        width: 125
+        height: 45
       alignment: 9
-      pivot: {x: 0.5420329, y: 0.51970357}
+      pivot: {x: 0.5000007, y: 0.38583165}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11bdbe50b34dac646a1a88a1f9d267e8
+      spriteID: 8ac2ee31a4e536a4d8ad81c85ad2febe
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WienerDog-GreenShoot_9
+      name: H-Death Right_5
       rect:
         serializedVersion: 2
-        x: 382
-        y: 5
-        width: 42
-        height: 64
+        x: 300
+        y: 6
+        width: 125
+        height: 45
       alignment: 9
-      pivot: {x: 0.57205856, y: 0.50000006}
+      pivot: {x: 0.50000024, y: 0.36046097}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9590b2ff71382bd48ac4d6caad7511a6
+      spriteID: d296caa0ddeef8f46bf42d43222e1576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WienerDog-GreenShoot_10
+      name: H-Death Right_11
       rect:
         serializedVersion: 2
-        x: 12
-        y: 5
-        width: 42
-        height: 64
+        x: 430
+        y: 6
+        width: 125
+        height: 45
       alignment: 9
-      pivot: {x: 0.5180147, y: 0.49605936}
+      pivot: {x: 0.5456685, y: 0.38583165}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed7865ade97305e4eaaadf61f0fd2ac4
+      spriteID: 0f38b0fd20399a34a9dd8d6b2feef4b2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WienerDog-GreenShoot_11
+      name: H-Death Right_14
       rect:
         serializedVersion: 2
-        x: 64
-        y: 5
-        width: 42
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 570
+        y: 6
+        width: 125
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5456685, y: 0.38583165}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e6e53f8690125a46995db86136809c4
+      spriteID: 79825c745e5180143b81abe0f24f958f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WienerDog-GreenShoot_12
+      name: H-Death Right_17
       rect:
         serializedVersion: 2
-        x: 116
-        y: 5
-        width: 42
-        height: 64
+        x: 700
+        y: 6
+        width: 125
+        height: 45
       alignment: 9
-      pivot: {x: 0.50600505, y: 0.50394076}
+      pivot: {x: 0.5867715, y: 0.36046097}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c256678a34b40dc4da6187f8062fd8df
+      spriteID: 2b019441c4c976c47b822bc3d639baab
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WienerDog-GreenShoot_13
+      name: H-Death Right_18
       rect:
         serializedVersion: 2
-        x: 223
-        y: 5
-        width: 42
-        height: 64
+        x: 838
+        y: 6
+        width: 125
+        height: 45
       alignment: 9
-      pivot: {x: 0.57806325, y: 0.47241515}
+      pivot: {x: 0.5867715, y: 0.36046097}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a61ad43f0b55d8f48b97f29cc5122b83
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: WienerDog-GreenShoot_16
-      rect:
-        serializedVersion: 2
-        x: 278
-        y: 5
-        width: 42
-        height: 74
-      alignment: 9
-      pivot: {x: 0.51801336, y: 0.4352449}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7dc6696006d3f8a43bd128a49aa6eeda
+      spriteID: 96c6c20adc0716846a3236c7dd3c5ea2
       vertices: []
       indices: 
       edges: []
@@ -285,7 +267,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c0a44a28cb219c1478a9c77c6626d284
+    spriteID: 8534174e8b2aea24cba2b763c601885e
     vertices: []
     indices: 
     edges: []
