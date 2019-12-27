@@ -1,2 +1,0 @@
-com.unity.postprocessing@2.1.6
-com.unity.textmeshpro@2.0.0
