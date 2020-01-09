@@ -1,0 +1,279 @@
+fileFormatVersion: 2
+guid: 55109c959df95bc4e9d4043b134383a0
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: HF-Death Left_0
+    21300002: HF-Death Left_1
+    21300004: HF-Death Left_2
+    21300006: HF-Death Left_3
+    21300008: HF-Death Left_4
+    21300010: HF-Death Left_5
+    21300012: HF-Death Left_6
+    21300014: HF-Death Left_7
+    21300016: HF-Death Left_8
+    21300018: HF-Death Left_9
+    21300020: HF-Death Left_10
+    21300022: HF-Death Left_11
+    21300024: HF-Death Left_12
+    21300026: HF-Death Left_13
+    21300028: HF-Death Left_14
+    21300030: HF-Death Left_15
+    21300032: HF-Death Left_16
+    21300034: HF-Death Left_17
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 28
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HF-Death Left_3
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 4
+        width: 125
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35135865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b87318e5b79d1964b8c2bd09437eb648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HF-Death Left_6
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 6
+        width: 125
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35135865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481c0e23cd432d246b0624da7660cf20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HF-Death Left_7
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 6
+        width: 125
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35135865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6efc8b32a7ca7f49aa2bbaec595eabf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HF-Death Left_8
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 4
+        width: 125
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35135865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085a6e4a28c6c4b4ca15892d659ad970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HF-Death Left_11
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 4
+        width: 125
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35135865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4d2e60de0c7d24c8cc84ba3d12c8a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HF-Death Left_15
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 4
+        width: 125
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5254815, y: 0.35135913}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593290bf9fad2424fb739064d9f67d7e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HF-Death Left_16
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 4
+        width: 125
+        height: 50
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35135865}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e7aae1debc7ac499392bef325d1edb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 74478b81b88364248bc8f17b7c1ae56a
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

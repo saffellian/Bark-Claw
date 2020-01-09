@@ -226,8 +226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 877901ee02ffd8049a224d1f64716e57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delayBeforefloating: 9
-  sceneNameToLoad: Menu
+  delayBeforefloating: 12
+  sceneNameToLoad: IntroVideo
 --- !u!65 &697322086
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -448,4 +448,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayBeforefloating: 12
-  sceneNameToLoad: 
+  sceneNameToLoad: IntroVideo

@@ -1,0 +1,280 @@
+fileFormatVersion: 2
+guid: a5aa7e022b6014c48ae446f56924e4c1
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: H-Death Right_0
+    21300002: H-Death Right_1
+    21300004: H-Death Right_2
+    21300006: H-Death Right_3
+    21300008: H-Death Right_4
+    21300010: H-Death Right_5
+    21300012: H-Death Right_6
+    21300014: H-Death Right_7
+    21300016: H-Death Right_8
+    21300018: H-Death Right_9
+    21300020: H-Death Right_10
+    21300022: H-Death Right_11
+    21300024: H-Death Right_12
+    21300026: H-Death Right_13
+    21300028: H-Death Right_14
+    21300030: H-Death Right_15
+    21300032: H-Death Right_16
+    21300034: H-Death Right_17
+    21300036: H-Death Right_18
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 28
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: H-Death Right_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 5
+        width: 125
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5, y: 0.38583165}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ec70db3b0277d48a8771576efa54f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H-Death Right_2
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 6
+        width: 125
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5000007, y: 0.38583165}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ac2ee31a4e536a4d8ad81c85ad2febe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H-Death Right_5
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 6
+        width: 125
+        height: 45
+      alignment: 9
+      pivot: {x: 0.50000024, y: 0.36046097}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d296caa0ddeef8f46bf42d43222e1576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H-Death Right_11
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 6
+        width: 125
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5456685, y: 0.38583165}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f38b0fd20399a34a9dd8d6b2feef4b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H-Death Right_14
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 6
+        width: 125
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5456685, y: 0.38583165}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79825c745e5180143b81abe0f24f958f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H-Death Right_17
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 6
+        width: 125
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5867715, y: 0.36046097}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b019441c4c976c47b822bc3d639baab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H-Death Right_18
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 6
+        width: 125
+        height: 45
+      alignment: 9
+      pivot: {x: 0.5867715, y: 0.36046097}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c6c20adc0716846a3236c7dd3c5ea2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8534174e8b2aea24cba2b763c601885e
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
