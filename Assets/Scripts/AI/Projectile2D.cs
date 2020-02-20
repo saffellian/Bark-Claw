@@ -53,8 +53,12 @@ public class Projectile2D : MonoBehaviour
 
         if (other.transform.CompareTag("Enemy")) // implement logic during 2D AI order
         {
-            //other.GetComponent<Enemy>().ApplyDamage(damage);
-            //damage = 0;
+            other.GetComponent<Enemy2D>().ApplyDamage(damage);
+            Destroy(gameObject);
+        }
+        else if (other.transform.CompareTag("Player"))
+        {
+            PlayerHealth.Instance.ApplyDamage(damage);
             Destroy(gameObject);
         }
         else

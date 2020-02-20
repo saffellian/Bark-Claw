@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
             myRigidbody.velocity = new Vector3(myRigidbody.velocity.x, jumpSpeed, 0f);
         }
 
-        if (!attacking && Input.GetButtonDown("Fire1"))
+        if (!attacking && Input.GetButtonDown("Fire2"))
         {
             attacking = true;
             animator.SetBool("Attack", true);
