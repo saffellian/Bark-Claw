@@ -53,13 +53,19 @@ public class Weapon : MonoBehaviour
         if (timerRunning)
             return;
 
+        // semi-auto weapons
         if ((weaponType == WeaponType.SemiAuto && Input.GetButtonDown("Fire1")) ||
             (weaponType == WeaponType.Shotgun && Input.GetButtonDown("Fire1")) ||
             (weaponType == WeaponType.LayableExplosive && Input.GetButtonDown("Fire1")) ||
             (weaponType == WeaponType.ThrowableExplosive && Input.GetButtonDown("Fire1")) ||
-            (weaponType == WeaponType.AreaOfEffect && Input.GetButtonDown("Fire1")) ||
-            (weaponType == WeaponType.Automatic && Input.GetButton("Fire1")) ||
-            (weaponType == WeaponType.Fluid && Input.GetButton("Fire1")))
+            (weaponType == WeaponType.AreaOfEffect && Input.GetButtonDown("Fire1")))
+        {
+            animator.SetTrigger("Fire");
+            StartCoroutine(FireTimer());
+        }
+        // automatic weapons
+        else if ((weaponType == WeaponType.Automatic && Input.GetButton("Fire1")) ||
+                 (weaponType == WeaponType.Fluid && Input.GetButton("Fire1")))
         {
             animator.SetBool("Fire", true);
             if (weaponType != WeaponType.Fluid)
@@ -92,6 +98,7 @@ public class Weapon : MonoBehaviour
         {
             case WeaponType.SemiAuto:
                 rb = Instantiate(projectile, projectileOrigins[0].position, projectile.transform.rotation).GetComponent<Rigidbody>();
+                Debug.Log("fire");
                 rb.velocity = projectileOrigins[0].forward * projectileSpeed;
                 rb.gameObject.GetComponent<Projectile>().RegisterNoCollideObject(gameObject);
                 rb.gameObject.GetComponent<Projectile>().RegisterNoCollideTag("Player");

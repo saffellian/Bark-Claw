@@ -146,8 +146,14 @@ MonoBehaviour:
   projectile: {fileID: 6596927309470718997, guid: a3c4ecfeed0f45c4f863bbdde6d6d808,
     type: 3}
   projectileSpread: 0
+  aoeRadius: 10
+  throwForce: 5
+  explosiveTimer: 3
+  shotgunProjectileCount: 5
   projectileSpeed: 20
-  projectileOrigin: {fileID: 1679800012281950283}
+  fluidDamage: 1
+  projectileOrigins:
+  - {fileID: 1679800012281950283}
 --- !u!1 &2503381482854771925
 GameObject:
   m_ObjectHideFlags: 0

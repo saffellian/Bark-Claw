@@ -40,11 +40,13 @@ public class Projectile : MonoBehaviour
             damage = 0;
             Destroy(gameObject);
         }
-        else
+        else if (other.transform.CompareTag("Enemy"))
         {
-            // explode
+            other.GetComponent<Enemy>().ApplyDamage(damage);
+            damage = 0;
             Destroy(gameObject);
         }
-        Debug.Log(other.name);
+
+        // Debug.Log(other.name);
     }
 }
