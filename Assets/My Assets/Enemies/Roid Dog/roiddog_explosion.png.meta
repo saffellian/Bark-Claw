@@ -1,0 +1,341 @@
+fileFormatVersion: 2
+guid: 9a9edd3b23f84c441b067f0bb3c9a73b
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: roiddog_explosion_0
+    21300002: roiddog_explosion_1
+    21300004: roiddog_explosion_2
+    21300006: roiddog_explosion_3
+    21300008: roiddog_explosion_4
+    21300010: roiddog_explosion_5
+    21300012: roiddog_explosion_6
+    21300014: roiddog_explosion_7
+    21300016: roiddog_explosion_8
+    21300018: roiddog_explosion_9
+    21300020: roiddog_explosion_10
+    21300022: roiddog_explosion_11
+    21300024: roiddog_explosion_12
+    21300026: roiddog_explosion_13
+    21300028: roiddog_explosion_14
+    21300030: roiddog_explosion_15
+    21300032: roiddog_explosion_16
+    21300034: roiddog_explosion_17
+    21300036: roiddog_explosion_18
+    21300038: roiddog_explosion_19
+    21300040: roiddog_explosion_20
+    21300042: roiddog_explosion_21
+    21300044: roiddog_explosion_22
+    21300046: roiddog_explosion_23
+    21300048: roiddog_explosion_24
+    21300050: roiddog_explosion_25
+    21300052: roiddog_explosion_26
+    21300054: roiddog_explosion_27
+    21300056: roiddog_explosion_28
+    21300058: roiddog_explosion_29
+    21300060: roiddog_explosion_30
+    21300062: roiddog_explosion_31
+    21300064: roiddog_explosion_32
+    21300066: roiddog_explosion_33
+    21300068: roiddog_explosion_34
+    21300070: roiddog_explosion_35
+    21300072: roiddog_explosion_36
+    21300074: roiddog_explosion_37
+    21300076: roiddog_explosion_38
+    21300078: roiddog_explosion_39
+    21300080: roiddog_explosion_40
+    21300082: roiddog_explosion_41
+    21300084: roiddog_explosion_42
+    21300086: roiddog_explosion_43
+    21300088: roiddog_explosion_44
+    21300090: roiddog_explosion_45
+    21300092: roiddog_explosion_46
+    21300094: roiddog_explosion_47
+    21300096: roiddog_explosion_48
+    21300098: roiddog_explosion_49
+    21300100: roiddog_explosion_50
+    21300102: roiddog_explosion_51
+    21300104: roiddog_explosion_52
+    21300106: roiddog_explosion_53
+    21300108: roiddog_explosion_54
+    21300110: roiddog_explosion_55
+    21300112: roiddog_explosion_56
+    21300114: roiddog_explosion_57
+    21300116: roiddog_explosion_58
+    21300118: roiddog_explosion_59
+    21300120: roiddog_explosion_60
+    21300122: roiddog_explosion_61
+    21300124: roiddog_explosion_62
+    21300126: roiddog_explosion_63
+    21300128: roiddog_explosion_64
+    21300130: roiddog_explosion_65
+    21300132: roiddog_explosion_66
+    21300134: roiddog_explosion_67
+    21300136: roiddog_explosion_68
+    21300138: roiddog_explosion_69
+    21300140: roiddog_explosion_70
+    21300142: roiddog_explosion_71
+    21300144: roiddog_explosion_72
+    21300146: roiddog_explosion_73
+    21300148: roiddog_explosion_74
+    21300150: roiddog_explosion_75
+    21300152: roiddog_explosion_76
+    21300154: roiddog_explosion_77
+    21300156: roiddog_explosion_78
+    21300158: roiddog_explosion_79
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 35
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: roiddog_explosion_0
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 2
+        width: 98
+        height: 110
+      alignment: 9
+      pivot: {x: 0.4399937, y: 0.41599062}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff6bcc7cc231944cb114ef6b123eeeb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roiddog_explosion_6
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 2
+        width: 45
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547c273ae0ff08e41af679a98122e858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roiddog_explosion_13
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 0
+        width: 159
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5544764, y: 0.3642354}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eefef608543402948aa144ff1b380db8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roiddog_explosion_16
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 2
+        width: 178
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5749872, y: 0.34523588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6332cc1cca2693348af31ca63cd3a587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roiddog_explosion_36
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 2
+        width: 202
+        height: 110
+      alignment: 9
+      pivot: {x: 0.5249546, y: 0.3625301}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4e06417cec0364da43e978f694db99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roiddog_explosion_59
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 2
+        width: 202
+        height: 110
+      alignment: 9
+      pivot: {x: 0.52911437, y: 0.3625301}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c90e8573723c9f42836b9ce4b8ca1de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: roiddog_explosion_75
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 1
+        width: 202
+        height: 110
+      alignment: 9
+      pivot: {x: 0.53406185, y: 0.3731388}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a977a2f62ad06f4f93f26120604ad1f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6afc6d3466d036d49b14489297d850af
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

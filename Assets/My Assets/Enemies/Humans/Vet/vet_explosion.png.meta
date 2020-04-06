@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: e8d8b8c9049c5234b97ff5971e302b6d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: vet_explosion_0
+    21300002: vet_explosion_1
+    21300004: vet_explosion_2
+    21300006: vet_explosion_3
+    21300008: vet_explosion_4
+    21300010: vet_explosion_5
+    21300012: vet_explosion_6
+    21300014: vet_explosion_7
+    21300016: vet_explosion_8
+    21300018: vet_explosion_9
+    21300020: vet_explosion_10
+    21300022: vet_explosion_11
+    21300024: vet_explosion_12
+    21300026: vet_explosion_13
+    21300028: vet_explosion_14
+    21300030: vet_explosion_15
+    21300032: vet_explosion_16
+    21300034: vet_explosion_17
+    21300036: vet_explosion_18
+    21300038: vet_explosion_19
+    21300040: vet_explosion_20
+    21300042: vet_explosion_21
+    21300044: vet_explosion_22
+    21300046: vet_explosion_23
+    21300048: vet_explosion_24
+    21300050: vet_explosion_25
+    21300052: vet_explosion_26
+    21300054: vet_explosion_27
+    21300056: vet_explosion_28
+    21300058: vet_explosion_29
+    21300060: vet_explosion_30
+    21300062: vet_explosion_31
+    21300064: vet_explosion_32
+    21300066: vet_explosion_33
+    21300068: vet_explosion_34
+    21300070: vet_explosion_35
+    21300072: vet_explosion_36
+    21300074: vet_explosion_37
+    21300076: vet_explosion_38
+    21300078: vet_explosion_39
+    21300080: vet_explosion_40
+    21300082: vet_explosion_41
+    21300084: vet_explosion_42
+    21300086: vet_explosion_43
+    21300088: vet_explosion_44
+    21300090: vet_explosion_45
+    21300092: vet_explosion_46
+    21300094: vet_explosion_47
+    21300096: vet_explosion_48
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 35
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vet_explosion_1
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 8
+        width: 69
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87bca6defcdbc9641977d8dd70e118cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vet_explosion_3
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 6
+        width: 26
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84788048428ec254a8130fab4972afc3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vet_explosion_5
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 6
+        width: 126
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70d2851a33afd14c946b7ab228e451c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vet_explosion_22
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 5
+        width: 173
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5f5b86c2c65fe498181dae43f4b135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vet_explosion_26
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 5
+        width: 177
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d3096b917724841bdae8a3d3ca4da1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vet_explosion_28
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 5
+        width: 156
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf59db6088394b47b7aaccd6ba403fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vet_explosion_33
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 6
+        width: 177
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d5813c1d669a045928a0f4dd7b5f86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vet_explosion_34
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 6
+        width: 177
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd960104a0756404f8d60c765b52fdbd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b88e163d43dde074f868328da1008d88
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

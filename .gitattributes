@@ -1,0 +1,6 @@
+*.mov filter=lfs diff=lfs merge=lfs -text
+TerrainData_3d8a6c0d636c-4c9a-87f891dda39f211a.assett filter=lfs diff=lfs merge=lfs -text
+TerrainData_675cd576-9cc6-4e5b-b1e9-05ca25960f3d.assett filter=lfs diff=lfs merge=lfs -text
+TerrainData_68185218-b011-4ce9-8336-301b61cd24ba.assett filter=lfs diff=lfs merge=lfs -text
+*.assett filter=lfs diff=lfs merge=lfs -text
+*.asset filter=lfs diff=lfs merge=lfs -text

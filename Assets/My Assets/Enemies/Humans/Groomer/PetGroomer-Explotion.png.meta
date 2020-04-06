@@ -1,0 +1,331 @@
+fileFormatVersion: 2
+guid: af8f70c41125ec24d8b8dedc9491ec02
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PetGroomer-Explotion_0
+    21300002: PetGroomer-Explotion_1
+    21300004: PetGroomer-Explotion_2
+    21300006: PetGroomer-Explotion_3
+    21300008: PetGroomer-Explotion_4
+    21300010: PetGroomer-Explotion_5
+    21300012: PetGroomer-Explotion_6
+    21300014: PetGroomer-Explotion_7
+    21300016: PetGroomer-Explotion_8
+    21300018: PetGroomer-Explotion_9
+    21300020: PetGroomer-Explotion_10
+    21300022: PetGroomer-Explotion_11
+    21300024: PetGroomer-Explotion_12
+    21300026: PetGroomer-Explotion_13
+    21300028: PetGroomer-Explotion_14
+    21300030: PetGroomer-Explotion_15
+    21300032: PetGroomer-Explotion_16
+    21300034: PetGroomer-Explotion_17
+    21300036: PetGroomer-Explotion_18
+    21300038: PetGroomer-Explotion_19
+    21300040: PetGroomer-Explotion_20
+    21300042: PetGroomer-Explotion_21
+    21300044: PetGroomer-Explotion_22
+    21300046: PetGroomer-Explotion_23
+    21300048: PetGroomer-Explotion_24
+    21300050: PetGroomer-Explotion_25
+    21300052: PetGroomer-Explotion_26
+    21300054: PetGroomer-Explotion_27
+    21300056: PetGroomer-Explotion_28
+    21300058: PetGroomer-Explotion_29
+    21300060: PetGroomer-Explotion_30
+    21300062: PetGroomer-Explotion_31
+    21300064: PetGroomer-Explotion_32
+    21300066: PetGroomer-Explotion_33
+    21300068: PetGroomer-Explotion_34
+    21300070: PetGroomer-Explotion_35
+    21300072: PetGroomer-Explotion_36
+    21300074: PetGroomer-Explotion_37
+    21300076: PetGroomer-Explotion_38
+    21300078: PetGroomer-Explotion_39
+    21300080: PetGroomer-Explotion_40
+    21300082: PetGroomer-Explotion_41
+    21300084: PetGroomer-Explotion_42
+    21300086: PetGroomer-Explotion_43
+    21300088: PetGroomer-Explotion_44
+    21300090: PetGroomer-Explotion_45
+    21300092: PetGroomer-Explotion_46
+    21300094: PetGroomer-Explotion_47
+    21300096: PetGroomer-Explotion_48
+    21300098: PetGroomer-Explotion_49
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PetGroomer-Explotion_1
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 5
+        width: 148
+        height: 84
+      alignment: 9
+      pivot: {x: 0.5137383, y: 0.33894047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eccd53c1ef7af24c9149085af3a3974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Explotion_15
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 5
+        width: 148
+        height: 84
+      alignment: 9
+      pivot: {x: 0.5, y: 0.33894047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5a297d580c0d04288811e9e3b5bdb1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Explotion_26
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 5
+        width: 148
+        height: 84
+      alignment: 9
+      pivot: {x: 0.5139321, y: 0.33894047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b9465a0c0c34bc4d948ecbe75990b87
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Explotion_32
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 5
+        width: 148
+        height: 84
+      alignment: 9
+      pivot: {x: 0.49495882, y: 0.33894047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637a79dddfbe053418c52431c28c4162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Explotion_36
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 5
+        width: 148
+        height: 84
+      alignment: 9
+      pivot: {x: 0.50894743, y: 0.33894047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5027b56ad168b844beaa28c5059f431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Explotion_44
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 5
+        width: 148
+        height: 84
+      alignment: 9
+      pivot: {x: 0.5092559, y: 0.33894047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b435da4915abe264e9ef7ac3aeb8e6c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Explotion_45
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 5
+        width: 148
+        height: 84
+      alignment: 9
+      pivot: {x: 0.49495882, y: 0.33894047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713212d1907ba0a4fac7d9e5fedf52f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Explotion_47
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 5
+        width: 148
+        height: 84
+      alignment: 9
+      pivot: {x: 0.514109, y: 0.33894047}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe0eaca178926b45a3214bf764a53b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b45c6292ec69723469bb87a3b12a4fbe
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,324 @@
+fileFormatVersion: 2
+guid: 09ddbd80b4c3c2b4abd036010445f678
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PetGroomer-Death_0
+    21300002: PetGroomer-Death_1
+    21300004: PetGroomer-Death_2
+    21300006: PetGroomer-Death_3
+    21300008: PetGroomer-Death_4
+    21300010: PetGroomer-Death_5
+    21300012: PetGroomer-Death_6
+    21300014: PetGroomer-Death_7
+    21300016: PetGroomer-Death_8
+    21300018: PetGroomer-Death_9
+    21300020: PetGroomer-Death_10
+    21300022: PetGroomer-Death_11
+    21300024: PetGroomer-Death_12
+    21300026: PetGroomer-Death_13
+    21300028: PetGroomer-Death_14
+    21300030: PetGroomer-Death_15
+    21300032: PetGroomer-Death_16
+    21300034: PetGroomer-Death_17
+    21300036: PetGroomer-Death_18
+    21300038: PetGroomer-Death_19
+    21300040: PetGroomer-Death_20
+    21300042: PetGroomer-Death_21
+    21300044: PetGroomer-Death_22
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PetGroomer-Death_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 5
+        width: 112
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 200c86e555ec07e4e90e46f5d2fd412d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Death_1
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 5
+        width: 112
+        height: 49
+      alignment: 9
+      pivot: {x: 0.49266434, y: 0.50040853}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22e03a4d10397b488f99e90b1366e5f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Death_4
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 5
+        width: 112
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1365f3db0ce6fb34d9b0ca4d318b38ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Death_7
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 4
+        width: 112
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5004245, y: 0.54}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0362391cce890648bcbb7997f35a442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Death_10
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 4
+        width: 112
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5395284, y: 0.5309831}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f9ddacb5ccd6448aa436085e378b0c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Death_12
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 5
+        width: 112
+        height: 49
+      alignment: 9
+      pivot: {x: 0.502285, y: 0.5075908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79fdf2840e4ac4d4e9e7b16d7449afb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Death_13
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 5
+        width: 112
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5187449, y: 0.5102702}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6183d81ce8e05864e83f8cc9ead9a11a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Death_14
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 5
+        width: 112
+        height: 49
+      alignment: 9
+      pivot: {x: 0.548948, y: 0.51382977}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0862f6111f041fe46b70c4bfa2e17b99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Death_15
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 5
+        width: 112
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5025166, y: 0.5103851}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e097ceb4407c854f829b70dbbe74e5a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2ff548e0d03cbf547a94905c34a0676f
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
