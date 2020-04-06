@@ -4,3 +4,4 @@ TerrainData_675cd576-9cc6-4e5b-b1e9-05ca25960f3d.assett filter=lfs diff=lfs merg
 TerrainData_68185218-b011-4ce9-8336-301b61cd24ba.assett filter=lfs diff=lfs merge=lfs -text
 *.assett filter=lfs diff=lfs merge=lfs -text
 *.asset filter=lfs diff=lfs merge=lfs -text
+Terrain_*.asset filter=lfs diff=lfs merge=lfs -text
