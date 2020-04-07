@@ -1,0 +1,327 @@
+fileFormatVersion: 2
+guid: 505662a36d493c34cb12b86b70e56a9c
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: dc_acid_0
+    21300002: dc_acid_1
+    21300004: dc_acid_2
+    21300006: dc_acid_3
+    21300008: dc_acid_4
+    21300010: dc_acid_5
+    21300012: dc_acid_6
+    21300014: dc_acid_7
+    21300016: dc_acid_8
+    21300018: dc_acid_9
+    21300020: dc_acid_10
+    21300022: dc_acid_11
+    21300024: dc_acid_12
+    21300026: dc_acid_13
+    21300028: dc_acid_14
+    21300030: dc_acid_15
+    21300032: dc_acid_16
+    21300034: dc_acid_17
+    21300036: dc_acid_18
+    21300038: dc_acid_19
+    21300040: dc_acid_20
+    21300042: dc_acid_21
+    21300044: dc_acid_22
+    21300046: dc_acid_23
+    21300048: dc_acid_24
+    21300050: dc_acid_25
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 35
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dc_acid_0
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 3
+        width: 51
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b9eb8b46e3bee49be66b9fa2c8a801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dc_acid_1
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 3
+        width: 51
+        height: 79
+      alignment: 9
+      pivot: {x: 0.44303206, y: 0.49999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e46342d4d9ab9d4da2093d9f42c999d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dc_acid_2
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 3
+        width: 51
+        height: 79
+      alignment: 9
+      pivot: {x: 0.3001721, y: 0.5062421}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8ca06f1282978478d0b1f59511c5ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dc_acid_4
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 4
+        width: 93
+        height: 79
+      alignment: 9
+      pivot: {x: 0.40203333, y: 0.44709662}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b811e33d5153349b6927973d25d75e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dc_acid_7
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 3
+        width: 109
+        height: 79
+      alignment: 9
+      pivot: {x: 0.4032324, y: 0.44741797}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0d6183fcaaa4e4db04b8f08a94cd65
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dc_acid_8
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 2
+        width: 133
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af9aa22931e2414da00a9c839209fad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dc_acid_9
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 3
+        width: 149
+        height: 79
+      alignment: 9
+      pivot: {x: 0.5, y: 0.46647364}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36bf8e583b37b5e4698476375e800804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dc_acid_10
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 3
+        width: 162
+        height: 79
+      alignment: 9
+      pivot: {x: 0.51849216, y: 0.4684969}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0abeb7226db98934abfa62945aec3fe8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dc_acid_11
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 3
+        width: 168
+        height: 79
+      alignment: 9
+      pivot: {x: 0.5361306, y: 0.4684969}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5cafe1181de7f42ac5d6b6856c2f39
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3a7f5f1a7e053bf44bb8357657460aca
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

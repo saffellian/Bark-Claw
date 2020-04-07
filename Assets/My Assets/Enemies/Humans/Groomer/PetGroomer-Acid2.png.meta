@@ -1,0 +1,374 @@
+fileFormatVersion: 2
+guid: ab8c0fc5cd7024640951b18222e21543
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PetGroomer-Acid2_0
+    21300002: PetGroomer-Acid2_1
+    21300004: PetGroomer-Acid2_3
+    21300006: PetGroomer-Acid2_4
+    21300008: PetGroomer-Acid2_5
+    21300010: PetGroomer-Acid2_6
+    21300012: PetGroomer-Acid2_7
+    21300014: PetGroomer-Acid2_8
+    21300016: PetGroomer-Acid2_9
+    21300018: PetGroomer-Acid2_11
+    21300020: PetGroomer-Acid2_14
+    21300022: PetGroomer-Acid2_15
+    21300024: PetGroomer-Acid2_17
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PetGroomer-Acid2_0
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 4
+        width: 103
+        height: 65
+      alignment: 9
+      pivot: {x: 0.49999994, y: 0.44815692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c356a26d3131fd49bc1714de7336042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Acid2_1
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 5
+        width: 103
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5535653, y: 0.44815692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e81d432c2578541aebb41d3d3d3195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Acid2_3
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 5
+        width: 103
+        height: 65
+      alignment: 9
+      pivot: {x: 0.53271604, y: 0.44815692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7e7b0b12e502f54c8ce9470ab0eb59d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Acid2_4
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 5
+        width: 103
+        height: 65
+      alignment: 9
+      pivot: {x: 0.62268597, y: 0.44815692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541942da804b4c14c9ceab419092a369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Acid2_5
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 5
+        width: 103
+        height: 65
+      alignment: 9
+      pivot: {x: 0.69132924, y: 0.44815692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1cdd2cef5d8e214dafc8e229e83d847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Acid2_6
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 5
+        width: 103
+        height: 65
+      alignment: 9
+      pivot: {x: 0.7208329, y: 0.44815692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf680b0d7b5dfa44381009544915b46c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Acid2_7
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 5
+        width: 103
+        height: 65
+      alignment: 9
+      pivot: {x: 0.6217029, y: 0.44815692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36e57cbc79133d408a4ffc847aa2ca7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Acid2_8
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 5
+        width: 103
+        height: 65
+      alignment: 9
+      pivot: {x: 0.7453708, y: 0.44815692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abcb4064665118e459eb4c36cc01f551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Acid2_9
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 5
+        width: 103
+        height: 65
+      alignment: 9
+      pivot: {x: 0.745372, y: 0.44815692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b79d82f82e87a148a4527fca72688ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Acid2_14
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 5
+        width: 103
+        height: 65
+      alignment: 9
+      pivot: {x: 0.745372, y: 0.44815692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eea6c92151a9cb41a496a483b02fe4a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Acid2_15
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 5
+        width: 103
+        height: 65
+      alignment: 9
+      pivot: {x: 0.745372, y: 0.44815692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf90896ad0f70748bdfb24ac1963d88
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PetGroomer-Acid2_17
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 5
+        width: 103
+        height: 65
+      alignment: 9
+      pivot: {x: 0.745372, y: 0.44815692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe972c44cd030934e97d639ecd6b2f77
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 158aa846e8c6b04478d3586b539ea1ac
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
