@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57fcdc1eb3c78d34d8b76e9072505a1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponType: 2
+  weaponType: 3
   delayBetweenShots: 0.8
   projectile: {fileID: 6596927309470718997, guid: eeb1a071238fd004390ddd6ba22e8645,
     type: 3}
@@ -152,6 +152,7 @@ MonoBehaviour:
   shotgunProjectileCount: 5
   projectileSpeed: 20
   fluidDamage: 1
+  meleeDamage: 5
   projectileOrigins:
   - {fileID: 1679800012281950283}
 --- !u!1 &2503381482854771925

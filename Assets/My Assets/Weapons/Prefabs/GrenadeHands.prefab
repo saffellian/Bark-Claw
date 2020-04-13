@@ -157,8 +157,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57fcdc1eb3c78d34d8b76e9072505a1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponType: 4
+  weaponType: 5
   delayBetweenShots: 0.8
+  ammo: 1
+  dropOnEmpty: 1
   projectile: {fileID: 6596927309470718997, guid: d67c348bc75d7324a8a3767b93fa61a7,
     type: 3}
   projectileSpread: 0
@@ -167,5 +169,7 @@ MonoBehaviour:
   explosiveTimer: 3
   shotgunProjectileCount: 0
   projectileSpeed: 20
+  fluidDamage: 1
+  meleeDamage: 5
   projectileOrigins:
   - {fileID: 2442580472704669194}

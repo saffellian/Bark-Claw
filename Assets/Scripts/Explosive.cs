@@ -6,6 +6,7 @@ public class Explosive : MonoBehaviour
 {
     [SerializeField] private float radius = 10;
     [SerializeField] private int damage = 25;
+    [SerializeField] private GameObject explosionPrefab;
     [SerializeField] private bool instantDeath = false;
 
     private bool deployable = false;
@@ -40,7 +41,9 @@ public class Explosive : MonoBehaviour
                     c.GetComponent<Enemy>().InstantDeath(true);
             }
         }
-        // spawn explosion particle
+
+        Transform t = Instantiate(explosionPrefab, transform.position, Quaternion.identity).transform;
+        t.localScale = Vector3.one * radius;
         Destroy(gameObject);
     }
 
@@ -52,7 +55,9 @@ public class Explosive : MonoBehaviour
                 other.GetComponent<Enemy>().ApplyDamage(damage);
             else
                 other.GetComponent<Enemy>().InstantDeath(true);
-            // spawn explosion particle
+
+            Transform t = Instantiate(explosionPrefab, transform.position, Quaternion.identity).transform;
+            t.localScale = Vector3.one * radius;
             Destroy(transform.parent.gameObject);
         }
     }

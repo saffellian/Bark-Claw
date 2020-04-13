@@ -46,12 +46,13 @@ public class PlayerInventory : MonoBehaviour
         
         if (Input.GetAxis("Mouse ScrollWheel") > 0) // scroll wheel up
         {
-            if (inventoryIndex >= inventorySize - 1)
+            inventoryIndex++;
+
+            if (inventoryIndex > inventorySize - 1)
                 inventoryIndex = 0;
             else
             {
-                inventoryIndex++;
-                for (int i = inventoryIndex; i < inventorySize; ++i)
+                for (int i = inventoryIndex; i <= inventorySize; i++)
                 {
                     if (i == inventorySize)
                     {
@@ -60,30 +61,25 @@ public class PlayerInventory : MonoBehaviour
                     }
                     else if (inventory[i] != null)
                     {
+                        inventoryIndex = i;
                         break;
                     }
-                    inventoryIndex++;
                 }
             }
         }
         else if (Input.GetAxis("Mouse ScrollWheel") < 0) // scroll wheel down
         {
-            if (inventoryIndex <= 0)
-                inventoryIndex = inventorySize - 1;
-            else
-            {
-                inventoryIndex--;
-            }
+            inventoryIndex--;
 
-            if (inventory[inventoryIndex] == null)
+            if (inventoryIndex < 0)
+                inventoryIndex = inventorySize - 1;
+
+            for (int i = inventoryIndex; i >= 0; i--)
             {
-                for (int i = inventoryIndex - 1; i >= 0; i--)
+                if (i == 0 || inventory[i] != null)
                 {
-                    inventoryIndex--;
-                    if (inventoryIndex == 0 || inventory[i] != null)
-                    {
-                        break;
-                    }
+                    inventoryIndex = i;
+                    break;
                 }
             }
         }
@@ -99,6 +95,18 @@ public class PlayerInventory : MonoBehaviour
         
         if (previousIndex != inventoryIndex)// && !(inventory[previousIndex] == defaultItem && inventory[inventoryIndex] == defaultItem))
             UpdateItem();
+    }
+
+    public void RemoveItem(GameObject item)
+    {
+        for (int i = 0; i < inventory.Count; i++)
+        {
+            if (inventory[i] == item)
+                inventory[i] = null;
+        }
+
+        inventoryIndex = 0;
+        UpdateItem();
     }
 
     public bool TryAddItem(GameObject newItem, bool replaceHeldItem)
@@ -141,22 +149,16 @@ public class PlayerInventory : MonoBehaviour
 
     public void UpdateItem()
     {
-        int i = 0;
+        GameObject obj = inventory[inventoryIndex];
         foreach (GameObject g in inventory)
         {
             if (g == null)
                 continue;
 
-            if (i == inventoryIndex)
-            {
+            if (g == obj)
                 g.SetActive(true);
-            }
             else
-            {
                 g.SetActive(false);
-            }
-
-            i++;
         }
     }
 }

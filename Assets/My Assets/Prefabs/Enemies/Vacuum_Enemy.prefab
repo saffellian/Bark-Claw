@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 3794113648905337933}
   - component: {fileID: 3794113648905337934}
   - component: {fileID: 3794113648905337937}
-  - component: {fileID: 2785668718322647914}
   - component: {fileID: 2879070224335056286}
   - component: {fileID: 1320087296}
-  - component: {fileID: 1320087297}
+  - component: {fileID: 8227663954075737903}
   m_Layer: 0
   m_Name: Vacuum_Enemy
   m_TagString: Enemy
@@ -141,31 +140,6 @@ NavMeshAgent:
   m_BaseOffset: 0.55
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &2785668718322647914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3794113648905337930}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9266c07129a9d1f4dba6227ab2ae164d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 20
-  attackDistance: 10
-  chaseDistance: 20
-  attackDamage: 5
-  attackDelay: 1.5
-  attackSound: {fileID: 8300000, guid: 38dd09fd715b0ab4b80267f0672815e8, type: 3}
-  attackSpeed: 6
-  patrolPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  patrolSpeed: 2
-  patrolSound: {fileID: 8300000, guid: 8087943edf9e7014e903d0d32e952a7d, type: 3}
-  deathSound: {fileID: 8300000, guid: 655f1c92db3bfba4895b10407db81bbc, type: 3}
 --- !u!114 &2879070224335056286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,6 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyType: 0
   health: 100
+  normalDeathOnly: 0
   attackDistance: 10
   chaseDistance: 20
   attackDamage: 5
@@ -199,6 +174,7 @@ MonoBehaviour:
   patrolSpeed: 2
   patrolAudio: []
   deathSound: {fileID: 8300000, guid: 655f1c92db3bfba4895b10407db81bbc, type: 3}
+  itemDrops: []
 --- !u!82 &1320087296
 AudioSource:
   m_ObjectHideFlags: 0
@@ -295,16 +271,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!65 &1320087297
-BoxCollider:
+--- !u!136 &8227663954075737903
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3794113648905337930}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.6, y: 1.0666667, z: 0.6}
-  m_Center: {x: 0.023612916, y: -0.000000059604645, z: 1.0852938e-16}
+  m_Radius: 0.5333335
+  m_Height: 1.0666667
+  m_Direction: 1
+  m_Center: {x: -0.08132478, y: 0, z: 0}

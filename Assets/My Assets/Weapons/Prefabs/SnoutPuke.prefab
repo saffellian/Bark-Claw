@@ -4838,8 +4838,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57fcdc1eb3c78d34d8b76e9072505a1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponType: 5
+  weaponType: 6
   delayBetweenShots: 0
+  ammo: 100
+  dropOnEmpty: 1
   projectile: {fileID: 0}
   projectileSpread: 0
   aoeRadius: 10
@@ -4848,4 +4850,5 @@ MonoBehaviour:
   shotgunProjectileCount: 5
   projectileSpeed: 20
   fluidDamage: 1
+  meleeDamage: 5
   projectileOrigins: []
