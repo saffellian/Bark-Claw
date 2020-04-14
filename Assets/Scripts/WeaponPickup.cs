@@ -10,8 +10,8 @@ public class WeaponPickup : MonoBehaviour
     {
         if (other.CompareTag("Player") && GetComponent<Renderer>().isVisible)
         {
-            other.transform.parent.GetComponent<PlayerInventory>().TryAddItem(itemPrefab, true);
-            Destroy(gameObject);
+            if (other.transform.parent.GetComponent<PlayerInventory>().TryAddItem(itemPrefab, false))
+                Destroy(gameObject);
         }
     }
 }

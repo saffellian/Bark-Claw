@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343428991284664939}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.155, z: 0.168}
+  m_LocalPosition: {x: 0, y: -0.208, z: 0.168}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2081077486515209729}
@@ -51,7 +51,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 596c147a9eff18442a93d60e495599cc, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -73,7 +73,7 @@ ParticleSystemRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_RenderMode: 0
-  m_SortMode: 0
+  m_SortMode: 1
   m_MinParticleSize: 0
   m_MaxParticleSize: 0.5
   m_CameraVelocityScale: 0
@@ -88,7 +88,7 @@ ParticleSystemRenderer:
   m_UseCustomVertexStreams: 0
   m_EnableGPUInstancing: 1
   m_ApplyActiveColorSpace: 1
-  m_AllowRoll: 1
+  m_AllowRoll: 0
   m_VertexStreams: 00010304
   m_Mesh: {fileID: 0}
   m_Mesh1: {fileID: 0}
@@ -4838,8 +4838,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57fcdc1eb3c78d34d8b76e9072505a1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponType: 5
+  weaponType: 6
   delayBetweenShots: 0
+  ammo: 100
+  dropOnEmpty: 1
   projectile: {fileID: 0}
   projectileSpread: 0
   aoeRadius: 10
@@ -4848,4 +4850,5 @@ MonoBehaviour:
   shotgunProjectileCount: 5
   projectileSpeed: 20
   fluidDamage: 1
+  meleeDamage: 5
   projectileOrigins: []

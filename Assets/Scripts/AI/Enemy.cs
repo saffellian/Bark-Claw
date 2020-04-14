@@ -37,6 +37,7 @@ public class Enemy : MonoBehaviour
     [Header("General")]
     [SerializeField] private EnemyType enemyType = EnemyType.Melee;
     [SerializeField] private int health;
+    [SerializeField] private bool normalDeathOnly = false;
     [Header("Attack")]
     [SerializeField] private float attackDistance;
     [SerializeField] private float chaseDistance;
@@ -66,7 +67,7 @@ public class Enemy : MonoBehaviour
     private Vector3 patrolMin;
     private Vector3 patrolMax;
     private DeathType deathType = DeathType.Normal;
-    // Start is called before the first frame update
+
     void Start()
     {
         PlayerHealth.Instance.playerDeath.AddListener(PlayerDied);
@@ -269,6 +270,7 @@ public class Enemy : MonoBehaviour
 
     private IEnumerator Death()
     {
+        GetComponent<Collider>().enabled = false;
         audioSource.Stop();
         audioSource.PlayOneShot(deathSound);
         animator.SetTrigger(deathType.ToString());
@@ -301,7 +303,9 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
             return;
 
-        deathType = dType;
+        if (!normalDeathOnly)
+            deathType = dType;
+
         health -= amount;
 
         if (health <= 0)
@@ -325,7 +329,7 @@ public class Enemy : MonoBehaviour
         health = 0;
         agent.isStopped = true;
         StopAllCoroutines();
-        if (explode)
+        if (!normalDeathOnly && explode)
             deathType = DeathType.Explosion;
         StartCoroutine(Death());
     }

@@ -8,10 +8,10 @@ using UnityEngine;
 public class PlayerInventory : MonoBehaviour
 {
     [SerializeField][Range(1,10)] private int inventorySize = 2;
-    [SerializeField] private GameObject[] inventory;
+    [SerializeField] private List<GameObject> inventory;
     [SerializeField] private GameObject defaultItem;
 
-    private int inventoryIndex = 0;
+   [SerializeField] private int inventoryIndex = 0;
 
     private readonly KeyCode[] numKeyCodes =
     {
@@ -29,10 +29,11 @@ public class PlayerInventory : MonoBehaviour
 
     private void Start()
     {
-        inventory = new GameObject[inventorySize];
-        for (int i = 0; i < inventorySize; i++)
+        inventory = new List<GameObject>(inventorySize);
+        inventory.Add(defaultItem);
+        for (int i = 1; i < inventorySize; ++i)
         {
-            inventory[i] = defaultItem;
+            inventory.Add(null);
         }
     }
 
@@ -43,36 +44,69 @@ public class PlayerInventory : MonoBehaviour
         
         int previousIndex = inventoryIndex;
         
-        if (Input.GetAxis("Mouse ScrollWheel") > 0)
+        if (Input.GetAxis("Mouse ScrollWheel") > 0) // scroll wheel up
         {
-            if (inventoryIndex >= inventorySize - 1)
+            inventoryIndex++;
+
+            if (inventoryIndex > inventorySize - 1)
                 inventoryIndex = 0;
             else
             {
-                inventoryIndex++;
+                for (int i = inventoryIndex; i <= inventorySize; i++)
+                {
+                    if (i == inventorySize)
+                    {
+                        inventoryIndex = 0;
+                        break;
+                    }
+                    else if (inventory[i] != null)
+                    {
+                        inventoryIndex = i;
+                        break;
+                    }
+                }
             }
         }
-        if (Input.GetAxis("Mouse ScrollWheel") < 0)
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0) // scroll wheel down
         {
-            if (inventoryIndex <= 0)
+            inventoryIndex--;
+
+            if (inventoryIndex < 0)
                 inventoryIndex = inventorySize - 1;
-            else
+
+            for (int i = inventoryIndex; i >= 0; i--)
             {
-                inventoryIndex--;
+                if (i == 0 || inventory[i] != null)
+                {
+                    inventoryIndex = i;
+                    break;
+                }
             }
         }
 
         for (int i = 0; i < numKeyCodes.Length; i++)
         {
-            if (Input.GetKeyDown(numKeyCodes[i]))
+            if (Input.GetKeyDown(numKeyCodes[i]) && inventory[i] != null)
             {
                 inventoryIndex = i;
                 break;
             }
         }
         
-        if (previousIndex != inventoryIndex && !(inventory[previousIndex] == defaultItem && inventory[inventoryIndex] == defaultItem))
+        if (previousIndex != inventoryIndex)// && !(inventory[previousIndex] == defaultItem && inventory[inventoryIndex] == defaultItem))
             UpdateItem();
+    }
+
+    public void RemoveItem(GameObject item)
+    {
+        for (int i = 0; i < inventory.Count; i++)
+        {
+            if (inventory[i] == item)
+                inventory[i] = null;
+        }
+
+        inventoryIndex = 0;
+        UpdateItem();
     }
 
     public bool TryAddItem(GameObject newItem, bool replaceHeldItem)
@@ -85,6 +119,9 @@ public class PlayerInventory : MonoBehaviour
 
         if (replaceHeldItem)
         {
+            if (inventoryIndex == 0)
+                return false; // don't replace claws
+
             inventory[inventoryIndex].SetActive(false);
             inventory[inventoryIndex] = Instantiate(newItem, gameObject.transform.GetChild(0));
             UpdateItem();
@@ -93,11 +130,10 @@ public class PlayerInventory : MonoBehaviour
         else
         {
             bool found = false;
-            for (int i = 0; i < inventory.Length; i++)
+            for (int i = 0; i < inventory.Count; i++)
             {
-                if (inventory[i] == defaultItem)
+                if (inventory[i] == null)
                 {
-                    inventory[i].SetActive(false);
                     inventory[i] = Instantiate(newItem, gameObject.transform.GetChild(0));
                     UpdateItem();
                     found = true;
@@ -113,19 +149,16 @@ public class PlayerInventory : MonoBehaviour
 
     public void UpdateItem()
     {
-        int i = 0;
+        GameObject obj = inventory[inventoryIndex];
         foreach (GameObject g in inventory)
         {
-            if (i == inventoryIndex)
-            {
-                g.SetActive(true);
-            }
-            else
-            {
-                g.SetActive(false);
-            }
+            if (g == null)
+                continue;
 
-            i++;
+            if (g == obj)
+                g.SetActive(true);
+            else
+                g.SetActive(false);
         }
     }
 }

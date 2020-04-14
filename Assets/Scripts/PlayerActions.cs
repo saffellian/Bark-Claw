@@ -24,6 +24,7 @@ public class PlayerActions : MonoBehaviour
     {
         animator.SetBool("IsMoving", fpController.HasMovement());
 
+        // TODO: move this old claw logic into weapon script melee type
         if (PlayerHealth.Instance.IsAlive() && canAttack && Input.GetMouseButtonDown(0))
         {
             canAttack = false;

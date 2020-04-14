@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 2081077486515209729}
   - component: {fileID: 2081077486515209728}
   - component: {fileID: 2081077486515209731}
-  - component: {fileID: 1151877619861304346}
-  - component: {fileID: 3662534639304691397}
   - component: {fileID: 2622585811649404849}
   m_Layer: 2
   m_Name: ChihuahuaGun
@@ -103,32 +101,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1151877619861304346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2081077486515209742}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0bccfa5369fafd24ba3346b285c380c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firePoint: {x: 0.5, y: 0.5}
---- !u!114 &3662534639304691397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2081077486515209742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f686cd33820bba4488591b7b31123d55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 10
 --- !u!114 &2622585811649404849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,13 +113,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57fcdc1eb3c78d34d8b76e9072505a1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponType: 0
+  weaponType: 1
   delayBetweenShots: 0.8
+  ammo: 10
+  dropOnEmpty: 0
   projectile: {fileID: 6596927309470718997, guid: a3c4ecfeed0f45c4f863bbdde6d6d808,
     type: 3}
   projectileSpread: 0
+  aoeRadius: 10
+  throwForce: 5
+  explosiveTimer: 3
+  shotgunProjectileCount: 5
   projectileSpeed: 20
-  projectileOrigin: {fileID: 1679800012281950283}
+  fluidDamage: 1
+  meleeDamage: 5
+  projectileOrigins:
+  - {fileID: 1679800012281950283}
 --- !u!1 &2503381482854771925
 GameObject:
   m_ObjectHideFlags: 0
