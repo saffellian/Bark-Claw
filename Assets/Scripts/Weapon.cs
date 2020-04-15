@@ -55,6 +55,11 @@ public class Weapon : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        timerRunning = false; // prevent stuck timer when switching weapons
+    }
+
     // Update is called once per frame
     void Update()
     {

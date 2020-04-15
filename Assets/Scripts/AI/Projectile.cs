@@ -18,6 +18,7 @@ public class Projectile : MonoBehaviour
 
     private List<string> _noCollideTags = new List<string>();
     private List<GameObject> _noCollideObjects = new List<GameObject>();
+    private bool hasExploded = false;
 
     private void Start()
     {
@@ -46,8 +47,10 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (_noCollideTags.Contains(other.tag) || _noCollideObjects.Contains(other.gameObject))
+        if (hasExploded || _noCollideTags.Contains(other.tag) || _noCollideObjects.Contains(other.gameObject))
             return;
+
+        hasExploded = true;
 
         if (other.transform.CompareTag("Player"))
         {
@@ -55,24 +58,43 @@ public class Projectile : MonoBehaviour
         }
         else if (other.transform.CompareTag("Enemy"))
         {
-            other.GetComponent<Enemy>().ApplyDamage(damage);
-        }
-
-        damage = 0; // avoid multiple hits
-        if (projectileType == ProjectileType.Explosive)
+            if (projectileType == ProjectileType.Explosive)
+            {
+                // fudge factor for explosion visibility
+                Vector3 newPos = transform.position + (FindObjectOfType<PlayerInventory>().transform.position - transform.position).normalized * (GetComponent<SphereCollider>().radius * 2);
+                Transform t = Instantiate(explosionPrefab, newPos, Quaternion.identity).transform;
+                t.localScale = Vector3.one * explosionRadius;
+                Collider[] colliders = Physics.OverlapSphere(t.position, explosionRadius, ~(LayerMask.GetMask(new string[] { "Enemy" })));
+                if (colliders.Length > 0)
+                {
+                    foreach (var c in colliders)
+                    {
+                        if (c.GetComponent<Enemy>())
+                            c.GetComponent<Enemy>().ApplyDamage(damage, Enemy.DeathType.Explosion);
+                    }
+                }
+            } else
+            {
+                other.GetComponent<Enemy>().ApplyDamage(damage);
+            }
+        } else if (projectileType == ProjectileType.Explosive)
         {
-            Transform t = Instantiate(explosionPrefab, transform.position, Quaternion.identity).transform;
+            // fudge factor for explosion visibility
+            Vector3 newPos = transform.position + (FindObjectOfType<PlayerInventory>().transform.position - transform.position).normalized * (GetComponent<SphereCollider>().radius * 2);
+            Transform t = Instantiate(explosionPrefab, newPos, Quaternion.identity).transform;
             t.localScale = Vector3.one * explosionRadius;
             Collider[] colliders = Physics.OverlapSphere(t.position, explosionRadius, ~(LayerMask.GetMask(new string[] { "Enemy" })));
             if (colliders.Length > 0)
             {
                 foreach (var c in colliders)
                 {
-                    if (c != other && c.GetComponent<Enemy>()) // prevent double damage
-                        c.GetComponent<Enemy>().ApplyDamage(damage);
+                    if (c.GetComponent<Enemy>())
+                        c.GetComponent<Enemy>().ApplyDamage(damage, Enemy.DeathType.Explosion);
                 }
             }
         }
+
+        damage = 0; // avoid multiple hits
 
         Destroy(gameObject);
     }

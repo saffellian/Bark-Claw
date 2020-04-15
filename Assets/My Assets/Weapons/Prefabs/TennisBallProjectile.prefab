@@ -124,9 +124,9 @@ Rigidbody:
   m_AngularDrag: 0.05
   m_UseGravity: 0
   m_IsKinematic: 0
-  m_Interpolate: 1
+  m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 2
+  m_CollisionDetection: 3
 --- !u!114 &6596927309470718998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,6 +144,7 @@ MonoBehaviour:
   explosionPrefab: {fileID: 6596927309470718997, guid: 33249eb140ef7c048903541e6e1354c6,
     type: 3}
   explosionRadius: 5
+  maxLifetime: 10
 --- !u!95 &6283487816910350664
 Animator:
   serializedVersion: 3
