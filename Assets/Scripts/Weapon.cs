@@ -9,6 +9,8 @@ using UnityStandardAssets.Characters.FirstPerson;
 [RequireComponent(typeof(Animator))]
 public class Weapon : MonoBehaviour
 {
+    public static IntEvent onAmmoUpdate = new IntEvent();
+
     public enum WeaponType
     {
         Melee,
@@ -60,6 +62,14 @@ public class Weapon : MonoBehaviour
         timerRunning = false; // prevent stuck timer when switching weapons
     }
 
+    public void WeaponSwapped()
+    {
+        if (weaponType == WeaponType.Melee)
+            onAmmoUpdate.Invoke(-1);
+        else
+            onAmmoUpdate.Invoke(ammo);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -99,6 +109,7 @@ public class Weapon : MonoBehaviour
                 {
                     fluidAmmo = 0;
                     ammo--;
+                    onAmmoUpdate.Invoke(ammo);
                 }
             }
 
@@ -146,6 +157,7 @@ public class Weapon : MonoBehaviour
                 break;
             case WeaponType.SemiAuto:
                 ammo--;
+                onAmmoUpdate.Invoke(ammo);
                 rb = Instantiate(projectile, projectileOrigins[0].position, projectile.transform.rotation).GetComponent<Rigidbody>();
                 rb.velocity = projectileOrigins[0].forward * projectileSpeed;
                 rb.gameObject.GetComponent<Projectile>().RegisterNoCollideObject(gameObject);
@@ -153,6 +165,7 @@ public class Weapon : MonoBehaviour
                 break;
             case WeaponType.Automatic:
                 ammo--;
+                onAmmoUpdate.Invoke(ammo);
                 rb = Instantiate(projectile, projectileOrigins[i].position, projectile.transform.rotation).GetComponent<Rigidbody>();
                 rb.velocity = projectileOrigins[i].forward * projectileSpeed;
                 i = (i + 1) % projectileOrigins.Count;
@@ -161,6 +174,7 @@ public class Weapon : MonoBehaviour
                 break;
             case WeaponType.Shotgun:
                 ammo--;
+                onAmmoUpdate.Invoke(ammo);
                 for (int i = 0; i < shotgunProjectileCount; ++i)
                 {
                     float xStray = Random.Range(-projectileSpread, projectileSpread);
@@ -176,11 +190,13 @@ public class Weapon : MonoBehaviour
                 break;
             case WeaponType.LayableExplosive:
                 ammo--;
+                onAmmoUpdate.Invoke(ammo);
                 Transform exp = Instantiate(projectile, transform.position, Quaternion.identity).transform.GetChild(0);
                 exp.GetComponent<Explosive>().StartDeployable();
                 break;
             case WeaponType.ThrowableExplosive:
                 ammo--;
+                onAmmoUpdate.Invoke(ammo);
                 Rigidbody r = Instantiate(projectile, projectileOrigins[0].position, Quaternion.identity).GetComponent<Rigidbody>();
                 r.velocity = projectileOrigins[0].forward * throwForce;
                 r.GetComponent<Explosive>().StartTimer(explosiveTimer);
@@ -190,6 +206,7 @@ public class Weapon : MonoBehaviour
                 break;
             case WeaponType.AreaOfEffect:
                 ammo--;
+                onAmmoUpdate.Invoke(ammo);
                 Collider[] enemyColliders = Physics.OverlapSphere(transform.position, aoeRadius, ~LayerMask.NameToLayer("Default"), QueryTriggerInteraction.Collide);
                 foreach (Collider c in enemyColliders)
                 {

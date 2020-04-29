@@ -74,13 +74,13 @@ public class SettingsMenu : MonoBehaviour
 
     private void SetMusicVolume(float volume)
     {
-        audioMixer.SetFloat("MusicVolume", volume);
+        audioMixer.SetFloat("MusicVolume", Mathf.Log10(volume) * 20);
         PlayerPrefs.SetFloat(PlayerPrefKeys.MUSIC_VOLUME, musicSlider.value);
     }
     
     private void SetEffectsVolume(float volume)
     {
-        audioMixer.SetFloat("EffectsVolume", volume);
+        audioMixer.SetFloat("EffectsVolume", Mathf.Log10(volume) * 20);
         PlayerPrefs.SetFloat(PlayerPrefKeys.SFX_VOLUME, effectsSlider.value);
     }
 
@@ -124,7 +124,7 @@ public class SettingsMenu : MonoBehaviour
 
     public void LoadSettings()
     {
-        musicSlider.value = PlayerPrefs.GetFloat(PlayerPrefKeys.MUSIC_VOLUME, 0);
+        musicSlider.value = Mathf.Log10(PlayerPrefs.GetFloat(PlayerPrefKeys.MUSIC_VOLUME, 0)) * 20;
         effectsSlider.value = PlayerPrefs.GetFloat(PlayerPrefKeys.SFX_VOLUME, 0);
         mouseSlider.value = PlayerPrefs.GetFloat(PlayerPrefKeys.MOUSE_SENS, 1);
         postProcessingToggle.isOn = PlayerPrefs.GetInt(PlayerPrefKeys.POST_PROC, 1) == 1;

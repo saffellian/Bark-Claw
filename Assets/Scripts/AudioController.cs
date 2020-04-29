@@ -110,4 +110,9 @@ public class AudioController : MonoBehaviour
     {
         musicSource.outputAudioMixerGroup.audioMixer.SetFloat("EffectsVolume", volume);
     }
+
+    public AudioSource GetMusicSource()
+    {
+        return musicSource;
+    }
 }

@@ -13,6 +13,8 @@ public class PlayerInventory : MonoBehaviour
 
    [SerializeField] private int inventoryIndex = 0;
 
+    private StatusBar statusBar;
+
     private readonly KeyCode[] numKeyCodes =
     {
         KeyCode.Alpha1,
@@ -29,6 +31,7 @@ public class PlayerInventory : MonoBehaviour
 
     private void Start()
     {
+        statusBar = FindObjectOfType<StatusBar>();
         inventory = new List<GameObject>(inventorySize);
         inventory.Add(defaultItem);
         for (int i = 1; i < inventorySize; ++i)
@@ -102,14 +105,17 @@ public class PlayerInventory : MonoBehaviour
         for (int i = 0; i < inventory.Count; i++)
         {
             if (inventory[i] == item)
+            {
+                statusBar.DisableWeapon(i);
                 inventory[i] = null;
+            }
         }
 
         inventoryIndex = 0;
         UpdateItem();
     }
 
-    public bool TryAddItem(GameObject newItem, bool replaceHeldItem)
+    public bool TryAddItem(GameObject newItem, int invIndex)
     {
         foreach (GameObject g in inventory) // disallowing duplicate items in inventory
         {
@@ -117,32 +123,12 @@ public class PlayerInventory : MonoBehaviour
                 return false;
         }
 
-        if (replaceHeldItem)
-        {
-            if (inventoryIndex == 0)
-                return false; // don't replace claws
+        if (inventoryIndex == invIndex)
+            return false; // don't replace current item
 
-            inventory[inventoryIndex].SetActive(false);
-            inventory[inventoryIndex] = Instantiate(newItem, gameObject.transform.GetChild(0));
-            UpdateItem();
-            // code will need to be added if the item being replaced needs to be dropped
-        }
-        else
-        {
-            bool found = false;
-            for (int i = 0; i < inventory.Count; i++)
-            {
-                if (inventory[i] == null)
-                {
-                    inventory[i] = Instantiate(newItem, gameObject.transform.GetChild(0));
-                    UpdateItem();
-                    found = true;
-                    break;
-                }
-            }
-
-            return found;
-        }
+        inventory[invIndex] = Instantiate(newItem, gameObject.transform.GetChild(0));
+        statusBar.EnableWeapon(invIndex);
+        UpdateItem();
 
         return true;
     }
@@ -150,6 +136,8 @@ public class PlayerInventory : MonoBehaviour
     public void UpdateItem()
     {
         GameObject obj = inventory[inventoryIndex];
+        obj.GetComponent<Weapon>().WeaponSwapped();
+        statusBar.SetCurrentWeapon(inventoryIndex);
         foreach (GameObject g in inventory)
         {
             if (g == null)

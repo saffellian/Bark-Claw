@@ -3,11 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+[System.Serializable]
+public class IntEvent : UnityEvent<int> { }
+
 public class PlayerHealth : MonoBehaviour
 {
+
     public static PlayerHealth Instance;
     
-    [HideInInspector] public UnityEvent playerDeath = new UnityEvent();
+    [HideInInspector] public UnityEvent onDeath = new UnityEvent();
+    [HideInInspector] public IntEvent onDamaged = new IntEvent(); // invokes with current health amount
     
     [SerializeField] private int health = 100;
 
@@ -33,8 +38,12 @@ public class PlayerHealth : MonoBehaviour
 
         if (health <= 0)
         {
-            playerDeath.Invoke();
+            onDeath.Invoke();
             FindObjectOfType<DeathCanvas>().BeginTransition();
+        }
+        else
+        {
+            onDamaged.Invoke(health);
         }
     }
 

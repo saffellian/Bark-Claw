@@ -46,7 +46,7 @@ public class SquirrelEnemy : Enemy2
     // Start is called before the first frame update
     void Start()
     {
-        PlayerHealth.Instance.playerDeath.AddListener(PlayerDied);
+        PlayerHealth.Instance.onDeath.AddListener(PlayerDied);
         player = GameObject.Find("FPSController");
         agent = GetComponent<NavMeshAgent>();
         audioSource = GetComponent<AudioSource>();

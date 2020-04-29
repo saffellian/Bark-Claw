@@ -70,7 +70,7 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
-        PlayerHealth.Instance.playerDeath.AddListener(PlayerDied);
+        PlayerHealth.Instance.onDeath.AddListener(PlayerDied);
         player = GameObject.Find("FPSController");
         agent = GetComponent<NavMeshAgent>();
         audioSource = GetComponent<AudioSource>();

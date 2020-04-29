@@ -160,3 +160,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemPrefab: {fileID: 2081077486515209742, guid: 79acd4d8c1a8889458b9bc2f7e08ae37,
     type: 3}
+  inventorySlot: 8
