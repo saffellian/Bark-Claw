@@ -35,6 +35,7 @@ public class Explosive : MonoBehaviour
         {
             if (c.GetComponent<Enemy>())
             {
+                Debug.Log(c.name);
                 if (!instantDeath)
                     c.GetComponent<Enemy>().ApplyDamage(damage);
                 else

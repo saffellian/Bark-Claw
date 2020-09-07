@@ -4429,6 +4429,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573844487147237428, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
         type: 3}
+      propertyPath: levelMusic.Array.data[0].timedEvent.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573844487147237428, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
+        type: 3}
+      propertyPath: levelMusic.Array.data[0].timedEvent.Array.data[0].eventAction.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573844487147237428, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
+        type: 3}
+      propertyPath: levelMusic.Array.data[0].timedEvent.Array.data[1].eventAction.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573844487147237428, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
+        type: 3}
       propertyPath: levelMusic.Array.data[0].levelName
       value: Menu
       objectReference: {fileID: 0}
@@ -4447,6 +4462,88 @@ PrefabInstance:
       propertyPath: levelMusic.Array.data[1].audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 2c413b4671eeb264d98bf08041e30413, type: 3}
+    - target: {fileID: 4573844487147237428, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
+        type: 3}
+      propertyPath: levelMusic.Array.data[0].timedEvent.Array.data[0].timeStamp
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573844487147237428, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
+        type: 3}
+      propertyPath: levelMusic.Array.data[0].timedEvent.Array.data[0].eventAction.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573844487147237428, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
+        type: 3}
+      propertyPath: levelMusic.Array.data[0].timedEvent.Array.data[1].eventAction.m_TypeName
+      value: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573844487147237428, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
+        type: 3}
+      propertyPath: levelMusic.Array.data[0].timedEvent.Array.data[1].timeStamp
+      value: 113
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573844487147237428, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
+        type: 3}
+      propertyPath: levelMusic.Array.data[0].timedEvent.Array.data[0].eventAction.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573844487147237428, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
+        type: 3}
+      propertyPath: levelMusic.Array.data[0].timedEvent.Array.data[0].eventAction.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573844487147237428, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
+        type: 3}
+      propertyPath: levelMusic.Array.data[0].timedEvent.Array.data[0].eventAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1127625127}
+    - target: {fileID: 4573844487147237428, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
+        type: 3}
+      propertyPath: levelMusic.Array.data[0].timedEvent.Array.data[0].eventAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartAnimation
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573844487147237428, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
+        type: 3}
+      propertyPath: levelMusic.Array.data[0].timedEvent.Array.data[0].eventAction.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573844487147237428, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
+        type: 3}
+      propertyPath: levelMusic.Array.data[0].timedEvent.Array.data[1].eventAction.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573844487147237428, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
+        type: 3}
+      propertyPath: levelMusic.Array.data[0].timedEvent.Array.data[1].eventAction.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573844487147237428, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
+        type: 3}
+      propertyPath: levelMusic.Array.data[0].timedEvent.Array.data[1].eventAction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1127625127}
+    - target: {fileID: 4573844487147237428, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
+        type: 3}
+      propertyPath: levelMusic.Array.data[0].timedEvent.Array.data[1].eventAction.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StopAnimation
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573844487147237428, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
+        type: 3}
+      propertyPath: levelMusic.Array.data[0].timedEvent.Array.data[1].eventAction.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573844487147237428, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
+        type: 3}
+      propertyPath: levelMusic.Array.data[0].timedEvent.Array.data[0].eventName
+      value: StartAnimation
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573844487147237428, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
+        type: 3}
+      propertyPath: levelMusic.Array.data[0].timedEvent.Array.data[1].eventName
+      value: StopAnimation
+      objectReference: {fileID: 0}
     - target: {fileID: 4573844487147237429, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
         type: 3}
       propertyPath: m_audioClip
@@ -4456,6 +4553,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4573844487147237429, guid: dd4d52d74b0800c4cbdbf24acdf3461a,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.277
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd4d52d74b0800c4cbdbf24acdf3461a, type: 3}
@@ -4853,8 +4955,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4813649359a052b4ea419cf4ea29f73c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startTime: 44
-  endTime: 114
 --- !u!95 &1127625128
 Animator:
   serializedVersion: 3

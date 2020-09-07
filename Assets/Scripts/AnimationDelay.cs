@@ -1,33 +1,36 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AnimationDelay : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public float startTime;
-    public float endTime;
-    Animator animator;
+    private Animator animator;
 
-    // Use this for initialization
-    void Start()
+    private void Start()
     {
         animator = GetComponent<Animator>();
-        StartCoroutine(DelayedAnimation());
+        AudioController.Instance.audioEvent.AddListener(AudioEvent);
+        bool isTag = animator.GetCurrentAnimatorStateInfo(0).IsTag("Strum");
+        float time = AudioController.Instance.GetMusicSource().time;
+        if ((time < 44 || time >= 113) && isTag)
+            animator.SetTrigger("Stop");
+        else if (time >= 44 && time < 113)
+            animator.SetTrigger("Start");
     }
 
-    // The delay coroutine
-    IEnumerator DelayedAnimation()
+    private void AudioEvent(string arg)
     {
-        AudioSource musicSource = FindObjectOfType<AudioController>().GetMusicSource();
-        while (gameObject.activeInHierarchy)
-        {
-            yield return new WaitForSeconds(startTime);
-            animator.SetTrigger("Start");
-            yield return new WaitForSeconds(endTime - startTime);
-            animator.SetTrigger("Stop");
-            yield return new WaitUntil(() => musicSource.time < startTime); // check if it has looped yet
-        }
+        arg = arg.Trim();
+        if (arg == "StartAnimation" || arg == "StopAnimation")
+            SendMessage(arg);
+    }
+
+    private void StartAnimation()
+    {
+        animator.SetTrigger("Start");
+    }
+
+    private void StopAnimation()
+    {
+        animator.SetTrigger("Stop");
     }
 
 }

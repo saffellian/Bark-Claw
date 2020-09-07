@@ -2,23 +2,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel.Design.Serialization;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+
+public class StringEvent : UnityEvent<string> { }
 
 public class AudioController : MonoBehaviour
 {
+    [Serializable]
+    public struct TimedEvent
+    {
+        public float timeStamp;
+        public string eventName;
+    }
+
     [Serializable]
     public struct LevelAudio
     {
         public string levelName;
         public AudioClip audioClip;
+        public TimedEvent[] timedEvent;
     }
     
     public static AudioController Instance;
+    public StringEvent audioEvent = new StringEvent();
 
     [SerializeField] private List<LevelAudio> levelMusic = new List<LevelAudio>();
 
     private AudioSource musicSource, effectsSource;
+    private Dictionary<float, string> audioEvents = new Dictionary<float, string>();
+    private float prevTime = 0;
+    private float[] keys;
     
     // Start is called before the first frame update
     void Start()
@@ -52,15 +68,32 @@ public class AudioController : MonoBehaviour
             {
                 musicSource.clip = la.audioClip;
                 musicSource.Play();
+                audioEvents = new Dictionary<float, string>();
+                for (int i = 0; i < la.timedEvent.Length; i++)
+                {
+                    audioEvents.Add(la.timedEvent[i].timeStamp, la.timedEvent[i].eventName);
+                }
+                prevTime = 0;
                 break;
             }
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        if (audioEvents.Count == 0)
+            return;
+
+        keys = audioEvents.Keys.ToArray();
+        for (int i = 0; i < keys.Length; i++)
+        {
+            if (keys[i] >= prevTime && keys[i] < musicSource.time)
+            {
+                audioEvent.Invoke(audioEvents[keys[i]]);
+            }
+        }
+
+        prevTime = musicSource.time;
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
@@ -71,6 +104,12 @@ public class AudioController : MonoBehaviour
             {
                 musicSource.clip = la.audioClip;
                 musicSource.Play();
+                audioEvents = new Dictionary<float, string>();
+                for (int i = 0; i < la.timedEvent.Length; i++)
+                {
+                    audioEvents.Add(la.timedEvent[i].timeStamp, la.timedEvent[i].eventName);
+                }
+                prevTime = 0;
                 break;
             }
         }

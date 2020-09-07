@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 201296538092977361}
   - component: {fileID: 201296538092977362}
   - component: {fileID: 1488357548}
-  - component: {fileID: 1488357550}
-  - component: {fileID: 1488357547}
   - component: {fileID: 1488357549}
   - component: {fileID: 7061337241988010776}
+  - component: {fileID: 8237051007443839529}
   m_Layer: 0
   m_Name: Cat_Enemy
   m_TagString: Enemy
@@ -216,46 +215,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!65 &1488357550
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 201296538092977366}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.6835723, z: 1}
-  m_Center: {x: 0, y: -0.1748805, z: -3.164179e-17}
---- !u!114 &1488357547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 201296538092977366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b93d97c76fe204438249e02fe09da44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 50
-  attackDistance: 20
-  chaseDistance: 25
-  attackDamage: 5
-  attackSpeed: 5
-  attackDelay: 1.5
-  attackSound: {fileID: 8300000, guid: 73c011e0a0eae384aadfee6bfc1fab99, type: 3}
-  deathSound: {fileID: 8300000, guid: 960e8797a7fa6664fab7fabfd03ccbd7, type: 3}
-  patrolRegion: {fileID: 0}
-  patrolSpeed: 3
-  patrolAudio:
-  - {fileID: 8300000, guid: 8326144e88c72a447931e27eb814966f, type: 3}
-  - {fileID: 8300000, guid: f689ddf0119eb3149b55124912bf2e5c, type: 3}
-  - {fileID: 8300000, guid: b346a85cb4d0bfe49974441e8b001ba4, type: 3}
-  itemDrops: []
 --- !u!195 &1488357549
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -292,6 +251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyType: 0
   health: 50
+  normalDeathOnly: 0
   attackDistance: 20
   chaseDistance: 25
   attackDamage: 5
@@ -313,3 +273,17 @@ MonoBehaviour:
   - {fileID: 8300000, guid: b346a85cb4d0bfe49974441e8b001ba4, type: 3}
   deathSound: {fileID: 8300000, guid: 960e8797a7fa6664fab7fabfd03ccbd7, type: 3}
   itemDrops: []
+--- !u!136 &8237051007443839529
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201296538092977366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.44285727
+  m_Height: 1.4285715
+  m_Direction: 1
+  m_Center: {x: 0.0057788207, y: -0.21956831, z: 0}

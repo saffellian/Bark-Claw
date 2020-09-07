@@ -138,4 +138,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed771f41ab7ca494faba6275fff0478f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectileType: 0
   damage: 1
+  explosionPrefab: {fileID: 0}
+  explosionRadius: 5
+  maxLifetime: 10

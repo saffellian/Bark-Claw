@@ -23,6 +23,8 @@ public class Weapon : MonoBehaviour
         AreaOfEffect
     }
 
+    private static float MIN_DROP_DELAY = 0.1f;
+
     [SerializeField] private WeaponType weaponType = WeaponType.SemiAuto;
     [SerializeField] private float delayBetweenShots = 0.8f;
     [SerializeField] private int ammo = 20;
@@ -44,6 +46,9 @@ public class Weapon : MonoBehaviour
     private int i = 0;
     private ParticleSystem pSystem;
     private float fluidAmmo = 0;
+    private bool fireButtonDown = false;
+    private bool fireButtonHeld = false;
+    private bool fireButtonPrev = false;
 
     // Start is called before the first frame update
     void Start()
@@ -73,6 +78,25 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetButton("Fire1") || Input.GetButtonDown("Fire1") || Input.GetAxis("Right Trigger") != 0)
+        {
+            if (fireButtonPrev == false)
+                fireButtonDown = true;
+            else
+            {
+                fireButtonDown = false;
+                fireButtonHeld = true;
+            }
+
+            fireButtonPrev = true;
+        } 
+        else
+        {
+            fireButtonPrev = false;
+            fireButtonDown = false;
+            fireButtonHeld = false;
+        }
+
         animator.SetBool("IsMoving", fpController.HasMovement());
 
         if (ammo <= 0 && weaponType != WeaponType.Melee)
@@ -85,21 +109,21 @@ public class Weapon : MonoBehaviour
 
         if (timerRunning)
             return;
-
+        
         // semi-auto weapons
-        if ((weaponType == WeaponType.Melee && Input.GetButtonDown("Fire1")) || 
-            (weaponType == WeaponType.SemiAuto && Input.GetButtonDown("Fire1")) ||
-            (weaponType == WeaponType.Shotgun && Input.GetButtonDown("Fire1")) ||
-            (weaponType == WeaponType.LayableExplosive && Input.GetButtonDown("Fire1")) ||
-            (weaponType == WeaponType.ThrowableExplosive && Input.GetButtonDown("Fire1")) ||
-            (weaponType == WeaponType.AreaOfEffect && Input.GetButtonDown("Fire1")))
+        if ((weaponType == WeaponType.Melee && fireButtonDown) || 
+            (weaponType == WeaponType.SemiAuto && fireButtonDown) ||
+            (weaponType == WeaponType.Shotgun && fireButtonDown) ||
+            (weaponType == WeaponType.LayableExplosive && fireButtonDown) ||
+            (weaponType == WeaponType.ThrowableExplosive && fireButtonDown) ||
+            (weaponType == WeaponType.AreaOfEffect && fireButtonDown))
         {
             animator.SetTrigger("Fire");
             StartCoroutine(FireTimer());
         }
         // automatic weapons
-        else if ((weaponType == WeaponType.Automatic && Input.GetButton("Fire1")) ||
-                 (weaponType == WeaponType.Fluid && Input.GetButton("Fire1")))
+        else if ((weaponType == WeaponType.Automatic && fireButtonHeld) ||
+                 (weaponType == WeaponType.Fluid && fireButtonHeld))
         {
             animator.SetBool("Fire", true);
             if (weaponType == WeaponType.Fluid)
@@ -221,9 +245,20 @@ public class Weapon : MonoBehaviour
 
         if (ammo <= 0 && dropOnEmpty)
         {
-            FindObjectOfType<PlayerInventory>().RemoveItem(gameObject);
-            Destroy(gameObject);
+            StartCoroutine(RemoveItem());
         }
+    }
+
+    /// <summary>
+    /// Drop item after its action animation has completed.
+    /// </summary>
+    /// <returns></returns>
+    private IEnumerator RemoveItem()
+    {
+        yield return new WaitForSeconds(MIN_DROP_DELAY);
+        yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsTag("Action"));
+        FindObjectOfType<PlayerInventory>().RemoveItem(gameObject);
+        Destroy(gameObject);
     }
 
     public void ParticleCollision(GameObject other)

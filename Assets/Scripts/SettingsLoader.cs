@@ -30,12 +30,6 @@ public class SettingsLoader : MonoBehaviour
         StartCoroutine(LoadMenuScene());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
         UpdateSettings(scene);
@@ -57,8 +51,8 @@ public class SettingsLoader : MonoBehaviour
     private IEnumerator LoadMenuScene()
     {
         yield return new WaitUntil(() => AudioController.Instance);
-        AudioController.Instance.SetMusicVolume(PlayerPrefs.GetFloat(PlayerPrefKeys.MUSIC_VOLUME, 0));
-        AudioController.Instance.SetEffectsVolume(PlayerPrefs.GetFloat(PlayerPrefKeys.SFX_VOLUME, 0));
+        AudioController.Instance.SetMusicVolume(Mathf.Log10(PlayerPrefs.GetFloat(PlayerPrefKeys.MUSIC_VOLUME, 0)) * 20);
+        AudioController.Instance.SetEffectsVolume(Mathf.Log10(PlayerPrefs.GetFloat(PlayerPrefKeys.SFX_VOLUME, 0)) * 20);
         menuInitialized = true;
     }
 

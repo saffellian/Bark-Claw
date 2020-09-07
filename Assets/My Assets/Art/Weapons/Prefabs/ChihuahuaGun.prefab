@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponType: 1
-  delayBetweenShots: 0.8
+  delayBetweenShots: 0.1
   ammo: 10
   dropOnEmpty: 0
   projectile: {fileID: 6596927309470718997, guid: a3c4ecfeed0f45c4f863bbdde6d6d808,

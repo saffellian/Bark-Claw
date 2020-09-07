@@ -12,7 +12,7 @@ public class Crouch : MonoBehaviour
    }
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetButton("Crouch"))
         {
             CharacterController.height = .1f;
         }

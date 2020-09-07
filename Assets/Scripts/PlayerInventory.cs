@@ -47,7 +47,7 @@ public class PlayerInventory : MonoBehaviour
         
         int previousIndex = inventoryIndex;
         
-        if (Input.GetAxis("Mouse ScrollWheel") > 0) // scroll wheel up
+        if (Input.GetAxis("Mouse ScrollWheel") > 0 || Input.GetButtonDown("RB")) // scroll wheel up
         {
             inventoryIndex++;
 
@@ -70,7 +70,7 @@ public class PlayerInventory : MonoBehaviour
                 }
             }
         }
-        else if (Input.GetAxis("Mouse ScrollWheel") < 0) // scroll wheel down
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0 || Input.GetButtonDown("LB")) // scroll wheel down
         {
             inventoryIndex--;
 
