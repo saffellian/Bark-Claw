@@ -117,10 +117,10 @@ public class PlayerInventory : MonoBehaviour
 
     public bool TryAddItem(GameObject newItem, int invIndex)
     {
-        foreach (GameObject g in inventory) // disallowing duplicate items in inventory
+        if (inventory[invIndex] != null)
         {
-            if (g == newItem)
-                return false;
+            inventory[invIndex].GetComponent<Weapon>().AddAmmo(newItem.GetComponent<Weapon>().GetAmmoAmount());
+            return true;
         }
 
         if (inventoryIndex == invIndex)

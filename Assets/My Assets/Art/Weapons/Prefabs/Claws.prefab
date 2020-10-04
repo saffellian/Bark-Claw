@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5228107159009644577}
   - component: {fileID: 5228107159009644578}
   - component: {fileID: 6161110712785688451}
+  - component: {fileID: 4669951224458453134}
   m_Layer: 2
   m_Name: Claws
   m_TagString: Untagged
@@ -113,3 +114,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackDamage: 10
+--- !u!114 &4669951224458453134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5228107159009644591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57fcdc1eb3c78d34d8b76e9072505a1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponType: 0
+  delayBetweenShots: 0.8
+  ammo: 20
+  dropOnEmpty: 0
+  projectile: {fileID: 0}
+  projectileSpread: 0
+  aoeRadius: 10
+  throwForce: 5
+  explosiveTimer: 3
+  shotgunProjectileCount: 5
+  projectileSpeed: 20
+  fluidDamage: 1
+  meleeDamage: 5
+  projectileOrigins: []

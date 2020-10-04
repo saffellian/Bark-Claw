@@ -28,6 +28,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] private WeaponType weaponType = WeaponType.SemiAuto;
     [SerializeField] private float delayBetweenShots = 0.8f;
     [SerializeField] private int ammo = 20;
+    [SerializeField] private int maxAmmo = 20;
     [SerializeField] private bool dropOnEmpty = false;
     [SerializeField] private GameObject projectile;
     [SerializeField] private float projectileSpread;
@@ -49,6 +50,8 @@ public class Weapon : MonoBehaviour
     private bool fireButtonDown = false;
     private bool fireButtonHeld = false;
     private bool fireButtonPrev = false;
+    private Vector3 meleeExtents;
+    private Vector3 meleePoint;
 
     // Start is called before the first frame update
     void Start()
@@ -59,6 +62,13 @@ public class Weapon : MonoBehaviour
         if (weaponType == WeaponType.Fluid)
         {
             pSystem = transform.GetChild(0).GetComponent<ParticleSystem>();
+        }
+        else if (weaponType == WeaponType.Melee)
+        {
+            GameObject obj = GameObject.Find("AttackCollider");
+            meleeExtents = obj.GetComponent<Collider>().bounds.extents;
+            meleePoint = obj.transform.position;
+            obj.SetActive(false);
         }
     }
 
@@ -153,6 +163,7 @@ public class Weapon : MonoBehaviour
             }
         }
     }
+
     private IEnumerator FireTimer()
     {
         timerRunning = true;
@@ -166,8 +177,7 @@ public class Weapon : MonoBehaviour
         switch (weaponType)
         {
             case WeaponType.Melee:
-                GameObject obj = GameObject.Find("AttackCollider");
-                Collider[] hits = Physics.OverlapBox(obj.transform.position, obj.GetComponent<Collider>().bounds.extents);
+                Collider[] hits = Physics.OverlapBox(meleePoint, meleeExtents);
                 if (hits.Length > 0)
                 {
                     foreach (Collider c in hits)
@@ -175,6 +185,10 @@ public class Weapon : MonoBehaviour
                         if (c.CompareTag("Enemy"))
                         {
                             c.GetComponent<Enemy>().ApplyDamage(meleeDamage);
+                        }
+                        else if (c.CompareTag("Fence"))
+                        {
+                            c.GetComponent<BreakableFence>().DamageFence(meleeDamage);
                         }
                     }
                 }
@@ -259,6 +273,24 @@ public class Weapon : MonoBehaviour
         yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsTag("Action"));
         FindObjectOfType<PlayerInventory>().RemoveItem(gameObject);
         Destroy(gameObject);
+    }
+
+    public void AddAmmo(int amount)
+    {
+        if (ammo + amount > maxAmmo)
+        {
+            ammo = maxAmmo;
+        }
+        else
+        {
+            ammo += amount;
+        }
+        onAmmoUpdate.Invoke(ammo);
+    }
+
+    public int GetAmmoAmount()
+    {
+        return ammo;
     }
 
     public void ParticleCollision(GameObject other)

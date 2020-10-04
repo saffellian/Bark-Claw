@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 1451875161031178212}
   - component: {fileID: 1451875161031178219}
   - component: {fileID: 341286042}
-  - component: {fileID: 341286044}
-  - component: {fileID: 341286041}
   - component: {fileID: 341286043}
   - component: {fileID: 7874199085888570803}
+  - component: {fileID: 1808264757}
   m_Layer: 0
   m_Name: Squirrel_Enemy
   m_TagString: Enemy
@@ -33,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 1451875161031178215}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -51.85, y: 0.33, z: 43.7}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children:
   - {fileID: 9155426358905334832}
   m_Father: {fileID: 0}
@@ -217,48 +216,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!65 &341286044
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1451875161031178215}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.8885896, z: 1}
-  m_Center: {x: -0.006916046, y: -0.12237179, z: 0}
---- !u!114 &341286041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1451875161031178215}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1d8d68adfeb3b04b9ada72d436862bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 50
-  attackDistance: 20
-  attackDelay: 0.75
-  attackStrafeDistance: 10
-  attackStrafeDepth: 3
-  attackStrafeWidth: 5
-  attackSound: {fileID: 8300000, guid: ff6c0ce69db419742a59beebc7d30b7a, type: 3}
-  projectile: {fileID: 6596927309470718997, guid: 21e7c78d201513944b31b9daff4d999a,
-    type: 3}
-  projectileSpawn: {fileID: 9155426358905334832}
-  patrolRegion: {fileID: 0}
-  patrolSpeed: 2
-  patrolAudio:
-  - {fileID: 8300000, guid: c55387815f5e7e743829aa3d8e9b118e, type: 3}
-  - {fileID: 8300000, guid: ee389ab16da9c6f4d887e8ea9428b4c1, type: 3}
-  - {fileID: 8300000, guid: 087c3f2b15dc481489120938a503b8f5, type: 3}
-  deathSound: {fileID: 8300000, guid: 2bb978f7bcdb2f948a9ec319dbbbe0ca, type: 3}
 --- !u!195 &341286043
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -295,6 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyType: 1
   health: 50
+  normalDeathOnly: 0
   attackDistance: 20
   chaseDistance: 0
   attackDamage: 5
@@ -313,6 +271,21 @@ MonoBehaviour:
   patrolSpeed: 2
   patrolAudio: []
   deathSound: {fileID: 8300000, guid: 2bb978f7bcdb2f948a9ec319dbbbe0ca, type: 3}
+  itemDrops: []
+--- !u!136 &1808264757
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451875161031178215}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.0666667
+  m_Height: 2.1333334
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8170947641737257467
 GameObject:
   m_ObjectHideFlags: 0
