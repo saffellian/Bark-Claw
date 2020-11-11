@@ -1,0 +1,3 @@
+[submodule "Assets/NPBehave"]
+	path = Assets/NPBehave
+	url = https://github.com/meniku/NPBehave
