@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 5945cb4077a0401429d7d1cab12ca6fa
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dog-SnoutPuke-Idle-B_0
+    21300002: Dog-SnoutPuke-Idle-B_1
+    21300004: Dog-SnoutPuke-Idle-B_2
+    21300006: Dog-SnoutPuke-Idle-B_3
+    21300008: Dog-SnoutPuke-Idle-B_4
+    21300010: Dog-SnoutPuke-Idle-B_5
+    21300012: Dog-SnoutPuke-Idle-B_6
+    21300014: Dog-SnoutPuke-Idle-B_7
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Idle-B_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 8
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.49206218, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8364c23b1aebf54c8f8e674b07f044d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Idle-B_1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 8
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.492, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f65204868d7bc7d46ab502034cfae003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Idle-B_2
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 8
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.492, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cca1210b98e6b844a1b1ee0922ee652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Idle-B_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 8
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.492, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67159a4c608db44f9a517d3b1483d62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Idle-B_4
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 8
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.492, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963d99b491bd272418125174f3b33371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Idle-B_5
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 8
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.492, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe9006d29b8f204694a5d17364968f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Idle-B_6
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 8
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.492, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5d1f54dc7e6bc4ea3111dde745370c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Idle-B_7
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 8
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.492, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfcc18292529aae48857c8c544a52940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d7b4a76f60619b94598e1170e999b5bd
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

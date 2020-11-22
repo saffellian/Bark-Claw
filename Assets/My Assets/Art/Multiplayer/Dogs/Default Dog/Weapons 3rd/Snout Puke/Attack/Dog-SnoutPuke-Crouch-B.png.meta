@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 2a16633e0ba47b94a8b7616a3dc28d07
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dog-SnoutPuke-Crouch-B_0
+    21300002: Dog-SnoutPuke-Crouch-B_1
+    21300004: Dog-SnoutPuke-Crouch-B_2
+    21300006: Dog-SnoutPuke-Crouch-B_3
+    21300008: Dog-SnoutPuke-Crouch-B_4
+    21300010: Dog-SnoutPuke-Crouch-B_5
+    21300012: Dog-SnoutPuke-Crouch-B_6
+    21300014: Dog-SnoutPuke-Crouch-B_7
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Crouch-B_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 8
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.49046642, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260644ce0b06cfa45a250617ce63a153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Crouch-B_1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 8
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.5093876, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e123ec97e4b134aa36fb0d5c10fef9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Crouch-B_2
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 8
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.5090571, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59af5016fb086da4cb0d7a9269021984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Crouch-B_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 8
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.49356598, y: 0.4500001}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326ce609d8f052a4f93ede150f17cfa4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Crouch-B_4
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 8
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.51262105, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e83056cc882094295c7c66130c35c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Crouch-B_5
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 8
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.4937416, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77eaf28ab327bb4da07b03b62293539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Crouch-B_6
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 8
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.5126769, y: 0.44999993}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39029b30fe63ba9428180fea9887b079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Crouch-B_7
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 8
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.49266428, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cfd923e44d85114697c9de0858feb24
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a978bd56ba7f9cc428e546cada86a67d
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

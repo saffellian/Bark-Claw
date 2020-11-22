@@ -1,0 +1,289 @@
+fileFormatVersion: 2
+guid: ae7ab4a47d9dfa1458ea699caaf91dc3
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dog-ToyGrenade-Death_0
+    21300002: Dog-ToyGrenade-Death_1
+    21300004: Dog-ToyGrenade-Death_3
+    21300006: Dog-ToyGrenade-Death_5
+    21300008: Dog-ToyGrenade-Death_8
+    21300010: Dog-ToyGrenade-Death_13
+    21300012: Dog-ToyGrenade-Death_17
+    21300014: Dog-ToyGrenade-Death_20
+    21300016: Dog-ToyGrenade-Death_26
+    21300018: Dog-ToyGrenade-Death_29
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dog-ToyGrenade-Death_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 785
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.4683681, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17532d129d012b1469be7c8d70de9933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ToyGrenade-Death_1
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 687
+        width: 46
+        height: 69
+      alignment: 9
+      pivot: {x: 0.45703223, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1efa35feeefc5f44aec2761bd07acd2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ToyGrenade-Death_3
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 590
+        width: 149
+        height: 91
+      alignment: 9
+      pivot: {x: 0.5, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913df3819f434cf43bf2ce625d436187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ToyGrenade-Death_8
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 498
+        width: 149
+        height: 91
+      alignment: 9
+      pivot: {x: 0.5, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a4a54a9ae5e42e498e2746cb0dcd21e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ToyGrenade-Death_13
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 393
+        width: 149
+        height: 91
+      alignment: 9
+      pivot: {x: 0.49999994, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e60bf1d827393134390d45e0adb6c061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ToyGrenade-Death_17
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 295
+        width: 149
+        height: 91
+      alignment: 9
+      pivot: {x: 0.49724886, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ebb4e7eaff4c8148bf22df02f2c0249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ToyGrenade-Death_20
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 197
+        width: 149
+        height: 91
+      alignment: 9
+      pivot: {x: 0.5110042, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651f5fc4fe132684786e78c1507d42d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ToyGrenade-Death_26
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 99
+        width: 149
+        height: 91
+      alignment: 9
+      pivot: {x: 0.5055021, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bccde51ab2d33a041a1ebb07b3b6ed2d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ToyGrenade-Death_29
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1
+        width: 149
+        height: 91
+      alignment: 9
+      pivot: {x: 0.5055021, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b93bf11865986f643b50258217b76e92
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 769bacc5e151bde4598765d1c363de94
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

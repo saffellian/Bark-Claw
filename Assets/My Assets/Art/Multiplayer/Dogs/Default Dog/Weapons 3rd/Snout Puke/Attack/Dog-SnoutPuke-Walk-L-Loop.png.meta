@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: fb4d65ff3c672ff4b895f237bdfb13e4
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dog-SnoutPuke-Walk-L-Loop_0
+    21300002: Dog-SnoutPuke-Walk-L-Loop_1
+    21300004: Dog-SnoutPuke-Walk-L-Loop_2
+    21300006: Dog-SnoutPuke-Walk-L-Loop_4
+    21300008: Dog-SnoutPuke-Walk-L-Loop_5
+    21300010: Dog-SnoutPuke-Walk-L-Loop_7
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Walk-L-Loop_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 10
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.491, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512a1937956adb141b7c46b51b2f6470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Walk-L-Loop_1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 11
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.491, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7fe539ebb5273447b4248dc07186715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Walk-L-Loop_2
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 11
+        width: 53
+        height: 68
+      alignment: 9
+      pivot: {x: 0.4368629, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25476c776021b68499e00268c71b8f15
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Walk-L-Loop_4
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 9
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.491, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67ffc144b273484495e193a8c35cc8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Walk-L-Loop_5
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 10
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.491, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb2db23a9880c54ba09462d309621db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Walk-L-Loop_7
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 11
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.44834238, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d5732d293921a44b5ce8522ae281d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2de055b0ccded3d46a5e03e3aaa8f97e
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

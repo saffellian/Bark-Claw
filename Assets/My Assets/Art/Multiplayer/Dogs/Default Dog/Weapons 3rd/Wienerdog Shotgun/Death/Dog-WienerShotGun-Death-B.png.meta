@@ -1,0 +1,289 @@
+fileFormatVersion: 2
+guid: 5907843c7fab7474187618d2822982d9
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dog-WienerShotGun-Death-B_0
+    21300002: Dog-WienerShotGun-Death-B_1
+    21300004: Dog-WienerShotGun-Death-B_3
+    21300006: Dog-WienerShotGun-Death-B_4
+    21300008: Dog-WienerShotGun-Death-B_6
+    21300010: Dog-WienerShotGun-Death-B_8
+    21300012: Dog-WienerShotGun-Death-B_11
+    21300014: Dog-WienerShotGun-Death-B_12
+    21300016: Dog-WienerShotGun-Death-B_14
+    21300018: Dog-WienerShotGun-Death-B_16
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dog-WienerShotGun-Death-B_0
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 793
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.491, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae32f0f66f974b24db1c7d5ba6727165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-WienerShotGun-Death-B_1
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 694
+        width: 72
+        height: 74
+      alignment: 9
+      pivot: {x: 0.26356634, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9054060eaae5142a2fbe4a2d30fca9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-WienerShotGun-Death-B_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 610
+        width: 71
+        height: 74
+      alignment: 9
+      pivot: {x: 0.29370332, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559ef819b29879a46afe3376b2c833ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-WienerShotGun-Death-B_6
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 514
+        width: 72
+        height: 74
+      alignment: 9
+      pivot: {x: 0.30711576, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d8b78fe8cce674b8028084fc8fc9a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-WienerShotGun-Death-B_8
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 408
+        width: 75
+        height: 74
+      alignment: 9
+      pivot: {x: 0.29535237, y: 0.40999955}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6616ca00a546a94bbf894efc90c0f7b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-WienerShotGun-Death-B_11
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 298
+        width: 68
+        height: 74
+      alignment: 9
+      pivot: {x: 0.22233447, y: 0.41000035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25262d0ca35602b448bc4713a23750d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-WienerShotGun-Death-B_12
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 199
+        width: 68
+        height: 74
+      alignment: 9
+      pivot: {x: 0.2279331, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b03bd3dcff2d8f42a905c5683a37dcc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-WienerShotGun-Death-B_14
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 100
+        width: 66
+        height: 74
+      alignment: 9
+      pivot: {x: 0.23349091, y: 0.41}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8595dd9b7b5824141ad616c30f0f8e75
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-WienerShotGun-Death-B_16
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1
+        width: 66
+        height: 74
+      alignment: 9
+      pivot: {x: 0.233, y: 0.41000026}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6780e8c2b9adb40b48cffcfd254ddc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3eb6f5d8ddb0f744ab138cf28e59676c
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

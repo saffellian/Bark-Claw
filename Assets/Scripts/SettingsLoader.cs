@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using DFA;
 using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.SceneManagement;
@@ -69,14 +68,6 @@ public class SettingsLoader : MonoBehaviour
 
     private void LoadGameplayScene()
     {
-        PostProcessVolume[] volumes = FindObjectsOfType<PostProcessVolume>();
-        
-        foreach (PostProcessVolume ppv in volumes)
-        {
-            if (ppv.profile.HasSettings<PixelNostalgia>())
-            {
-                ppv.profile.GetSetting<PixelNostalgia>().enabled.value = PlayerPrefs.GetInt(PlayerPrefKeys.POST_PROC, 1) == 1;
-            }
-        }
+       
     }
 }

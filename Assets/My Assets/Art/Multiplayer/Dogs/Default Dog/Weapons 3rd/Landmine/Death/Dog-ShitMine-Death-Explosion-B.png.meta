@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: 2a6ab4f96a34931488cb76d114313c4f
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dog-ShitMine-Death-Explosion-B_0
+    21300002: Dog-ShitMine-Death-Explosion-B_2
+    21300004: Dog-ShitMine-Death-Explosion-B_6
+    21300006: Dog-ShitMine-Death-Explosion-B_37
+    21300008: Dog-ShitMine-Death-Explosion-B_75
+    21300010: Dog-ShitMine-Death-Explosion-B_98
+    21300012: Dog-ShitMine-Death-Explosion-B_109
+    21300014: Dog-ShitMine-Death-Explosion-B_117
+    21300016: Dog-ShitMine-Death-Explosion-B_122
+    21300018: Dog-ShitMine-Death-Explosion-B_128
+    21300020: Dog-ShitMine-Death-Explosion-B_132
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dog-ShitMine-Death-Explosion-B_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 991
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.4724199, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b48a7a24b13f442b86455966d903d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ShitMine-Death-Explosion-B_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 895
+        width: 252
+        height: 93
+      alignment: 9
+      pivot: {x: 0.49380583, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e677de1cb39ef49b2c29d6bdb03f7f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ShitMine-Death-Explosion-B_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 793
+        width: 252
+        height: 93
+      alignment: 9
+      pivot: {x: 0.49380583, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f28b9da3fec8e148927323b80731fb3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ShitMine-Death-Explosion-B_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 694
+        width: 252
+        height: 93
+      alignment: 9
+      pivot: {x: 0.49380583, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e25a4d0b376ec49b0b5a4471405d2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ShitMine-Death-Explosion-B_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 595
+        width: 252
+        height: 93
+      alignment: 9
+      pivot: {x: 0.49380583, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e40d433f3365e140b37be440d5417b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ShitMine-Death-Explosion-B_98
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 496
+        width: 252
+        height: 93
+      alignment: 9
+      pivot: {x: 0.49380583, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c999dc9510ee0ec41ae447752360efbc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ShitMine-Death-Explosion-B_109
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 397
+        width: 252
+        height: 93
+      alignment: 9
+      pivot: {x: 0.49380583, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4424c5a07801a45a4e5c43f2529383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ShitMine-Death-Explosion-B_117
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 298
+        width: 252
+        height: 93
+      alignment: 9
+      pivot: {x: 0.49380583, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e4f1031f9fc6134c9c572d80abd2fb3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ShitMine-Death-Explosion-B_122
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 199
+        width: 252
+        height: 93
+      alignment: 9
+      pivot: {x: 0.49380583, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf2cfc6391e6fb44a72008e6781fe84
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ShitMine-Death-Explosion-B_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 252
+        height: 93
+      alignment: 9
+      pivot: {x: 0.49380583, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e908e7c1064d834e9000080d4049819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ShitMine-Death-Explosion-B_132
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 252
+        height: 93
+      alignment: 9
+      pivot: {x: 0.49380583, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c2d280c5788f6418800ff10b9f8caf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: bfcfccfa20522a343ae424546387f8b4
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

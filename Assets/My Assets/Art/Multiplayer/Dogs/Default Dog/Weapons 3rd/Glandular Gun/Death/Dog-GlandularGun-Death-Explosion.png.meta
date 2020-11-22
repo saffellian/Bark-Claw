@@ -1,0 +1,334 @@
+fileFormatVersion: 2
+guid: f58ecd4e97a002140a7ee3d33d3a1dcb
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dog-GlandularGun-Death-Explosion_0
+    21300002: Dog-GlandularGun-Death-Explosion_1
+    21300004: Dog-GlandularGun-Death-Explosion_6
+    21300006: Dog-GlandularGun-Death-Explosion_14
+    21300008: Dog-GlandularGun-Death-Explosion_15
+    21300010: Dog-GlandularGun-Death-Explosion_26
+    21300012: Dog-GlandularGun-Death-Explosion_32
+    21300014: Dog-GlandularGun-Death-Explosion_47
+    21300016: Dog-GlandularGun-Death-Explosion_62
+    21300018: Dog-GlandularGun-Death-Explosion_87
+    21300020: Dog-GlandularGun-Death-Explosion_97
+    21300022: Dog-GlandularGun-Death-Explosion_104
+    21300024: Dog-GlandularGun-Death-Explosion_109
+    21300026: Dog-GlandularGun-Death-Explosion_113
+    21300028: Dog-GlandularGun-Death-Explosion_117
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Death-Explosion_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1031
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.5000004, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603539e021c9c1b418f274612dec053d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Death-Explosion_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 930
+        width: 253
+        height: 93
+      alignment: 9
+      pivot: {x: 0.48882824, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2990e7c4823a7b5449cef39dba58db65
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Death-Explosion_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 825
+        width: 253
+        height: 100
+      alignment: 9
+      pivot: {x: 0.48882824, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05a088edc0875484e9fc216b099ca33c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Death-Explosion_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 722
+        width: 253
+        height: 93
+      alignment: 9
+      pivot: {x: 0.488, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f685eeca9786354789001dfc1cc9ac0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Death-Explosion_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 619
+        width: 253
+        height: 93
+      alignment: 9
+      pivot: {x: 0.488, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94cfecd43b37153419e0d7306c9b51a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Death-Explosion_87
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 516
+        width: 253
+        height: 93
+      alignment: 9
+      pivot: {x: 0.488, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1fc8fd2ba0489448145b0ff1db24cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Death-Explosion_97
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 413
+        width: 253
+        height: 93
+      alignment: 9
+      pivot: {x: 0.488, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b39ca4d9dffe54785bb73646e26305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Death-Explosion_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 310
+        width: 253
+        height: 93
+      alignment: 9
+      pivot: {x: 0.488, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943f10ba7baebbe4b9c5b9ef2031bbe8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Death-Explosion_109
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 207
+        width: 253
+        height: 93
+      alignment: 9
+      pivot: {x: 0.488, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94df67f1cf86ce641b9cb5768e607599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Death-Explosion_113
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 253
+        height: 93
+      alignment: 9
+      pivot: {x: 0.488, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6684a8b0ef3889408fae56750b0f848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Death-Explosion_117
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 253
+        height: 93
+      alignment: 9
+      pivot: {x: 0.488, y: 0.32}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd30ff1b792d0e4dba803514713cef6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c207fae0b87f46941bacea1290ba5df3
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,332 @@
+fileFormatVersion: 2
+guid: 3a72a7d436c281d47b0cac8c00ff8327
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dog-DeathExplotion_0
+    21300002: Dog-DeathExplotion_1
+    21300004: Dog-DeathExplotion_6
+    21300006: Dog-DeathExplotion_12
+    21300008: Dog-DeathExplotion_27
+    21300010: Dog-DeathExplotion_64
+    21300012: Dog-DeathExplotion_71
+    21300014: Dog-DeathExplotion_97
+    21300016: Dog-DeathExplotion_107
+    21300018: Dog-DeathExplotion_119
+    21300020: Dog-DeathExplotion_124
+    21300022: Dog-DeathExplotion_128
+    21300024: Dog-DeathExplotion_132
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dog-DeathExplotion_0
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 971
+        width: 43
+        height: 69
+      alignment: 9
+      pivot: {x: 0.44169423, y: 0.4500016}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f670728fdce78c24eb36d08403a93574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-DeathExplotion_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 876
+        width: 251
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74b1e9c7ab1875a458887c45ca614e8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-DeathExplotion_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 777
+        width: 251
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a114e37eafcfbb4287ff1d009c961f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-DeathExplotion_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 680
+        width: 251
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f7c7dd8a02436c4dbb79646d34008a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-DeathExplotion_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 583
+        width: 251
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9932c8de8fff75946b9690dbe327d497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-DeathExplotion_97
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 486
+        width: 251
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02c8e04cef34434f88abfcbbd9c932b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-DeathExplotion_107
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 389
+        width: 251
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1218d8ed97ddda049b78c1703d2b8fd7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-DeathExplotion_119
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 292
+        width: 251
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fec0582114c0e4ba600e3fbd1bc322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-DeathExplotion_124
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 195
+        width: 251
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533b63f30a2c992449b9c09cc113f4fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-DeathExplotion_128
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 98
+        width: 251
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2d8954f1df28d448c7e759e815a04c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-DeathExplotion_132
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 251
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280e8e9fca12d7344afb71a811f372fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0eb83eff023acca43be52e60a9ae4fba
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

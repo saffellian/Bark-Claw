@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: 78014c30301cd8f44b3c6823c23b2004
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dog-GrenadeLauncher-Death-Explosion_0
+    21300002: Dog-GrenadeLauncher-Death-Explosion_1
+    21300004: Dog-GrenadeLauncher-Death-Explosion_6
+    21300006: Dog-GrenadeLauncher-Death-Explosion_24
+    21300008: Dog-GrenadeLauncher-Death-Explosion_57
+    21300010: Dog-GrenadeLauncher-Death-Explosion_95
+    21300012: Dog-GrenadeLauncher-Death-Explosion_101
+    21300014: Dog-GrenadeLauncher-Death-Explosion_108
+    21300016: Dog-GrenadeLauncher-Death-Explosion_112
+    21300018: Dog-GrenadeLauncher-Death-Explosion_116
+    21300020: Dog-GrenadeLauncher-Death-Explosion_120
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dog-GrenadeLauncher-Death-Explosion_0
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1011
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.4828638, y: 0.44999894}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53fbc11e36cb8a640a7e3ec5a78b4e2c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GrenadeLauncher-Death-Explosion_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 912
+        width: 258
+        height: 93
+      alignment: 9
+      pivot: {x: 0.48906907, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ae40afc3a596a47a7ad9606aa4e202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GrenadeLauncher-Death-Explosion_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 809
+        width: 258
+        height: 93
+      alignment: 9
+      pivot: {x: 0.48906907, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41350ae7ed2019a46bf2c6857ac99162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GrenadeLauncher-Death-Explosion_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 708
+        width: 258
+        height: 93
+      alignment: 9
+      pivot: {x: 0.48906907, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5794a0a79eb7b5c448418b4e1f328871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GrenadeLauncher-Death-Explosion_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 607
+        width: 258
+        height: 93
+      alignment: 9
+      pivot: {x: 0.48906907, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f17c5165539624597382cc3d7a7d57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GrenadeLauncher-Death-Explosion_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 506
+        width: 258
+        height: 93
+      alignment: 9
+      pivot: {x: 0.48906907, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29de73114a5e7c641856fe0e5d57365a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GrenadeLauncher-Death-Explosion_101
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 405
+        width: 258
+        height: 93
+      alignment: 9
+      pivot: {x: 0.48906907, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387d3cd06e872a242802db1e4a0bb883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GrenadeLauncher-Death-Explosion_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 258
+        height: 93
+      alignment: 9
+      pivot: {x: 0.48906907, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b3f77c006603b42ac77aee59d965e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GrenadeLauncher-Death-Explosion_112
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 203
+        width: 258
+        height: 93
+      alignment: 9
+      pivot: {x: 0.48906907, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e1e4591e53c8c47997f8bdc6b210bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GrenadeLauncher-Death-Explosion_116
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 102
+        width: 258
+        height: 93
+      alignment: 9
+      pivot: {x: 0.48906907, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc39ccb9d0ba8cd47814a82a7626ce16
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GrenadeLauncher-Death-Explosion_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 258
+        height: 93
+      alignment: 9
+      pivot: {x: 0.48906907, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a85f241fad412ab459b59fc0618a664e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 505843a4daf5bad41b2e6be928e9b14a
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

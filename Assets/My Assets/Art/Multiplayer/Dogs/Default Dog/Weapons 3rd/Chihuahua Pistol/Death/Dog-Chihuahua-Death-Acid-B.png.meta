@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: c1514b806aa940d4ba5ffc9258d026d2
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dog-Chihuahua-Death-Acid-B_0
+    21300002: Dog-Chihuahua-Death-Acid-B_1
+    21300004: Dog-Chihuahua-Death-Acid-B_3
+    21300006: Dog-Chihuahua-Death-Acid-B_5
+    21300008: Dog-Chihuahua-Death-Acid-B_7
+    21300010: Dog-Chihuahua-Death-Acid-B_9
+    21300012: Dog-Chihuahua-Death-Acid-B_11
+    21300014: Dog-Chihuahua-Death-Acid-B_13
+    21300016: Dog-Chihuahua-Death-Acid-B_15
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dog-Chihuahua-Death-Acid-B_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 801
+        width: 49
+        height: 69
+      alignment: 9
+      pivot: {x: 0.5186015, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f2862a58a5b684fa57d8b5f4398be9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-Chihuahua-Death-Acid-B_1
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 701
+        width: 64
+        height: 83
+      alignment: 9
+      pivot: {x: 0.29414195, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593622a4f6b298842bacd7fb0a0fd119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-Chihuahua-Death-Acid-B_3
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 601
+        width: 75
+        height: 71
+      alignment: 9
+      pivot: {x: 0.34263307, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07d20a866ca9db468da23796d181499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-Chihuahua-Death-Acid-B_5
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 501
+        width: 79
+        height: 69
+      alignment: 9
+      pivot: {x: 0.30890825, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366e17e7ee24a7b4c9d6592b5a0d8dca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-Chihuahua-Death-Acid-B_7
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 401
+        width: 75
+        height: 69
+      alignment: 9
+      pivot: {x: 0.33897334, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088b50b6e9014ab418de8eb1cfdf9c51
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-Chihuahua-Death-Acid-B_9
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 301
+        width: 75
+        height: 69
+      alignment: 9
+      pivot: {x: 0.3023763, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70520355de022d745bda4c1ca9d6d94a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-Chihuahua-Death-Acid-B_11
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 201
+        width: 75
+        height: 69
+      alignment: 9
+      pivot: {x: 0.28041813, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd195f3163f07d14f99bee2ec6288b7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-Chihuahua-Death-Acid-B_13
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 101
+        width: 75
+        height: 69
+      alignment: 9
+      pivot: {x: 0.28041813, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a3b075c5418134890b2751063d0c94
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-Chihuahua-Death-Acid-B_15
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1
+        width: 75
+        height: 69
+      alignment: 9
+      pivot: {x: 0.28041813, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93251e48e53866e4890ede6cac58025e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f1434243b3e68b4459c5c3322ecb7fc3
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
