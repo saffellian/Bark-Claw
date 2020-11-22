@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1488357549}
   - component: {fileID: 7061337241988010776}
   - component: {fileID: 8237051007443839529}
+  - component: {fileID: 7433233995647553289}
   m_Layer: 0
   m_Name: Cat_Enemy
   m_TagString: Enemy
@@ -33,7 +34,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -49.349, y: 0.023, z: -27.978}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 321303462804818937}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -252,17 +254,18 @@ MonoBehaviour:
   enemyType: 0
   health: 50
   normalDeathOnly: 0
-  attackDistance: 20
+  meleeAttackDistance: 1.75
   chaseDistance: 25
   attackDamage: 5
   attackSpeed: 5
   attackDelay: 1.5
-  attackStrafeDistance: 0
-  attackStrafeDepth: 0
-  attackStrafeWidth: 0
+  attackStrafeDistance: 5
+  attackStrafeDepth: 5
+  attackStrafeWidth: 5
   attackSound: {fileID: 8300000, guid: 73c011e0a0eae384aadfee6bfc1fab99, type: 3}
-  projectile: {fileID: 0}
-  projectileSpawn: {fileID: 0}
+  projectile: {fileID: 6596927309470718997, guid: 21e7c78d201513944b31b9daff4d999a,
+    type: 3}
+  projectileSpawn: {fileID: 321303462804818937}
   patrolType: 1
   patrolRegion: {fileID: 0}
   patrolPoints: []
@@ -272,7 +275,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f689ddf0119eb3149b55124912bf2e5c, type: 3}
   - {fileID: 8300000, guid: b346a85cb4d0bfe49974441e8b001ba4, type: 3}
   deathSound: {fileID: 8300000, guid: 960e8797a7fa6664fab7fabfd03ccbd7, type: 3}
-  itemDrops: []
+  itemDrops:
+  - item: {fileID: 7529992895111195962, guid: 2ef6ee1a9126a44489a7cd99942f5d6a, type: 3}
+    dropChance: 100
 --- !u!136 &8237051007443839529
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -287,3 +292,75 @@ CapsuleCollider:
   m_Height: 1.4285715
   m_Direction: 1
   m_Center: {x: 0.0057788207, y: -0.21956831, z: 0}
+--- !u!114 &7433233995647553289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201296538092977366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fd1782782c33a144aa3b0d575bb80ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoreList: []
+  EnableTagFilter: 1
+  AllowedTags:
+  - Player
+  OnDetected:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: SensorToolkit.Sensor+SensorDetectionEventHandler, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnLostDetection:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: SensorToolkit.Sensor+SensorDetectionEventHandler, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  DetectionMode: 0
+  RequiresLineOfSight: 1
+  BlocksLineOfSight:
+    serializedVersion: 2
+    m_Bits: 5633
+  TestLOSTargetsOnly: 0
+  NumberOfRays: 1
+  MinimumVisibility: 0.5
+  SensorRange: 12
+  DetectsOnLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  SensorUpdateMode: 0
+  CheckInterval: 0.5
+  InitialBufferSize: 1
+  DynamicallyIncreaseBufferSize: 0
+--- !u!1 &6050892715119395388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 321303462804818937}
+  m_Layer: 0
+  m_Name: ProjectileSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &321303462804818937
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6050892715119395388}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.227, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 201296538092977360}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

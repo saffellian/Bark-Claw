@@ -128,6 +128,7 @@ public class PlayerInventory : MonoBehaviour
 
         inventory[invIndex] = Instantiate(newItem, gameObject.transform.GetChild(0));
         statusBar.EnableWeapon(invIndex);
+        inventoryIndex = invIndex;
         UpdateItem();
 
         return true;

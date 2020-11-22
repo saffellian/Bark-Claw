@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5228107159009644576}
   - component: {fileID: 5228107159009644577}
   - component: {fileID: 5228107159009644578}
-  - component: {fileID: 6161110712785688451}
   - component: {fileID: 4669951224458453134}
   m_Layer: 2
   m_Name: Claws
@@ -101,19 +100,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6161110712785688451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5228107159009644591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f686cd33820bba4488591b7b31123d55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackDamage: 10
 --- !u!114 &4669951224458453134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,6 +115,7 @@ MonoBehaviour:
   weaponType: 0
   delayBetweenShots: 0.8
   ammo: 20
+  maxAmmo: 20
   dropOnEmpty: 0
   projectile: {fileID: 0}
   projectileSpread: 0

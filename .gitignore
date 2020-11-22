@@ -517,4 +517,4 @@ MigrationBackup/
 # End of https://www.gitignore.io/api/unity,rider,jetbrains,visualstudio
 
 \.idea/
-
+.vscode/

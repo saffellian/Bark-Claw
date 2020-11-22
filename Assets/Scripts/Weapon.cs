@@ -51,7 +51,7 @@ public class Weapon : MonoBehaviour
     private bool fireButtonHeld = false;
     private bool fireButtonPrev = false;
     private Vector3 meleeExtents;
-    private Vector3 meleePoint;
+    private Transform meleeTransform;
 
     // Start is called before the first frame update
     void Start()
@@ -67,7 +67,7 @@ public class Weapon : MonoBehaviour
         {
             GameObject obj = GameObject.Find("AttackCollider");
             meleeExtents = obj.GetComponent<Collider>().bounds.extents;
-            meleePoint = obj.transform.position;
+            meleeTransform = obj.transform;
             obj.SetActive(false);
         }
     }
@@ -177,7 +177,7 @@ public class Weapon : MonoBehaviour
         switch (weaponType)
         {
             case WeaponType.Melee:
-                Collider[] hits = Physics.OverlapBox(meleePoint, meleeExtents);
+                Collider[] hits = Physics.OverlapBox(meleeTransform.position, meleeExtents);
                 if (hits.Length > 0)
                 {
                     foreach (Collider c in hits)

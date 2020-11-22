@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NPBehave;
+using SensorToolkit;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,10 +9,12 @@ using Random = UnityEngine.Random;
 [RequireComponent(typeof(NavMeshAgent), typeof(AudioSource), typeof(Animator))]
 public class Enemy : MonoBehaviour
 {
-    [Serializable]
+    [System.Serializable]
     struct ItemDrop
     {
+        [Tooltip("Prefab of item that will drop.")]
         public GameObject item;
+        [Tooltip("Percent chance that this item drops when the enemy dies.")]
         [Range(1, 100)]
         public int dropChance;
     }
@@ -19,8 +22,10 @@ public class Enemy : MonoBehaviour
     public enum EnemyType
     {
         Melee,
-        Projectile
+        Projectile,
+        Mixed
     }
+
     public enum DeathType
     {
         Normal,
@@ -31,7 +36,8 @@ public class Enemy : MonoBehaviour
     public enum PatrolType
     {
         Waypoints,
-        Area
+        Area,
+        None
     }
 
     [Header("General")]
@@ -39,19 +45,20 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int health;
     [SerializeField] private bool normalDeathOnly = false;
     [Header("Attack")]
-    [SerializeField] private float attackDistance;
-    [SerializeField] private float chaseDistance;
+    [SerializeField] [EnemyType("Melee, Mixed")] private float meleeAttackDistance;
+    [SerializeField] [EnemyType("Projectile, Mixed")] private float projectileAttackRange = 20f;
+    [SerializeField] [EnemyType("Melee, Mixed")] private float chaseDistance;
     [SerializeField] private int attackDamage = 5;
     [SerializeField] private float attackSpeed;
     [SerializeField] private float attackDelay;
-    [SerializeField] private float attackStrafeDistance, attackStrafeDepth, attackStrafeWidth;
+    [SerializeField] [EnemyType("Projectile, Mixed")] private float attackStrafeDistance, attackStrafeDepth, attackStrafeWidth;
     [SerializeField] private AudioClip attackSound;
-    [SerializeField] private GameObject projectile;
-    [SerializeField] private Transform projectileSpawn;
+    [SerializeField] [EnemyType("Projectile, Mixed")] private GameObject projectile;
+    [SerializeField] [EnemyType("Projectile, Mixed")] private Transform projectileSpawn;
     [Header("Patrol")] 
     [SerializeField] private PatrolType patrolType = PatrolType.Waypoints;
-    [SerializeField] private MeshFilter patrolRegion;
-    [SerializeField] private List<Transform> patrolPoints;
+    [SerializeField] [PatrolType("Area")] private MeshFilter patrolRegion;
+    [SerializeField] [PatrolType("Waypoints")] private List<Transform> patrolPoints;
     [SerializeField] private float patrolSpeed;
     [SerializeField] private List<AudioClip> patrolAudio;
     [Header("Death")]
@@ -66,7 +73,13 @@ public class Enemy : MonoBehaviour
     private Animator animator;
     private Vector3 patrolMin;
     private Vector3 patrolMax;
+    private Queue<Transform> patrolPointQueue;
     private DeathType deathType = DeathType.Normal;
+    private RangeSensor rangeSensor;
+    private Root behaviorTree;
+    private Blackboard blackboard;
+    private Vector3 startPosition;
+    private const float NAV_AGENT_TOLERANCE = 0.5f;
 
     void Start()
     {
@@ -80,79 +93,333 @@ public class Enemy : MonoBehaviour
             patrolMin = patrolRegion.GetComponent<Renderer>().bounds.min;
             patrolMax = patrolRegion.GetComponent<Renderer>().bounds.max;
         }
-
-        StartCoroutine(BrainLogic());
-        StartCoroutine(PatrolAudio());
-    }
-
-    private IEnumerator BrainLogic()
-    {
-        while (gameObject.activeInHierarchy)
+        else if (patrolType == PatrolType.Waypoints)
         {
-            if (patrolType == PatrolType.Area)
-                yield return AreaPatrol();
-            else if (patrolType == PatrolType.Waypoints)
-                yield return PointPatrol();
-
-            if (enemyType == EnemyType.Projectile)
-                yield return ProjectileAttack();
-            else if (enemyType == EnemyType.Melee)
-                yield return MeleeAttack();
+            patrolPointQueue = new Queue<Transform>(patrolPoints);
         }
+        
+        startPosition = transform.position;
+
+        rangeSensor = GetComponent<RangeSensor>();
+
+        behaviorTree = InitializeBehaviorTree();
+        blackboard = behaviorTree.Blackboard;
+        behaviorTree.Start();
+
+        // attach the debugger component if executed in editor (helps to debug in the inspector) 
+#if UNITY_EDITOR
+        Debugger debugger = (Debugger)this.gameObject.AddComponent(typeof(Debugger));
+        debugger.BehaviorTree = behaviorTree;
+#endif
     }
 
-    private IEnumerator AreaPatrol()
+    private Root InitializeBehaviorTree()
     {
-        animator.SetTrigger("Walk");
-        agent.speed = patrolSpeed;
-        RaycastHit hit;
-        bool visible = false;
-        do
-        {
-            agent.destination = new Vector3(Random.Range(patrolMin.x, patrolMax.x), patrolRegion.transform.position.y, Random.Range(patrolMin.z, patrolMax.z));
-            yield return new WaitUntil(() => (!agent.pathPending && agent.remainingDistance < 0.5f));
+        return new Root(
 
-            if (Vector3.Distance(transform.position, player.transform.position) < attackDistance)
-            {
-                Ray ray = new Ray(transform.position, (player.transform.position - transform.position));
-                UnityEngine.Debug.DrawRay(transform.position, (player.transform.position - transform.position) * 20);
-                if (Physics.Raycast(ray, out hit, attackDistance))
-                {
-                    visible = hit.transform.CompareTag("Player");
-                }
-            }
+            // service to update player distance sensor
+            new Service(0.125f, UpdateBlackboard,
+                    new Sequence(
+                        new Succeeder(
+                        new BlackboardCondition("isDead", Operator.IS_EQUAL, false, Stops.IMMEDIATE_RESTART,
+                            new Repeater(
+                            new Sequence(
+                                // jump out of node when player is in range
+                                new Succeeder(
+                                new BlackboardCondition("playerInRange", Operator.IS_EQUAL, false, Stops.IMMEDIATE_RESTART,
+                                    new Sequence(
+                                        new Action(() => {
+                                            StartCoroutine("PatrolAudio");
+                                        }),
+                                        new Repeater( patrolType == PatrolType.Area ? AreaPatrol() : patrolType == PatrolType.Waypoints ? PointPatrol() : NonePatrol() )
+                                    )
+                                )),
 
-            yield return new WaitForEndOfFrame();
-        } while (!visible);
+                                new Action(() => {
+                                    StopCoroutine("PatrolAudio");
+                                }),
+
+                                new Succeeder(new Repeater(
+                                enemyType == EnemyType.Melee ? MeleeAttack() : enemyType == EnemyType.Projectile ? ProjectileAttack() : MixedAttack()
+                                ))
+                            )
+                            )
+                        )),
+
+                        new Action(() =>
+                        {
+                            agent.enabled = false;
+                            GetComponent<Collider>().enabled = false;
+                            audioSource.Stop();
+                            audioSource.PlayOneShot(deathSound);
+                            animator.SetTrigger(deathType.ToString());
+                            DropItem();
+                            behaviorTree.Stop();
+                        })
+                        { Label = "Dead" }
+                    )
+            )
+        );
     }
 
-    private IEnumerator PointPatrol()
+    private void UpdateBlackboard()
     {
-        animator.SetTrigger("Walk");
-        int i = 0;
-        agent.speed = patrolSpeed;
-        RaycastHit hit;
-        bool visible = false;
-        do
-        {
-            agent.destination = patrolPoints[i].position;
-            i = (i + 1) % patrolPoints.Count;
-            yield return new WaitUntil(() => (!agent.pathPending && agent.remainingDistance < 0.5f));
-
-            if (Vector3.Distance(transform.position, player.transform.position) < attackDistance)
-            {
-                Ray ray = new Ray(transform.position, (player.transform.position - transform.position));
-                UnityEngine.Debug.DrawRay(transform.position, (player.transform.position - transform.position) * 20);
-                if (Physics.Raycast(ray, out hit, chaseDistance))
-                {
-                    visible = hit.transform.CompareTag("Player");
-                }
-            }
-
-            yield return new WaitForEndOfFrame();
-        } while (!visible);
+        behaviorTree.Blackboard["isDead"] = health <= 0;
+        behaviorTree.Blackboard["playerInRange"] = rangeSensor.DetectedObjects.Count > 0
+                                                && (enemyType == EnemyType.Melee ? Vector3.Distance(player.transform.position, startPosition) < chaseDistance : true);
+        behaviorTree.Blackboard["playerDistance"] = Vector3.Distance(transform.position, player.transform.position);
+        behaviorTree.Blackboard["canChase"] = rangeSensor.DetectedObjects.Count > 0 
+                                            && (enemyType == EnemyType.Projectile ? true : Vector3.Distance(transform.position, player.transform.position) > meleeAttackDistance) 
+                                            && Vector3.Distance(player.transform.position, startPosition) < (enemyType == EnemyType.Melee ? chaseDistance : projectileAttackRange + rangeSensor.SensorRange);
     }
 
+    private Node NonePatrol()
+    {        
+        return new Sequence(
+            // set patrol target
+            new Action(() =>
+            {
+                agent.isStopped = false;
+                behaviorTree.Blackboard["navTarget"] = startPosition;
+            })
+            { Label = "Set Destination" },
+            // move to patrol target
+            new NavMoveTo(agent, "navTarget", NAV_AGENT_TOLERANCE)
+            { Label = "Waiting to reach destination" },
+
+            new WaitUntilStopped()
+        )
+        { Label = "None Patrol" };
+    }
+
+    private Node AreaPatrol()
+    {
+        return new Sequence(
+            // set patrol target
+            new Action(() =>
+            {
+                agent.isStopped = false;
+                behaviorTree.Blackboard["navTarget"] = new Vector3(Random.Range(patrolMin.x, patrolMax.x), patrolRegion.transform.position.y, Random.Range(patrolMin.z, patrolMax.z));
+            })
+            { Label = "Set Destination" },
+         
+            // move to patrol target
+            new NavMoveTo(agent, "navTarget", NAV_AGENT_TOLERANCE)
+            { Label = "Waiting to reach destination" }
+        )
+        { Label = "Area Patrol" };
+    }
+
+    private Node PointPatrol()
+    {
+        return new Sequence(
+                               // set patrol target
+                               new Action(() =>
+                               {
+                                   agent.isStopped = false;
+                                   Transform next = patrolPointQueue.Dequeue();
+                                   behaviorTree.Blackboard["navTarget"] = next;
+                                   patrolPointQueue.Enqueue(next);
+
+                               })
+                               { Label = "Set Destination" },
+
+                               // move to patrol target
+                               new NavMoveTo(agent, "navTarget", NAV_AGENT_TOLERANCE)
+                               { Label = "Waiting to reach destination" }
+                           )
+        { Label = "Point Patrol" };
+    }
+
+    private Node MeleeAttack()
+    {
+        return new Sequence(
+            // chase until close enough to attack or out of range
+            new Succeeder(
+            new BlackboardCondition("canChase", Operator.IS_EQUAL, true, Stops.IMMEDIATE_RESTART,
+                    // set player as chase target
+                    new Action((bool _shouldCancel) =>
+                    {
+                        if (!_shouldCancel)
+                        {
+                            agent.isStopped = false;
+                            agent.SetDestination(player.transform.position);
+                            return Action.Result.PROGRESS;
+                        }
+                        else
+                        {
+                            return Action.Result.FAILED;
+                        }
+
+                    })
+                    { Label = "Chase Player" }
+            )),
+
+            // attack if in range
+            new Succeeder(
+            new BlackboardCondition("playerDistance", Operator.IS_SMALLER_OR_EQUAL, meleeAttackDistance, Stops.IMMEDIATE_RESTART,
+                new Sequence(
+                    // set player as chase target
+                    new Action(() =>
+                    {
+                        agent.isStopped = true;
+                        animator.SetTrigger("Attack");
+                        audioSource.PlayOneShot(attackSound);
+                    })
+                    { Label = "Set Destination" },
+                    // damage delay
+                    new Wait(0.5f)
+                    { Label = "Wait for attack delay duration" },
+                    new Action(() =>
+                    {
+                        if (Physics.CheckSphere(transform.position, 2, 1 << LayerMask.NameToLayer("Player")))
+                        {
+                            PlayerHealth.Instance.ApplyDamage(attackDamage);
+                        }
+                    })
+                    { Label = "Check and apply damage" },
+                    // attack delay
+                    new Wait(attackDelay)
+                    { Label = "Wait for attack delay duration" }
+                )
+            ))
+        );
+    }
+
+    private Node ProjectileAttack()
+    {
+        return new BlackboardCondition("canChase", Operator.IS_EQUAL, true, Stops.IMMEDIATE_RESTART,
+                new Sequence(
+                    new Action(() =>
+                    {
+                        Vector3 forwardDir = (player.transform.position - transform.position).normalized;
+                        forwardDir *= attackStrafeDepth;
+                        forwardDir = new Vector3(forwardDir.x, 0, forwardDir.z);
+                        Vector3 horizontalDir = Quaternion.Euler(0, 90, 0) * (forwardDir.normalized * attackStrafeWidth);
+                        horizontalDir = new Vector3(horizontalDir.x, 0, horizontalDir.z);
+                        Vector3 centerPos = player.transform.position + ((transform.position - player.transform.position).normalized * attackStrafeDistance);
+                        centerPos = new Vector3(centerPos.x, 0, centerPos.z);
+                        Vector3[] points = { centerPos + forwardDir + horizontalDir, centerPos - forwardDir - horizontalDir };
+                        
+                        behaviorTree.Blackboard["navTarget"] = new Vector3(Random.Range(points[0].x, points[1].x), 0, Random.Range(points[0].z, points[1].z));
+
+                    })
+                    { Label = "Find Point Near Self" },
+                    new NavMoveTo(agent, "navTarget", NAV_AGENT_TOLERANCE),
+                    new Action(() => {
+                        agent.isStopped = true;
+                        animator.SetTrigger("Attack");
+                    })
+                    { Label = "Stop Agent and Start Attack" },
+                    new Wait(0.3f),
+                    new Action(() => 
+                    {
+                        Rigidbody obj = Instantiate(projectile, projectileSpawn.position, Quaternion.identity).GetComponent<Rigidbody>();
+                        obj.GetComponent<Projectile>().RegisterNoCollideObject(gameObject);
+                        obj.AddForce((GameObject.Find("FirstPersonCharacter").transform.position - transform.position).normalized * 20, ForceMode.Impulse);
+                    })
+                    { Label = "Fire Projectile" },
+                    new Wait(attackDelay),
+                    new Action(() => 
+                    {
+                        agent.isStopped = false;
+                    })
+                    { Label = "End Attack" }
+                )                
+        );
+    }
+
+    private Node MixedAttack()
+    {
+        return new Succeeder(
+        new BlackboardCondition("playerInRange", Operator.IS_EQUAL, true, Stops.IMMEDIATE_RESTART,
+                new Sequence(
+                    new Succeeder(new BlackboardCondition("playerDistance", Operator.IS_SMALLER_OR_EQUAL, 5f, Stops.IMMEDIATE_RESTART,
+                        new Action((bool _shouldCancel) =>
+                        {
+                            if (!_shouldCancel)
+                            {
+                                if ((float)behaviorTree.Blackboard["playerDistance"] <= meleeAttackDistance)
+                                    return Action.Result.FAILED;
+                                agent.isStopped = false;
+                                agent.SetDestination(player.transform.position);
+                                return Action.Result.PROGRESS;
+                            }
+                            else
+                            {
+                                return Action.Result.FAILED;
+                            }
+                        }){ Label = "Chase Player" }
+                    )),
+
+                    new Succeeder(new BlackboardCondition("playerDistance", Operator.IS_SMALLER_OR_EQUAL, meleeAttackDistance, Stops.IMMEDIATE_RESTART,
+                        new Sequence(
+                            new Action(() =>
+                            {
+                                agent.isStopped = true;
+                                animator.SetTrigger("Attack");
+                                audioSource.PlayOneShot(attackSound);
+                            })
+                            { Label = "Set Destination" },
+                            new Wait(0.5f)
+                            { Label = "Wait for attack delay duration" },
+                            new Action(() =>
+                            {
+                                if (Physics.CheckSphere(transform.position, 2, 1 << LayerMask.NameToLayer("Player")))
+                                {
+                                    PlayerHealth.Instance.ApplyDamage(attackDamage);
+                                }
+                            })
+                            { Label = "Check and apply damage" },
+                            new Wait(attackDelay)
+                            { Label = "Wait for attack delay duration" }
+                        )
+                    )),
+
+                    new Succeeder(new BlackboardCondition("playerDistance", Operator.IS_GREATER, 5f, Stops.IMMEDIATE_RESTART,
+                        new Sequence(
+                            new Action(() =>
+                            {
+                                Vector3 forwardDir = (player.transform.position - transform.position).normalized;
+                                forwardDir *= attackStrafeDepth;
+                                forwardDir = new Vector3(forwardDir.x, 0, forwardDir.z);
+                                Vector3 horizontalDir = Quaternion.Euler(0, 90, 0) * (forwardDir.normalized * attackStrafeWidth);
+                                horizontalDir = new Vector3(horizontalDir.x, 0, horizontalDir.z);
+                                Vector3 centerPos = player.transform.position + ((transform.position - player.transform.position).normalized * attackStrafeDistance);
+                                centerPos = new Vector3(centerPos.x, 0, centerPos.z);
+                                Vector3[] points = { centerPos + forwardDir + horizontalDir, centerPos - forwardDir - horizontalDir };
+                                behaviorTree.Blackboard["navTarget"] = new Vector3(Random.Range(points[0].x, points[1].x), 0, Random.Range(points[0].z, points[1].z));
+                            })
+                            { Label = "Find Point Near Self" },
+                            new NavMoveTo(agent, "navTarget", NAV_AGENT_TOLERANCE),
+                            new Action(() => {
+                                agent.isStopped = true;
+                                animator.SetTrigger("Attack");
+                            })
+                            { Label = "Stop Agent and Start Attack" },
+                            new Wait(0.3f),
+                            new Action(() => 
+                            {
+                                Rigidbody obj = Instantiate(projectile, projectileSpawn.position, Quaternion.identity).GetComponent<Rigidbody>();
+                                obj.GetComponent<Projectile>().RegisterNoCollideObject(gameObject);
+                                obj.AddForce((GameObject.Find("FirstPersonCharacter").transform.position - transform.position).normalized * 20, ForceMode.Impulse);
+                            })
+                            { Label = "Fire Projectile" },
+                            new Wait(attackDelay),
+                            new Action(() => 
+                            {
+                                agent.isStopped = false;
+                            })
+                            { Label = "End Attack" }
+                        )
+                    ))                    
+                )                
+        ));
+    }
+
+    /// <summary>
+    /// Play audio associated with enemy patrol
+    /// </summary>
     private IEnumerator PatrolAudio()
     {
         AudioClip clip;
@@ -164,136 +431,22 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private IEnumerator ProjectileAttack()
-    {
-        audioSource.clip = attackSound;
-        Vector3 forwardDir, horizontalDir, centerPos;
-        while (Vector3.Distance(transform.position, player.transform.position) < attackDistance)
-        {
-            forwardDir = (player.transform.position - transform.position).normalized;
-            forwardDir *= attackStrafeDepth;
-            forwardDir = new Vector3(forwardDir.x, 0, forwardDir.z);
-            horizontalDir = Quaternion.Euler(0, 90, 0) * (forwardDir.normalized * attackStrafeWidth);
-            horizontalDir = new Vector3(horizontalDir.x, 0, horizontalDir.z);
-            centerPos = player.transform.position + ((transform.position - player.transform.position).normalized * attackStrafeDistance);
-            centerPos = new Vector3(centerPos.x, 0, centerPos.z);
-            Vector3[] points = { centerPos + forwardDir + horizontalDir, centerPos - forwardDir - horizontalDir };
-
-            Vector3 samplePoint = new Vector3(Random.Range(points[0].x, points[1].x), 0, Random.Range(points[0].z, points[1].z));
-            NavMeshPath path = new NavMeshPath();
-            if (agent.CalculatePath(samplePoint, path) && path.status == NavMeshPathStatus.PathComplete) // check if agent can get to point
-            {
-                agent.destination = samplePoint;
-            }
-            else if (agent.CalculatePath(Vector3.LerpUnclamped(samplePoint, player.transform.position, 2), path) && path.status == NavMeshPathStatus.PathComplete) // test opposite direction
-            {
-                agent.destination = Vector3.LerpUnclamped(samplePoint, player.transform.position, 2);
-            }
-            else // fall back to finding a random point in a circular region near the squirrel
-            {
-                Vector2 rand;
-                do
-                {
-                    rand = Random.insideUnitCircle * attackStrafeWidth;
-                    samplePoint = new Vector3(rand.x, 0, rand.y) + transform.position;
-                    yield return new WaitForEndOfFrame();
-                } while (!agent.CalculatePath(samplePoint, path) && path.status == NavMeshPathStatus.PathComplete);
-
-                agent.destination = samplePoint;
-            }
-
-            yield return new WaitUntil(() => (!agent.pathPending && agent.remainingDistance < 0.5f));
-
-            if (Vector3.Distance(transform.position, player.transform.position) < attackDistance)
-            {
-                agent.isStopped = true;
-                animator.SetTrigger("Attack");
-                yield return new WaitForSeconds(0.3f); // delay to line up animation
-                // spawn and shoot acorn
-                Rigidbody obj = Instantiate(projectile, projectileSpawn.position, Quaternion.identity).GetComponent<Rigidbody>();
-                obj.GetComponent<Projectile>().RegisterNoCollideObject(gameObject);
-                obj.AddForce((GameObject.Find("FirstPersonCharacter").transform.position - transform.position).normalized * 20, ForceMode.Impulse);
-
-                yield return new WaitForSeconds(attackDelay);
-                agent.isStopped = false;
-            }
-
-            yield return new WaitForEndOfFrame();
-        }
-
-        agent.speed = patrolSpeed;
-        audioSource.Stop();
-        audioSource.clip = null;
-    }
-
-    private IEnumerator MeleeAttack()
-    {
-        agent.speed = attackSpeed;
-        while (Vector3.Distance(transform.position, player.transform.position) < chaseDistance)
-        {
-            if (Vector3.Distance(transform.position, player.transform.position) > 1.75f)
-            {
-                NavMeshHit hit;
-                if (NavMesh.SamplePosition(player.transform.position, out hit, 1f, NavMesh.AllAreas))
-                {
-                    agent.destination = Vector3.LerpUnclamped(player.transform.position, hit.position, 1.7f);
-                    UnityEngine.Debug.DrawLine(agent.destination, agent.destination + Vector3.up, Color.red, 100, false);
-                }
-            }
-
-            yield return new WaitUntil(() => Vector3.Distance(transform.position, player.transform.position) < 1.75f || !agent.hasPath || agent.isPathStale);
-
-            if (Vector3.Distance(transform.position, player.transform.position) < 1.75f)
-            {
-                agent.isStopped = true;
-                animator.SetTrigger("Attack");
-                audioSource.PlayOneShot(attackSound);
-                if (Physics.CheckSphere(transform.position, 2, 1 << LayerMask.NameToLayer("Player")))
-                {
-                    PlayerHealth.Instance.ApplyDamage(attackDamage);
-                    yield return new WaitForSeconds(attackDelay); // delay between attacks
-                }
-            }
-            agent.isStopped = false;
-            yield return new WaitForEndOfFrame();
-        }
-
-        agent.isStopped = false;
-        agent.speed = patrolSpeed;
-    }
-
     private void PlayerDied()
     {
-        StopAllCoroutines();
         agent.isStopped = true;
-    }
-
-    private IEnumerator Death()
-    {
-        GetComponent<Collider>().enabled = false;
-        audioSource.Stop();
-        audioSource.PlayOneShot(deathSound);
-        animator.SetTrigger(deathType.ToString());
-        yield return null;
     }
 
     private void DropItem()
     {
         if (itemDrops.Count > 0)
         {
-            List<GameObject> potentialDrops = new List<GameObject>(itemDrops.Count);
             foreach (ItemDrop item in itemDrops)
             {
-                if (Random.Range(1, 100) <= item.dropChance)
+                if (Random.Range(1, 101) <= item.dropChance)
                 {
-                    potentialDrops.Add(item.item);
+                    float offset = GetComponent<CapsuleCollider>().height / 2f;
+                    Instantiate(item.item, transform.position - (Vector3.up * offset), Quaternion.identity);
                 }
-            }
-
-            if (potentialDrops.Count > 0)
-            {
-                GameObject drop = potentialDrops[Random.Range(0, potentialDrops.Count - 1)];
-                Instantiate(drop, transform.position, Quaternion.identity);
             }
         }
     }
@@ -311,8 +464,6 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             agent.isStopped = true;
-            StopAllCoroutines();
-            StartCoroutine(Death());
         }
     }
 
@@ -328,9 +479,7 @@ public class Enemy : MonoBehaviour
 
         health = 0;
         agent.isStopped = true;
-        StopAllCoroutines();
         if (!normalDeathOnly && explode)
             deathType = DeathType.Explosion;
-        StartCoroutine(Death());
     }
 }
