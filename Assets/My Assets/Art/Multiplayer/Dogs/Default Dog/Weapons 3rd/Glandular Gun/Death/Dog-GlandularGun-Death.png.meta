@@ -1,0 +1,290 @@
+fileFormatVersion: 2
+guid: e961915335f8f03499b2c021fb79c40a
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dog-GlandularGun-Death_0
+    21300002: Dog-GlandularGun-Death_2
+    21300004: Dog-GlandularGun-Death_4
+    21300006: Dog-GlandularGun-Death_8
+    21300008: Dog-GlandularGun-Death_11
+    21300010: Dog-GlandularGun-Death_13
+    21300012: Dog-GlandularGun-Death_17
+    21300014: Dog-GlandularGun-Death_21
+    21300016: Dog-GlandularGun-Death_22
+    21300018: Dog-GlandularGun-Death_25
+    21300020: Dog-GlandularGun-Death_28
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Death_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 825
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.4853615, y: 0.4500007}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a264b2ba1842e274f9a416cbb70c38f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Death_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 722
+        width: 253
+        height: 70
+      alignment: 9
+      pivot: {x: 0.49107003, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205e659c21871a14699c091a0df417c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Death_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 620
+        width: 253
+        height: 73
+      alignment: 9
+      pivot: {x: 0.49007782, y: 0.4500005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0266e87f48061db46852dc7ad45bf754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Death_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 523
+        width: 253
+        height: 69
+      alignment: 9
+      pivot: {x: 0.49007782, y: 0.4500016}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2cd53a0d86522459c1849fa7a0fe7a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Death_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 413
+        width: 253
+        height: 69
+      alignment: 9
+      pivot: {x: 0.49107003, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 600f0c723eaac624ebd176dd8d5dbfbd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Death_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 310
+        width: 253
+        height: 69
+      alignment: 9
+      pivot: {x: 0.49206224, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4454843fdb34f964e844123764af9528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Death_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 207
+        width: 253
+        height: 69
+      alignment: 9
+      pivot: {x: 0.49206224, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808daf60c97a822479a2155eea0ec20c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Death_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 253
+        height: 69
+      alignment: 9
+      pivot: {x: 0.49206224, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0936c575b2cdc82468d62727854d3a4b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Death_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 253
+        height: 69
+      alignment: 9
+      pivot: {x: 0.49206224, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaddadac1c9cfb34abb1ea30b4ae87b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d7ac32dd2aa501741b6e672c1a9ae902
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

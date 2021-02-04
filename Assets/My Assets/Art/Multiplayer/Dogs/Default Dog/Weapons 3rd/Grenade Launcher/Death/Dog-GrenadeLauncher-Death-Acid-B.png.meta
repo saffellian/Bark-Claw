@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: 0617e1d58b88ae045a71c0652a4bd545
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dog-GrenadeLauncher-Death-Acid-B_0
+    21300002: Dog-GrenadeLauncher-Death-Acid-B_1
+    21300004: Dog-GrenadeLauncher-Death-Acid-B_2
+    21300006: Dog-GrenadeLauncher-Death-Acid-B_4
+    21300008: Dog-GrenadeLauncher-Death-Acid-B_6
+    21300010: Dog-GrenadeLauncher-Death-Acid-B_8
+    21300012: Dog-GrenadeLauncher-Death-Acid-B_10
+    21300014: Dog-GrenadeLauncher-Death-Acid-B_12
+    21300016: Dog-GrenadeLauncher-Death-Acid-B_14
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dog-GrenadeLauncher-Death-Acid-B_0
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 809
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.49078226, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3190e5f5725986d4ba1a948c61bb4dd1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GrenadeLauncher-Death-Acid-B_1
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 708
+        width: 57
+        height: 69
+      alignment: 9
+      pivot: {x: 0.33143815, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2afe905daf20b48b8be04085c9d1a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GrenadeLauncher-Death-Acid-B_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 607
+        width: 71
+        height: 69
+      alignment: 9
+      pivot: {x: 0.36696926, y: 0.4499998}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043182bc0326fe8428004bc5dbb63558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GrenadeLauncher-Death-Acid-B_4
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 506
+        width: 77
+        height: 69
+      alignment: 9
+      pivot: {x: 0.31388816, y: 0.4499998}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b77208d212ba354bbdfec51159eb279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GrenadeLauncher-Death-Acid-B_6
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 405
+        width: 84
+        height: 69
+      alignment: 9
+      pivot: {x: 0.30705234, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b29511ec2a88b64aab82318cbc9cc91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GrenadeLauncher-Death-Acid-B_8
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 304
+        width: 86
+        height: 69
+      alignment: 9
+      pivot: {x: 0.2864113, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ef621e65994b646895ab2160fa91fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GrenadeLauncher-Death-Acid-B_10
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 203
+        width: 91
+        height: 69
+      alignment: 9
+      pivot: {x: 0.28875774, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc2548ae6e39d74ea464c902ceaacc9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GrenadeLauncher-Death-Acid-B_12
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 102
+        width: 94
+        height: 69
+      alignment: 9
+      pivot: {x: 0.27873716, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0bfff183dfd58541b7edd3fb9b69618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GrenadeLauncher-Death-Acid-B_14
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1
+        width: 94
+        height: 69
+      alignment: 9
+      pivot: {x: 0.27873716, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa907b7992037ae4598d704b99d74761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6e13a9e90b15bbf4599f772e9b505111
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

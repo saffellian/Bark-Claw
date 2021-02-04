@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: e5b6cd772ba9d7e4a96a0f0d0b86cf89
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dog-GlandularGun-Walk-F-L-S_0
+    21300002: Dog-GlandularGun-Walk-F-L-S_1
+    21300004: Dog-GlandularGun-Walk-F-L-S_2
+    21300006: Dog-GlandularGun-Walk-F-L-S_3
+    21300008: Dog-GlandularGun-Walk-F-L-S_4
+    21300010: Dog-GlandularGun-Walk-F-L-S_5
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Walk-F-L-S_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 3
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.44148254, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0cbcaefdad42574b9988386dc30dae3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Walk-F-L-S_1
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 4
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.4634267, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926645b66390f56499987913bbf49a81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Walk-F-L-S_2
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 4
+        width: 54
+        height: 69
+      alignment: 9
+      pivot: {x: 0.34205684, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239c4d30a23ef804eba8f47da72a8801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Walk-F-L-S_3
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2
+        width: 60
+        height: 69
+      alignment: 9
+      pivot: {x: 0.306161, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d8262a5b91de34eaefaccf55416c13
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Walk-F-L-S_4
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 3
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.4634267, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72fb264b9939e3a44ade4363cf023111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-GlandularGun-Walk-F-L-S_5
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 4
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.44879726, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdfc995fb73f7604dbdae19966ac6724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 609bc23be552e6e429d58abc3b913a8a
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 8ffde2e2cdcadf84a9c2ac1b01586bdd
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dog-SnoutPuke-Falling-B_0
+    21300002: Dog-SnoutPuke-Falling-B_1
+    21300004: Dog-SnoutPuke-Falling-B_2
+    21300006: Dog-SnoutPuke-Falling-B_3
+    21300008: Dog-SnoutPuke-Falling-B_4
+    21300010: Dog-SnoutPuke-Falling-B_5
+    21300012: Dog-SnoutPuke-Falling-B_6
+    21300014: Dog-SnoutPuke-Falling-B_7
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Falling-B_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 14
+        width: 53
+        height: 88
+      alignment: 9
+      pivot: {x: 0.49156764, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b046340c67aaa743a214f836a670466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Falling-B_1
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 14
+        width: 53
+        height: 88
+      alignment: 9
+      pivot: {x: 0.49156794, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14008fd9941ba894ba1e08aea290c04b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Falling-B_2
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 14
+        width: 53
+        height: 88
+      alignment: 9
+      pivot: {x: 0.49156764, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df40acc3eb683f4ca468b358fb16f71
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Falling-B_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 14
+        width: 53
+        height: 88
+      alignment: 9
+      pivot: {x: 0.4914925, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ef53b7a1dc35949a78c616ac9c8d69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Falling-B_4
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 14
+        width: 53
+        height: 88
+      alignment: 9
+      pivot: {x: 0.4915685, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ede26266c92bd45a871f32384416bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Falling-B_5
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 14
+        width: 53
+        height: 88
+      alignment: 9
+      pivot: {x: 0.49156794, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf9e06868f5b474a944ae9455556b72
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Falling-B_6
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 14
+        width: 53
+        height: 88
+      alignment: 9
+      pivot: {x: 0.49156678, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67bbe89f2ccee8c4abdfe0c146c5d9cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-SnoutPuke-Falling-B_7
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 14
+        width: 53
+        height: 88
+      alignment: 9
+      pivot: {x: 0.49156678, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0fce6ae7b864b64a88ccfdcea18c06d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a04c79228d555b54ea298289932982de
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

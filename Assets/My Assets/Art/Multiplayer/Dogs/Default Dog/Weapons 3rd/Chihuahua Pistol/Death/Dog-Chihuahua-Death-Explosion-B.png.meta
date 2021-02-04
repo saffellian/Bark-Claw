@@ -1,0 +1,341 @@
+fileFormatVersion: 2
+guid: 1fbc8117f3707b5439eb74a655108cad
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dog-Chihuahua-Death-Explosion-B_0
+    21300002: Dog-Chihuahua-Death-Explosion-B_2
+    21300004: Dog-Chihuahua-Death-Explosion-B_6
+    21300006: Dog-Chihuahua-Death-Explosion-B_13
+    21300008: Dog-Chihuahua-Death-Explosion-B_15
+    21300010: Dog-Chihuahua-Death-Explosion-B_16
+    21300012: Dog-Chihuahua-Death-Explosion-B_17
+    21300014: Dog-Chihuahua-Death-Explosion-B_19
+    21300016: Dog-Chihuahua-Death-Explosion-B_26
+    21300018: Dog-Chihuahua-Death-Explosion-B_40
+    21300020: Dog-Chihuahua-Death-Explosion-B_50
+    21300022: Dog-Chihuahua-Death-Explosion-B_53
+    21300024: Dog-Chihuahua-Death-Explosion-B_66
+    21300026: Dog-Chihuahua-Death-Explosion-B_74
+    21300028: Dog-Chihuahua-Death-Explosion-B_78
+    21300030: Dog-Chihuahua-Death-Explosion-B_86
+    21300032: Dog-Chihuahua-Death-Explosion-B_95
+    21300034: Dog-Chihuahua-Death-Explosion-B_96
+    21300036: Dog-Chihuahua-Death-Explosion-B_103
+    21300038: Dog-Chihuahua-Death-Explosion-B_108
+    21300040: Dog-Chihuahua-Death-Explosion-B_113
+    21300042: Dog-Chihuahua-Death-Explosion-B_117
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dog-Chihuahua-Death-Explosion-B_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1001
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.54210997, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 386a54c1cb33f704e8d1cdd0900d281b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-Chihuahua-Death-Explosion-B_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 903
+        width: 252
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5143006, y: 0.3350003}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f78cf0862e21645894f2ae81104d9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-Chihuahua-Death-Explosion-B_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 801
+        width: 252
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5143006, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987cfa5a7ca16294ebf9b5e075b6a721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-Chihuahua-Death-Explosion-B_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 701
+        width: 252
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5143006, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8393d4c092fbdb4fb372fa66cfede1d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-Chihuahua-Death-Explosion-B_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 601
+        width: 252
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5143006, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c751329b0dfc834d80ce12e1d2196c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-Chihuahua-Death-Explosion-B_86
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 501
+        width: 252
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5143006, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9862a89f4de714e8e36d33b6722bef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-Chihuahua-Death-Explosion-B_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 401
+        width: 252
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5143006, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd16f2d7a3d1a1e4d96a22fd279b3ba6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-Chihuahua-Death-Explosion-B_103
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 301
+        width: 252
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5143006, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7feef958584ee7b42bfba00505f77bd6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-Chihuahua-Death-Explosion-B_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 201
+        width: 252
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5143006, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 853024782188a4c45823d873253ea32a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-Chihuahua-Death-Explosion-B_113
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 101
+        width: 252
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5143006, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9906cc21808a0b14885f9622e3048273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-Chihuahua-Death-Explosion-B_117
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 252
+        height: 93
+      alignment: 9
+      pivot: {x: 0.5143006, y: 0.335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77faf12d6287a344a919b0d90357d50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4259f77e7c3553740a34fe06e786b17e
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

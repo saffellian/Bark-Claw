@@ -1,0 +1,289 @@
+fileFormatVersion: 2
+guid: b2d17591c50f26d40aea3ef8dd095fdf
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dog-ShitMine-Death-B_0
+    21300002: Dog-ShitMine-Death-B_1
+    21300004: Dog-ShitMine-Death-B_4
+    21300006: Dog-ShitMine-Death-B_5
+    21300008: Dog-ShitMine-Death-B_7
+    21300010: Dog-ShitMine-Death-B_8
+    21300012: Dog-ShitMine-Death-B_10
+    21300014: Dog-ShitMine-Death-B_12
+    21300016: Dog-ShitMine-Death-B_14
+    21300018: Dog-ShitMine-Death-B_16
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dog-ShitMine-Death-B_0
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 793
+        width: 53
+        height: 69
+      alignment: 9
+      pivot: {x: 0.47191605, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2bc1c7d274b5b41975e887ff42aa28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ShitMine-Death-B_1
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 694
+        width: 55
+        height: 71
+      alignment: 9
+      pivot: {x: 0.34535438, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121fc8b206e60e0478d24af9c748b46b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ShitMine-Death-B_4
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 610
+        width: 59
+        height: 69
+      alignment: 9
+      pivot: {x: 0.35583898, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a681be0c4771d64483b1ad184546363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ShitMine-Death-B_7
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 514
+        width: 66
+        height: 58
+      alignment: 9
+      pivot: {x: 0.33568898, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4717348016815284fbf4e359eb6e3543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ShitMine-Death-B_8
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 408
+        width: 70
+        height: 68
+      alignment: 9
+      pivot: {x: 0.32865852, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46e3329d4e75664cb2290a5f221b4db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ShitMine-Death-B_10
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 298
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.24417007, y: 0.39}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eada619bb0a866e418e2f1aca5810099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ShitMine-Death-B_12
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 199
+        width: 66
+        height: 69
+      alignment: 9
+      pivot: {x: 0.23259181, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189f0d210c2b5e44db131de1c24276e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ShitMine-Death-B_14
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 100
+        width: 64
+        height: 69
+      alignment: 9
+      pivot: {x: 0.2375251, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2284cf233550f6b4d99eed94035c736d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-ShitMine-Death-B_16
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 1
+        width: 64
+        height: 69
+      alignment: 9
+      pivot: {x: 0.23647857, y: 0.45000017}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a3f6fc3f90bb440b90d2178217b270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 47f5f58d37a8cd643aca92bebaf749e6
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
