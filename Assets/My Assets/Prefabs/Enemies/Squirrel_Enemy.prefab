@@ -237,7 +237,7 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 1.53
   m_BaseOffset: 1.0666667
-  m_WalkableMask: 4294967295
+  m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
 --- !u!114 &7874199085888570803
 MonoBehaviour:
@@ -254,7 +254,8 @@ MonoBehaviour:
   enemyType: 1
   health: 50
   normalDeathOnly: 0
-  attackDistance: 20
+  meleeAttackDistance: 0
+  projectileAttackRange: 20
   chaseDistance: 0
   attackDamage: 5
   attackSpeed: 0

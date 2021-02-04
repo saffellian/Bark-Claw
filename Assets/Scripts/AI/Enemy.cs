@@ -154,7 +154,8 @@ public class Enemy : MonoBehaviour
                             audioSource.PlayOneShot(deathSound);
                             animator.SetTrigger(deathType.ToString());
                             DropItem();
-                            behaviorTree.Stop();
+                            if (behaviorTree != null && behaviorTree.CurrentState == Node.State.ACTIVE)
+                                behaviorTree.Stop();
                         })
                         { Label = "Dead" }
                     )
@@ -331,90 +332,91 @@ public class Enemy : MonoBehaviour
 
     private Node MixedAttack()
     {
-        return new Succeeder(
-        new BlackboardCondition("playerInRange", Operator.IS_EQUAL, true, Stops.IMMEDIATE_RESTART,
-                new Sequence(
-                    new Succeeder(new BlackboardCondition("playerDistance", Operator.IS_SMALLER_OR_EQUAL, 5f, Stops.IMMEDIATE_RESTART,
-                        new Action((bool _shouldCancel) =>
+        return new BlackboardCondition("playerInRange", Operator.IS_EQUAL, true, Stops.IMMEDIATE_RESTART,
+            new Sequence(
+                new Succeeder(new BlackboardCondition("playerDistance", Operator.IS_SMALLER_OR_EQUAL, 5f, Stops.IMMEDIATE_RESTART,
+                    new Action((bool _shouldCancel) =>
+                    {
+                        if (!_shouldCancel)
                         {
-                            if (!_shouldCancel)
-                            {
-                                if ((float)behaviorTree.Blackboard["playerDistance"] <= meleeAttackDistance)
-                                    return Action.Result.FAILED;
-                                agent.isStopped = false;
-                                agent.SetDestination(player.transform.position);
-                                return Action.Result.PROGRESS;
-                            }
-                            else
-                            {
+                            if ((float)behaviorTree.Blackboard["playerDistance"] <= meleeAttackDistance)
                                 return Action.Result.FAILED;
+                            agent.isStopped = false;
+                            agent.SetDestination(player.transform.position);
+                            return Action.Result.PROGRESS;
+                        }
+                        else
+                        {
+                            return Action.Result.FAILED;
+                        }
+                    })
+                    { Label = "Chase Player" }
+                )),
+
+                new Succeeder(new BlackboardCondition("playerDistance", Operator.IS_SMALLER_OR_EQUAL, meleeAttackDistance, Stops.NONE,
+                    new Sequence(
+                        new Action(() =>
+                        {
+                            agent.isStopped = true;
+                            animator.SetTrigger("Attack");
+                            audioSource.PlayOneShot(attackSound);
+                        })
+                        { Label = "Set Destination" },
+                        new Wait(0.5f)
+                        { Label = "Wait for attack delay duration" },
+                        new Action(() =>
+                        {
+                            if (Physics.CheckSphere(transform.position, 2, 1 << LayerMask.NameToLayer("Player")))
+                            {
+                                PlayerHealth.Instance.ApplyDamage(attackDamage);
                             }
-                        }){ Label = "Chase Player" }
-                    )),
+                        })
+                        { Label = "Check and apply damage" },
+                        new Wait(attackDelay)
+                        { Label = "Wait for attack delay duration" }
+                    )
+                )),
 
-                    new Succeeder(new BlackboardCondition("playerDistance", Operator.IS_SMALLER_OR_EQUAL, meleeAttackDistance, Stops.IMMEDIATE_RESTART,
-                        new Sequence(
-                            new Action(() =>
-                            {
-                                agent.isStopped = true;
-                                animator.SetTrigger("Attack");
-                                audioSource.PlayOneShot(attackSound);
-                            })
-                            { Label = "Set Destination" },
-                            new Wait(0.5f)
-                            { Label = "Wait for attack delay duration" },
-                            new Action(() =>
-                            {
-                                if (Physics.CheckSphere(transform.position, 2, 1 << LayerMask.NameToLayer("Player")))
-                                {
-                                    PlayerHealth.Instance.ApplyDamage(attackDamage);
-                                }
-                            })
-                            { Label = "Check and apply damage" },
-                            new Wait(attackDelay)
-                            { Label = "Wait for attack delay duration" }
-                        )
-                    )),
-
-                    new Succeeder(new BlackboardCondition("playerDistance", Operator.IS_GREATER, 5f, Stops.IMMEDIATE_RESTART,
-                        new Sequence(
-                            new Action(() =>
-                            {
-                                Vector3 forwardDir = (player.transform.position - transform.position).normalized;
-                                forwardDir *= attackStrafeDepth;
-                                forwardDir = new Vector3(forwardDir.x, 0, forwardDir.z);
-                                Vector3 horizontalDir = Quaternion.Euler(0, 90, 0) * (forwardDir.normalized * attackStrafeWidth);
-                                horizontalDir = new Vector3(horizontalDir.x, 0, horizontalDir.z);
-                                Vector3 centerPos = player.transform.position + ((transform.position - player.transform.position).normalized * attackStrafeDistance);
-                                centerPos = new Vector3(centerPos.x, 0, centerPos.z);
-                                Vector3[] points = { centerPos + forwardDir + horizontalDir, centerPos - forwardDir - horizontalDir };
-                                behaviorTree.Blackboard["navTarget"] = new Vector3(Random.Range(points[0].x, points[1].x), 0, Random.Range(points[0].z, points[1].z));
-                            })
-                            { Label = "Find Point Near Self" },
-                            new NavMoveTo(agent, "navTarget", NAV_AGENT_TOLERANCE),
-                            new Action(() => {
-                                agent.isStopped = true;
-                                animator.SetTrigger("Attack");
-                            })
-                            { Label = "Stop Agent and Start Attack" },
-                            new Wait(0.3f),
-                            new Action(() => 
-                            {
-                                Rigidbody obj = Instantiate(projectile, projectileSpawn.position, Quaternion.identity).GetComponent<Rigidbody>();
-                                obj.GetComponent<Projectile>().RegisterNoCollideObject(gameObject);
-                                obj.AddForce((GameObject.Find("FirstPersonCharacter").transform.position - transform.position).normalized * 20, ForceMode.Impulse);
-                            })
-                            { Label = "Fire Projectile" },
-                            new Wait(attackDelay),
-                            new Action(() => 
-                            {
-                                agent.isStopped = false;
-                            })
-                            { Label = "End Attack" }
-                        )
-                    ))                    
-                )                
-        ));
+                new Succeeder(new BlackboardCondition("playerDistance", Operator.IS_GREATER, 5f, Stops.IMMEDIATE_RESTART,
+                    new Sequence(
+                        new Action(() =>
+                        {
+                            Vector3 forwardDir = (player.transform.position - transform.position).normalized;
+                            forwardDir *= attackStrafeDepth;
+                            forwardDir = new Vector3(forwardDir.x, 0, forwardDir.z);
+                            Vector3 horizontalDir = Quaternion.Euler(0, 90, 0) * (forwardDir.normalized * attackStrafeWidth);
+                            horizontalDir = new Vector3(horizontalDir.x, 0, horizontalDir.z);
+                            Vector3 centerPos = player.transform.position + ((transform.position - player.transform.position).normalized * attackStrafeDistance);
+                            centerPos = new Vector3(centerPos.x, 0, centerPos.z);
+                            Vector3[] points = { centerPos + forwardDir + horizontalDir, centerPos - forwardDir - horizontalDir };
+                            behaviorTree.Blackboard["navTarget"] = new Vector3(Random.Range(points[0].x, points[1].x), 0, Random.Range(points[0].z, points[1].z));
+                        })
+                        { Label = "Find Point Near Self" },
+                        new NavMoveTo(agent, "navTarget", NAV_AGENT_TOLERANCE),
+                        new Action(() =>
+                        {
+                            agent.isStopped = true;
+                            animator.SetTrigger("Attack");
+                        })
+                        { Label = "Stop Agent and Start Attack" },
+                        new Wait(0.3f),
+                        new Action(() =>
+                        {
+                            Rigidbody obj = Instantiate(projectile, projectileSpawn.position, Quaternion.identity).GetComponent<Rigidbody>();
+                            obj.GetComponent<Projectile>().RegisterNoCollideObject(gameObject);
+                            obj.AddForce((GameObject.Find("FirstPersonCharacter").transform.position - transform.position).normalized * 20, ForceMode.Impulse);
+                        })
+                        { Label = "Fire Projectile" },
+                        new Wait(attackDelay),
+                        new Action(() =>
+                        {
+                            agent.isStopped = false;
+                        })
+                        { Label = "End Attack" }
+                    )
+                ))
+            )
+        );
     }
 
     /// <summary>

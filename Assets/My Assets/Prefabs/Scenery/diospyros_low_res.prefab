@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 836522292727991482}
   - component: {fileID: 836522292727991483}
-  - component: {fileID: 836522292727991480}
+  - component: {fileID: 836522291561269347}
   m_Layer: 0
   m_Name: diospyros_low_res
   m_TagString: Untagged
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &836522292727991480
+--- !u!114 &836522291561269347
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,7 +89,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 836522292727991481}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a2027977dd8ed74aa894d333bd6b58c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d832410a3361064ababee29136f4781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ViewCam: {fileID: 0}
+  m_Camera: {fileID: 0}
+  unlockHorizontalAxes: 0
