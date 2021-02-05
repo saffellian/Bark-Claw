@@ -140,7 +140,7 @@ public class Enemy : MonoBehaviour
                                 }),
 
                                 new Succeeder(new Repeater(
-                                enemyType == EnemyType.Melee ? MeleeAttack() : enemyType == EnemyType.Projectile ? ProjectileAttack() : MixedAttack()
+                                    enemyType == EnemyType.Melee ? MeleeAttack() : enemyType == EnemyType.Projectile ? ProjectileAttack() : MixedAttack()
                                 ))
                             )
                             )
@@ -234,9 +234,8 @@ public class Enemy : MonoBehaviour
 
     private Node MeleeAttack()
     {
-        return new Sequence(
+        return new Selector(
             // chase until close enough to attack or out of range
-            new Succeeder(
             new BlackboardCondition("canChase", Operator.IS_EQUAL, true, Stops.IMMEDIATE_RESTART,
                     // set player as chase target
                     new Action((bool _shouldCancel) =>
@@ -254,10 +253,9 @@ public class Enemy : MonoBehaviour
 
                     })
                     { Label = "Chase Player" }
-            )),
+            ),
 
             // attack if in range
-            new Succeeder(
             new BlackboardCondition("playerDistance", Operator.IS_SMALLER_OR_EQUAL, meleeAttackDistance, Stops.IMMEDIATE_RESTART,
                 new Sequence(
                     // set player as chase target
@@ -283,7 +281,7 @@ public class Enemy : MonoBehaviour
                     new Wait(attackDelay)
                     { Label = "Wait for attack delay duration" }
                 )
-            ))
+            )
         );
     }
 
@@ -333,8 +331,8 @@ public class Enemy : MonoBehaviour
     private Node MixedAttack()
     {
         return new BlackboardCondition("playerInRange", Operator.IS_EQUAL, true, Stops.IMMEDIATE_RESTART,
-            new Sequence(
-                new Succeeder(new BlackboardCondition("playerDistance", Operator.IS_SMALLER_OR_EQUAL, 5f, Stops.IMMEDIATE_RESTART,
+            new Selector(
+                new BlackboardCondition("playerDistance", Operator.IS_SMALLER_OR_EQUAL, 5f, Stops.NONE,
                     new Action((bool _shouldCancel) =>
                     {
                         if (!_shouldCancel)
@@ -351,9 +349,9 @@ public class Enemy : MonoBehaviour
                         }
                     })
                     { Label = "Chase Player" }
-                )),
+                ),
 
-                new Succeeder(new BlackboardCondition("playerDistance", Operator.IS_SMALLER_OR_EQUAL, meleeAttackDistance, Stops.NONE,
+                new BlackboardCondition("playerDistance", Operator.IS_SMALLER_OR_EQUAL, meleeAttackDistance, Stops.NONE,
                     new Sequence(
                         new Action(() =>
                         {
@@ -375,9 +373,9 @@ public class Enemy : MonoBehaviour
                         new Wait(attackDelay)
                         { Label = "Wait for attack delay duration" }
                     )
-                )),
+                ),
 
-                new Succeeder(new BlackboardCondition("playerDistance", Operator.IS_GREATER, 5f, Stops.IMMEDIATE_RESTART,
+                new BlackboardCondition("playerDistance", Operator.IS_GREATER, 5f, Stops.NONE,
                     new Sequence(
                         new Action(() =>
                         {
@@ -414,7 +412,7 @@ public class Enemy : MonoBehaviour
                         })
                         { Label = "End Attack" }
                     )
-                ))
+                )
             )
         );
     }

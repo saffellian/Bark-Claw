@@ -18,10 +18,13 @@ public class PlayerController : MonoBehaviour
     public Vector3 projectileOffset;
     public GameObject projectile;
     public float projectileSpeed = 5f;
+    public float attackDelay = 1f;
 
     private Animator animator;
     private SpriteRenderer sr;
     private bool attacking = false;
+    private PlayerHealth health;
+    private bool isDead = false;
 
     // Start is called before the first frame update
     void Start()
@@ -29,13 +32,15 @@ public class PlayerController : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+        health = GetComponent<PlayerHealth>();
+        health.onDamaged.AddListener(Damaged);
     }
 
     // Update is called once per frame
     void Update() 
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
-        animator.SetBool("InAir", !isGrounded);
+        animator.SetBool("Jumping", !isGrounded && myRigidbody.velocity.y > 0.1f);
 
         if (Input.GetAxisRaw("Horizontal") > 0.01f)
         {
@@ -62,18 +67,15 @@ public class PlayerController : MonoBehaviour
 
         if (!attacking && Input.GetButtonDown("Fire2"))
         {
-            Debug.Log("in");
             attacking = true;
-            animator.SetBool("Attack", true);
+            animator.SetTrigger("Attack");
             StartCoroutine(FireHelper());
         }
     }
 
     private IEnumerator FireHelper()
     {
-        yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"));
-        yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"));
-        animator.SetBool("Attack", false);
+        yield return new WaitForSeconds(attackDelay);
         attacking = false;
     }
 
@@ -91,6 +93,15 @@ public class PlayerController : MonoBehaviour
             p.transform.position = transform.position - projectileOffset;
             p.transform.localScale = new Vector3(-p.transform.localScale.x, p.transform.localScale.y, p.transform.localScale.z);
             p.GetComponent<Rigidbody2D>().velocity = Vector3.left * projectileSpeed;
+        }
+    }
+
+    private void Damaged(int health)
+    {
+        if (!isDead && health <= 0)
+        {
+            isDead = true;
+            animator.SetBool("IsDead", true);
         }
     }
 }   

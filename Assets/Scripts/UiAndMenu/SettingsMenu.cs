@@ -144,7 +144,7 @@ public class SettingsMenu : MonoBehaviour
             case "Settings":
                 SceneManager.LoadScene("Menu");
                 break;
-            case "1":
+            default:
                 if (calledBy != null)
                 {
                     calledBy.SetActive(true);
