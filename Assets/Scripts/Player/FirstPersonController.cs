@@ -1,4 +1,4 @@
-using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
@@ -10,7 +10,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
     [RequireComponent(typeof (AudioSource))]
     public class FirstPersonController : MonoBehaviour
     {
-        [SerializeField] private bool m_IsWalking;
         [SerializeField] private float m_WalkSpeed;
         [SerializeField] private float m_RunSpeed;
         [SerializeField] [Range(0f, 1f)] private float m_RunstepLenghten;
@@ -29,8 +28,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
         [SerializeField] private Animator m_FPAnimator;
         [SerializeField] private PlayerInventory m_PlayerInventory;
+        [SerializeField] private Animator bodyAnimator;
 
         private Camera m_Camera;
+        private bool m_IsWalking;
         private bool m_Jump;
         private float m_YRotation;
         private Vector2 m_Input;
@@ -61,7 +62,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			m_MouseLook.Init(transform , m_Camera.transform);
         }
 
-
         // Update is called once per frame
         private void Update()
         {
@@ -90,6 +90,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Impact = Vector3.Lerp(m_Impact, Vector3.zero, 5 * Time.deltaTime);
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
+            bodyAnimator.SetInteger("MoveDirection", m_MoveDir.z > 0.01f ? -1 : m_MoveDir.z < -0.01f ? 1 : 0);
+
+            bodyAnimator.SetBool("IsCrouching", CrossPlatformInputManager.GetButton("Crouch"));
         }
 
         public void AddImpact(Vector3 impact)
@@ -97,14 +100,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Impact += impact / GetComponent<Rigidbody>().mass;
         }
 
-
         private void PlayLandingSound()
         {
             m_AudioSource.clip = m_LandSound;
             m_AudioSource.Play();
             m_NextStep = m_StepCycle + .5f;
         }
-
 
         private void FixedUpdate()
         {
@@ -148,13 +149,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_MouseLook.UpdateCursorLock();
         }
 
-
         private void PlayJumpSound()
         {
             m_AudioSource.clip = m_JumpSound;
             m_AudioSource.Play();
         }
-
 
         private void ProgressStepCycle(float speed)
         {
@@ -174,7 +173,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             PlayFootStepAudio();
         }
 
-
         private void PlayFootStepAudio()
         {
             if (!m_CharacterController.isGrounded)
@@ -190,7 +188,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_FootstepSounds[n] = m_FootstepSounds[0];
             m_FootstepSounds[0] = m_AudioSource.clip;
         }
-
 
         private void UpdateCameraPosition(float speed)
         {
@@ -214,7 +211,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
             m_Camera.transform.localPosition = newCameraPosition;
         }
-
 
         private void GetInput(out float speed)
         {
@@ -248,7 +244,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
         }
 
-
         private void RotateView()
         {
             if (Time.timeScale == 0 || !PlayerHealth.Instance.IsAlive())
@@ -259,7 +254,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             m_MouseLook.LookRotation (transform, m_Camera.transform);
         }
-
 
         private void OnControllerColliderHit(ControllerColliderHit hit)
         {
