@@ -11,7 +11,7 @@ public class Projectile : MonoBehaviour
     }
 
     [SerializeField] private ProjectileType projectileType = ProjectileType.Standard;
-    [SerializeField] private int damage = 1;
+    public int damage = 1;
     [SerializeField] private GameObject explosionPrefab;
     [SerializeField] private float explosionRadius = 5;
     [SerializeField] private float maxLifetime = 10;

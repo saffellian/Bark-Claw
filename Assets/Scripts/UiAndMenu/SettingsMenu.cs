@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
-using UnityEngine.Experimental.UIElements;
 using UnityEngine.UI;
-using UnityEngine.Rendering.PostProcessing;
 using UnityStandardAssets.CrossPlatformInput;
 using Button = UnityEngine.UI.Button;
 using Slider = UnityEngine.UI.Slider;
@@ -66,7 +62,7 @@ public class SettingsMenu : MonoBehaviour
         postProcessingToggle.onValueChanged.AddListener(delegate { SetActivePostProcessing(postProcessingToggle.isOn); });
         initialized = true;
 
-        if (currentScene.name == "1")
+        if (currentScene.name == "3DLevel")
         {
             LoadSettings();
         }

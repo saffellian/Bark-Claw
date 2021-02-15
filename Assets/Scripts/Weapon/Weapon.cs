@@ -26,6 +26,8 @@ public class Weapon : MonoBehaviour
     private static float MIN_DROP_DELAY = 0.1f;
 
     [SerializeField] private WeaponType weaponType = WeaponType.SemiAuto;
+    [SerializeField] bool overrideDefaultProjectileDamage = false;
+    [SerializeField] private int projectileDamage = 1;
     [SerializeField] private float delayBetweenShots = 0.8f;
     [SerializeField] private int ammo = 20;
     [SerializeField] private int maxAmmo = 20;
@@ -174,6 +176,7 @@ public class Weapon : MonoBehaviour
     public void FireProjectile()
     {
         Rigidbody rb;
+        Projectile projectileRef = null;
         switch (weaponType)
         {
             case WeaponType.Melee:
@@ -198,8 +201,9 @@ public class Weapon : MonoBehaviour
                 onAmmoUpdate.Invoke(ammo);
                 rb = Instantiate(projectile, projectileOrigins[0].position, projectile.transform.rotation).GetComponent<Rigidbody>();
                 rb.velocity = projectileOrigins[0].forward * projectileSpeed;
-                rb.gameObject.GetComponent<Projectile>().RegisterNoCollideObject(gameObject);
-                rb.gameObject.GetComponent<Projectile>().RegisterNoCollideTag("Player");
+                projectileRef = rb.gameObject.GetComponent<Projectile>();
+                projectileRef.RegisterNoCollideObject(gameObject);
+                projectileRef.RegisterNoCollideTag("Player");
                 break;
             case WeaponType.Automatic:
                 ammo--;
@@ -207,8 +211,9 @@ public class Weapon : MonoBehaviour
                 rb = Instantiate(projectile, projectileOrigins[i].position, projectile.transform.rotation).GetComponent<Rigidbody>();
                 rb.velocity = projectileOrigins[i].forward * projectileSpeed;
                 i = (i + 1) % projectileOrigins.Count;
-                rb.gameObject.GetComponent<Projectile>().RegisterNoCollideObject(gameObject);
-                rb.gameObject.GetComponent<Projectile>().RegisterNoCollideTag("Player");
+                projectileRef = rb.gameObject.GetComponent<Projectile>();
+                projectileRef.RegisterNoCollideObject(gameObject);
+                projectileRef.RegisterNoCollideTag("Player");
                 break;
             case WeaponType.Shotgun:
                 ammo--;
@@ -221,9 +226,10 @@ public class Weapon : MonoBehaviour
                     rb = Instantiate(projectile, projectileOrigins[0].position, projectile.transform.rotation).GetComponent<Rigidbody>();
                     rb.transform.Rotate(xStray, yStray, zStray);
                     rb.velocity = projectileOrigins[0].rotation * rb.transform.forward * projectileSpeed;
-                    rb.gameObject.GetComponent<Projectile>().RegisterNoCollideObject(gameObject);
-                    rb.gameObject.GetComponent<Projectile>().RegisterNoCollideTag("Player");
-                    rb.gameObject.GetComponent<Projectile>().RegisterNoCollideTag("Projectile");
+                    projectileRef = rb.gameObject.GetComponent<Projectile>();
+                    projectileRef.RegisterNoCollideObject(gameObject);
+                    projectileRef.RegisterNoCollideTag("Player");
+                    projectileRef.RegisterNoCollideTag("Projectile");
                 }
                 break;
             case WeaponType.LayableExplosive:
@@ -255,6 +261,11 @@ public class Weapon : MonoBehaviour
                     }
                 }
                 break;
+        }
+
+        if (overrideDefaultProjectileDamage && projectileRef != null)
+        {
+            projectileRef.damage = projectileDamage;
         }
 
         if (ammo <= 0 && dropOnEmpty)

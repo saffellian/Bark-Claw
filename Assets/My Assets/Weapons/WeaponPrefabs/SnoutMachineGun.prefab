@@ -115,6 +115,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponType: 2
+  overrideDefaultProjectileDamage: 1
+  projectileDamage: 5
   delayBetweenShots: 0.1
   ammo: 20
   maxAmmo: 20

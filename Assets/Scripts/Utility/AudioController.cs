@@ -102,6 +102,7 @@ public class AudioController : MonoBehaviour
         {
             if (la.levelName == SceneManager.GetActiveScene().name && musicSource.clip != la.audioClip)
             {
+                musicSource.Stop();
                 musicSource.clip = la.audioClip;
                 musicSource.Play();
                 audioEvents = new Dictionary<float, string>();
@@ -148,6 +149,20 @@ public class AudioController : MonoBehaviour
     public void SetEffectsVolume(float volume)
     {
         musicSource.outputAudioMixerGroup.audioMixer.SetFloat("EffectsVolume", volume);
+    }
+
+    public float GetNormalizedEffectsVolume()
+    {
+        float value = 0;
+        musicSource.outputAudioMixerGroup.audioMixer.GetFloat("EffectsVolume", out value);
+        return Mathf.InverseLerp(-80f, 20f, value);
+    }
+
+    public float GetNormalizedMusicVolume()
+    {
+        float value = 0;
+        musicSource.outputAudioMixerGroup.audioMixer.GetFloat("MusicVolume", out value);
+        return Mathf.InverseLerp(-80f, 20f, value);
     }
 
     public AudioSource GetMusicSource()

@@ -1,7 +1,5 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.SceneManagement;
 
 public class SettingsLoader : MonoBehaviour
@@ -38,7 +36,7 @@ public class SettingsLoader : MonoBehaviour
     {
         switch (scene.name)
         {
-            case "1":
+            case "3DLevel":
                 LoadGameplayScene();
                 break;
             case "Settings":

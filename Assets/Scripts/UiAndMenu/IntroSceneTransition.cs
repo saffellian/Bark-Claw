@@ -5,9 +5,6 @@ using UnityEngine.Video;
 
 public class IntroSceneTransition : MonoBehaviour
 {
-    [SerializeField]
-    private string sceneNameToLoad;
-
     private VideoPlayer player;
 
     private void Start()
@@ -20,6 +17,7 @@ public class IntroSceneTransition : MonoBehaviour
     {
         yield return new WaitUntil(() => player.isPlaying);
         yield return new WaitUntil(() => player.isPlaying == false);
-        SceneManager.LoadScene(sceneNameToLoad);
+        // load next scene in build order
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
