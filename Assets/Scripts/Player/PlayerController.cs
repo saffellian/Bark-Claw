@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -65,7 +64,7 @@ public class PlayerController : MonoBehaviour
             myRigidbody.velocity = new Vector3(myRigidbody.velocity.x, jumpSpeed, 0f);
         }
 
-        if (!attacking && Input.GetButtonDown("Fire2"))
+        if (!attacking && (Input.GetButtonDown("Fire2") || Input.GetAxis("Right Trigger") != 0))
         {
             attacking = true;
             animator.SetTrigger("Attack");

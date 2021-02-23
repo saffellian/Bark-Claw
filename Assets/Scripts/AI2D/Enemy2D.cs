@@ -469,6 +469,8 @@ public class Enemy2D : MonoBehaviour
             StopAllCoroutines();
             animator.SetBool("Dead", true);
             animator.SetTrigger("Dying");
+            // move to same layer as player to ignore collisions when dead
+            gameObject.layer = LayerMask.NameToLayer("Player");
         }
     }
 
