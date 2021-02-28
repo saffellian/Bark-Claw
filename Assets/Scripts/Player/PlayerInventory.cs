@@ -115,18 +115,23 @@ public class PlayerInventory : MonoBehaviour
         UpdateItem();
     }
 
-    public bool TryAddItem(GameObject newItem, int invIndex)
+    public bool TryAddItem(WeaponPickup pickup, int invIndex)
     {
         if (inventory[invIndex] != null)
         {
-            inventory[invIndex].GetComponent<Weapon>().AddAmmo(newItem.GetComponent<Weapon>().GetAmmoAmount(), inventoryIndex == invIndex);
+            Weapon weapon = pickup.itemPrefab.GetComponent<Weapon>();
+            Debug.Log(weapon.GetAmmoAmount());
+            if (pickup.overridePickupAmmo)
+                inventory[invIndex].GetComponent<Weapon>().AddAmmo(pickup.overrideAmmoAmount, inventoryIndex == invIndex);
+            else
+                inventory[invIndex].GetComponent<Weapon>().AddAmmo(weapon.GetAmmoAmount(), inventoryIndex == invIndex);
             return true;
         }
 
         if (inventoryIndex == invIndex)
             return false; // don't replace current item
 
-        inventory[invIndex] = Instantiate(newItem, gameObject.transform.GetChild(0));
+        inventory[invIndex] = Instantiate(pickup.itemPrefab, gameObject.transform.GetChild(0));
         statusBar.EnableWeapon(invIndex);
         inventoryIndex = invIndex;
         UpdateItem();
