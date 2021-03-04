@@ -55,6 +55,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private AudioClip attackSound;
     [SerializeField] [EnemyType("Projectile, Mixed")] private GameObject projectile;
     [SerializeField] [EnemyType("Projectile, Mixed")] private Transform projectileSpawn;
+    [SerializeField] [EnemyType("Projectile, Mixed")] private int projectileDamage = 5;
     [Header("Patrol")] 
     [SerializeField] private PatrolType patrolType = PatrolType.Waypoints;
     [SerializeField] [PatrolType("Area")] private MeshFilter patrolRegion;
@@ -314,6 +315,7 @@ public class Enemy : MonoBehaviour
                     new Action(() => 
                     {
                         Rigidbody obj = Instantiate(projectile, projectileSpawn.position, Quaternion.identity).GetComponent<Rigidbody>();
+                        obj.GetComponent<Projectile>().SetProjectileDamage(projectileDamage);
                         obj.GetComponent<Projectile>().RegisterNoCollideObject(gameObject);
                         obj.AddForce((GameObject.Find("FirstPersonCharacter").transform.position - transform.position).normalized * 20, ForceMode.Impulse);
                     })
@@ -401,6 +403,7 @@ public class Enemy : MonoBehaviour
                         new Action(() =>
                         {
                             Rigidbody obj = Instantiate(projectile, projectileSpawn.position, Quaternion.identity).GetComponent<Rigidbody>();
+                            obj.GetComponent<Projectile>().SetProjectileDamage(projectileDamage);
                             obj.GetComponent<Projectile>().RegisterNoCollideObject(gameObject);
                             obj.AddForce((GameObject.Find("FirstPersonCharacter").transform.position - transform.position).normalized * 20, ForceMode.Impulse);
                         })

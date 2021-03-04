@@ -11,7 +11,6 @@ public class Projectile : MonoBehaviour
     }
 
     [SerializeField] private ProjectileType projectileType = ProjectileType.Standard;
-    public int damage = 1;
     [SerializeField] private GameObject explosionPrefab;
     [SerializeField] private float explosionRadius = 5;
     [SerializeField] private float maxLifetime = 10;
@@ -19,10 +18,16 @@ public class Projectile : MonoBehaviour
     private List<string> _noCollideTags = new List<string>();
     private List<GameObject> _noCollideObjects = new List<GameObject>();
     private bool hasExploded = false;
+    private int damage = 1;
 
     private void Start()
     {
         Destroy(gameObject, maxLifetime);
+    }
+
+    public void SetProjectileDamage(int damageAmount)
+    {
+        damage = damageAmount;
     }
 
     public void RegisterNoCollideObject(GameObject obj)

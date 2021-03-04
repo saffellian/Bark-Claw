@@ -265,7 +265,7 @@ public class Weapon : MonoBehaviour
 
         if (overrideDefaultProjectileDamage && projectileRef != null)
         {
-            projectileRef.damage = projectileDamage;
+            projectileRef.SetProjectileDamage(projectileDamage);
         }
 
         if (ammo <= 0 && dropOnEmpty)

@@ -3205,6 +3205,7 @@ MonoBehaviour:
   attackSound: {fileID: 0}
   projectile: {fileID: 0}
   projectileSpawn: {fileID: 0}
+  projectileDamage: 5
   patrolType: 1
   patrolRegion: {fileID: 759421527}
   patrolPoints: []
@@ -5799,6 +5800,7 @@ MonoBehaviour:
   attackSound: {fileID: 0}
   projectile: {fileID: 0}
   projectileSpawn: {fileID: 0}
+  projectileDamage: 5
   patrolType: 1
   patrolRegion: {fileID: 911007696}
   patrolPoints: []
