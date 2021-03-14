@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Projectile
   - Fence
+  - GrassDecor
   layers:
   - Default
   - TransparentFX

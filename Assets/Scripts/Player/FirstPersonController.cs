@@ -93,6 +93,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
             bodyAnimator.SetInteger("MoveDirection", m_MoveDir.z > 0.01f ? -1 : m_MoveDir.z < -0.01f ? 1 : 0);
 
             bodyAnimator.SetBool("IsCrouching", CrossPlatformInputManager.GetButton("Crouch"));
+            if (CrossPlatformInputManager.GetButton("Crouch"))
+            {                
+                m_CharacterController.height = .1f;
+            }
+            else if (m_CharacterController.height != 1f)
+            {
+                m_CharacterController.height = 1f;
+            }
         }
 
         public void AddImpact(Vector3 impact)

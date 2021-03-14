@@ -4866,6 +4866,11 @@ PrefabInstance:
       propertyPath: chaseDistance
       value: 4.08
       objectReference: {fileID: 0}
+    - target: {fileID: 1427896484678301122, guid: 4da2dda0e383d7240b5b7137ffcd096e,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4da2dda0e383d7240b5b7137ffcd096e, type: 3}
 --- !u!1001 &5292422812874854209
