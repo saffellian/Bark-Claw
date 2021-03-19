@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using Unity.Collections;
 using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
@@ -10,8 +7,10 @@ public class PlayerInventory : MonoBehaviour
     [SerializeField][Range(1,10)] private int inventorySize = 2;
     [SerializeField] private List<GameObject> inventory;
     [SerializeField] private GameObject defaultItem;
+    [SerializeField] private float weaponSwitchDelay = 0.2f;
 
-   [SerializeField] private int inventoryIndex = 0;
+    private int inventoryIndex = 0;
+    private bool canSwitch = true;
 
     private StatusBar statusBar;
 
@@ -47,8 +46,11 @@ public class PlayerInventory : MonoBehaviour
         
         int previousIndex = inventoryIndex;
         
-        if (Input.GetAxis("Mouse ScrollWheel") > 0 || Input.GetButtonDown("RB")) // scroll wheel up
+        if ((Input.mouseScrollDelta.y > 0 && canSwitch)|| Input.GetButtonDown("RB")) // scroll wheel up
         {
+            if (!Input.GetButtonDown("RB"))
+                StartCoroutine("WeaponSwitchTimer");
+
             inventoryIndex++;
 
             if (inventoryIndex > inventorySize - 1)
@@ -70,8 +72,11 @@ public class PlayerInventory : MonoBehaviour
                 }
             }
         }
-        else if (Input.GetAxis("Mouse ScrollWheel") < 0 || Input.GetButtonDown("LB")) // scroll wheel down
+        else if ((Input.mouseScrollDelta.y < 0 && canSwitch)|| Input.GetButtonDown("LB")) // scroll wheel down
         {
+            if (!Input.GetButtonDown("LB"))
+                StartCoroutine("WeaponSwitchTimer");
+
             inventoryIndex--;
 
             if (inventoryIndex < 0)
@@ -98,6 +103,13 @@ public class PlayerInventory : MonoBehaviour
         
         if (previousIndex != inventoryIndex)// && !(inventory[previousIndex] == defaultItem && inventory[inventoryIndex] == defaultItem))
             UpdateItem();
+    }
+
+    private IEnumerator WeaponSwitchTimer()
+    {
+        canSwitch = false;
+        yield return new WaitForSeconds(weaponSwitchDelay);
+        canSwitch = true;
     }
 
     public void RemoveItem(GameObject item)
