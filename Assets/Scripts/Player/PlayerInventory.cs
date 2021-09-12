@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    [SerializeField][Range(1,10)] private int inventorySize = 2;
-    [SerializeField] private List<GameObject> inventory;
-    [SerializeField] private GameObject defaultItem;
     [SerializeField] private float weaponSwitchDelay = 0.2f;
+    [SerializeField] private List<GameObject> availableItems = new List<GameObject>();
 
+    private List<GameObject> instantiatedItems;
+    private List<GameObject> inventory;
+    private int inventorySize = 0;
     private int inventoryIndex = 0;
     private bool canSwitch = true;
 
@@ -31,12 +32,26 @@ public class PlayerInventory : MonoBehaviour
     private void Start()
     {
         statusBar = FindObjectOfType<StatusBar>();
+        inventorySize = availableItems.Count;
+
+        instantiatedItems = new List<GameObject>(inventorySize);
+        foreach (var item in availableItems)
+        {
+            instantiatedItems.Add(Instantiate(item, gameObject.transform.GetChild(0)));
+        }
+
+        foreach (var item in instantiatedItems)
+        {
+            item.SetActive(false);
+        }
+
         inventory = new List<GameObject>(inventorySize);
-        inventory.Add(defaultItem);
-        for (int i = 1; i < inventorySize; ++i)
+        for (int i = 0; i < inventorySize; i++)
         {
             inventory.Add(null);
         }
+        inventory[0] = instantiatedItems[0];
+        inventory[0].SetActive(true);
     }
 
     private void Update()
@@ -127,12 +142,14 @@ public class PlayerInventory : MonoBehaviour
         UpdateItem();
     }
 
-    public bool TryAddItem(WeaponPickup pickup, int invIndex)
+    public bool TryAddItem(WeaponPickup pickup)
     {
+        int invIndex = availableItems.FindIndex(0, availableItems.Count, x => x.gameObject == pickup.itemPrefab);
+
         if (inventory[invIndex] != null)
         {
             Weapon weapon = pickup.itemPrefab.GetComponent<Weapon>();
-            Debug.Log(weapon.GetAmmoAmount());
+            
             if (pickup.overridePickupAmmo)
                 inventory[invIndex].GetComponent<Weapon>().AddAmmo(pickup.overrideAmmoAmount, inventoryIndex == invIndex);
             else
@@ -143,7 +160,7 @@ public class PlayerInventory : MonoBehaviour
         if (inventoryIndex == invIndex)
             return false; // don't replace current item
 
-        inventory[invIndex] = Instantiate(pickup.itemPrefab, gameObject.transform.GetChild(0));
+        inventory[invIndex] = instantiatedItems[invIndex];
         statusBar.EnableWeapon(invIndex);
         inventoryIndex = invIndex;
         UpdateItem();

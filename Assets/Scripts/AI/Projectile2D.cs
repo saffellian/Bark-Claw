@@ -10,6 +10,12 @@ public class Projectile2D : MonoBehaviour
     private List<GameObject> _noCollideObjects = new List<GameObject>();
     private Rigidbody2D rb;
 
+
+    public void SetProjectileDamage(int damageAmount)
+    {
+        damage = damageAmount;
+    }
+    
     public void RegisterNoCollideObject(GameObject obj)
     {
         _noCollideObjects.Add(obj);

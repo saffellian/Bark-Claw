@@ -12,6 +12,10 @@ public class Camera_Follow : MonoBehaviour
         // These public booleans allow you to move in any specific direction
         public bool _followX = true;
         public bool _followY = true;
+        [Range(-0.5f, 0.5f)]
+        public float _offsetX = 0f;
+        [Range(-0.5f, 0.5f)]
+        public float _offsetY = 0f;
 
         private Vector3 _velocity = Vector3.zero;
 
@@ -27,7 +31,7 @@ public class Camera_Follow : MonoBehaviour
             if (_target)
             {
                 Vector3 point = Camera.main.WorldToViewportPoint(_target.position);
-                Vector3 delta = _target.position - Camera.main.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, point.z)); //(new Vector3(0.5, 0.5, point.z));
+                Vector3 delta = _target.position - Camera.main.ViewportToWorldPoint(new Vector3(_offsetX + 0.5f, _offsetY + 0.5f, point.z)); //(new Vector3(0.5, 0.5, point.z));
                 Vector3 destination = transform.position + delta;
                 transform.position = Vector3.SmoothDamp(transform.position, new Vector3(_followX ? destination.x : transform.position.x,
                                                                                          _followY ? destination.y : transform.position.y,

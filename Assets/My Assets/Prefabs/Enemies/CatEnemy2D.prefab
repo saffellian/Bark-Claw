@@ -1,5 +1,203 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3921648627557316137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 373691353953558819}
+  - component: {fileID: 3298246581831696549}
+  m_Layer: 11
+  m_Name: CliffSensor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &373691353953558819
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3921648627557316137}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.35, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8300626587800093811}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3298246581831696549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3921648627557316137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4c266bf91a80044af037d5d437176e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoreList: []
+  EnableTagFilter: 0
+  AllowedTags: []
+  OnDetected:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: SensorToolkit.Sensor+SensorDetectionEventHandler, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnLostDetection:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: SensorToolkit.Sensor+SensorDetectionEventHandler, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  Length: 1.9
+  Radius: 0.3
+  ObstructedByLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  DetectsOnLayers:
+    serializedVersion: 2
+    m_Bits: 4096
+  DetectionMode: 0
+  Direction: {x: 0, y: -1}
+  WorldSpace: 0
+  SensorUpdateMode: 0
+  InitialBufferSize: 20
+  DynamicallyIncreaseBufferSize: 1
+  OnObstruction:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: SensorToolkit.Sensor+SensorEventHandler, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnClear:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: SensorToolkit.Sensor+SensorEventHandler, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!1 &4208534816209728397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1806345763762611368}
+  - component: {fileID: 5853220659407046556}
+  - component: {fileID: 73032148000157110}
+  - component: {fileID: 76464393293255663}
+  m_Layer: 11
+  m_Name: PlayerSensor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1806345763762611368
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208534816209728397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8300626587800093811}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5853220659407046556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208534816209728397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff464aec5bd28204fa60b6456b500e6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoreList: []
+  EnableTagFilter: 0
+  AllowedTags: []
+  OnDetected:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: SensorToolkit.Sensor+SensorDetectionEventHandler, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnLostDetection:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: SensorToolkit.Sensor+SensorDetectionEventHandler, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  DetectionMode: 0
+  RequiresLineOfSight: 1
+  BlocksLineOfSight:
+    serializedVersion: 2
+    m_Bits: 4096
+  TestLOSTargetsOnly: 0
+  NumberOfRays: 1
+  MinimumVisibility: 0.5
+  LineOfSightUpdateMode: 0
+  CheckLineOfSightInterval: 1
+--- !u!60 &73032148000157110
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208534816209728397}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 5, y: 2}
+      - {x: 0, y: 0.5}
+      - {x: 0, y: 0}
+      - {x: 5, y: -2}
+--- !u!50 &76464393293255663
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4208534816209728397}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &8300626587800093820
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,9 +209,9 @@ GameObject:
   - component: {fileID: 8300626587800093811}
   - component: {fileID: 8300626587800093808}
   - component: {fileID: 8300626587800093809}
-  - component: {fileID: 8300626587800093822}
-  - component: {fileID: 1616195612}
   - component: {fileID: 1616195611}
+  - component: {fileID: 3096519415432646478}
+  - component: {fileID: 1352589364216794284}
   m_Layer: 11
   m_Name: CatEnemy2D
   m_TagString: Enemy
@@ -31,7 +229,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -76.53, y: -4.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 373691353953558819}
+  - {fileID: 5419935300593406842}
+  - {fileID: 1806345763762611368}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -102,7 +303,48 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!50 &8300626587800093822
+--- !u!114 &1616195611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8300626587800093820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab10c2f7e0dd0a943baee2c180e4ed2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyType: 1
+  health: 3
+  projectile: {fileID: 5554695699019258307, guid: c02d58dd2914be14182efe5a78837075,
+    type: 3}
+  projectileDamage: 1
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 4096
+  slopeFriction: 1
+  patrolDistance: 3.88
+  attackRange: 5
+  chaseDistance: 5
+  meleeRange: 0.89
+  meleeDamage: 5
+  attackDelay: 1.5
+  projectileVelocity: 5
+  flightPath:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  flightHeight: 10
+  flightPathWidth: 10
+  flightPathHeight: 1
+  attackAngle: 45
+  attackDistance: 8
+  attackDamage: 15
+  patrolChangeTime: 10
+--- !u!50 &3096519415432646478
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -117,13 +359,13 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2.5
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!70 &1616195612
+  m_Constraints: 0
+--- !u!70 &1352589364216794284
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,30 +378,78 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.15, y: 0}
-  m_Size: {x: 0.78, y: 1.1785715}
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.9285714, y: 1.1428572}
   m_Direction: 0
---- !u!114 &1616195611
+--- !u!1 &8978478062220236452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5419935300593406842}
+  - component: {fileID: 3054371051399077591}
+  m_Layer: 11
+  m_Name: GroundSensor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5419935300593406842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8978478062220236452}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.25, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8300626587800093811}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3054371051399077591
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8300626587800093820}
+  m_GameObject: {fileID: 8978478062220236452}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab10c2f7e0dd0a943baee2c180e4ed2e, type: 3}
+  m_Script: {fileID: 11500000, guid: ea99d7406bae0404195d20652de48155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyType: 1
-  projectile: {fileID: 5554695699019258307, guid: c02d58dd2914be14182efe5a78837075,
-    type: 3}
-  whatIsGround:
+  IgnoreList: []
+  EnableTagFilter: 0
+  AllowedTags: []
+  OnDetected:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: SensorToolkit.Sensor+SensorDetectionEventHandler, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnLostDetection:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: SensorToolkit.Sensor+SensorDetectionEventHandler, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  DetectionMode: 0
+  RequiresLineOfSight: 0
+  BlocksLineOfSight:
     serializedVersion: 2
     m_Bits: 0
-  slopeFriction: 1
-  patrolDistance: 3.88
-  attackRange: 5
-  meleeRange: 0.89
-  attackDelay: 1.5
-  projectileVelocity: 5
+  TestLOSTargetsOnly: 0
+  NumberOfRays: 1
+  MinimumVisibility: 0.5
+  SensorRange: 0.43
+  DetectsOnLayers:
+    serializedVersion: 2
+    m_Bits: 4096
+  SensorUpdateMode: 0
+  CheckInterval: 1
+  InitialBufferSize: 20
+  DynamicallyIncreaseBufferSize: 1

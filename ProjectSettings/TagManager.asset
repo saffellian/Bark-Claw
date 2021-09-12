@@ -9,6 +9,7 @@ TagManager:
   - Projectile
   - Fence
   - GrassDecor
+  - KillBoundary
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - AICar
   - Enemy
   - Ground
-  - 
+  - Consumables
   - 
   - 
   - 
