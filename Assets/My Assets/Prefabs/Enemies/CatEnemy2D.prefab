@@ -1,5 +1,77 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2021489085508688404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5109120794750014705}
+  - component: {fileID: 6301051535229040572}
+  m_Layer: 11
+  m_Name: MeleeSensor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5109120794750014705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021489085508688404}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.65, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8300626587800093811}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6301051535229040572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021489085508688404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea99d7406bae0404195d20652de48155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IgnoreList: []
+  EnableTagFilter: 0
+  AllowedTags: []
+  OnDetected:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: SensorToolkit.Sensor+SensorDetectionEventHandler, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnLostDetection:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: SensorToolkit.Sensor+SensorDetectionEventHandler, Assembly-CSharp,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  DetectionMode: 0
+  RequiresLineOfSight: 0
+  BlocksLineOfSight:
+    serializedVersion: 2
+    m_Bits: 0
+  TestLOSTargetsOnly: 0
+  NumberOfRays: 1
+  MinimumVisibility: 0.5
+  SensorRange: 0.5
+  DetectsOnLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  SensorUpdateMode: 0
+  CheckInterval: 1
+  InitialBufferSize: 20
+  DynamicallyIncreaseBufferSize: 0
 --- !u!1 &3921648627557316137
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,6 +305,7 @@ Transform:
   - {fileID: 373691353953558819}
   - {fileID: 5419935300593406842}
   - {fileID: 1806345763762611368}
+  - {fileID: 5109120794750014705}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -317,20 +390,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyType: 1
   health: 3
-  projectile: {fileID: 5554695699019258307, guid: c02d58dd2914be14182efe5a78837075,
-    type: 3}
-  projectileDamage: 1
   whatIsGround:
     serializedVersion: 2
     m_Bits: 4096
   slopeFriction: 1
   patrolDistance: 3.88
-  attackRange: 5
-  chaseDistance: 5
-  meleeRange: 0.89
+  projectile: {fileID: 5554695699019258307, guid: c02d58dd2914be14182efe5a78837075,
+    type: 3}
+  projectileDamage: 1
+  projectileVelocity: 5
   meleeDamage: 5
   attackDelay: 1.5
-  projectileVelocity: 5
   flightPath:
     serializedVersion: 2
     m_Curve: []
