@@ -19,6 +19,8 @@ public class Enemy2D : MonoBehaviour
     [SerializeField] LayerMask whatIsGround;
     [SerializeField] float slopeFriction = 1;
     [SerializeField] float patrolDistance = 3;
+    [SerializeField] float patrolSpeedMultiplier = 1;
+    [SerializeField] float chaseSpeedMultiplier = 1.5f;
     [SerializeField] [EnemyType("Squirrel, Cat")] GameObject projectile;
     [SerializeField] [EnemyType("Squirrel, Cat")] int projectileDamage = 1;
     [SerializeField] [EnemyType("Squirrel, Cat")] float projectileVelocity = 3;
@@ -42,32 +44,45 @@ public class Enemy2D : MonoBehaviour
     private AnimationCurve worldFlightCurve;
     private Root behaviorTree;
     private Blackboard blackboard;
-    private GameObject player;
+    private Transform player;
     private Vector2 startPosition;
     private RaySensor2D cliffSensor;
     private RangeSensor2D groundSensor;
-    private TriggerSensor2D playerSensor;
-    private float sensorOffset;
+    private TriggerSensor2D chaseSensor;
+    private RangeSensor2D meleeSensor;
+    private float cliffSensorOffset;
+    private float meleeSensorOffset;
     private float attackTime;
     private Collider2D collider;
+    private bool previouslyFlipped;
+    private bool isDead;
+    private bool playerInChaseRange;
+    private bool playerInMeleeRange;
+    private bool rightExtentReached;
+    private bool leftExtentReached;
 
     // Start is called before the first frame update
     void Start()
     {
         attackTime = Time.time;
-        player = GameObject.Find("FPSController");
+
+        player = GameObject.Find("Player").transform;
         cliffSensor = transform.Find("CliffSensor").GetComponent<RaySensor2D>();
         groundSensor = transform.Find("GroundSensor").GetComponent<RangeSensor2D>();
-        playerSensor = transform.Find("PlayerSensor").GetComponent<TriggerSensor2D>();
-        sensorOffset = cliffSensor.transform.localPosition.x;
+        chaseSensor = transform.Find("ChaseSensor").GetComponent<TriggerSensor2D>();
+        meleeSensor = transform.Find("MeleeSensor").GetComponent<RangeSensor2D>();
+        
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         collider = GetComponent<Collider2D>();
 
+        cliffSensorOffset = cliffSensor.transform.localPosition.x;
+        meleeSensorOffset = meleeSensor.transform.localPosition.x;
         startPosition = transform.position;
         patrolLeftX = (transform.position - (Vector3.right * patrolDistance)).x;
         patrolRightX = (transform.position + (Vector3.right * patrolDistance)).x;
+        previouslyFlipped = !sr.flipX;
 
         if (enemyType == EnemyType.Hawk)
         {
@@ -110,14 +125,34 @@ public class Enemy2D : MonoBehaviour
     private void Update()
     {
         isGrounded = groundSensor.DetectedObjects.Count > 0;
+        isDead = health <= 0;
+        playerInChaseRange = chaseSensor.DetectedObjects.Find(g => g.name == "Player") != null;
+        playerInMeleeRange = meleeSensor.DetectedObjects.Count != 0;
+        rightExtentReached = !leftWalk && (transform.position.x > patrolRightX || cliffSensor.DetectedObjects.Count == 0);
+        leftExtentReached = leftWalk && (transform.position.x < patrolLeftX || cliffSensor.DetectedObjects.Count == 0);
+
+        // update sensor locations only when the sprite becomes flipped
+        if (previouslyFlipped != sr.flipX)
+        {
+            if (sr.flipX)
+            {
+                cliffSensor.transform.localPosition = new Vector3(-cliffSensorOffset, cliffSensor.transform.localPosition.y, 0);
+                meleeSensor.transform.localPosition = new Vector3(-meleeSensorOffset, meleeSensor.transform.localPosition.y, 0);
+                chaseSensor.transform.localScale = new Vector3(-1, 1, 1);
+            }
+            else
+            {
+                cliffSensor.transform.localPosition = new Vector3(cliffSensorOffset, cliffSensor.transform.localPosition.y, 0);
+                meleeSensor.transform.localPosition = new Vector3(meleeSensorOffset, meleeSensor.transform.localPosition.y, 0);
+                chaseSensor.transform.localScale = new Vector3(1, 1, 1);
+            }
+        }
+        previouslyFlipped = sr.flipX;
     }
 
     private void UpdateBlackboard()
     {
         behaviorTree.Blackboard["isDead"] = health <= 0;
-        behaviorTree.Blackboard["playerInChaseRange"] = playerSensor.DetectedObjects.Find(g => g.name == "Player") != null;
-        behaviorTree.Blackboard["rightExtentReached"] = !leftWalk && (transform.position.x > patrolRightX || cliffSensor.DetectedObjects.Count == 0);
-        behaviorTree.Blackboard["leftExtentReached"] = leftWalk && (transform.position.x < patrolLeftX || cliffSensor.DetectedObjects.Count == 0);
     }
 
     private Root HawkBehaviorTree()
@@ -127,20 +162,27 @@ public class Enemy2D : MonoBehaviour
 
     private Root CatBehaviorTree()
     {
-        return new Root(new Service(0.125f, UpdateBlackboard, 
-            new Sequence(
-                new Action(() => {
-                    animator.SetBool("Movement", true);
-                }){ Label = "Enable Movement Animation"} ,
-                new BlackboardCondition("playerInChaseRange", Operator.IS_EQUAL, false, Stops.SELF,
-                    GroundPatrol()
+        return new Root(new Service(0.125f, UpdateBlackboard,
+            new BlackboardCondition("isDead", Operator.IS_EQUAL, false, Stops.SELF,
+                new Sequence(
+                    new Succeeder(new Condition(() =>
+                    {
+                        return !playerInChaseRange;
+                    },
+                        Stops.SELF,
+                        GroundPatrol()
+                    ))
+                    { Label = "Ground Patrol" },
+                    new Succeeder(new Condition(() =>
+                    {
+                        return !playerInMeleeRange && playerInChaseRange;
+                    },
+                        Stops.SELF,
+                        GroundChase()
+                    ))
+                    { Label = "Ground Patrol" },                    
+                    MeleeAttack()
                 )
-                { Label = "Ground Patrol" },
-                new Action(() => {
-                    animator.SetBool("Movement", false);
-                    Debug.Log("Chase");
-                })
-                { Label = "Disable Movement Animation" }
             )
         ));
     }
@@ -152,33 +194,35 @@ public class Enemy2D : MonoBehaviour
 
     private Node GroundPatrol()
     {
-        // set patrol target
         return new Repeater(new Sequence(
-            new Action(() => {
-                cliffSensor.transform.localPosition = new Vector3(sensorOffset, cliffSensor.transform.localPosition.y, 0);
-                playerSensor.transform.localScale = new Vector3(1, 1, 1);
+            new Action(() =>
+            {
+                animator.SetBool("Movement", true);
                 sr.flipX = false;
                 leftWalk = false;
             }),
             new Wait(0.3f),
-            new Succeeder(new BlackboardCondition("rightExtentReached", Operator.IS_EQUAL, false, Stops.SELF,
-                new Repeater(new Action(() => {
-                    rb.velocity = Vector2.right;
-            
+            new Succeeder(
+                new Condition(() => { return !rightExtentReached; }, Stops.SELF,
+                new Repeater(new Action(() =>
+                {
+                    rb.velocity = Vector2.right * patrolSpeedMultiplier;
+
                     NormalizeSlope();
                 }))
             )),
-            new Action(() => {
-                cliffSensor.transform.localPosition = new Vector3(-sensorOffset, cliffSensor.transform.localPosition.y, 0);
-                playerSensor.transform.localScale = new Vector3(-1, 1, 1);
+            new Action(() =>
+            {
                 sr.flipX = true;
                 leftWalk = true;
             }),
             new Wait(0.3f),
-            new Succeeder(new BlackboardCondition("leftExtentReached", Operator.IS_EQUAL, false, Stops.SELF,
-                new Repeater(new Action(() => {
-                    rb.velocity = Vector2.left;
-            
+            new Succeeder(
+                new Condition(() => { return !leftExtentReached; }, Stops.SELF,
+                new Repeater(new Action(() =>
+                {
+                    rb.velocity = Vector2.left * patrolSpeedMultiplier;
+
                     NormalizeSlope();
                 }))
             ))
@@ -193,25 +237,36 @@ public class Enemy2D : MonoBehaviour
 
     private Node GroundChase()
     {
-        return null;
+        return new Repeater(
+            new Action(() => {
+
+            })
+        );
     }
 
     private Node MeleeAttack()
     {
-        return new Action(() =>
-        {
-            animator.SetBool("Movement", false);
-            if (Time.time - attackTime > attackDelay)
+        return new Cooldown(attackDelay, 0.125f,
+        new Sequence(
+            new Action(() =>
             {
-                attackTime = Time.time;
+                animator.SetBool("Movement", false);
                 rb.velocity = Vector2.zero;
                 animator.SetBool("Attack", true);
-                //c.GetComponent<PlayerHealth>().ApplyDamage(meleeDamage);
+                player.GetComponent<PlayerHealth>().ApplyDamage(meleeDamage);
                 // yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"));
                 // yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"));
+            }),
+            new WaitForCondition(() => {
+                return animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack");
+            }, 
+            new WaitForCondition(() => {
+                return !animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack");
+            }, new Action(() => {
                 animator.SetBool("Attack", false);
-            }
-        });
+            })))
+        )
+        );
     }
 
     private Node ProjectileAttack()
