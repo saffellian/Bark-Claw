@@ -396,7 +396,7 @@ MonoBehaviour:
   slopeFriction: 1
   patrolDistance: 3.88
   patrolSpeedMultiplier: 1
-  chaseSpeedMultiplier: 1.5
+  chaseSpeedMultiplier: 2.3
   projectile: {fileID: 5554695699019258307, guid: c02d58dd2914be14182efe5a78837075,
     type: 3}
   projectileDamage: 1

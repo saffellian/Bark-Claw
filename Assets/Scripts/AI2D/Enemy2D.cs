@@ -180,8 +180,17 @@ public class Enemy2D : MonoBehaviour
                         Stops.SELF,
                         GroundChase()
                     ))
-                    { Label = "Ground Patrol" },                    
-                    MeleeAttack()
+                    { Label = "Ground Patrol" },  
+                    new Succeeder(new Condition(() => 
+                    {
+                        return playerInMeleeRange;
+                    }, 
+                        Stops.SELF,                  
+                        MeleeAttack()
+                    )),
+                    new Action(() => {
+                        animator.SetBool("Attack", false);
+                    })
                 )
             )
         ));
@@ -238,9 +247,24 @@ public class Enemy2D : MonoBehaviour
     private Node GroundChase()
     {
         return new Repeater(
-            new Action(() => {
-
-            })
+            new Sequence(
+                new Succeeder(
+                    new Condition(() => { return player.position.x < transform.position.x; }, Stops.SELF,
+                        new Action(() => {
+                            // move left
+                            rb.velocity = Vector2.left * chaseSpeedMultiplier;
+                        })
+                    )
+                ),
+                new Succeeder(
+                    new Condition(() => { return player.position.x > transform.position.x; }, Stops.SELF,
+                        new Action(() => {
+                            // move right
+                            rb.velocity = Vector2.right * chaseSpeedMultiplier;
+                        })
+                    )
+                )
+            )
         );
     }
 
@@ -254,8 +278,6 @@ public class Enemy2D : MonoBehaviour
                 rb.velocity = Vector2.zero;
                 animator.SetBool("Attack", true);
                 player.GetComponent<PlayerHealth>().ApplyDamage(meleeDamage);
-                // yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"));
-                // yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"));
             }),
             new WaitForCondition(() => {
                 return animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack");
