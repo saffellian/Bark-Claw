@@ -117,7 +117,6 @@ public class Enemy : MonoBehaviour
     private Root InitializeBehaviorTree()
     {
         return new Root(
-
             // service to update player distance sensor
             new Service(0.125f, UpdateBlackboard,
                     new Sequence(
@@ -146,7 +145,6 @@ public class Enemy : MonoBehaviour
                             )
                             )
                         )),
-
                         new Action(() =>
                         {
                             agent.enabled = false;
@@ -155,10 +153,9 @@ public class Enemy : MonoBehaviour
                             audioSource.PlayOneShot(deathSound);
                             animator.SetTrigger(deathType.ToString());
                             DropItem();
-                            if (behaviorTree != null && behaviorTree.CurrentState == Node.State.ACTIVE)
-                                behaviorTree.Stop();
                         })
-                        { Label = "Dead" }
+                        { Label = "Dead" },
+                        new WaitUntilStopped()
                     )
             )
         );
