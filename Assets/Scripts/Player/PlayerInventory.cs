@@ -35,9 +35,10 @@ public class PlayerInventory : MonoBehaviour
         inventorySize = availableItems.Count;
 
         instantiatedItems = new List<GameObject>(inventorySize);
+        var weaponParent = transform.Find("FirstPersonCharacter").Find("WeaponCanvas");
         foreach (var item in availableItems)
         {
-            instantiatedItems.Add(Instantiate(item, gameObject.transform.GetChild(0)));
+            instantiatedItems.Add(Instantiate(item, weaponParent));
         }
 
         foreach (var item in instantiatedItems)

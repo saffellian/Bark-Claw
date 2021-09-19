@@ -26,7 +26,6 @@ public class Weapon : MonoBehaviour
     private static float MIN_DROP_DELAY = 0.1f;
 
     [SerializeField] private WeaponType weaponType = WeaponType.SemiAuto;
-    [SerializeField] bool overrideDefaultProjectileDamage = false;
     [SerializeField] private int projectileDamage = 1;
     [SerializeField] private float delayBetweenShots = 0.8f;
     [SerializeField] private int ammo = 20;
@@ -263,7 +262,7 @@ public class Weapon : MonoBehaviour
                 break;
         }
 
-        if (overrideDefaultProjectileDamage && projectileRef != null)
+        if (projectileRef != null)
         {
             projectileRef.SetProjectileDamage(projectileDamage);
         }
