@@ -127,7 +127,7 @@ public class GameStateManager : MonoBehaviour
         }
         catch (Exception e)
         {
-            Debug.LogError(e.Message);
+            Debug.Log(e.Message);
             return GameStateProcessResult.FAILURE;
         }
         
@@ -157,7 +157,7 @@ public class GameStateManager : MonoBehaviour
         }
         catch (Exception e)
         {
-            Debug.LogError(e.Message);
+            Debug.Log(e.Message);
             return GameStateProcessResult.FAILURE;
         }
 
