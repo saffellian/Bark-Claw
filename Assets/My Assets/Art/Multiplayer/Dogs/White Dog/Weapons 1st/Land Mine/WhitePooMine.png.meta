@@ -1,12 +1,30 @@
 fileFormatVersion: 2
 guid: 651003a72708ad640a5e46529914c005
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: WhitePooMine_0
+    21300002: WhitePooMine_2
+    21300004: WhitePooMine_4
+    21300006: WhitePooMine_6
+    21300008: WhitePooMine_8
+    21300010: WhitePooMine_10
+    21300012: WhitePooMine_12
+    21300014: WhitePooMine_14
+    21300016: WhitePooMine_16
+    21300018: WhitePooMine_18
+    21300020: WhitePooMine_20
+    21300022: WhitePooMine_21
+    21300024: WhitePooMine_23
+    21300026: WhitePooMine_25
+    21300028: WhitePooMine_26
+    21300030: WhitePooMine_27
+    21300032: WhitePooMine_29
+    21300034: WhitePooMine_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -31,27 +49,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: -1
-    wrapV: -1
+    wrapU: 1
+    wrapV: 1
     wrapW: -1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -60,7 +78,18 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -71,11 +100,371 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: WhitePooMine_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.4953243, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae76496b80488ea4bb3ee2cba7f7eac5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePooMine_2
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5109105, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbdffa4914d8be742907ce4de91cf021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePooMine_4
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5249386, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea498d7150c2ffc42bdfd46acd769455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePooMine_6
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.35192442, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b34805c24c30e14f823faa795a344b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePooMine_8
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5046749, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c347babd9916a684da6271c7c0d52849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePooMine_10
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50467587, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad28119342012d24bb93d007754672f3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePooMine_12
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.48752975, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabe986d932ce18458c6105c648ff252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePooMine_14
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 3
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f610200804e8a4b87d01eaa4207a84
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePooMine_16
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.4703846, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1735d1a83a7b44abb1fe84df4c658f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePooMine_18
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 3
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8719661c71df711428f325d96d862933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePooMine_20
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.46726608, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e34a4a335cf6a41bb9c3c2ffaf59ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePooMine_21
+      rect:
+        serializedVersion: 2
+        x: 1398
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.46726608, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4efd77d58772646aeaf95adb570964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePooMine_23
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.3877735, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418dfc6fae872f04aad4a73da196b047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePooMine_25
+      rect:
+        serializedVersion: 2
+        x: 1631
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.41738892, y: 0.49688262}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7948766379cf619499ec4daeaea604a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePooMine_26
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5311718, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e887b451758d243b6ee46fdde866fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePooMine_27
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.49220467, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a41938464d85646b46336433b0cf99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePooMine_29
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 2
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.51714325, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b0b6678a78895498a2b2d54f3a45cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePooMine_1
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.52182055, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc75266487e5f354ba48432868e16eaa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5b215c7b68780994d87fd3a482ef93c3
     vertices: []
     indices: 
     edges: []

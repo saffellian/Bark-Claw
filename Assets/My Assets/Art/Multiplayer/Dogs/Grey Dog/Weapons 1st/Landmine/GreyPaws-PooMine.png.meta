@@ -1,12 +1,30 @@
 fileFormatVersion: 2
 guid: a0939d8d40635a74b9d39866af1fde79
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: GreyPaws-PooMine_0
+    21300002: GreyPaws-PooMine_2
+    21300004: GreyPaws-PooMine_4
+    21300006: GreyPaws-PooMine_6
+    21300008: GreyPaws-PooMine_8
+    21300010: GreyPaws-PooMine_10
+    21300012: GreyPaws-PooMine_12
+    21300014: GreyPaws-PooMine_13
+    21300016: GreyPaws-PooMine_15
+    21300018: GreyPaws-PooMine_17
+    21300020: GreyPaws-PooMine_19
+    21300022: GreyPaws-PooMine_20
+    21300024: GreyPaws-PooMine_21
+    21300026: GreyPaws-PooMine_23
+    21300028: GreyPaws-PooMine_25
+    21300030: GreyPaws-PooMine_26
+    21300032: GreyPaws-PooMine_27
+    21300034: GreyPaws-PooMine_29
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -31,27 +49,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: -1
-    wrapV: -1
+    wrapU: 1
+    wrapV: 1
     wrapW: -1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -60,7 +78,18 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -71,11 +100,371 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: GreyPaws-PooMine_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.48947245, y: 0.49999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c4b16d81dcdaf4484d778ab489ed37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyPaws-PooMine_2
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5522909, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a0416392d08ed4ca460ddf79dc2a1f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyPaws-PooMine_4
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50808954, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc690d826c3824f45b7a7946b513ee0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyPaws-PooMine_6
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.49224854, y: 0.49999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e920b470206cb7840bd46a6e762713ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyPaws-PooMine_8
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.523, y: 0.49999982}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1200020320301404d9b63cbe09991292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyPaws-PooMine_10
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.492, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c0670bd54d04b4bb1e7f0e4c3b9fa8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyPaws-PooMine_12
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5091362, y: 0.49999982}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf77b96982f23a41980c3a7d96b915c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyPaws-PooMine_13
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.509, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10071794ddeaab148b9a80b6b2b66377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyPaws-PooMine_15
+      rect:
+        serializedVersion: 2
+        x: 942
+        y: 3
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a684641f3b1f904faa7245323a66c48
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyPaws-PooMine_17
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.4931469, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf1916d39d48574e99fe6bc8ce6e787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyPaws-PooMine_19
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5045681, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef96c5f25217c11459ca67b35a083659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyPaws-PooMine_20
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.497715, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 003bf53871d8e2c4aa01637344d1593d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyPaws-PooMine_21
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.4931469, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f80c5a6cf99ca241b370d212dbb8fda
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyPaws-PooMine_23
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5022831, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51b43f611e66e3e499ea4bd1e9a34902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyPaws-PooMine_25
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 3
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37d779491c649343a34ce5063f1881b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyPaws-PooMine_26
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5045681, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a754a49ed05536e48948c0f1071e530e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyPaws-PooMine_27
+      rect:
+        serializedVersion: 2
+        x: 1861
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5045681, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f13ca91884fc934ba954a9e26dc7ccf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyPaws-PooMine_29
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.502285, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71d15018dc8e03e42b0cdd7f54fbfc62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e7b7dd2a7758475479403e8628b8ae9b
     vertices: []
     indices: 
     edges: []

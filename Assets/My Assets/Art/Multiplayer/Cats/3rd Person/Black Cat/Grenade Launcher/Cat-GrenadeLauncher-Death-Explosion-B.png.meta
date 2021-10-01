@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: e28de6970b2bfb149869681a94f073fb
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Cat-GrenadeLauncher-Death-Explosion-B_0
+    21300002: Cat-GrenadeLauncher-Death-Explosion-B_1
+    21300004: Cat-GrenadeLauncher-Death-Explosion-B_2
+    21300006: Cat-GrenadeLauncher-Death-Explosion-B_3
+    21300008: Cat-GrenadeLauncher-Death-Explosion-B_4
+    21300010: Cat-GrenadeLauncher-Death-Explosion-B_5
+    21300012: Cat-GrenadeLauncher-Death-Explosion-B_6
+    21300014: Cat-GrenadeLauncher-Death-Explosion-B_7
+    21300016: Cat-GrenadeLauncher-Death-Explosion-B_8
+    21300018: Cat-GrenadeLauncher-Death-Explosion-B_9
+    21300020: Cat-GrenadeLauncher-Death-Explosion-B_10
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cat-GrenadeLauncher-Death-Explosion-B_0
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1741
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50749aad9d7f8ce478b639f8a121cde5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GrenadeLauncher-Death-Explosion-B_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1559
+        width: 112
+        height: 109
+      alignment: 9
+      pivot: {x: 0.5, y: 0.405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ec12090b11e1149a7c6f4255557754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GrenadeLauncher-Death-Explosion-B_2
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1393
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab0b17957ab084449b13d0bd56cae7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GrenadeLauncher-Death-Explosion-B_3
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1219
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43fbc1648a545346aa776c35c23ab6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GrenadeLauncher-Death-Explosion-B_4
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1045
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1532d060c8608c44298dfa1460ca02af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GrenadeLauncher-Death-Explosion-B_5
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 871
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 244d519037678564aa39f5e3afba4133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GrenadeLauncher-Death-Explosion-B_6
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 697
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2755e2f78218ee42813952cb7c301ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GrenadeLauncher-Death-Explosion-B_7
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 523
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.52141654, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb40e5918a1412439ab7fd9608b3e22
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GrenadeLauncher-Death-Explosion-B_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 349
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5270389, y: 0.3400003}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e4b4075522043449f52bdc6b746135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GrenadeLauncher-Death-Explosion-B_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 175
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5270389, y: 0.3400003}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe93ff696108e143a42c4279e126576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GrenadeLauncher-Death-Explosion-B_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5283264, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6844994bdc39a4ea975605a4591246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d16bfda1c04a6234494087ea7e37cbc0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Camera: {fileID: 0}
+  unlockHorizontalAxes: 0
 --- !u!135 &6596927309470719000
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -138,7 +139,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed771f41ab7ca494faba6275fff0478f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  projectileType: 0
+  damage: 20
+  explosionPrefab: {fileID: 0}
+  explosionRadius: 5
+  maxLifetime: 10
 --- !u!95 &7990832239119324501
 Animator:
   serializedVersion: 3

@@ -113,9 +113,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponType: 4
+  overrideDefaultProjectileDamage: 0
+  projectileDamage: 1
   delayBetweenShots: 0.8
   ammo: 1
-  maxAmmo: 20
+  maxAmmo: 100
   dropOnEmpty: 1
   projectile: {fileID: 5446231911465943678, guid: 43945cd104dfa4c48850198f71b19d58,
     type: 3}

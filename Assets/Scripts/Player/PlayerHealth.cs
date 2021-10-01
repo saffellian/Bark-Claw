@@ -39,7 +39,7 @@ public class PlayerHealth : MonoBehaviour
         if (health <= 0)
         {
             onDeath.Invoke();
-            FindObjectOfType<DeathCanvas>().BeginTransition();
+            FindObjectOfType<DeathCanvas>()?.BeginTransition();
         }
         else
         {

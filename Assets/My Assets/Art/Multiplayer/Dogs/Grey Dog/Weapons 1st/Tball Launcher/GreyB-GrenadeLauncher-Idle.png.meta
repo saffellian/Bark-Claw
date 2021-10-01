@@ -1,12 +1,18 @@
 fileFormatVersion: 2
 guid: cabe449dad1339a4591b207e5048e61c
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: GreyB-GrenadeLauncher-Idle_0
+    21300002: GreyB-GrenadeLauncher-Idle_1
+    21300004: GreyB-GrenadeLauncher-Idle_2
+    21300006: GreyB-GrenadeLauncher-Idle_3
+    21300008: GreyB-GrenadeLauncher-Idle_4
+    21300010: GreyB-GrenadeLauncher-Idle_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -31,27 +37,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: -1
-    wrapV: -1
+    wrapU: 1
+    wrapV: 1
     wrapW: -1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -69,13 +75,144 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: GreyB-GrenadeLauncher-Idle_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 5
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5119967, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea34eea2a85a20e479871761b61e6ec0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyB-GrenadeLauncher-Idle_1
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 5
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41789dd3bdfc8b43a07609d67e766e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyB-GrenadeLauncher-Idle_2
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 5
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5419884, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453f8fba514be324786ce2a99cfd02bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyB-GrenadeLauncher-Idle_3
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 5
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.49400187, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c81b8e565e8aa64e8c54267f7b9504b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyB-GrenadeLauncher-Idle_4
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 5
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.498, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d3ecaae37dc0a74ba27e19dcd5f577a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyB-GrenadeLauncher-Idle_5
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 5
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7d61c5122b73044ac62257953832f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d1a765a04d2a0f3479174959445e37eb
     vertices: []
     indices: 
     edges: []

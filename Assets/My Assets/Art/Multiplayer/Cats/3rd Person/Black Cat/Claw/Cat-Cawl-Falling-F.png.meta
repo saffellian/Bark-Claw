@@ -1,0 +1,267 @@
+fileFormatVersion: 2
+guid: 8a4e9b0d7d49d7f438143251814f087d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Cat-Cawl-Falling-F_0
+    21300002: Cat-Cawl-Falling-F_1
+    21300004: Cat-Cawl-Falling-F_2
+    21300006: Cat-Cawl-Falling-F_3
+    21300008: Cat-Cawl-Falling-F_4
+    21300010: Cat-Cawl-Falling-F_5
+    21300012: Cat-Cawl-Falling-F_6
+    21300014: Cat-Cawl-Falling-F_7
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cat-Cawl-Falling-F_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 8
+        width: 64
+        height: 78
+      alignment: 9
+      pivot: {x: 0.48431575, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c934bec18c53b941a115fd01bdf383a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Cawl-Falling-F_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 8
+        width: 64
+        height: 78
+      alignment: 9
+      pivot: {x: 0.48431575, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe90284a24c61949a1cf24e55b61dfe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Cawl-Falling-F_2
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 8
+        width: 64
+        height: 78
+      alignment: 9
+      pivot: {x: 0.49999976, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdba64e99fa56c447ac7c9cd37dd134d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Cawl-Falling-F_3
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 8
+        width: 72
+        height: 78
+      alignment: 9
+      pivot: {x: 0.3887842, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa46062bb6d636429ee2af2b5a62b84
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Cawl-Falling-F_4
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 8
+        width: 71
+        height: 78
+      alignment: 9
+      pivot: {x: 0.3950754, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62156be3f7e40fd41ac02372864bb50e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Cawl-Falling-F_5
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 8
+        width: 72
+        height: 78
+      alignment: 9
+      pivot: {x: 0.3907831, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47125adeaba7a414099f444eb80bec1c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Cawl-Falling-F_6
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 8
+        width: 72
+        height: 78
+      alignment: 9
+      pivot: {x: 0.3850352, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31613ae49fbee3942af68e1f8c049b06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Cawl-Falling-F_7
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 8
+        width: 64
+        height: 78
+      alignment: 9
+      pivot: {x: 0.49986267, y: 0.43}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb0a45a3c10a4d42b939a58b7f3ffbc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 866b784bf19a21e49943e6f96fd5aa9b
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

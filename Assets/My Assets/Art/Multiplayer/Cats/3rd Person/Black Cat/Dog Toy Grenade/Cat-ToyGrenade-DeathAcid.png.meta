@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: 08758b1074653e04cb0c52c2902a29a1
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Cat-ToyGrenade-DeathAcid_0
+    21300002: Cat-ToyGrenade-DeathAcid_1
+    21300004: Cat-ToyGrenade-DeathAcid_2
+    21300006: Cat-ToyGrenade-DeathAcid_3
+    21300008: Cat-ToyGrenade-DeathAcid_4
+    21300010: Cat-ToyGrenade-DeathAcid_5
+    21300012: Cat-ToyGrenade-DeathAcid_6
+    21300014: Cat-ToyGrenade-DeathAcid_7
+    21300016: Cat-ToyGrenade-DeathAcid_8
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cat-ToyGrenade-DeathAcid_0
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 881
+        width: 64
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5026071, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1152ca5f7646a9e478c9e30ea39e632c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ToyGrenade-DeathAcid_1
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 771
+        width: 96
+        height: 87
+      alignment: 9
+      pivot: {x: 0.5, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab9885d9d0a3d648b295c38c7a12cee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ToyGrenade-DeathAcid_2
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 661
+        width: 95
+        height: 87
+      alignment: 9
+      pivot: {x: 0.49766475, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85157056e13fb14ca1cefb119618426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ToyGrenade-DeathAcid_3
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 551
+        width: 94
+        height: 87
+      alignment: 9
+      pivot: {x: 0.5, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d805d5015cdcaa4ba7dc51de2b96dda
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ToyGrenade-DeathAcid_4
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 441
+        width: 99
+        height: 87
+      alignment: 9
+      pivot: {x: 0.49415034, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 116eb3030db61ae47a5a101e1ec17d0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ToyGrenade-DeathAcid_5
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 331
+        width: 83
+        height: 87
+      alignment: 9
+      pivot: {x: 0.48255664, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef3fd1def01a894493ca3b7853dfbaa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ToyGrenade-DeathAcid_6
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 221
+        width: 90
+        height: 87
+      alignment: 9
+      pivot: {x: 0.4999993, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032c5dc8db537a14a8ead7f607103b2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ToyGrenade-DeathAcid_7
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 111
+        width: 100
+        height: 87
+      alignment: 9
+      pivot: {x: 0.5, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec891cabe1cea24f8627c0dabefd9d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ToyGrenade-DeathAcid_8
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1
+        width: 95
+        height: 87
+      alignment: 9
+      pivot: {x: 0.49390402, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1874b0d3bfb6fbd46b0d943eaac9d3b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 602742796d2141b48b60757b7cbe40bc
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

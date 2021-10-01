@@ -4825,9 +4825,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponType: 6
+  overrideDefaultProjectileDamage: 0
+  projectileDamage: 1
   delayBetweenShots: 0
-  ammo: 100
-  maxAmmo: 20
+  ammo: 40
+  maxAmmo: 100
   dropOnEmpty: 1
   projectile: {fileID: 0}
   projectileSpread: 0

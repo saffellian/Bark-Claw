@@ -114,9 +114,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponType: 3
+  overrideDefaultProjectileDamage: 1
+  projectileDamage: 15
   delayBetweenShots: 0.8
-  ammo: 20
-  maxAmmo: 20
+  ammo: 25
+  maxAmmo: 500
   dropOnEmpty: 0
   projectile: {fileID: 6596927309470718997, guid: eeb1a071238fd004390ddd6ba22e8645,
     type: 3}
@@ -124,7 +126,7 @@ MonoBehaviour:
   aoeRadius: 10
   throwForce: 5
   explosiveTimer: 3
-  shotgunProjectileCount: 5
+  shotgunProjectileCount: 10
   projectileSpeed: 20
   fluidDamage: 1
   meleeDamage: 5

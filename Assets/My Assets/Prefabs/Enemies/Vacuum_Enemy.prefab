@@ -154,9 +154,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyType: 0
-  health: 100
+  health: 150
   normalDeathOnly: 0
-  attackDistance: 10
+  meleeAttackDistance: 0
+  projectileAttackRange: 20
   chaseDistance: 20
   attackDamage: 5
   attackSpeed: 6

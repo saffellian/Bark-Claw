@@ -1,12 +1,30 @@
 fileFormatVersion: 2
 guid: f197a4c128b66a643acdfc78d28e320b
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: tanPaws-BombToy_0
+    21300002: tanPaws-BombToy_1
+    21300004: tanPaws-BombToy_4
+    21300006: tanPaws-BombToy_6
+    21300008: tanPaws-BombToy_7
+    21300010: tanPaws-BombToy_9
+    21300012: tanPaws-BombToy_11
+    21300014: tanPaws-BombToy_13
+    21300016: tanPaws-BombToy_15
+    21300018: tanPaws-BombToy_17
+    21300020: tanPaws-BombToy_18
+    21300022: tanPaws-BombToy_20
+    21300024: tanPaws-BombToy_22
+    21300026: tanPaws-BombToy_24
+    21300028: tanPaws-BombToy_26
+    21300030: tanPaws-BombToy_27
+    21300032: tanPaws-BombToy_29
+    21300034: tanPaws-BombToy_31
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -31,27 +49,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: -1
-    wrapV: -1
+    wrapU: 1
+    wrapV: 1
     wrapW: -1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -60,7 +78,18 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -71,11 +100,371 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: tanPaws-BombToy_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 3
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce9fcdb3a4a797f448fc6222ad78be4d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-BombToy_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.57999945, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1586a966c36ba6144a3aa07326bf9408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-BombToy_4
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.58, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7f0572de2d4df45b81e6271bc5d147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-BombToy_6
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.52625465, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65752585a8fa5774e98426c781b2a069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-BombToy_7
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.59, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596a39309abdc0348ad4596de2bffc0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-BombToy_9
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5895, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a60a417d308c4c46a2704de720dca8e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-BombToy_11
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.605, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f998bfb9663f09e4ba8b7f8d707a3bf0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-BombToy_13
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.57638264, y: 0.5000001}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0c7f5f7a5d402438a0b0f6423fb7a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-BombToy_15
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.58, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc376bed1504144d98d0ba5942f5b3c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-BombToy_17
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.56510925, y: 0.49999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa4462b60a49274d8fa3832c6e854f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-BombToy_18
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.58, y: 0.49999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57cfa12dc70e5de49992da5768bdbe9f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-BombToy_20
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.58, y: 0.49999982}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c521171e183a8345967e67e292fb1fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-BombToy_22
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 3
+        width: 74
+        height: 64
+      alignment: 9
+      pivot: {x: 0.36, y: 0.49999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b026abc295429e478ee60c9726b2a59
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-BombToy_24
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 3
+        width: 74
+        height: 64
+      alignment: 9
+      pivot: {x: 0.36438483, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db056a325cc1f84eb0ec16aaa5f9def
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-BombToy_26
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.35038376, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcec156861f083f4e87e1d66d1c2fdcf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-BombToy_27
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.49423409, y: 0.49999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52eca3b88f2de1c428c58b0175848544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-BombToy_29
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 3
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3bc0e678823e6429d9235985d5e8e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-BombToy_31
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 3
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43891d24a730fac4186381a8f3efe00b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 82d0be6fadf6cc241b01d31194d0a4a2
     vertices: []
     indices: 
     edges: []

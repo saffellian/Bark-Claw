@@ -1,12 +1,20 @@
 fileFormatVersion: 2
 guid: f5ef29c394d726341b16790dcb995c54
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: TanWienerDog-BrownShoot_0
+    21300002: TanWienerDog-BrownShoot_1
+    21300004: TanWienerDog-BrownShoot_2
+    21300006: TanWienerDog-BrownShoot_3
+    21300008: TanWienerDog-BrownShoot_4
+    21300010: TanWienerDog-BrownShoot_5
+    21300012: TanWienerDog-BrownShoot_6
+    21300014: TanWienerDog-BrownShoot_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -31,27 +39,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: -1
-    wrapV: -1
+    wrapU: 1
+    wrapV: 1
     wrapW: -1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -69,13 +77,184 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: TanWienerDog-BrownShoot_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.46004972, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f99b5669aae58684c817c1e1719239b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TanWienerDog-BrownShoot_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 5
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50665843, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df0dab04bb78d2418047f0c9956a04b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TanWienerDog-BrownShoot_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 5
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.4750316, y: 0.50000024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85014ae64ebae641a98b846b57f710e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TanWienerDog-BrownShoot_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 5
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.49667096, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea91c47dec949846bc7178873e3b19d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TanWienerDog-BrownShoot_4
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 5
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.48668337, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93fe826d35307a941b092550d75f8e98
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TanWienerDog-BrownShoot_5
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 5
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.476696, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c44f39f6138855499a0df88b4f06963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TanWienerDog-BrownShoot_6
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 5
+        width: 65
+        height: 64
+      alignment: 9
+      pivot: {x: 0.46722084, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c957e5dc19ce3a9428bd7d317913eb47
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TanWienerDog-BrownShoot_7
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 5
+        width: 58
+        height: 63
+      alignment: 9
+      pivot: {x: 0.52571577, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c198db6a67ad9104da2068112132ccf2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 28bbd53d4cc94524c96ad781e13faa54
     vertices: []
     indices: 
     edges: []

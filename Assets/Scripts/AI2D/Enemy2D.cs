@@ -76,7 +76,8 @@ public class Enemy2D : MonoBehaviour
     private void FixedUpdate()
     {
     }
-
+    
+    #if UNITY_EDITOR
     private void OnDrawGizmosSelected()
     {
         if (!Application.isPlaying)
@@ -113,7 +114,7 @@ public class Enemy2D : MonoBehaviour
             }
         }
     }
-
+    #endif
     private IEnumerator BrainLogic()
     {
         while (gameObject.activeInHierarchy)
