@@ -7,11 +7,9 @@ using Newtonsoft.Json;
 [System.Serializable]
 public class IntEvent : UnityEvent<int> { }
 
-public class PlayerHealth : MonoBehaviour, ISaveable
+public class PlayerHealth : Saveable
 {
     public static PlayerHealth Instance;
-    
-    Dictionary<string, object> saveData = new Dictionary<string, object>();
 
     [HideInInspector] public UnityEvent onDeath = new UnityEvent();
     [HideInInspector] public IntEvent onDamaged = new IntEvent(); // invokes with current health amount
@@ -78,14 +76,14 @@ public class PlayerHealth : MonoBehaviour, ISaveable
         return health > 0;
     }
 
-    public SaveableData GetObjectState()
+    public override SaveableData GetObjectState()
     {
         saveData["health"] = health;
         var data = new SaveableData(GetDictionaryKey(), JsonConvert.SerializeObject(saveData));
         return data;
     }
 
-    public void ApplyObjectState(string objectJson)
+    public override void ApplyObjectState(string objectJson)
     {
         var state = JsonConvert.DeserializeObject<Dictionary<string, object>>(objectJson);
 
@@ -93,10 +91,5 @@ public class PlayerHealth : MonoBehaviour, ISaveable
         // update health UI
         // TODO: prevent damaged effects when loading health
         onDamaged.Invoke(health);
-    }
-
-    public string GetDictionaryKey()
-    {
-        return $"{gameObject.GetInstanceID()}:{this.GetType().Name}";
     }
 }

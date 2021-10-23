@@ -64,4 +64,13 @@ public class PausedMenu: MonoBehaviour
         Debug.Log("Quitting Game...");
         Application.Quit();
     }
+
+    public void Exit2DLevel()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+        SceneManager.LoadScene("3DLevel");
+    }
 }

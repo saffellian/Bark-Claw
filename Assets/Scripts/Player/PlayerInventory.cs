@@ -135,6 +135,7 @@ public class PlayerInventory : MonoBehaviour
             if (inventory[i] == item)
             {
                 statusBar.DisableWeapon(i);
+                instantiatedItems[i].SetActive(false);
                 inventory[i] = null;
             }
         }
