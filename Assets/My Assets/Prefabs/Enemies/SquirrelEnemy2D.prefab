@@ -151,3 +151,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab10c2f7e0dd0a943baee2c180e4ed2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyType: 0
+  health: 3
+  projectile: {fileID: 0}
+  projectileDamage: 1
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
+  slopeFriction: 1
+  patrolDistance: 3
+  attackRange: 5
+  chaseDistance: 5
+  meleeRange: 3
+  meleeDamage: 5
+  attackDelay: 1.5
+  projectileVelocity: 3
+  flightPath:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  flightHeight: 10
+  flightPathWidth: 10
+  flightPathHeight: 1
+  attackAngle: 45
+  attackDistance: 8
+  attackDamage: 15
+  patrolChangeTime: 10

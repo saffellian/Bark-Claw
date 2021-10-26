@@ -1,14 +1,18 @@
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace UnityStandardAssets.Characters.FirstPerson
 {
+    [Serializable]
     [RequireComponent(typeof (CharacterController))]
     [RequireComponent(typeof (AudioSource))]
-    public class FirstPersonController : MonoBehaviour
+    public class FirstPersonController : MonoBehaviour, ISaveable
     {
         [SerializeField] private float m_WalkSpeed;
         [SerializeField] private float m_RunSpeed;
@@ -46,6 +50,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private AudioSource m_AudioSource;
         private bool animationMovement = false;
         private Vector3 m_Impact = Vector3.zero;
+        private Dictionary<string, object> saveData = new Dictionary<string, object>();
 
         // Use this for initialization
         private void Start()
@@ -93,6 +98,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
             bodyAnimator.SetInteger("MoveDirection", m_MoveDir.z > 0.01f ? -1 : m_MoveDir.z < -0.01f ? 1 : 0);
 
             bodyAnimator.SetBool("IsCrouching", CrossPlatformInputManager.GetButton("Crouch"));
+            if (CrossPlatformInputManager.GetButton("Crouch"))
+            {                
+                m_CharacterController.height = .1f;
+            }
+            else if (m_CharacterController.height != 1f)
+            {
+                m_CharacterController.height = 1f;
+            }
         }
 
         public void AddImpact(Vector3 impact)
@@ -279,6 +292,38 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public bool HasMovement()
         {
             return animationMovement;
+        }
+
+        public SaveableData GetObjectState()
+        {
+            saveData["position"] = transform.position;
+            saveData["rotation"] = transform.rotation.eulerAngles;
+
+            var data = new SaveableData(GetDictionaryKey(), JsonConvert.SerializeObject(saveData));
+
+            return data;
+        }
+
+        public void ApplyObjectState(string objectJson)
+        {
+            var state = JsonConvert.DeserializeObject<Dictionary<string, object>>(objectJson);
+            JObject position = state["position"] as JObject;
+            JObject rotation = state["rotation"] as JObject;
+            
+            //m_Camera.transform.rotation = Quaternion.Euler(((float)rotation.GetValue("x")), ((float)rotation.GetValue("y")), ((float)rotation.GetValue("z")));
+            var newRotation = new Quaternion();
+            newRotation.eulerAngles = new Vector3(((float)rotation.GetValue("x")), ((float)rotation.GetValue("y")), ((float)rotation.GetValue("z")));
+            
+            m_CharacterController.enabled = false;
+            transform.position = new Vector3(((float)position.GetValue("x")), ((float)position.GetValue("y")), ((float)position.GetValue("z")));
+            transform.rotation = newRotation;
+            m_MouseLook.Init(transform, m_Camera.transform);
+            m_CharacterController.enabled = true;
+        }
+
+        public string GetDictionaryKey()
+        {
+            return $"{gameObject.GetInstanceID()}:{this.GetType().Name}";
         }
     }
 }

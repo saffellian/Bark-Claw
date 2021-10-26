@@ -5,7 +5,8 @@ public class SkipScene : MonoBehaviour
 {
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
+        // check for space or return inputs
+        if (Input.GetButtonDown("Submit") || Input.GetButtonDown("Jump"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }

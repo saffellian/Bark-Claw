@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5674956674429481123}
   - component: {fileID: 673350377260783467}
   - component: {fileID: 5103084193100316221}
-  m_Layer: 2
+  m_Layer: 5
   m_Name: ParticleSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ Transform:
   m_LocalPosition: {x: 0, y: -0.208, z: 0.168}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2081077486515209729}
+  m_Father: {fileID: 5714823894427809738}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!199 &5674956674429481123
@@ -4719,32 +4719,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2081077486515209729}
+  - component: {fileID: 5714823894427809738}
   - component: {fileID: 2081077486515209728}
   - component: {fileID: 2081077486515209731}
   - component: {fileID: 2622585811649404849}
-  m_Layer: 2
+  m_Layer: 5
   m_Name: SnoutPuke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2081077486515209729
-Transform:
+--- !u!224 &5714823894427809738
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081077486515209742}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.034, z: 0.27}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 16, y: 16, z: 1}
   m_Children:
   - {fileID: 5645473669378822655}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 512}
+  m_SizeDelta: {x: 64, y: 64}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &2081077486515209728
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4825,11 +4830,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponType: 6
-  overrideDefaultProjectileDamage: 0
   projectileDamage: 1
   delayBetweenShots: 0
-  ammo: 40
-  maxAmmo: 100
+  ammo: 100
+  maxAmmo: 20
   dropOnEmpty: 1
   projectile: {fileID: 0}
   projectileSpread: 0

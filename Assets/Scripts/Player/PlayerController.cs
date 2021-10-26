@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -19,12 +18,16 @@ public class PlayerController : MonoBehaviour
     public GameObject projectile;
     public float projectileSpeed = 5f;
     public float attackDelay = 1f;
+    public int enemyTouchDamageGiven = 2;
+    public int enemyTouchDamageTaken = 5;
+    public Collider2D stompCollider;
 
     private Animator animator;
     private SpriteRenderer sr;
     private bool attacking = false;
     private PlayerHealth health;
     private bool isDead = false;
+    private float deathHeight = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -34,11 +37,21 @@ public class PlayerController : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         health = GetComponent<PlayerHealth>();
         health.onDamaged.AddListener(Damaged);
+        deathHeight = GameObject.FindGameObjectWithTag("KillBoundary").transform.position.y;
     }
 
     // Update is called once per frame
     void Update() 
     {
+        if (!health.IsAlive())
+            return;
+
+        if (transform.position.y < deathHeight)
+        {
+            health.InstantDeath();
+            return;
+        }
+
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
         animator.SetBool("Jumping", !isGrounded && myRigidbody.velocity.y > 0.1f);
 
@@ -65,7 +78,7 @@ public class PlayerController : MonoBehaviour
             myRigidbody.velocity = new Vector3(myRigidbody.velocity.x, jumpSpeed, 0f);
         }
 
-        if (!attacking && Input.GetButtonDown("Fire2"))
+        if (!attacking && (Input.GetButtonDown("Fire2") || Input.GetAxis("Right Trigger") != 0))
         {
             attacking = true;
             animator.SetTrigger("Attack");
@@ -102,6 +115,26 @@ public class PlayerController : MonoBehaviour
         {
             isDead = true;
             animator.SetBool("IsDead", true);
+        }
+    }
+
+    /// <summary>
+    /// Sent when an incoming collider makes contact with this object's
+    /// collider (2D physics only).
+    /// </summary>
+    /// <param name="other">The Collision2D data associated with this collision.</param>
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.collider.CompareTag("Enemy"))
+        {
+            if (stompCollider.IsTouching(other.collider))
+            {
+                other.gameObject.GetComponent<Enemy2D>().ApplyDamage(enemyTouchDamageGiven);
+                myRigidbody.velocity = new Vector3(myRigidbody.velocity.x, jumpSpeed, 0f);
+                return;
+            }
+
+            health.ApplyDamage(enemyTouchDamageTaken);
         }
     }
 }   

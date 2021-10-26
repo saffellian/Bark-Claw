@@ -274,6 +274,7 @@ GameObject:
   - component: {fileID: 1981971811}
   - component: {fileID: 1981971810}
   - component: {fileID: 1981971812}
+  - component: {fileID: 1981971813}
   m_Layer: 0
   m_Name: Video Player
   m_TagString: Untagged
@@ -341,4 +342,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 877901ee02ffd8049a224d1f64716e57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneNameToLoad: PressStart
+--- !u!114 &1981971813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981971809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1b2bd84da138c41a9e014d60e0fc3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

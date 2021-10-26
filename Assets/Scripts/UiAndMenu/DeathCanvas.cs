@@ -8,6 +8,7 @@ public class DeathCanvas : MonoBehaviour
 {
 
     [SerializeField] private Button retryButton;
+    [SerializeField] private Button exitButton;
     [SerializeField] private CanvasGroup fadeGroup;
     [SerializeField] private float fadeSpeed;
     [SerializeField] private float buttonActivateDelay;
@@ -18,23 +19,20 @@ public class DeathCanvas : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (!gameObject.activeInHierarchy)
-        {
-            gameObject.SetActive(true);
-        }
-
         fadeGroup.alpha = 0;
         retryButton.onClick.AddListener(Retry);
         retryButton.gameObject.SetActive(false);
+        exitButton.onClick.AddListener(Exit);
+        exitButton.gameObject.SetActive(false);
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.N)) // debug
-        {
-            PlayerHealth.Instance.ApplyDamage(500);
-        }
-    }
+    // private void Update()
+    // {
+    //     if (Input.GetKeyDown(KeyCode.N)) // debug
+    //     {
+    //         PlayerHealth.Instance.ApplyDamage(500);
+    //     }
+    // }
 
     public void BeginTransition()
     {
@@ -57,11 +55,16 @@ public class DeathCanvas : MonoBehaviour
         yield return new WaitForSeconds(buttonActivateDelay);
         FindObjectOfType<FirstPersonController>().SetCursorLock(false);
         retryButton.gameObject.SetActive(true);
+        exitButton.gameObject.SetActive(true);
     }
 
     private void Retry()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // reload current scene
-        // implementation can be changed in the future depending on how gameplay should be handled
+    }
+
+    private void Exit()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }

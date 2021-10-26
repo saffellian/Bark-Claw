@@ -55,6 +55,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private AudioClip attackSound;
     [SerializeField] [EnemyType("Projectile, Mixed")] private GameObject projectile;
     [SerializeField] [EnemyType("Projectile, Mixed")] private Transform projectileSpawn;
+    [SerializeField] [EnemyType("Projectile, Mixed")] private int projectileDamage = 5;
     [Header("Patrol")] 
     [SerializeField] private PatrolType patrolType = PatrolType.Waypoints;
     [SerializeField] [PatrolType("Area")] private MeshFilter patrolRegion;
@@ -116,7 +117,6 @@ public class Enemy : MonoBehaviour
     private Root InitializeBehaviorTree()
     {
         return new Root(
-
             // service to update player distance sensor
             new Service(0.125f, UpdateBlackboard,
                     new Sequence(
@@ -145,7 +145,6 @@ public class Enemy : MonoBehaviour
                             )
                             )
                         )),
-
                         new Action(() =>
                         {
                             agent.enabled = false;
@@ -154,10 +153,9 @@ public class Enemy : MonoBehaviour
                             audioSource.PlayOneShot(deathSound);
                             animator.SetTrigger(deathType.ToString());
                             DropItem();
-                            if (behaviorTree != null && behaviorTree.CurrentState == Node.State.ACTIVE)
-                                behaviorTree.Stop();
                         })
-                        { Label = "Dead" }
+                        { Label = "Dead" },
+                        new WaitUntilStopped()
                     )
             )
         );
@@ -314,6 +312,7 @@ public class Enemy : MonoBehaviour
                     new Action(() => 
                     {
                         Rigidbody obj = Instantiate(projectile, projectileSpawn.position, Quaternion.identity).GetComponent<Rigidbody>();
+                        obj.GetComponent<Projectile>().SetProjectileDamage(projectileDamage);
                         obj.GetComponent<Projectile>().RegisterNoCollideObject(gameObject);
                         obj.AddForce((GameObject.Find("FirstPersonCharacter").transform.position - transform.position).normalized * 20, ForceMode.Impulse);
                     })
@@ -401,6 +400,7 @@ public class Enemy : MonoBehaviour
                         new Action(() =>
                         {
                             Rigidbody obj = Instantiate(projectile, projectileSpawn.position, Quaternion.identity).GetComponent<Rigidbody>();
+                            obj.GetComponent<Projectile>().SetProjectileDamage(projectileDamage);
                             obj.GetComponent<Projectile>().RegisterNoCollideObject(gameObject);
                             obj.AddForce((GameObject.Find("FirstPersonCharacter").transform.position - transform.position).normalized * 20, ForceMode.Impulse);
                         })

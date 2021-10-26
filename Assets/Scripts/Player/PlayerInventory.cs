@@ -1,17 +1,17 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using Unity.Collections;
 using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    [SerializeField][Range(1,10)] private int inventorySize = 2;
-    [SerializeField] private List<GameObject> inventory;
-    [SerializeField] private GameObject defaultItem;
+    [SerializeField] private float weaponSwitchDelay = 0.2f;
+    [SerializeField] private List<GameObject> availableItems = new List<GameObject>();
 
-   [SerializeField] private int inventoryIndex = 0;
+    private List<GameObject> instantiatedItems;
+    private List<GameObject> inventory;
+    private int inventorySize = 0;
+    private int inventoryIndex = 0;
+    private bool canSwitch = true;
 
     private StatusBar statusBar;
 
@@ -32,12 +32,27 @@ public class PlayerInventory : MonoBehaviour
     private void Start()
     {
         statusBar = FindObjectOfType<StatusBar>();
+        inventorySize = availableItems.Count;
+
+        instantiatedItems = new List<GameObject>(inventorySize);
+        var weaponParent = transform.Find("FirstPersonCharacter").Find("WeaponCanvas");
+        foreach (var item in availableItems)
+        {
+            instantiatedItems.Add(Instantiate(item, weaponParent));
+        }
+
+        foreach (var item in instantiatedItems)
+        {
+            item.SetActive(false);
+        }
+
         inventory = new List<GameObject>(inventorySize);
-        inventory.Add(defaultItem);
-        for (int i = 1; i < inventorySize; ++i)
+        for (int i = 0; i < inventorySize; i++)
         {
             inventory.Add(null);
         }
+        inventory[0] = instantiatedItems[0];
+        inventory[0].SetActive(true);
     }
 
     private void Update()
@@ -47,8 +62,11 @@ public class PlayerInventory : MonoBehaviour
         
         int previousIndex = inventoryIndex;
         
-        if (Input.GetAxis("Mouse ScrollWheel") > 0 || Input.GetButtonDown("RB")) // scroll wheel up
+        if ((Input.mouseScrollDelta.y > 0 && canSwitch)|| Input.GetButtonDown("RB")) // scroll wheel up
         {
+            if (!Input.GetButtonDown("RB"))
+                StartCoroutine("WeaponSwitchTimer");
+
             inventoryIndex++;
 
             if (inventoryIndex > inventorySize - 1)
@@ -70,8 +88,11 @@ public class PlayerInventory : MonoBehaviour
                 }
             }
         }
-        else if (Input.GetAxis("Mouse ScrollWheel") < 0 || Input.GetButtonDown("LB")) // scroll wheel down
+        else if ((Input.mouseScrollDelta.y < 0 && canSwitch)|| Input.GetButtonDown("LB")) // scroll wheel down
         {
+            if (!Input.GetButtonDown("LB"))
+                StartCoroutine("WeaponSwitchTimer");
+
             inventoryIndex--;
 
             if (inventoryIndex < 0)
@@ -100,6 +121,13 @@ public class PlayerInventory : MonoBehaviour
             UpdateItem();
     }
 
+    private IEnumerator WeaponSwitchTimer()
+    {
+        canSwitch = false;
+        yield return new WaitForSeconds(weaponSwitchDelay);
+        canSwitch = true;
+    }
+
     public void RemoveItem(GameObject item)
     {
         for (int i = 0; i < inventory.Count; i++)
@@ -115,18 +143,25 @@ public class PlayerInventory : MonoBehaviour
         UpdateItem();
     }
 
-    public bool TryAddItem(GameObject newItem, int invIndex)
+    public bool TryAddItem(WeaponPickup pickup)
     {
+        int invIndex = availableItems.FindIndex(0, availableItems.Count, x => x.gameObject == pickup.itemPrefab);
+
         if (inventory[invIndex] != null)
         {
-            inventory[invIndex].GetComponent<Weapon>().AddAmmo(newItem.GetComponent<Weapon>().GetAmmoAmount(), inventoryIndex == invIndex);
+            Weapon weapon = pickup.itemPrefab.GetComponent<Weapon>();
+            
+            if (pickup.overridePickupAmmo)
+                inventory[invIndex].GetComponent<Weapon>().AddAmmo(pickup.overrideAmmoAmount, inventoryIndex == invIndex);
+            else
+                inventory[invIndex].GetComponent<Weapon>().AddAmmo(weapon.GetAmmoAmount(), inventoryIndex == invIndex);
             return true;
         }
 
         if (inventoryIndex == invIndex)
             return false; // don't replace current item
 
-        inventory[invIndex] = Instantiate(newItem, gameObject.transform.GetChild(0));
+        inventory[invIndex] = instantiatedItems[invIndex];
         statusBar.EnableWeapon(invIndex);
         inventoryIndex = invIndex;
         UpdateItem();

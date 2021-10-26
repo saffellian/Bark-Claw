@@ -7,10 +7,16 @@ public class PausedMenu: MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI, settingCanvas;
 
+    void Start()
+    {        
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (PlayerHealth.Instance.IsAlive() && (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown("joystick button 7")))
+        if (PlayerHealth.Instance.IsAlive() && Input.GetButtonDown("Pause"))
         {
             if (GameIsPaused)
             {
@@ -25,6 +31,8 @@ public class PausedMenu: MonoBehaviour
 
     public void Resume()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -32,6 +40,8 @@ public class PausedMenu: MonoBehaviour
     
     void Pause()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
