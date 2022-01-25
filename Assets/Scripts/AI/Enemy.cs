@@ -42,6 +42,8 @@ public class Enemy : Saveable
         None
     }
 
+    public static int EnemiesAttacking = 0;
+
     [Header("General")]
     [SerializeField] private EnemyType enemyType = EnemyType.Melee;
     [SerializeField] private int health;
@@ -141,9 +143,17 @@ public class Enemy : Saveable
                                     StopCoroutine("PatrolAudio");
                                 }),
 
+                                new Action(() => {
+                                    EnemiesAttacking++;
+                                }),
+
                                 new Succeeder(new Repeater(
                                     enemyType == EnemyType.Melee ? MeleeAttack() : enemyType == EnemyType.Projectile ? ProjectileAttack() : MixedAttack()
-                                ))
+                                )),
+
+                                new Action(() => {
+                                    EnemiesAttacking--;
+                                })
                             )
                             )
                         )),

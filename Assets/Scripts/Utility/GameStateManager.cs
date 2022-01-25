@@ -202,4 +202,16 @@ public class GameStateManager : MonoBehaviour
         Scene activeScene = SceneManager.GetActiveScene();
         return $"{activeScene.name}_{activeScene.buildIndex}";
     }
+
+    private bool SaveGameExists(string saveId = null)
+    {
+        if (!string.IsNullOrEmpty(saveId))
+        {
+            return File.Exists(Path.Combine(Application.persistentDataPath, saveId));
+        }
+        else
+        {
+            return false; // TODO: do this properly
+        }
+    }
 }

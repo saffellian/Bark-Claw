@@ -10207,6 +10207,11 @@ PrefabInstance:
       propertyPath: settingCanvas
       value: 
       objectReference: {fileID: 1786944972}
+    - target: {fileID: 5413509561542739812, guid: ea3ccff8fabc41d419a4440e5babd66c,
+        type: 3}
+      propertyPath: saveButton
+      value: 
+      objectReference: {fileID: 2139864048}
     - target: {fileID: 5413509563018407469, guid: ea3ccff8fabc41d419a4440e5babd66c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -10510,6 +10515,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4130108711546620790, guid: ea3ccff8fabc41d419a4440e5babd66c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SaveGame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea3ccff8fabc41d419a4440e5babd66c, type: 3}
@@ -14195,7 +14205,7 @@ RectTransform:
   m_Children:
   - {fileID: 1618354365}
   m_Father: {fileID: 1011397523}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15358,6 +15368,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Camera: {fileID: 0}
   unlockHorizontalAxes: 0
+--- !u!114 &2139864048 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4130108711546620790, guid: ea3ccff8fabc41d419a4440e5babd66c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1532364381}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1264933115156195
 GameObject:
   m_ObjectHideFlags: 0
@@ -38274,7 +38296,7 @@ PrefabInstance:
     - target: {fileID: 9049203358752844896, guid: 8cf02139f33d9dc44828bfb7038deda4,
         type: 3}
       propertyPath: skipStartupLoad
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 522217904417087991, guid: 8cf02139f33d9dc44828bfb7038deda4,
         type: 3}

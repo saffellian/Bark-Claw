@@ -1,14 +1,17 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PausedMenu: MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI, settingCanvas;
+    private GameStateManager gameStateManager;
+    [SerializeField] private Button saveButton;
 
     void Start()
-    {        
+    {
+        gameStateManager = GameStateManager.Instance;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -45,6 +48,7 @@ public class PausedMenu: MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        saveButton.enabled = Enemy.EnemiesAttacking > 0;
     }
 
     public void OpenSettings()
@@ -57,6 +61,18 @@ public class PausedMenu: MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Menu");
+    }
+
+    public void SaveGame()
+    {
+        if (gameStateManager.SaveGameState() == GameStateManager.GameStateProcessResult.SUCCESS)
+        {
+            Debug.Log("Game saved successfully.");
+        }
+        else
+        {
+            Debug.LogError("Failed to save game.");
+        }
     }
     
     public void QuitGame()
