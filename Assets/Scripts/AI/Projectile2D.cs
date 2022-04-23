@@ -4,36 +4,18 @@ using UnityEngine;
 
 public class Projectile2D : MonoBehaviour
 {
-    [SerializeField] private int damage = 1;
-
-    private List<string> _noCollideTags = new List<string>();
-    private List<GameObject> _noCollideObjects = new List<GameObject>();
+    private int damage = 0;
     private Rigidbody2D rb;
-
+    private string targetTag = String.Empty;
 
     public void SetProjectileDamage(int damageAmount)
     {
         damage = damageAmount;
     }
-    
-    public void RegisterNoCollideObject(GameObject obj)
-    {
-        _noCollideObjects.Add(obj);
-    }
 
-    public void RemoveNoCollideTag(GameObject obj)
+    public void SetTargetTag(string tag)
     {
-        _noCollideObjects.RemoveAll(o => o == obj);
-    }
-
-    public void RegisterNoCollideTag(string tagName)
-    {
-        _noCollideTags.Add(tagName);
-    }
-
-    public void RemoveNoCollideTag(string tagName)
-    {
-        _noCollideTags.RemoveAll(t => t == tagName);
+        targetTag = tag;
     }
 
     private void Start()
@@ -54,23 +36,18 @@ public class Projectile2D : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (_noCollideTags.Contains(other.tag) || _noCollideObjects.Contains(other.gameObject))
+        if (targetTag != other.tag)
             return;
 
         if (other.transform.CompareTag("Enemy")) // implement logic during 2D AI order
         {
             other.GetComponent<Enemy2D>().ApplyDamage(damage);
-            Destroy(gameObject);
         }
         else if (other.transform.CompareTag("Player"))
         {
             PlayerHealth.Instance.ApplyDamage(damage);
-            Destroy(gameObject);
         }
-        else
-        {
-            // explode
-            Destroy(gameObject);
-        }
+        
+        Destroy(gameObject);
     }
 }

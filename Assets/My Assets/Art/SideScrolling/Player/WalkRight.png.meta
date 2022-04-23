@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 3e84428e06b381a4285ef62dd5771c9c
+guid: 85f5e567594060e4ba71b4dcfb710d9b
 TextureImporter:
   fileIDToRecycleName:
-    21300000: D-Walk Left_0
-    21300002: D-Walk Left_1
-    21300004: D-Walk Left_2
-    21300006: D-Walk Left_3
-    21300008: D-Walk Left_4
-    21300010: D-Walk Left_5
+    21300000: D-Walk_0
+    21300002: D-Walk_1
+    21300004: D-Walk_2
+    21300006: D-Walk_3
+    21300008: D-Walk_4
+    21300010: D-Walk_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -53,7 +53,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 28
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -112,121 +112,121 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: D-Walk Left_0
+      name: D-Walk_0
       rect:
         serializedVersion: 2
-        x: 35
+        x: 44
         y: 6
-        width: 28
-        height: 31
-      alignment: 9
-      pivot: {x: 0.50738335, y: 0.5255736}
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 170123526b3f22b4799aa8dc36334f41
+      spriteID: e4b0b94bd2d66e24a9b2d1cd6103f219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D-Walk Left_1
+      name: D-Walk_1
       rect:
         serializedVersion: 2
-        x: 138
+        x: 147
+        y: 6
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b381867e630e7804e9db4b352564515f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D-Walk_2
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 6
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7acddefd21c498468351c59b39ab9f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D-Walk_3
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 6
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5bba83c427c8b4189a3d7b3a05d4cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: D-Walk_4
+      rect:
+        serializedVersion: 2
+        x: 455
         y: 6
         width: 30
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6aead6811adbe24283021f56b80d4c1
+      spriteID: 641333730e8b56a448373abcbab1f03b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: D-Walk Left_2
+      name: D-Walk_5
       rect:
         serializedVersion: 2
-        x: 241
+        x: 560
         y: 6
-        width: 29
-        height: 33
+        width: 28
+        height: 31
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c2dca2595017ee4b802dc01e66b7536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: D-Walk Left_3
-      rect:
-        serializedVersion: 2
-        x: 344
-        y: 6
-        width: 29
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53af6d4036f26a942b546acc4fa315fc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: D-Walk Left_4
-      rect:
-        serializedVersion: 2
-        x: 447
-        y: 6
-        width: 29
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e292e94502dcfa74dbe9fd0d1994f6a7
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: D-Walk Left_5
-      rect:
-        serializedVersion: 2
-        x: 550
-        y: 6
-        width: 29
-        height: 33
-      alignment: 9
-      pivot: {x: 0.49999788, y: 0.52805847}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d2871808e8467324d983276f2e0db797
+      spriteID: 1284b97cbaea16045b9b1064ef3f6336
       vertices: []
       indices: 
       edges: []
@@ -234,7 +234,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 30f98bbae4a829a478313470b6c22c1f
+    spriteID: acfc2b2ed663abd4baa07c20a0bce927
     vertices: []
     indices: 
     edges: []

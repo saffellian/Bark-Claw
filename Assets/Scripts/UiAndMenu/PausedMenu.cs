@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using BarkClaw;
 
 public class PausedMenu: MonoBehaviour
 {
+    public static UserInterfaceEvent MenuEvent;
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI, settingCanvas;
     private GameStateManager gameStateManager;
@@ -11,9 +13,12 @@ public class PausedMenu: MonoBehaviour
 
     void Start()
     {
+        if (pauseMenuUI.activeInHierarchy)
+        {
+            pauseMenuUI.SetActive(false);
+        }
         gameStateManager = GameStateManager.Instance;
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        MenuEvent = new UserInterfaceEvent();
     }
 
     // Update is called once per frame
@@ -34,8 +39,7 @@ public class PausedMenu: MonoBehaviour
 
     public void Resume()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        MenuEvent.Invoke(InterfaceEvents.RESUME);
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -43,12 +47,19 @@ public class PausedMenu: MonoBehaviour
     
     void Pause()
     {
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
+        MenuEvent.Invoke(InterfaceEvents.PAUSE);
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
-        saveButton.enabled = Enemy.EnemiesAttacking > 0;
+
+        if (SceneManager.GetActiveScene().name == "3DLevel")
+        {
+            saveButton.enabled = Enemy.EnemiesAttacking > 0;
+        }
+        else if (SceneManager.GetActiveScene().name == "2DLevel")
+        {
+            saveButton.enabled = Enemy2D.EnemiesAttacking > 0;
+        }
     }
 
     public void OpenSettings()

@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using BarkClaw;
 
 public class PlayerController : MonoBehaviour
 {
-
     public float moveSpeed;
     private Rigidbody2D myRigidbody;
 
@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public int enemyTouchDamageGiven = 2;
     public int enemyTouchDamageTaken = 5;
     public Collider2D stompCollider;
+    public float iFrameDuration = 2f;
 
     private Animator animator;
     private SpriteRenderer sr;
@@ -29,6 +30,7 @@ public class PlayerController : MonoBehaviour
     private PlayerHealth health;
     private bool isDead = false;
     private float deathHeight = 0;
+    private bool iFramesActive = false;
 
     // Start is called before the first frame update
     void Start()
@@ -37,8 +39,34 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         health = GetComponent<PlayerHealth>();
-        health.onDamaged.AddListener(Damaged);
+        health.onDamaged.AddListener(OnDamaged);
         deathHeight = GameObject.FindGameObjectWithTag("KillBoundary").transform.position.y;
+        PausedMenu.MenuEvent.AddListener(PauseEventListener);
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
+    private void OnDamaged(int remainingHealth)
+    {
+        animator.SetTrigger("Hurt");
+    }
+
+    void PauseEventListener(InterfaceEvents e)
+    {
+        switch (e)
+        {
+            case InterfaceEvents.RESUME:
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+                break;
+            case InterfaceEvents.PAUSE:
+            case InterfaceEvents.DEATH:
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                break;
+            default:
+                break;
+        }
     }
 
     // Update is called once per frame
@@ -96,7 +124,7 @@ public class PlayerController : MonoBehaviour
     private void FireProjectile()
     {
         GameObject p = Instantiate(projectile);
-        p.GetComponent<Projectile2D>().RegisterNoCollideTag("Player");
+        p.GetComponent<Projectile2D>().SetTargetTag("Enemy");
         if (!sr.flipX) // facing right
         {
             p.transform.position = transform.position + projectileOffset;
@@ -110,15 +138,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void Damaged(int health)
-    {
-        if (!isDead && health <= 0)
-        {
-            isDead = true;
-            animator.SetBool("IsDead", true);
-        }
-    }
-
     /// <summary>
     /// Sent when an incoming collider makes contact with this object's
     /// collider (2D physics only).
@@ -126,7 +145,7 @@ public class PlayerController : MonoBehaviour
     /// <param name="other">The Collision2D data associated with this collision.</param>
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.collider.CompareTag("Enemy"))
+        if (health.IsAlive() && !iFramesActive && other.collider.CompareTag("Enemy"))
         {
             if (stompCollider.IsTouching(other.collider))
             {
@@ -136,7 +155,31 @@ public class PlayerController : MonoBehaviour
             }
 
             health.ApplyDamage(enemyTouchDamageTaken);
+
+            if (health.IsAlive())
+            {
+                StartCoroutine(StartIFrames());
+            }
+            else
+            {
+                animator.SetBool("IsDead", true);
+            }
         }
+    }
+
+    private IEnumerator StartIFrames()
+    {
+        iFramesActive = true;
+        int prevLayer = gameObject.layer;
+        gameObject.layer = LayerMask.NameToLayer("PlayerIFrame");
+        Color color = sr.color;
+        Color prevColor = color;
+        color.a = 0.3f;
+        sr.color = color;
+        yield return new WaitForSeconds(iFrameDuration);
+        gameObject.layer = prevLayer;
+        sr.color = prevColor;
+        iFramesActive = false;
     }
 }   
 

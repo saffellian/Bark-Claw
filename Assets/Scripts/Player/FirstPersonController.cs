@@ -6,6 +6,7 @@ using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using BarkClaw;
 
 namespace UnityStandardAssets.Characters.FirstPerson
 {
@@ -64,6 +65,21 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+            PausedMenu.MenuEvent.AddListener(PauseEventListener);
+        }
+
+        void PauseEventListener(InterfaceEvents e)
+        {
+            if (e == InterfaceEvents.PAUSE)
+            {
+                m_MouseLook.SetCursorLock(false);
+                Cursor.visible = true;
+            }
+            else if (e == InterfaceEvents.RESUME)
+            {
+                m_MouseLook.SetCursorLock(true);
+                Cursor.visible = false;
+            }
         }
 
         // Update is called once per frame
@@ -281,11 +297,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 return;
             }
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
-        }
-
-        public void SetCursorLock(bool value)
-        {
-            m_MouseLook.SetCursorLock(value);
         }
 
         public bool HasMovement()

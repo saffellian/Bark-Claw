@@ -17,8 +17,7 @@ public class PlayerHealth : Saveable
     
     [SerializeField] private int health = 100;
     [SerializeField] private int maxHealth = 100;
-
-    private DeathCanvas deathCanvas;
+    [SerializeField] private DeathCanvas deathCanvas = null;
 
     // Start is called before the first frame update
     void Start()
@@ -31,8 +30,6 @@ public class PlayerHealth : Saveable
         {
             Destroy(this);
         }
-
-        deathCanvas = FindObjectOfType<DeathCanvas>();
     }
 
     public void ApplyDamage(int amount)
@@ -53,14 +50,21 @@ public class PlayerHealth : Saveable
         }
     }
 
-    public void ApplyHealth(int amount)
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="amount"></param>
+    /// <returns>Amount of health healed</returns>
+    public int ApplyHealth(int amount)
     {
         if (health == maxHealth)
-            return;
+            return 0;
 
+        int previousHealth = health;
         health = Mathf.Clamp(health + amount, 0, maxHealth);
 
         onHealed.Invoke(health);
+        return health - previousHealth;
     }
 
     public void InstantDeath()

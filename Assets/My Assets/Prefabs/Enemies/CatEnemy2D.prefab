@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6301051535229040572}
   m_Layer: 11
   m_Name: MeleeSensor
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,12 +48,34 @@ MonoBehaviour:
   AllowedTags: []
   OnDetected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1616195611}
+        m_MethodName: SetDetected
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: melee
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: SensorToolkit.Sensor+SensorDetectionEventHandler, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnLostDetection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1616195611}
+        m_MethodName: SetNotDetected
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: melee
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: SensorToolkit.Sensor+SensorDetectionEventHandler, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   DetectionMode: 0
@@ -84,7 +106,7 @@ GameObject:
   - component: {fileID: 3298246581831696549}
   m_Layer: 11
   m_Name: CliffSensor
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,12 +142,34 @@ MonoBehaviour:
   AllowedTags: []
   OnDetected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1616195611}
+        m_MethodName: SetDetected
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: cliff
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: SensorToolkit.Sensor+SensorDetectionEventHandler, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnLostDetection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1616195611}
+        m_MethodName: SetNotDetected
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: cliff
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: SensorToolkit.Sensor+SensorDetectionEventHandler, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   Length: 1.9
@@ -165,8 +209,8 @@ GameObject:
   - component: {fileID: 73032148000157110}
   - component: {fileID: 76464393293255663}
   m_Layer: 11
-  m_Name: PlayerSensor
-  m_TagString: Untagged
+  m_Name: ChaseSensor
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -198,16 +242,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IgnoreList: []
-  EnableTagFilter: 0
-  AllowedTags: []
+  EnableTagFilter: 1
+  AllowedTags:
+  - Player
   OnDetected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1616195611}
+        m_MethodName: SetDetected
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: chase
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: SensorToolkit.Sensor+SensorDetectionEventHandler, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnLostDetection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1616195611}
+        m_MethodName: SetNotDetected
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: chase
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: SensorToolkit.Sensor+SensorDetectionEventHandler, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   DetectionMode: 0
@@ -397,8 +464,7 @@ MonoBehaviour:
   patrolDistance: 3.88
   patrolSpeedMultiplier: 1
   chaseSpeedMultiplier: 2.3
-  projectile: {fileID: 5554695699019258307, guid: c02d58dd2914be14182efe5a78837075,
-    type: 3}
+  projectilePrefab: {fileID: 0}
   projectileDamage: 1
   projectileVelocity: 5
   meleeDamage: 1
@@ -416,6 +482,19 @@ MonoBehaviour:
   attackDistance: 8
   attackDamage: 15
   patrolChangeTime: 10
+  sensors:
+  - sensor: {fileID: 3298246581831696549}
+    locationSync: 1
+    locationOffset: 0
+  - sensor: {fileID: 3054371051399077591}
+    locationSync: 0
+    locationOffset: 0
+  - sensor: {fileID: 5853220659407046556}
+    locationSync: 2
+    locationOffset: 0
+  - sensor: {fileID: 6301051535229040572}
+    locationSync: 1
+    locationOffset: 0
 --- !u!50 &3096519415432646478
 Rigidbody2D:
   serializedVersion: 4
@@ -436,7 +515,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &1352589364216794284
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -465,7 +544,7 @@ GameObject:
   - component: {fileID: 3054371051399077591}
   m_Layer: 11
   m_Name: GroundSensor
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -501,12 +580,34 @@ MonoBehaviour:
   AllowedTags: []
   OnDetected:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1616195611}
+        m_MethodName: SetDetected
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: isGrounded
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: SensorToolkit.Sensor+SensorDetectionEventHandler, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnLostDetection:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1616195611}
+        m_MethodName: SetNotDetected
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: isGrounded
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: SensorToolkit.Sensor+SensorDetectionEventHandler, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   DetectionMode: 0
