@@ -1,7 +1,11 @@
 fileFormatVersion: 2
 guid: 980e26a1dc153f946bfad893cc282da2
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Cat-WienerShotGun-Falling-S_0
+    21300002: Cat-WienerShotGun-Falling-S_1
+    21300004: Cat-WienerShotGun-Falling-S_2
+    21300006: Cat-WienerShotGun-Falling-S_3
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -82,11 +86,91 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Falling-S_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 3
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.46}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70869bc67e32560428bc120818e8068a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Falling-S_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 3
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.46}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb04efd76902b184cada310f65a64d98
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Falling-S_2
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 3
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.46}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca4c796c8168494f92d14a5ae085c4e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Falling-S_3
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 3
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.46}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf1d276153aee34fab3dbae59e47e23
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 87251ffb117a9194aa169e98bc2e7793
     vertices: []
     indices: 
     edges: []

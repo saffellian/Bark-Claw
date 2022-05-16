@@ -1,7 +1,15 @@
 fileFormatVersion: 2
 guid: 04b4db459756e074ba5f4464ba27b0c2
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Cat-SonicBark-Falling_0
+    21300002: Cat-SonicBark-Falling_1
+    21300004: Cat-SonicBark-Falling_2
+    21300006: Cat-SonicBark-Falling_3
+    21300008: Cat-SonicBark-Falling_4
+    21300010: Cat-SonicBark-Falling_5
+    21300012: Cat-SonicBark-Falling_6
+    21300014: Cat-SonicBark-Falling_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -82,11 +90,171 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Cat-SonicBark-Falling_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 14
+        width: 64
+        height: 76
+      alignment: 9
+      pivot: {x: 0.49999976, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b43dcad31f6f744bc457dd344e344a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Falling_1
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 14
+        width: 64
+        height: 76
+      alignment: 9
+      pivot: {x: 0.4985273, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7a1612ae5576e4fa36017394655f34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Falling_2
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 14
+        width: 64
+        height: 76
+      alignment: 9
+      pivot: {x: 0.49852705, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6950942c19ac03d4a97ded566a6eda5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Falling_3
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 14
+        width: 64
+        height: 76
+      alignment: 9
+      pivot: {x: 0.49671173, y: 0.44000003}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2194acb78891b4ca52f914b65f9a62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Falling_4
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 14
+        width: 64
+        height: 84
+      alignment: 9
+      pivot: {x: 0.49310684, y: 0.40000013}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9561e9d39e4be4aad8a0aa8f64446e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Falling_5
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 14
+        width: 77
+        height: 88
+      alignment: 9
+      pivot: {x: 0.50713795, y: 0.385}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a6e69094c4a04c43bf33fd841a59d8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Falling_6
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 14
+        width: 75
+        height: 89
+      alignment: 9
+      pivot: {x: 0.5073275, y: 0.38}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce35ade14ef39bb47b68cab69b6c9cb0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Falling_7
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 14
+        width: 64
+        height: 75
+      alignment: 9
+      pivot: {x: 0.4999981, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ce0b7b06f382144bb3b6ff05062248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2f4663c7c03f8d3418afb0c0a8ddba5c
     vertices: []
     indices: 
     edges: []

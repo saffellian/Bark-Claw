@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: a88c7a61ba1e0dc48a3a9776ae5082fa
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Cat-WienerShotGun-Crouching-S_0
+    21300002: Cat-WienerShotGun-Crouching-S_1
+    21300004: Cat-WienerShotGun-Crouching-S_2
+    21300006: Cat-WienerShotGun-Crouching-S_3
+    21300008: Cat-WienerShotGun-Crouching-S_4
+    21300010: Cat-WienerShotGun-Crouching-S_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -82,11 +88,131 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Crouching-S_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba7c8af0c4ea9a5498ee5aa81db119df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Crouching-S_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a454a82f57433408be991754306dbd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Crouching-S_2
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb745e98689e7df4ab5224825c3e72e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Crouching-S_3
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d71bbeb65a16294eb9237e6f1308952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Crouching-S_4
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 1
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4299050ea3f92f945a7c1cf0b3092466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Crouching-S_5
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97447918ee44f440a61ab9fa80c7270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2a8d5665464aa3c468be1637d07dc74b
     vertices: []
     indices: 
     edges: []

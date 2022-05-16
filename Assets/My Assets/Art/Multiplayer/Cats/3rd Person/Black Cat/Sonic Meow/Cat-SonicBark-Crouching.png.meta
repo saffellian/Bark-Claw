@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: 12d4740cf7bcd37438e27b9aa2ec83ba
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Cat-SonicBark-Crouching_0
+    21300002: Cat-SonicBark-Crouching_1
+    21300004: Cat-SonicBark-Crouching_2
+    21300006: Cat-SonicBark-Crouching_3
+    21300008: Cat-SonicBark-Crouching_4
+    21300010: Cat-SonicBark-Crouching_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -82,11 +88,131 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Cat-SonicBark-Crouching_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 8
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96ba7a13a4ddb144bbefdd900f6f5f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Crouching_1
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 8
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa1eff2733cb8a4dbbc7567fd7fd27f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Crouching_2
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 8
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5c791d7e2f7444db5d51b5c1d3c4fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Crouching_3
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 8
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ae6c61fdbc5cf4da09f1435223f686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Crouching_4
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 8
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8358f7ae6b3084887ae943f879c19d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Crouching_5
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 8
+        width: 77
+        height: 67
+      alignment: 9
+      pivot: {x: 0.50658864, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dba8860562496642adf6981a479db63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c07f87d871871534ebf05b13f037957d
     vertices: []
     indices: 
     edges: []

@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: 8687dc48a9a01144da337b970cbdbf58
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Cat-SonicBark-Walk-L_0
+    21300002: Cat-SonicBark-Walk-L_1
+    21300004: Cat-SonicBark-Walk-L_2
+    21300006: Cat-SonicBark-Walk-L_3
+    21300008: Cat-SonicBark-Walk-L_4
+    21300010: Cat-SonicBark-Walk-L_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -82,11 +88,131 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Cat-SonicBark-Walk-L_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 9
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c899603aedf83a44b6785f1f7e0aa2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Walk-L_1
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 10
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947efbff327f97a4db52e6e57cdfb199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Walk-L_2
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 10
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af5f8b37bb0df6b4c8e581b24daa9da2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Walk-L_3
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 8
+        width: 66
+        height: 67
+      alignment: 9
+      pivot: {x: 0.46760005, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d462c32cce7a7da4e81c5ec2d34cb2b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Walk-L_4
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 9
+        width: 82
+        height: 73
+      alignment: 9
+      pivot: {x: 0.4000356, y: 0.465}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c22db4ca7bdf1d41acb0408a172d08b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Walk-L_5
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 10
+        width: 91
+        height: 76
+      alignment: 9
+      pivot: {x: 0.3120124, y: 0.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b6eb819e8c19a45bc17f63952bae34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5379486b2b554b64ebdb97785de1e45a
     vertices: []
     indices: 
     edges: []

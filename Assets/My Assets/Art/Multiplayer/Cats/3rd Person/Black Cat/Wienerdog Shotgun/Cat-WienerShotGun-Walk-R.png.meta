@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: f9a1c6494fba3644cbe3d41d6832ff20
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Cat-WienerShotGun-Walk-R_0
+    21300002: Cat-WienerShotGun-Walk-R_1
+    21300004: Cat-WienerShotGun-Walk-R_2
+    21300006: Cat-WienerShotGun-Walk-R_3
+    21300008: Cat-WienerShotGun-Walk-R_4
+    21300010: Cat-WienerShotGun-Walk-R_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -82,11 +88,131 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Walk-R_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 64
+        height: 67
+      alignment: 9
+      pivot: {x: 0.47795415, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1040618f37515a448a2eb8272cb7069b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Walk-R_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 4
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da6926f27754b564da2468b62ef67ca5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Walk-R_2
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 4
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a14135200a57a4fa830fd268fb8e93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Walk-R_3
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 2
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b0e4b990882bb45a0eb759133d3d79
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Walk-R_4
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 3
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d21bc54e0e51b489ebca55cf04e5ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Walk-R_5
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 4
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d2b2d714fcb9904e9ad875e357aaaa5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fa5439258135d5243ba5c30cabd90990
     vertices: []
     indices: 
     edges: []

@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: 0569e19753068a440b6d62afd8c995d5
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Cat-SonicBark-Jumping_0
+    21300002: Cat-SonicBark-Jumping_1
+    21300004: Cat-SonicBark-Jumping_2
+    21300006: Cat-SonicBark-Jumping_3
+    21300008: Cat-SonicBark-Jumping_4
+    21300010: Cat-SonicBark-Jumping_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -82,11 +88,131 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Cat-SonicBark-Jumping_0
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 8
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e4b46d11065cf49a5dd42ef4b9e818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Jumping_1
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 8
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45d0a3efb9150c44a2526f49bb77219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Jumping_2
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 8
+        width: 64
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6871968687052594e9a2715f65c7acc9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Jumping_3
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 8
+        width: 64
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c182b86037a00449b28748c282f23f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Jumping_4
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 8
+        width: 64
+        height: 118
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3521ea48f098d94ea3be4fb02c8ca46
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-SonicBark-Jumping_5
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 8
+        width: 77
+        height: 121
+      alignment: 9
+      pivot: {x: 0.5039689, y: 0.28}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab80156aa2fb6b42bdfe744eda87ba5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2d36755a40365784a9c67a7ec04937e3
     vertices: []
     indices: 
     edges: []

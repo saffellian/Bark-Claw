@@ -95,12 +95,12 @@ TextureImporter:
       name: Cat-SonicBark-B_0
       rect:
         serializedVersion: 2
-        x: 38
-        y: 5
-        width: 55
-        height: 83
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 34
+        y: 8
+        width: 64
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -115,12 +115,12 @@ TextureImporter:
       name: Cat-SonicBark-B_1
       rect:
         serializedVersion: 2
-        x: 162
-        y: 0
-        width: 72
-        height: 90
+        x: 165
+        y: 8
+        width: 64
+        height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -135,12 +135,12 @@ TextureImporter:
       name: Cat-SonicBark-B_2
       rect:
         serializedVersion: 2
-        x: 300
-        y: 7
-        width: 51
-        height: 82
+        x: 296
+        y: 8
+        width: 64
+        height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,12 +155,12 @@ TextureImporter:
       name: Cat-SonicBark-B_3
       rect:
         serializedVersion: 2
-        x: 412
-        y: 6
-        width: 89
-        height: 82
+        x: 427
+        y: 8
+        width: 64
+        height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -175,12 +175,12 @@ TextureImporter:
       name: Cat-SonicBark-B_4
       rect:
         serializedVersion: 2
-        x: 552
-        y: 5
-        width: 79
-        height: 83
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 558
+        y: 8
+        width: 64
+        height: 70
+      alignment: 9
+      pivot: {x: 0.5, y: 0.475}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -195,12 +195,12 @@ TextureImporter:
       name: Cat-SonicBark-B_5
       rect:
         serializedVersion: 2
-        x: 674
-        y: 5
-        width: 92
-        height: 88
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 682
+        y: 8
+        width: 77
+        height: 74
+      alignment: 9
+      pivot: {x: 0.50556374, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,12 +215,12 @@ TextureImporter:
       name: Cat-SonicBark-B_6
       rect:
         serializedVersion: 2
-        x: 809
-        y: 5
-        width: 83
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 814
+        y: 8
+        width: 75
+        height: 75
+      alignment: 9
+      pivot: {x: 0.50638425, y: 0.44500014}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -235,12 +235,12 @@ TextureImporter:
       name: Cat-SonicBark-B_7
       rect:
         serializedVersion: 2
-        x: 945
+        x: 951
         y: 8
-        width: 69
-        height: 73
+        width: 64
+        height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

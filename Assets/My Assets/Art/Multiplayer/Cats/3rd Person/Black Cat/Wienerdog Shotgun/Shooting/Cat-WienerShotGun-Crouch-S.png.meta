@@ -1,7 +1,11 @@
 fileFormatVersion: 2
 guid: 530c1c12f9fc5ca4f8ab768e066ddf4f
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Cat-WienerShotGun-Crouch-S_0
+    21300002: Cat-WienerShotGun-Crouch-S_1
+    21300004: Cat-WienerShotGun-Crouch-S_2
+    21300006: Cat-WienerShotGun-Crouch-S_3
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -82,11 +86,91 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Crouch-S_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 465f9bb7f75267d4391f6fb754722270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Crouch-S_1
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1fe617d6a8c3bb4cb7cd9f3a9d6b669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Crouch-S_2
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1587cc75a08c1864396077cefcf05ce1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Crouch-S_3
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 1
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7ebefd65dc9c04682658c54eb70039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 780927b0c84563b4a924525233b4c0db
     vertices: []
     indices: 
     edges: []

@@ -1,7 +1,16 @@
 fileFormatVersion: 2
 guid: c1a793058ae1ee147a213177a2089888
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Cat-WienerShotGun-Death-Acid_0
+    21300002: Cat-WienerShotGun-Death-Acid_1
+    21300004: Cat-WienerShotGun-Death-Acid_2
+    21300006: Cat-WienerShotGun-Death-Acid_3
+    21300008: Cat-WienerShotGun-Death-Acid_4
+    21300010: Cat-WienerShotGun-Death-Acid_5
+    21300012: Cat-WienerShotGun-Death-Acid_6
+    21300014: Cat-WienerShotGun-Death-Acid_7
+    21300016: Cat-WienerShotGun-Death-Acid_8
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -82,11 +91,191 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Death-Acid_0
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1393
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52239250ddb712943b9f3fca8ad748fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Death-Acid_1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1219
+        width: 64
+        height: 70
+      alignment: 9
+      pivot: {x: 0.6863065, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0c042eabedf134a899d1e04b021b96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Death-Acid_2
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1045
+        width: 67
+        height: 74
+      alignment: 9
+      pivot: {x: 0.6178908, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7770989dd24cb241ab318e38e9e7927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Death-Acid_3
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 871
+        width: 65
+        height: 71
+      alignment: 9
+      pivot: {x: 0.6353269, y: 0.46}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a1d1dfdff5b824fb55818f67753eae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Death-Acid_4
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 697
+        width: 68
+        height: 67
+      alignment: 9
+      pivot: {x: 0.63727635, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7fb3c4ff0f947e45a2cbfe997fa3601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Death-Acid_5
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 523
+        width: 68
+        height: 67
+      alignment: 9
+      pivot: {x: 0.63199663, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67ba5a4de9340c419a453e2143e25a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Death-Acid_6
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 349
+        width: 68
+        height: 67
+      alignment: 9
+      pivot: {x: 0.63199663, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4288e8969c73f384894ad2d917833f27
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Death-Acid_7
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 175
+        width: 67
+        height: 67
+      alignment: 9
+      pivot: {x: 0.61253196, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627d08d0a63a30849a46a60caae0dfff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-WienerShotGun-Death-Acid_8
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 1
+        width: 67
+        height: 67
+      alignment: 9
+      pivot: {x: 0.61253196, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b69a102ed8ce394c9f1ddfb61f8eafd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: e23ad421a37f7a544948dc1ff53ca719
     vertices: []
     indices: 
     edges: []
