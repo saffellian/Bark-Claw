@@ -5,9 +5,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 [RequireComponent(typeof(NavMeshAgent), typeof(AudioSource), typeof(Animator))]
-public class Enemy : MonoBehaviour
+public class Enemy : Saveable
 {
     [System.Serializable]
     struct ItemDrop
@@ -39,6 +41,8 @@ public class Enemy : MonoBehaviour
         Area,
         None
     }
+
+    public static int EnemiesAttacking = 0;
 
     [Header("General")]
     [SerializeField] private EnemyType enemyType = EnemyType.Melee;
@@ -139,9 +143,17 @@ public class Enemy : MonoBehaviour
                                     StopCoroutine("PatrolAudio");
                                 }),
 
+                                new Action(() => {
+                                    EnemiesAttacking++;
+                                }),
+
                                 new Succeeder(new Repeater(
                                     enemyType == EnemyType.Melee ? MeleeAttack() : enemyType == EnemyType.Projectile ? ProjectileAttack() : MixedAttack()
-                                ))
+                                )),
+
+                                new Action(() => {
+                                    EnemiesAttacking--;
+                                })
                             )
                             )
                         )),
@@ -481,5 +493,34 @@ public class Enemy : MonoBehaviour
         agent.isStopped = true;
         if (!normalDeathOnly && explode)
             deathType = DeathType.Explosion;
+    }
+
+
+    public override SaveableData GetObjectState()
+    {
+        saveData["position"] = transform.position;
+        saveData["rotation"] = transform.rotation.eulerAngles;
+        saveData["health"] = health;
+
+        var data = new SaveableData(GetDictionaryKey(), JsonConvert.SerializeObject(saveData));
+
+        return data;
+    }
+
+    public override void ApplyObjectState(string objectJson)
+    {
+        var state = JsonConvert.DeserializeObject<Dictionary<string, object>>(objectJson);
+        JObject position = state["position"] as JObject;
+        JObject rotation = state["rotation"] as JObject;
+        int currentHealth = System.Convert.ToInt32(state["health"]);
+
+
+        var newRotation = new Quaternion();
+        newRotation.eulerAngles = new Vector3(((float)rotation.GetValue("x")), ((float)rotation.GetValue("y")), ((float)rotation.GetValue("z")));
+
+        transform.position = new Vector3(((float)position.GetValue("x")), ((float)position.GetValue("y")), ((float)position.GetValue("z")));
+        transform.rotation = newRotation;
+
+        health = currentHealth;
     }
 }

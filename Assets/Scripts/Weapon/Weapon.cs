@@ -23,7 +23,7 @@ public class Weapon : MonoBehaviour
         AreaOfEffect
     }
 
-    private static float MIN_DROP_DELAY = 0.1f;
+    private const float MIN_DROP_DELAY = 0.1f;
 
     [SerializeField] private WeaponType weaponType = WeaponType.SemiAuto;
     [SerializeField] private int projectileDamage = 1;
@@ -53,23 +53,44 @@ public class Weapon : MonoBehaviour
     private bool fireButtonPrev = false;
     private Vector3 meleeExtents;
     private Transform meleeTransform;
+    private Transform fpControllerTransform;
+    private Transform cameraTransform;
+    private string[] noCollideTags;
+    private GameObject[] noCollideObjects;
+    private float lerpFactor;
 
     // Start is called before the first frame update
     void Start()
     {
         fpController = FindObjectOfType<FirstPersonController>();
+        fpControllerTransform = fpController.transform;
         animator = GetComponent<Animator>();
 
-        if (weaponType == WeaponType.Fluid)
+        cameraTransform = fpControllerTransform.GetComponentInChildren<Camera>().transform;
+        Canvas weaponCanvas = GameObject.Find("WeaponCanvas").GetComponent<Canvas>();
+        lerpFactor = 1f - (Camera.main.nearClipPlane / weaponCanvas.planeDistance);
+
+        // weapon specific initialization
+        switch (weaponType)
         {
-            pSystem = transform.GetChild(0).GetComponent<ParticleSystem>();
-        }
-        else if (weaponType == WeaponType.Melee)
-        {
-            GameObject obj = GameObject.Find("AttackCollider");
-            meleeExtents = obj.GetComponent<Collider>().bounds.extents;
-            meleeTransform = obj.transform;
-            obj.SetActive(false);
+            case WeaponType.Melee:
+                GameObject obj = GameObject.Find("AttackCollider");
+                meleeExtents = obj.GetComponent<Collider>().bounds.extents;
+                meleeTransform = obj.transform;
+                obj.SetActive(false);
+                break;
+            case WeaponType.Automatic:
+            case WeaponType.SemiAuto:
+                noCollideObjects = new GameObject[]{ gameObject };
+                noCollideTags = new string[]{ "Player" };
+                break;
+            case WeaponType.Shotgun:
+                noCollideObjects = new GameObject[]{ gameObject };
+                noCollideTags = new string[]{ "Player", "Projectile" };
+                break;
+            case WeaponType.Fluid:
+                pSystem = transform.GetChild(0).GetComponent<ParticleSystem>();
+                break;
         }
     }
 
@@ -167,13 +188,17 @@ public class Weapon : MonoBehaviour
 
     private IEnumerator FireTimer()
     {
-        timerRunning = true;
-        yield return new WaitForSeconds(delayBetweenShots);
-        timerRunning = false;
+        if (!timerRunning)
+        {
+            timerRunning = true;
+            yield return new WaitForSeconds(delayBetweenShots);
+            timerRunning = false;
+        }
     }
 
     public void FireProjectile()
     {
+        Vector3 newPos;
         Rigidbody rb;
         Projectile projectileRef = null;
         switch (weaponType)
@@ -196,52 +221,37 @@ public class Weapon : MonoBehaviour
                 }
                 break;
             case WeaponType.SemiAuto:
-                ammo--;
-                onAmmoUpdate.Invoke(ammo);
-                rb = Instantiate(projectile, projectileOrigins[0].position, projectile.transform.rotation).GetComponent<Rigidbody>();
-                rb.velocity = projectileOrigins[0].forward * projectileSpeed;
-                projectileRef = rb.gameObject.GetComponent<Projectile>();
-                projectileRef.RegisterNoCollideObject(gameObject);
-                projectileRef.RegisterNoCollideTag("Player");
-                break;
             case WeaponType.Automatic:
-                ammo--;
-                onAmmoUpdate.Invoke(ammo);
-                rb = Instantiate(projectile, projectileOrigins[i].position, projectile.transform.rotation).GetComponent<Rigidbody>();
-                rb.velocity = projectileOrigins[i].forward * projectileSpeed;
+                newPos = Vector3.Lerp(projectileOrigins[i].position, cameraTransform.position, lerpFactor);
+                rb = Instantiate(projectile, newPos, cameraTransform.rotation).GetComponent<Rigidbody>();
+                rb.velocity = cameraTransform.forward * projectileSpeed;
                 i = (i + 1) % projectileOrigins.Count;
                 projectileRef = rb.gameObject.GetComponent<Projectile>();
-                projectileRef.RegisterNoCollideObject(gameObject);
-                projectileRef.RegisterNoCollideTag("Player");
                 break;
             case WeaponType.Shotgun:
-                ammo--;
-                onAmmoUpdate.Invoke(ammo);
+                // TODO: this is not going to handle the registered no collide tags and objects correctly
                 for (int i = 0; i < shotgunProjectileCount; ++i)
                 {
                     float xStray = Random.Range(-projectileSpread, projectileSpread);
                     float yStray = Random.Range(-projectileSpread, projectileSpread);
                     float zStray = Random.Range(-projectileSpread, projectileSpread);
-                    rb = Instantiate(projectile, projectileOrigins[0].position, projectile.transform.rotation).GetComponent<Rigidbody>();
+                    newPos = Vector3.Lerp(projectileOrigins[0].position, cameraTransform.position, lerpFactor);
+                    rb = Instantiate(projectile, newPos, cameraTransform.rotation).GetComponent<Rigidbody>();
                     rb.transform.Rotate(xStray, yStray, zStray);
-                    rb.velocity = projectileOrigins[0].rotation * rb.transform.forward * projectileSpeed;
+                    rb.velocity = cameraTransform.rotation * rb.transform.forward * projectileSpeed;
                     projectileRef = rb.gameObject.GetComponent<Projectile>();
-                    projectileRef.RegisterNoCollideObject(gameObject);
-                    projectileRef.RegisterNoCollideTag("Player");
-                    projectileRef.RegisterNoCollideTag("Projectile");
                 }
                 break;
             case WeaponType.LayableExplosive:
                 ammo--;
                 onAmmoUpdate.Invoke(ammo);
-                Transform exp = Instantiate(projectile, transform.position, Quaternion.identity).transform.GetChild(0);
-                exp.GetComponent<Explosive>().StartDeployable();
+                Explosive exp = Instantiate(projectile, fpControllerTransform.position, Quaternion.identity).transform.GetComponentInChildren<Explosive>();
+                exp.StartDeployable();
                 break;
             case WeaponType.ThrowableExplosive:
-                ammo--;
-                onAmmoUpdate.Invoke(ammo);
-                Rigidbody r = Instantiate(projectile, projectileOrigins[0].position, Quaternion.identity).GetComponent<Rigidbody>();
-                r.velocity = projectileOrigins[0].forward * throwForce;
+                newPos = Vector3.Lerp(projectileOrigins[0].position, cameraTransform.position, lerpFactor);
+                Rigidbody r = Instantiate(projectile, newPos, Quaternion.identity).GetComponent<Rigidbody>();
+                r.velocity = cameraTransform.forward * throwForce;
                 r.GetComponent<Explosive>().StartTimer(explosiveTimer);
                 break;
             case WeaponType.Fluid:
@@ -255,7 +265,6 @@ public class Weapon : MonoBehaviour
                 {
                     if (c.GetComponent<Enemy>() && !c.GetComponent<Enemy>().IsDead())
                     {
-                        Debug.Log(c.name);
                         c.GetComponent<Enemy>().InstantDeath(true);
                     }
                 }
@@ -264,6 +273,19 @@ public class Weapon : MonoBehaviour
 
         if (projectileRef != null)
         {
+            ammo--;
+            onAmmoUpdate.Invoke(ammo);
+            
+            foreach (var go in noCollideObjects)
+            {
+                projectileRef.RegisterNoCollideObject(go);
+            }
+
+            foreach (var tag in noCollideTags)
+            {
+                projectileRef.RegisterNoCollideTag(tag);
+            }
+
             projectileRef.SetProjectileDamage(projectileDamage);
         }
 
@@ -282,7 +304,6 @@ public class Weapon : MonoBehaviour
         yield return new WaitForSeconds(MIN_DROP_DELAY);
         yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsTag("Action"));
         FindObjectOfType<PlayerInventory>().RemoveItem(gameObject);
-        Destroy(gameObject);
     }
 
     public void AddAmmo(int amount, bool isCurrentWeapon)

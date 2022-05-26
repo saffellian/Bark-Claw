@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 
 [RequireComponent(typeof (BoxCollider))]
 [RequireComponent(typeof (Rigidbody))]
-public class WeaponPickup : MonoBehaviour, ISaveable
+public class WeaponPickup : Saveable
 {
     Dictionary<string, object> saveData = new Dictionary<string, object>();
 
@@ -29,14 +29,14 @@ public class WeaponPickup : MonoBehaviour, ISaveable
         }
     }
 
-    public SaveableData GetObjectState()
+    public override SaveableData GetObjectState()
     {
         saveData["hasBeenPickedUp"] = hasBeenPickedUp;
         var data = new SaveableData(GetDictionaryKey(), JsonConvert.SerializeObject(saveData));
         return data;
     }
 
-    public void ApplyObjectState(string objectJson)
+    public override void ApplyObjectState(string objectJson)
     {
         var state = JsonConvert.DeserializeObject<Dictionary<string, object>>(objectJson);
 
@@ -45,10 +45,5 @@ public class WeaponPickup : MonoBehaviour, ISaveable
         // switch this to enabled = false if performance issues arise
         if (hasBeenPickedUp)
             Destroy(gameObject);
-    }
-
-    public string GetDictionaryKey()
-    {
-        return $"{gameObject.GetInstanceID()}:{this.GetType().Name}";
     }
 }

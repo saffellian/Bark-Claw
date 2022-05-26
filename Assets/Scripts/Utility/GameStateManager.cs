@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.IO;
@@ -35,6 +36,7 @@ public class GameStateManager : MonoBehaviour
     public bool skipStartupLoad = false;
 
     private bool loadStateTrigger = false;
+    [SerializeField] private string nextLoadId = null;
 
     // Start is called before the first frame update
     void Start()
@@ -64,8 +66,23 @@ public class GameStateManager : MonoBehaviour
     /// <param name="mode">The mode in which the scene was loaded</param>
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        if (Instance != this)
+            return;
+            
         if (!skipStartupLoad)
             loadStateTrigger = true;
+
+        if (!string.IsNullOrEmpty(nextLoadId) && nextLoadId.Contains(GetSceneId()))
+        {
+            StartCoroutine(WaitBeforeLoad());
+        }
+    }
+
+    private IEnumerator WaitBeforeLoad()
+    {
+        yield return new WaitForEndOfFrame();
+        LoadGameState(nextLoadId);
+        nextLoadId = null;
     }
 
     /// <summary>
@@ -94,15 +111,23 @@ public class GameStateManager : MonoBehaviour
     /// <summary>
     /// Get all saveable objects and write their data to file in JSON format.
     /// </summary>
-    public GameStateProcessResult SaveGameState()
+    public GameStateProcessResult SaveGameState(string saveId = null, bool setNextLoad = false)
     {
         try
         {
-            string storageId = GetSceneId(SceneManager.GetActiveScene());
-            string savePath = Path.Combine(Application.persistentDataPath, $"{storageId}.json");
-            string jsonString = string.Empty;
+            string storageId = GetSceneId();
 
-            ISaveable[] saveables = GameObject.FindObjectsOfType<MonoBehaviour>().OfType<ISaveable>().ToArray();
+            if (setNextLoad)
+            {
+                nextLoadId = $"{storageId}_{saveId}.json";
+            }
+
+            string path = string.IsNullOrEmpty(saveId) ? $"{storageId}.json" : nextLoadId;
+            string savePath = Path.Combine(Application.persistentDataPath, path);
+            string jsonString = string.Empty;
+            Debug.Log(savePath);
+
+            Saveable[] saveables = GameObject.FindObjectsOfType<Saveable>().ToArray();
             
             SceneObject sceneObject = new SceneObject();
             sceneObject.saveableObjects = new Dictionary<string, string>();
@@ -134,21 +159,24 @@ public class GameStateManager : MonoBehaviour
         return GameStateProcessResult.SUCCESS;
     }
 
-    public GameStateProcessResult LoadGameState()
+    public GameStateProcessResult LoadGameState(string saveId = null)
     {
         try
         {
-            string storageId = GetSceneId(SceneManager.GetActiveScene());
-            string savePath = Path.Combine(Application.persistentDataPath, $"{storageId}.json");
+            string storageId = GetSceneId();
+            string path = string.IsNullOrEmpty(saveId) ? $"{storageId}.json" : saveId;
+            string savePath = Path.Combine(Application.persistentDataPath, path);
+            Debug.Log(savePath);
             
             string jsonString = File.ReadAllText(savePath);
             var converter = new SceneObjectJsonConverter(typeof(SceneObject));
             SceneObject sceneObject = JsonConvert.DeserializeObject<SceneObject>(jsonString, converter);
             
-            ISaveable[] saveables = GameObject.FindObjectsOfType<MonoBehaviour>().OfType<ISaveable>().ToArray();
+            Saveable[] saveables = GameObject.FindObjectsOfType<Saveable>().ToArray();
 
             foreach(var item in saveables)
             {
+                Debug.Log(item.GetDictionaryKey());
                 if (sceneObject.saveableObjects.ContainsKey(item.GetDictionaryKey()))
                 {
                     item.ApplyObjectState(sceneObject.saveableObjects[item.GetDictionaryKey()]);
@@ -157,7 +185,7 @@ public class GameStateManager : MonoBehaviour
         }
         catch (Exception e)
         {
-            Debug.Log(e.Message);
+            Debug.LogError(e.Message);
             return GameStateProcessResult.FAILURE;
         }
 
@@ -169,8 +197,21 @@ public class GameStateManager : MonoBehaviour
         extraData.Add(dictionaryKey, jsonContent);
     }
 
-    private string GetSceneId(Scene activeScene)
+    private string GetSceneId()
     {
+        Scene activeScene = SceneManager.GetActiveScene();
         return $"{activeScene.name}_{activeScene.buildIndex}";
+    }
+
+    private bool SaveGameExists(string saveId = null)
+    {
+        if (!string.IsNullOrEmpty(saveId))
+        {
+            return File.Exists(Path.Combine(Application.persistentDataPath, saveId));
+        }
+        else
+        {
+            return false; // TODO: do this properly
+        }
     }
 }

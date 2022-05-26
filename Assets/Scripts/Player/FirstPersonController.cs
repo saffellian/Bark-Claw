@@ -6,13 +6,14 @@ using UnityStandardAssets.Utility;
 using Random = UnityEngine.Random;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using BarkClaw;
 
 namespace UnityStandardAssets.Characters.FirstPerson
 {
     [Serializable]
     [RequireComponent(typeof (CharacterController))]
     [RequireComponent(typeof (AudioSource))]
-    public class FirstPersonController : MonoBehaviour, ISaveable
+    public class FirstPersonController : Saveable
     {
         [SerializeField] private float m_WalkSpeed;
         [SerializeField] private float m_RunSpeed;
@@ -50,7 +51,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private AudioSource m_AudioSource;
         private bool animationMovement = false;
         private Vector3 m_Impact = Vector3.zero;
-        private Dictionary<string, object> saveData = new Dictionary<string, object>();
 
         // Use this for initialization
         private void Start()
@@ -65,6 +65,21 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+            PausedMenu.MenuEvent.AddListener(PauseEventListener);
+        }
+
+        void PauseEventListener(InterfaceEvents e)
+        {
+            if (e == InterfaceEvents.PAUSE)
+            {
+                m_MouseLook.SetCursorLock(false);
+                Cursor.visible = true;
+            }
+            else if (e == InterfaceEvents.RESUME)
+            {
+                m_MouseLook.SetCursorLock(true);
+                Cursor.visible = false;
+            }
         }
 
         // Update is called once per frame
@@ -284,17 +299,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
             body.AddForceAtPosition(m_CharacterController.velocity*0.1f, hit.point, ForceMode.Impulse);
         }
 
-        public void SetCursorLock(bool value)
-        {
-            m_MouseLook.SetCursorLock(value);
-        }
-
         public bool HasMovement()
         {
             return animationMovement;
         }
 
-        public SaveableData GetObjectState()
+        public override SaveableData GetObjectState()
         {
             saveData["position"] = transform.position;
             saveData["rotation"] = transform.rotation.eulerAngles;
@@ -304,7 +314,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             return data;
         }
 
-        public void ApplyObjectState(string objectJson)
+        public override void ApplyObjectState(string objectJson)
         {
             var state = JsonConvert.DeserializeObject<Dictionary<string, object>>(objectJson);
             JObject position = state["position"] as JObject;
@@ -319,11 +329,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
             transform.rotation = newRotation;
             m_MouseLook.Init(transform, m_Camera.transform);
             m_CharacterController.enabled = true;
-        }
-
-        public string GetDictionaryKey()
-        {
-            return $"{gameObject.GetInstanceID()}:{this.GetType().Name}";
         }
     }
 }

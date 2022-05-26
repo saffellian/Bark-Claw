@@ -4,21 +4,24 @@ public class HealthPickup : MonoBehaviour
 {
     public int healAmount = 1;
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
-        {
-            other.GetComponent<PlayerHealth>().ApplyHealth(healAmount);
-            Destroy(gameObject);
-        }
+        HandleCollision(other);
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        HandleCollision(other);
+    }
+
+    private void HandleCollision(Component collider)
+    {
+        if (collider.CompareTag("Player"))
         {
-            other.GetComponent<PlayerHealth>().ApplyHealth(healAmount);
-            Destroy(gameObject);
+            if (collider.GetComponent<PlayerHealth>().ApplyHealth(healAmount) > 0)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

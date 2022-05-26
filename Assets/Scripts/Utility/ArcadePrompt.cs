@@ -6,11 +6,18 @@ using UnityEngine.SceneManagement;
 public class ArcadePrompt : MonoBehaviour
 {
     private bool inPrompt = false;
+    private GameStateManager gameStateManager;
+
+    private void Start()
+    {
+        gameStateManager = GameStateManager.Instance;
+    }
 
     private void Update()
     {
         if (inPrompt && Input.GetKeyDown(KeyCode.E))
         {
+            gameStateManager?.SaveGameState("arcade", true);
             SceneManager.LoadScene("2DLevel");
         }
     }
@@ -20,7 +27,6 @@ public class ArcadePrompt : MonoBehaviour
         if (other.transform.CompareTag("Player"))
         {
             inPrompt = true;
-            Debug.Log("prompt displays");
         }
     }
 
@@ -29,7 +35,6 @@ public class ArcadePrompt : MonoBehaviour
         if (other.transform.CompareTag("Player"))
         {
             inPrompt = false;
-            Debug.Log("prompt goes away");
         }
     }
 }

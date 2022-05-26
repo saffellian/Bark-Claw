@@ -2,11 +2,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityStandardAssets.Characters.FirstPerson;
 
 public class DeathCanvas : MonoBehaviour
 {
-
     [SerializeField] private Button retryButton;
     [SerializeField] private Button exitButton;
     [SerializeField] private CanvasGroup fadeGroup;
@@ -45,7 +43,10 @@ public class DeathCanvas : MonoBehaviour
 
     private IEnumerator Transition()
     {
-        statusAnimator.SetTrigger("Dead");
+        if (statusAnimator != null)
+        {
+            statusAnimator.SetTrigger("Dead");
+        }
         gameObject.SetActive(true);
         while (fadeGroup.alpha < 1)
         {
@@ -53,7 +54,7 @@ public class DeathCanvas : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         yield return new WaitForSeconds(buttonActivateDelay);
-        FindObjectOfType<FirstPersonController>().SetCursorLock(false);
+        PausedMenu.MenuEvent.Invoke(BarkClaw.InterfaceEvents.DEATH);
         retryButton.gameObject.SetActive(true);
         exitButton.gameObject.SetActive(true);
     }

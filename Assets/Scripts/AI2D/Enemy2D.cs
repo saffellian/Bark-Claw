@@ -7,6 +7,8 @@ using SensorToolkit;
 
 public class Enemy2D : MonoBehaviour
 {
+    public static int EnemiesAttacking = 0;
+
     public enum EnemyType
     {
         Squirrel,
@@ -21,7 +23,7 @@ public class Enemy2D : MonoBehaviour
     [SerializeField] float patrolDistance = 3;
     [SerializeField] float patrolSpeedMultiplier = 1;
     [SerializeField] float chaseSpeedMultiplier = 1.5f;
-    [SerializeField] [EnemyType("Squirrel, Cat")] GameObject projectile;
+    [SerializeField] [EnemyType("Squirrel, Cat")] GameObject projectilePrefab;
     [SerializeField] [EnemyType("Squirrel, Cat")] int projectileDamage = 1;
     [SerializeField] [EnemyType("Squirrel, Cat")] float projectileVelocity = 3;
     [SerializeField] int meleeDamage = 5;
@@ -34,6 +36,7 @@ public class Enemy2D : MonoBehaviour
     [SerializeField] [EnemyType("Hawk")] float attackDistance = 8f;
     [SerializeField] [EnemyType("Hawk")] int attackDamage = 15;
     [SerializeField] [EnemyType("Hawk")] float patrolChangeTime = 10;
+    [SerializeField] List<SensorMap> sensors = new List<SensorMap>();
 
     private float patrolLeftX, patrolRightX;
     private Rigidbody2D rb;
@@ -46,12 +49,6 @@ public class Enemy2D : MonoBehaviour
     private Blackboard blackboard;
     private Transform player;
     private Vector2 startPosition;
-    private RaySensor2D cliffSensor;
-    private RangeSensor2D groundSensor;
-    private TriggerSensor2D chaseSensor;
-    private RangeSensor2D meleeSensor;
-    private float cliffSensorOffset;
-    private float meleeSensorOffset;
     private float attackTime;
     private Collider2D collider;
     private bool previouslyFlipped;
@@ -61,24 +58,40 @@ public class Enemy2D : MonoBehaviour
     private bool rightExtentReached;
     private bool leftExtentReached;
 
+    [System.Serializable]
+    private class SensorMap {
+        public Sensor sensor;
+        public SensorLocationSync locationSync;
+        [HideInInspector]
+        public float locationOffset;
+    }
+
+    private enum SensorLocationSync {
+        NONE,
+        MOVE,
+        SCALE
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         attackTime = Time.time;
 
         player = GameObject.Find("Player").transform;
-        cliffSensor = transform.Find("CliffSensor").GetComponent<RaySensor2D>();
-        groundSensor = transform.Find("GroundSensor").GetComponent<RangeSensor2D>();
-        chaseSensor = transform.Find("ChaseSensor").GetComponent<TriggerSensor2D>();
-        meleeSensor = transform.Find("MeleeSensor").GetComponent<RangeSensor2D>();
         
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         collider = GetComponent<Collider2D>();
 
-        cliffSensorOffset = cliffSensor.transform.localPosition.x;
-        meleeSensorOffset = meleeSensor.transform.localPosition.x;
+        for (int i = 0; i < sensors.Count; i++)
+        {
+            if (sensors[i].locationSync == SensorLocationSync.MOVE)
+            {
+                sensors[i].locationOffset = sensors[i].sensor.transform.localPosition.x;
+            }
+        }
+
         startPosition = transform.position;
         patrolLeftX = (transform.position - (Vector3.right * patrolDistance)).x;
         patrolRightX = (transform.position + (Vector3.right * patrolDistance)).x;
@@ -124,30 +137,38 @@ public class Enemy2D : MonoBehaviour
 
     private void Update()
     {
-        isGrounded = groundSensor.DetectedObjects.Count > 0;
         isDead = health <= 0;
-        playerInChaseRange = chaseSensor.DetectedObjects.Find(g => g.name == "Player") != null;
-        playerInMeleeRange = meleeSensor.DetectedObjects.Count != 0;
-        rightExtentReached = !leftWalk && (transform.position.x > patrolRightX || cliffSensor.DetectedObjects.Count == 0);
-        leftExtentReached = leftWalk && (transform.position.x < patrolLeftX || cliffSensor.DetectedObjects.Count == 0);
+        rightExtentReached = !leftWalk && (transform.position.x > patrolRightX || bool.Equals(blackboard?.Get("cliff") ?? false, false));
+        leftExtentReached = leftWalk && (transform.position.x < patrolLeftX || bool.Equals(blackboard?.Get("cliff") ?? false, false));
 
         // update sensor locations only when the sprite becomes flipped
         if (previouslyFlipped != sr.flipX)
         {
-            if (sr.flipX)
+            float scaleFactor = sr.flipX ? -1f : 1f;
+            for (int i = 0; i < sensors.Count; i++)
             {
-                cliffSensor.transform.localPosition = new Vector3(-cliffSensorOffset, cliffSensor.transform.localPosition.y, 0);
-                meleeSensor.transform.localPosition = new Vector3(-meleeSensorOffset, meleeSensor.transform.localPosition.y, 0);
-                chaseSensor.transform.localScale = new Vector3(-1, 1, 1);
-            }
-            else
-            {
-                cliffSensor.transform.localPosition = new Vector3(cliffSensorOffset, cliffSensor.transform.localPosition.y, 0);
-                meleeSensor.transform.localPosition = new Vector3(meleeSensorOffset, meleeSensor.transform.localPosition.y, 0);
-                chaseSensor.transform.localScale = new Vector3(1, 1, 1);
+                if (sensors[i].locationSync == SensorLocationSync.MOVE)
+                {
+                    sensors[i].sensor.transform.localPosition = new Vector3(scaleFactor * sensors[i].locationOffset, sensors[i].sensor.transform.localPosition.y, 0);
+                }
+                else if (sensors[i].locationSync == SensorLocationSync.SCALE)
+                {
+                    sensors[i].sensor.transform.localScale = new Vector3(scaleFactor, 1, 1);
+                }
             }
         }
+
         previouslyFlipped = sr.flipX;
+    }
+
+    public void SetDetected(string key)
+    {
+        blackboard.Set(key, true);
+    }
+
+    public void SetNotDetected(string key)
+    {
+        blackboard.Set(key, false);
     }
 
     private void UpdateBlackboard()
@@ -162,43 +183,93 @@ public class Enemy2D : MonoBehaviour
 
     private Root CatBehaviorTree()
     {
-        return new Root(new Service(0.125f, UpdateBlackboard,
+        Root rootNode = new Root(new Service(0.125f, UpdateBlackboard,
             new BlackboardCondition("isDead", Operator.IS_EQUAL, false, Stops.SELF,
                 new Sequence(
-                    new Succeeder(new Condition(() =>
-                    {
-                        return !playerInChaseRange;
-                    },
+                    new Succeeder(
+                    new BlackboardCondition(
+                        "chase",
+                        Operator.IS_NOT_EQUAL,
+                        true,
                         Stops.SELF,
                         GroundPatrol()
                     ))
-                    { Label = "Ground Patrol" },
-                    new Succeeder(new Condition(() =>
-                    {
-                        return !playerInMeleeRange && playerInChaseRange;
-                    },
+                    { Label = "Patrol" },
+
+                    new Succeeder(
+                    new BlackboardQuery(
+                        new string[] {"chase", "melee"},
                         Stops.SELF,
+                        () => { 
+                            return blackboard.Get<bool>("chase") == true 
+                                && blackboard.Get<bool>("melee") == false;
+                        },
                         GroundChase()
                     ))
-                    { Label = "Ground Patrol" },  
-                    new Succeeder(new Condition(() => 
-                    {
-                        return playerInMeleeRange;
-                    }, 
-                        Stops.SELF,                  
+                    { Label = "Chase" },
+
+                    new Succeeder(
+                    new BlackboardCondition(
+                        "melee",
+                        Operator.IS_EQUAL,
+                        true,
+                        Stops.SELF,
                         MeleeAttack()
-                    )),
+                    ))
+                    { Label = "Attack" },
+                    
                     new Action(() => {
                         animator.SetBool("Attack", false);
                     })
                 )
             )
         ));
+
+        // set necessary blackboard values
+        rootNode.Blackboard.Set("melee", false);
+        rootNode.Blackboard.Set("chase", false);
+
+        return rootNode;
     }
 
     private Root SquirrelBehaviorTree()
     {
-        return null;
+        Root rootNode = new Root(new Service(0.125f, UpdateBlackboard,
+            new BlackboardCondition("isDead", Operator.IS_EQUAL, false, Stops.SELF,
+                new Sequence(
+
+                    new Succeeder(
+                    new BlackboardCondition(
+                        "playerClose",
+                        Operator.IS_EQUAL,
+                        false,
+                        Stops.SELF,
+                        GroundPatrol()
+                    ))
+                    { Label = "Ground Patrol" },
+
+                    new Succeeder(
+                    new BlackboardCondition(
+                        "rangeAttack",
+                        Operator.IS_EQUAL,
+                        true,
+                        Stops.SELF,
+                        ProjectileAttack()
+                    ))
+                    { Label = "Projectile Attack" },
+
+                    new Action(() => {
+                        animator.SetBool("Attack", false);
+                    })
+                )
+            )
+        ));
+
+        // set necessary blackboard values
+        rootNode.Blackboard.Set("playerClose", false);
+        rootNode.Blackboard.Set("attackRange", false);
+
+        return rootNode;
     }
 
     private Node GroundPatrol()
@@ -250,7 +321,8 @@ public class Enemy2D : MonoBehaviour
             new Sequence(
                 new Succeeder(
                     new Condition(() => { return player.position.x < transform.position.x; }, Stops.SELF,
-                        new Action(() => {
+                        new Action(() =>
+                        {
                             // move left
                             rb.velocity = Vector2.left * chaseSpeedMultiplier;
                         })
@@ -258,7 +330,8 @@ public class Enemy2D : MonoBehaviour
                 ),
                 new Succeeder(
                     new Condition(() => { return player.position.x > transform.position.x; }, Stops.SELF,
-                        new Action(() => {
+                        new Action(() =>
+                        {
                             // move right
                             rb.velocity = Vector2.right * chaseSpeedMultiplier;
                         })
@@ -270,7 +343,7 @@ public class Enemy2D : MonoBehaviour
 
     private Node MeleeAttack()
     {
-        return new Cooldown(attackDelay, 0.125f,
+        return new Cooldown(attackDelay, attackDelay,
         new Sequence(
             new Action(() =>
             {
@@ -293,7 +366,29 @@ public class Enemy2D : MonoBehaviour
 
     private Node ProjectileAttack()
     {
-        return null;
+        return new Cooldown(attackDelay, attackDelay,
+        new Sequence(
+            new Action(() =>
+            {
+                animator.SetBool("Attack", true);
+                Rigidbody2D projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity).GetComponent<Rigidbody2D>();
+                projectile.GetComponent<Projectile2D>().SetTargetTag("Player");
+                projectile.GetComponent<Projectile2D>().SetProjectileDamage(projectileDamage);
+                projectile.velocity = (GameObject.Find("Player").transform.position - transform.position).normalized * projectileVelocity;
+            }),
+            new WaitForCondition(() =>
+            {
+                return animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack");
+            },
+            new WaitForCondition(() =>
+            {
+                return !animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack");
+            }, new Action(() =>
+            {
+                animator.SetBool("Attack", false);
+            })))
+        )
+        );
     }
 
     // private IEnumerator HawkAirPatrol()
@@ -372,19 +467,6 @@ public class Enemy2D : MonoBehaviour
     //     yield return new WaitForFixedUpdate();
     //     yield return new WaitUntil(() => Mathf.Abs(rb.velocity.y) <= Mathf.Epsilon);
     //     animator.SetBool("Flying", false);
-    // }
-
-    // private IEnumerator SquirrelAttack()
-    // {
-    //     Rigidbody2D acorn = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody2D>();
-    //     acorn.GetComponent<Projectile2D>().RegisterNoCollideObject(gameObject);
-    //     acorn.GetComponent<Projectile2D>().SetProjectileDamage(projectileDamage);
-    //     acorn.velocity = (GameObject.Find("Player").transform.position - transform.position).normalized * projectileVelocity;
-    //     animator.SetBool("Attack", true);
-    //     yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"));
-    //     yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsTag("Attack"));
-    //     animator.SetBool("Attack", false);
-    //     yield return new WaitForSeconds(attackDelay);
     // }
 
     public void ApplyDamage(int amount)
