@@ -987,8 +987,10 @@ MonoBehaviour:
     m_PreInfinity: 1
     m_PostInfinity: 1
     m_RotationOrder: 4
+  randomizeBobOffset: 1
   bobSpeed: 1
-  rotateSpeed: 1
+  randomizeRotateSpeed: 1
+  rotateSpeed: 20
   rotateAxis: 2
 --- !u!65 &8293701115155647877
 BoxCollider:
