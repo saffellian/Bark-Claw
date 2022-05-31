@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: 061a732f0919ef742a0782a6a85389cf
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Cat-ShitMine-Death-Acid_0
+    21300002: Cat-ShitMine-Death-Acid_1
+    21300004: Cat-ShitMine-Death-Acid_2
+    21300006: Cat-ShitMine-Death-Acid_3
+    21300008: Cat-ShitMine-Death-Acid_4
+    21300010: Cat-ShitMine-Death-Acid_5
+    21300012: Cat-ShitMine-Death-Acid_6
+    21300014: Cat-ShitMine-Death-Acid_7
+    21300016: Cat-ShitMine-Death-Acid_8
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cat-ShitMine-Death-Acid_0
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1393
+        width: 64
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5007143, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f2a5fd084913e04c914419de21f70cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ShitMine-Death-Acid_1
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1219
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1853bb6a381b8f44981be2382163abcd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ShitMine-Death-Acid_2
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1045
+        width: 64
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8d79b1f67549a459074a2b15967646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ShitMine-Death-Acid_3
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 871
+        width: 64
+        height: 70
+      alignment: 9
+      pivot: {x: 0.62642074, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c795766d85cb84e9560500832d749a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ShitMine-Death-Acid_4
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 697
+        width: 66
+        height: 71
+      alignment: 9
+      pivot: {x: 0.61850345, y: 0.47}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f28b4f7641df144a1e2ea6378386dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ShitMine-Death-Acid_5
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 523
+        width: 69
+        height: 74
+      alignment: 9
+      pivot: {x: 0.63875747, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e0f7dfa456476448dd1342f9101585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ShitMine-Death-Acid_6
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 349
+        width: 70
+        height: 75
+      alignment: 9
+      pivot: {x: 0.6444809, y: 0.45}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824b7c29ea987b94492edb820a6ac060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ShitMine-Death-Acid_7
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 175
+        width: 71
+        height: 67
+      alignment: 9
+      pivot: {x: 0.6348488, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603445b305855714b9a90bf4918f7a82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ShitMine-Death-Acid_8
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 1
+        width: 69
+        height: 67
+      alignment: 9
+      pivot: {x: 0.62116826, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bbe60880db874545a8719b95bc3d325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9789218c420b14a498b4b69d0a1002cd
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

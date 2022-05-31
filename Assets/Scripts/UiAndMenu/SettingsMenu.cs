@@ -59,7 +59,7 @@ public class SettingsMenu : MonoBehaviour
         musicSlider.onValueChanged.AddListener(delegate { SetMusicVolume(musicSlider.value); });
         mouseSlider.onValueChanged.AddListener(delegate { SetMouseSensitivity(mouseSlider.value); });
         mouseTextField.onEndEdit.AddListener(delegate { UpdateMouseInputField(mouseTextField.text); });
-        postProcessingToggle.onValueChanged.AddListener(delegate { SetActivePostProcessing(postProcessingToggle.isOn); });
+        
         initialized = true;
 
         if (currentScene.name == "3DLevel")
@@ -123,7 +123,7 @@ public class SettingsMenu : MonoBehaviour
         musicSlider.value = PlayerPrefs.GetFloat(PlayerPrefKeys.MUSIC_VOLUME, 1);
         effectsSlider.value = PlayerPrefs.GetFloat(PlayerPrefKeys.SFX_VOLUME, 1);
         mouseSlider.value = PlayerPrefs.GetFloat(PlayerPrefKeys.MOUSE_SENS, 1);
-        postProcessingToggle.isOn = PlayerPrefs.GetInt(PlayerPrefKeys.POST_PROC, 1) == 1;
+
     }
 
     public void ActivateOverlay(GameObject callingObject)

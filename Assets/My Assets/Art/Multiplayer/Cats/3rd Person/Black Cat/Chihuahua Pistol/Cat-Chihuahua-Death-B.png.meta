@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: 66643e9ff00ddfe4f8b3d13d1be7ddfd
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Cat-Chihuahua-Death-B_0
+    21300002: Cat-Chihuahua-Death-B_1
+    21300004: Cat-Chihuahua-Death-B_2
+    21300006: Cat-Chihuahua-Death-B_3
+    21300008: Cat-Chihuahua-Death-B_4
+    21300010: Cat-Chihuahua-Death-B_5
+    21300012: Cat-Chihuahua-Death-B_6
+    21300014: Cat-Chihuahua-Death-B_7
+    21300016: Cat-Chihuahua-Death-B_8
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cat-Chihuahua-Death-B_0
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1
+        width: 64
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5069158, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c777a35d0445143a94261ce20bf9ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Chihuahua-Death-B_1
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 1
+        width: 75
+        height: 83
+      alignment: 9
+      pivot: {x: 0.42904907, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8adb0bace76d0429a7da5101fb2c00
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Chihuahua-Death-B_2
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 1
+        width: 77
+        height: 71
+      alignment: 9
+      pivot: {x: 0.36398593, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c89e44e8be25624a98b7d00a1becde8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Chihuahua-Death-B_3
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 1
+        width: 84
+        height: 67
+      alignment: 9
+      pivot: {x: 0.34579104, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae784ef66ba186409d59550c39634d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Chihuahua-Death-B_4
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 1
+        width: 79
+        height: 67
+      alignment: 9
+      pivot: {x: 0.37789568, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97df7d2fae454ee4eaf50e50a0920bb0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Chihuahua-Death-B_5
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 1
+        width: 68
+        height: 67
+      alignment: 9
+      pivot: {x: 0.23655252, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52618744253802741aa3a69ad7f194ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Chihuahua-Death-B_6
+      rect:
+        serializedVersion: 2
+        x: 1787
+        y: 1
+        width: 66
+        height: 67
+      alignment: 9
+      pivot: {x: 0.24527255, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b94152af91213d459a727ca2c66c4f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Chihuahua-Death-B_7
+      rect:
+        serializedVersion: 2
+        x: 2065
+        y: 1
+        width: 66
+        height: 67
+      alignment: 9
+      pivot: {x: 0.24109626, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e2110b28b5360745bd113c637e53c4e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Chihuahua-Death-B_8
+      rect:
+        serializedVersion: 2
+        x: 2343
+        y: 1
+        width: 66
+        height: 67
+      alignment: 9
+      pivot: {x: 0.24188048, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2acd0b3fafe174aa8a01389186b210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 64b44f38c417a6c4e802d3e787322535
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

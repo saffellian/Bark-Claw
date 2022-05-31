@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: 2f45be10106a2df4eba81bab6727e595
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Cat-Chihuahua-Death-Acid-B_0
+    21300002: Cat-Chihuahua-Death-Acid-B_1
+    21300004: Cat-Chihuahua-Death-Acid-B_2
+    21300006: Cat-Chihuahua-Death-Acid-B_3
+    21300008: Cat-Chihuahua-Death-Acid-B_4
+    21300010: Cat-Chihuahua-Death-Acid-B_5
+    21300012: Cat-Chihuahua-Death-Acid-B_6
+    21300014: Cat-Chihuahua-Death-Acid-B_7
+    21300016: Cat-Chihuahua-Death-Acid-B_8
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cat-Chihuahua-Death-Acid-B_0
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b91471a3528d6f4482b0993959f87ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Chihuahua-Death-Acid-B_1
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 1
+        width: 75
+        height: 83
+      alignment: 9
+      pivot: {x: 0.42750204, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e26868d96683b54496d743bbe13af1b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Chihuahua-Death-Acid-B_2
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1
+        width: 81
+        height: 71
+      alignment: 9
+      pivot: {x: 0.39704272, y: 0.47}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45575b206bc3f8646a7b659fd6419bf7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Chihuahua-Death-Acid-B_3
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 1
+        width: 87
+        height: 67
+      alignment: 9
+      pivot: {x: 0.36864042, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779fad86936739b4ba3de57808f32ebe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Chihuahua-Death-Acid-B_4
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 1
+        width: 75
+        height: 67
+      alignment: 9
+      pivot: {x: 0.35585937, y: 0.5000002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9210fc2ce745c4e9048b8a89829ef7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Chihuahua-Death-Acid-B_5
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 1
+        width: 82
+        height: 67
+      alignment: 9
+      pivot: {x: 0.36498725, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b851e029e9cab44b9e91683b75ead0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Chihuahua-Death-Acid-B_6
+      rect:
+        serializedVersion: 2
+        x: 1778
+        y: 1
+        width: 75
+        height: 67
+      alignment: 9
+      pivot: {x: 0.343055, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f125f1943441de43883dff9aa8a8e37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Chihuahua-Death-Acid-B_7
+      rect:
+        serializedVersion: 2
+        x: 2056
+        y: 1
+        width: 75
+        height: 64
+      alignment: 9
+      pivot: {x: 0.3414388, y: 0.51}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e895d23cf1d1d4eb51c41c0be3d93f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-Chihuahua-Death-Acid-B_8
+      rect:
+        serializedVersion: 2
+        x: 2334
+        y: 1
+        width: 75
+        height: 67
+      alignment: 9
+      pivot: {x: 0.3414388, y: 0.49}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681052ba1c5be1947b8a5702d86a89d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d2c518757a4fe784da9bc2f411d558da
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

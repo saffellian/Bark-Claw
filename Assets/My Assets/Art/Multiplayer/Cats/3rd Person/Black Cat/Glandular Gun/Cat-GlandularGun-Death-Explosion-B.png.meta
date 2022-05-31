@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: 3871d040095116d409dd79a14d5e32b1
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Cat-GlandularGun-Death-Explosion-B_3
+    21300002: Cat-GlandularGun-Death-Explosion-B_4
+    21300004: Cat-GlandularGun-Death-Explosion-B_5
+    21300006: Cat-GlandularGun-Death-Explosion-B_6
+    21300008: Cat-GlandularGun-Death-Explosion-B_7
+    21300010: Cat-GlandularGun-Death-Explosion-B_8
+    21300012: Cat-GlandularGun-Death-Explosion-B_9
+    21300014: Cat-GlandularGun-Death-Explosion-B_10
+    21300016: Cat-GlandularGun-Death-Explosion-B_11
+    21300018: Cat-GlandularGun-Death-Explosion-B_12
+    21300020: Cat-GlandularGun-Death-Explosion-B_13
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cat-GlandularGun-Death-Explosion-B_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154962d29cc2de5448d970ad952a58e1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GlandularGun-Death-Explosion-B_4
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 1
+        width: 95
+        height: 96
+      alignment: 9
+      pivot: {x: 0.48229435, y: 0.36}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2daf7e3fbf6e64d4696b377bf8acaa63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GlandularGun-Death-Explosion-B_5
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 1
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e842a58455dfc04d9f2406f40bca87b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GlandularGun-Death-Explosion-B_6
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 1
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6d5419be7b3c147b8dae89cf049109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GlandularGun-Death-Explosion-B_7
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 1
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916864fc4201b984eb49c118bc4e997a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GlandularGun-Death-Explosion-B_8
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 1
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b949780a03d40cc449feaec40bcfd6a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GlandularGun-Death-Explosion-B_9
+      rect:
+        serializedVersion: 2
+        x: 1692
+        y: 1
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b8ac555c233f1419afeab294c90a43
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GlandularGun-Death-Explosion-B_10
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 1
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5158672, y: 0.34000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8afffa6742ee8d40ac18f4675d10871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GlandularGun-Death-Explosion-B_11
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 1
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.52878004, y: 0.3399998}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b18e05d5aaf2d746a122d3f58081198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GlandularGun-Death-Explosion-B_12
+      rect:
+        serializedVersion: 2
+        x: 2519
+        y: 1
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.52438056, y: 0.3399998}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016cf902a4a37594f8f1c381ab7d7477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GlandularGun-Death-Explosion-B_13
+      rect:
+        serializedVersion: 2
+        x: 2796
+        y: 1
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.52874655, y: 0.34000015}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60402cb89f26994db533e4928bbd314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2cc1b064afd2a874793103fd5222f4e4
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

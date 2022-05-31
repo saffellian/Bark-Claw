@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: b9f13368fbbdb194d881683469bb2795
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Cat-ToyGrenade-Death-B_0
+    21300002: Cat-ToyGrenade-Death-B_1
+    21300004: Cat-ToyGrenade-Death-B_2
+    21300006: Cat-ToyGrenade-Death-B_3
+    21300008: Cat-ToyGrenade-Death-B_4
+    21300010: Cat-ToyGrenade-Death-B_5
+    21300012: Cat-ToyGrenade-Death-B_6
+    21300014: Cat-ToyGrenade-Death-B_7
+    21300016: Cat-ToyGrenade-Death-B_8
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cat-ToyGrenade-Death-B_0
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 881
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8fbeb0b2cfd5cb4e839b50a8b92f84a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ToyGrenade-Death-B_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 771
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ff23531d6b189145a40b867c3459533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ToyGrenade-Death-B_2
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 665
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbc69c7801974f4fb0b8bbf1c4c9826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ToyGrenade-Death-B_3
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 563
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ca89158fcdc2d4684d8ff5705c7b9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ToyGrenade-Death-B_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 449
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e9f21723777a348bc5d890b0de3db8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ToyGrenade-Death-B_5
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 331
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5065419, y: 0.3299997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1040296b10a14bb41918f15cbe26a7f3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ToyGrenade-Death-B_6
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 221
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5048744, y: 0.32999983}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59609d0a3e99fda459b7e10c64934854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ToyGrenade-Death-B_7
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 111
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5048744, y: 0.33}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd70bf384785ac14fa22398d76f6e52d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ToyGrenade-Death-B_8
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1
+        width: 248
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5014213, y: 0.33000028}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61737f73089aafa40a67ad910b3b01b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3cc356e40280a8043a863d905eb74f54
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: 325a9a32ebd57b7449d86a59f8883dec
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Cat-GrenadeLauncher-Death-Acid-B_0
+    21300002: Cat-GrenadeLauncher-Death-Acid-B_1
+    21300004: Cat-GrenadeLauncher-Death-Acid-B_2
+    21300006: Cat-GrenadeLauncher-Death-Acid-B_3
+    21300008: Cat-GrenadeLauncher-Death-Acid-B_4
+    21300010: Cat-GrenadeLauncher-Death-Acid-B_5
+    21300012: Cat-GrenadeLauncher-Death-Acid-B_6
+    21300014: Cat-GrenadeLauncher-Death-Acid-B_7
+    21300016: Cat-GrenadeLauncher-Death-Acid-B_8
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cat-GrenadeLauncher-Death-Acid-B_0
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1393
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dcee50a3ec02df448899f82f2f7d295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GrenadeLauncher-Death-Acid-B_1
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1219
+        width: 64
+        height: 67
+      alignment: 9
+      pivot: {x: 0.40076876, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943d9b026d2949f4aafdab57b3431192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GrenadeLauncher-Death-Acid-B_2
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1045
+        width: 71
+        height: 69
+      alignment: 9
+      pivot: {x: 0.36582798, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58924702829d18742a8c3b6c4f370334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GrenadeLauncher-Death-Acid-B_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 871
+        width: 80
+        height: 67
+      alignment: 9
+      pivot: {x: 0.3346142, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a349d43cf8e3f0040b7952eeb407e659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GrenadeLauncher-Death-Acid-B_4
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 697
+        width: 84
+        height: 67
+      alignment: 9
+      pivot: {x: 0.29033408, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34272f8a65c1b4845929706d75982afa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GrenadeLauncher-Death-Acid-B_5
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 523
+        width: 88
+        height: 67
+      alignment: 9
+      pivot: {x: 0.28650197, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c778037eb12f06d4382bfba937e8b459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GrenadeLauncher-Death-Acid-B_6
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 349
+        width: 91
+        height: 67
+      alignment: 9
+      pivot: {x: 0.28772444, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe2cd1f640529b40b391a5bb5c2f647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GrenadeLauncher-Death-Acid-B_7
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 175
+        width: 94
+        height: 67
+      alignment: 9
+      pivot: {x: 0.27656037, y: 0.5000005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168ac6077aa1c8f44a6e778c508e7d70
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GrenadeLauncher-Death-Acid-B_8
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1
+        width: 94
+        height: 67
+      alignment: 9
+      pivot: {x: 0.27762684, y: 0.49999925}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54368b7a84e9452479f1a00419519a05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a65ca8705cafa9e4ba897f2738657210
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

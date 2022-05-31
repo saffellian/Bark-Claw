@@ -1,12 +1,44 @@
 fileFormatVersion: 2
 guid: 44651cc866894034f85bfad8a0c32ec0
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: WhitePaws-BombToy_0
+    21300002: WhitePaws-BombToy_1
+    21300004: WhitePaws-BombToy_2
+    21300006: WhitePaws-BombToy_3
+    21300008: WhitePaws-BombToy_4
+    21300010: WhitePaws-BombToy_5
+    21300012: WhitePaws-BombToy_6
+    21300014: WhitePaws-BombToy_7
+    21300016: WhitePaws-BombToy_8
+    21300018: WhitePaws-BombToy_9
+    21300020: WhitePaws-BombToy_10
+    21300022: WhitePaws-BombToy_11
+    21300024: WhitePaws-BombToy_12
+    21300026: WhitePaws-BombToy_13
+    21300028: WhitePaws-BombToy_14
+    21300030: WhitePaws-BombToy_15
+    21300032: WhitePaws-BombToy_16
+    21300034: WhitePaws-BombToy_17
+    21300036: WhitePaws-BombToy_18
+    21300038: WhitePaws-BombToy_19
+    21300040: WhitePaws-BombToy_20
+    21300042: WhitePaws-BombToy_21
+    21300044: WhitePaws-BombToy_22
+    21300046: WhitePaws-BombToy_23
+    21300048: WhitePaws-BombToy_24
+    21300050: WhitePaws-BombToy_25
+    21300052: WhitePaws-BombToy_26
+    21300054: WhitePaws-BombToy_27
+    21300056: WhitePaws-BombToy_28
+    21300058: WhitePaws-BombToy_29
+    21300060: WhitePaws-BombToy_30
+    21300062: WhitePaws-BombToy_31
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -31,27 +63,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: -1
-    wrapV: -1
+    wrapU: 1
+    wrapV: 1
     wrapW: -1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -60,7 +92,18 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -71,11 +114,371 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: WhitePaws-BombToy_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.44746262, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614156a062c66bc49a53e5bac04b0e34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePaws-BombToy_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 3
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f69b58658f3d364ab1d37ff000feed3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePaws-BombToy_4
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.40913916, y: 0.49999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492759ff698990f4d82b88e2a80ee717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePaws-BombToy_6
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.32451057, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ef5ca78c211724b89247650ff5a0e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePaws-BombToy_8
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.43241882, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2764ddeb78779f6459337c04a36d893c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePaws-BombToy_9
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.43241882, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d5b104f2b6c0e43bf83263cea57f4d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePaws-BombToy_11
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.4785204, y: 0.49999988}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1055c6918eb44a04287364a15383b97f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePaws-BombToy_13
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.44809628, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ca894ac801caa44a5ae4902387e82a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePaws-BombToy_16
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 3
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aabd25727689c147aa396c7a0751398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePaws-BombToy_17
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 3
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885b50a85d2470c43bcf5484bd12f6eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePaws-BombToy_19
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 3
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2b3a3b978b3994dbc9acbd2f11c8a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePaws-BombToy_21
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 3
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39f90b39dd36954db2841d3856b6678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePaws-BombToy_22
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 3
+        width: 74
+        height: 64
+      alignment: 9
+      pivot: {x: 0.28559834, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a5e8d53dd7151429279c8d6f2f9302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePaws-BombToy_24
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 3
+        width: 74
+        height: 64
+      alignment: 9
+      pivot: {x: 0.29192457, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24c080bd49b00d6449497f63592998ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePaws-BombToy_26
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.35010338, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f36893848b56f46af766a47f0c16fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePaws-BombToy_28
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.4627819, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51486498d1995464eac8452f563c6e30
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePaws-BombToy_29
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50797653, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af885147e82693e419bbe13bd65fea98
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WhitePaws-BombToy_31
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.4680996, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf6f3c51d4c3b84497cb3dbd86c2b50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 474d7d605d18c2c41b96fd012ef38d80
     vertices: []
     indices: 
     edges: []

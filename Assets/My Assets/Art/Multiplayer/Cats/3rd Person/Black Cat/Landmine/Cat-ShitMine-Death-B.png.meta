@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: ef6460b6a23983947bc3eff6df27ecc2
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Cat-ShitMine-Death-B_0
+    21300002: Cat-ShitMine-Death-B_1
+    21300004: Cat-ShitMine-Death-B_2
+    21300006: Cat-ShitMine-Death-B_3
+    21300008: Cat-ShitMine-Death-B_4
+    21300010: Cat-ShitMine-Death-B_5
+    21300012: Cat-ShitMine-Death-B_6
+    21300014: Cat-ShitMine-Death-B_7
+    21300016: Cat-ShitMine-Death-B_8
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cat-ShitMine-Death-B_0
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1393
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3830109fb0380469f5ec631cc50d19
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ShitMine-Death-B_1
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 1219
+        width: 64
+        height: 71
+      alignment: 9
+      pivot: {x: 0.441051, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e9798ec09c843d44a4c941d457d9718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ShitMine-Death-B_2
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1048
+        width: 64
+        height: 73
+      alignment: 9
+      pivot: {x: 0.4066646, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0161b1ca663332479d75d7490f575cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ShitMine-Death-B_3
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 886
+        width: 66
+        height: 61
+      alignment: 9
+      pivot: {x: 0.33327645, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec54576f5854e44697339d69b9562e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ShitMine-Death-B_4
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 708
+        width: 70
+        height: 68
+      alignment: 9
+      pivot: {x: 0.3260897, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc6b22f317f07e6459ca8d274dc16142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ShitMine-Death-B_5
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 523
+        width: 64
+        height: 80
+      alignment: 9
+      pivot: {x: 0.24680376, y: 0.42510223}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3625913f7ae597f488d4c979df67a8d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ShitMine-Death-B_6
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 349
+        width: 66
+        height: 67
+      alignment: 9
+      pivot: {x: 0.23324284, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 182b0dd85b6102f4fa5b3ab03fabf99b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ShitMine-Death-B_7
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 175
+        width: 64
+        height: 67
+      alignment: 9
+      pivot: {x: 0.24455595, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff716cdf41a9699448eb3d91e5459dbc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-ShitMine-Death-B_8
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1
+        width: 64
+        height: 67
+      alignment: 9
+      pivot: {x: 0.24455571, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c98f1d0ad0bc974409a8861066d355ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0e7ea5eca046a2f42aa3e06d0e10d90f
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

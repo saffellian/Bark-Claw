@@ -1,12 +1,30 @@
 fileFormatVersion: 2
 guid: a4a1a0dc29e13094799375701c132d84
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: tanPaws-PooMine_0
+    21300002: tanPaws-PooMine_2
+    21300004: tanPaws-PooMine_4
+    21300006: tanPaws-PooMine_6
+    21300008: tanPaws-PooMine_8
+    21300010: tanPaws-PooMine_10
+    21300012: tanPaws-PooMine_11
+    21300014: tanPaws-PooMine_13
+    21300016: tanPaws-PooMine_15
+    21300018: tanPaws-PooMine_17
+    21300020: tanPaws-PooMine_18
+    21300022: tanPaws-PooMine_20
+    21300024: tanPaws-PooMine_21
+    21300026: tanPaws-PooMine_23
+    21300028: tanPaws-PooMine_25
+    21300030: tanPaws-PooMine_26
+    21300032: tanPaws-PooMine_27
+    21300034: tanPaws-PooMine_29
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -31,27 +49,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: -1
-    wrapV: -1
+    wrapU: 1
+    wrapV: 1
     wrapW: -1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -60,7 +78,18 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -71,11 +100,371 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: tanPaws-PooMine_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50220525, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45c72004fca1004cb9a20bfae7c65c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-PooMine_2
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50220525, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7baf624915819a64ab12cd711b75d5f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-PooMine_4
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50220525, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f3276bc85614e47b6ba2036491aa2a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-PooMine_6
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50220525, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a44dcbf87f4444892c3f37798e36b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-PooMine_8
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50220525, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d4e15e1750e0b4e85f4cfe8d117041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-PooMine_10
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50220525, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 227770b1e986b1a498d418cb2ca89447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-PooMine_11
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50220525, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26be5abaadcb5d4b857ecb169bc023d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-PooMine_13
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50220525, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64552cbbd316eb449c20026afebc145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-PooMine_15
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50220525, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a152bef6a995b4cb3567959b83bda6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-PooMine_17
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50220525, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb26851d94201cb40b66bedb65638ac1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-PooMine_18
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50220525, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a72aca2c600831448ce8aba54a87883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-PooMine_20
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50220525, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308c0fba056a0174ea3ab58fdedd230d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-PooMine_21
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50220525, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a66d0b4f646d345aa4c829215e1366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-PooMine_23
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50220525, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf2a51e56d7e5840b7f0939c96a1a65
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-PooMine_25
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.49593163, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5160d53c0c023c14f8df3d20655baf13
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-PooMine_26
+      rect:
+        serializedVersion: 2
+        x: 1745
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50220525, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59c68a5588e1afa439060c0722391790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-PooMine_27
+      rect:
+        serializedVersion: 2
+        x: 1862
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50220525, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89938ae66676b1b4e9dc4b19d566b430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tanPaws-PooMine_29
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50220525, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21725f2cc04ba474080e6d2e49486f88
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2b9ad516f1bd071419c9672a8555949c
     vertices: []
     indices: 
     edges: []

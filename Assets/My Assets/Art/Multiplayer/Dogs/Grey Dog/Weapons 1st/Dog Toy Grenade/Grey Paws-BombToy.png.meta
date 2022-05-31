@@ -1,12 +1,30 @@
 fileFormatVersion: 2
 guid: e23af7f1620851a408ffc64f5f2d66c2
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Grey Paws-BombToy_0
+    21300002: Grey Paws-BombToy_1
+    21300004: Grey Paws-BombToy_4
+    21300006: Grey Paws-BombToy_5
+    21300008: Grey Paws-BombToy_8
+    21300010: Grey Paws-BombToy_9
+    21300012: Grey Paws-BombToy_11
+    21300014: Grey Paws-BombToy_13
+    21300016: Grey Paws-BombToy_15
+    21300018: Grey Paws-BombToy_17
+    21300020: Grey Paws-BombToy_19
+    21300022: Grey Paws-BombToy_20
+    21300024: Grey Paws-BombToy_22
+    21300026: Grey Paws-BombToy_24
+    21300028: Grey Paws-BombToy_26
+    21300030: Grey Paws-BombToy_28
+    21300032: Grey Paws-BombToy_29
+    21300034: Grey Paws-BombToy_31
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -31,27 +49,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: -1
-    wrapV: -1
+    wrapU: 1
+    wrapV: 1
     wrapW: -1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -60,7 +78,18 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -71,11 +100,371 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Grey Paws-BombToy_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.4921348, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1aeecb7a3c40374babf68aeaa7bb2d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grey Paws-BombToy_1
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.526397, y: 0.4998862}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95eecda0ac58d5e4ba4636ec9156d38c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grey Paws-BombToy_4
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.54277563, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15e57037413564499f8e5bcb31cb7ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grey Paws-BombToy_5
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.53564596, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c8504870a503244f9c872eda173b125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grey Paws-BombToy_8
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5343971, y: 0.49999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d7c03fedd7a2b448b8cb005c809f4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grey Paws-BombToy_9
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5222931, y: 0.48542064}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b118053e4edc29498e714026b02bc52
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grey Paws-BombToy_11
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.53712463, y: 0.48708218}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4ff678507230141bd8dde04506e41b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grey Paws-BombToy_13
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5523968, y: 0.5000002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb6bf1b04be93e48b9aed30fbb022b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grey Paws-BombToy_15
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5280609, y: 0.49455512}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f8a34abab64764a8783e67303b94bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grey Paws-BombToy_17
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.51425743, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d36e8d9673e5a4a93642f00e95d68c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grey Paws-BombToy_19
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50237656, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ff8246819bc104fbd242ab9a1e2cf6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grey Paws-BombToy_20
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.52869034, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0f884e9de5ddf4bbac1b30a90be950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grey Paws-BombToy_22
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 3
+        width: 74
+        height: 64
+      alignment: 9
+      pivot: {x: 0.32994452, y: 0.50237644}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea7e154f1551274c9f30711b4282f61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grey Paws-BombToy_24
+      rect:
+        serializedVersion: 2
+        x: 1522
+        y: 3
+        width: 74
+        height: 64
+      alignment: 9
+      pivot: {x: 0.31913468, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a3dac8eebc40445bca5cfd4b9cec28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grey Paws-BombToy_26
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 3
+        width: 68
+        height: 64
+      alignment: 9
+      pivot: {x: 0.38816744, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf45a467897c664899a459c7968458b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grey Paws-BombToy_28
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.4738598, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1d7bb7599ae034f99aeace7cf7c426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grey Paws-BombToy_29
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5047512, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bef8ab53cfe24440800ec9b9aed51af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grey Paws-BombToy_31
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 3
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.49762344, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8163d2aa3169e954183a5efb3a02c1dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5a8b4bc65e328f842becd0aaa247cb47
     vertices: []
     indices: 
     edges: []

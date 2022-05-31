@@ -1,12 +1,20 @@
 fileFormatVersion: 2
 guid: 6804875c894a18647abb7f8ee7f71eb2
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: GreyWienerDog-BrownShoot_0
+    21300002: GreyWienerDog-BrownShoot_1
+    21300004: GreyWienerDog-BrownShoot_2
+    21300006: GreyWienerDog-BrownShoot_3
+    21300008: GreyWienerDog-BrownShoot_4
+    21300010: GreyWienerDog-BrownShoot_5
+    21300012: GreyWienerDog-BrownShoot_6
+    21300014: GreyWienerDog-BrownShoot_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -31,27 +39,27 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
-    wrapU: -1
-    wrapV: -1
+    wrapU: 1
+    wrapV: 1
     wrapW: -1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   maxTextureSizeSet: 0
@@ -69,13 +77,184 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: GreyWienerDog-BrownShoot_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.45665234, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a18d35746cea941b6f74eeaf4279e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyWienerDog-BrownShoot_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 5
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.4724151, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c822221e1abbc479536e2f97c4843c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyWienerDog-BrownShoot_2
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 5
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.436949, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d761db89b15a711448976b59bb34f0d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyWienerDog-BrownShoot_3
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 5
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.48423696, y: 0.49999994}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075f4f4097a054f4a8769cea2fb45305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyWienerDog-BrownShoot_4
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 5
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f13658322cd8b4b9fb7b948beedea2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyWienerDog-BrownShoot_5
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 5
+        width: 62
+        height: 64
+      alignment: 9
+      pivot: {x: 0.4877969, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd1215785a6d754f9b1fda4db1c768d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyWienerDog-BrownShoot_6
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 5
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.50788116, y: 0.511822}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afd01b9bc7e4f84e99029cf632dc0dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreyWienerDog-BrownShoot_7
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 5
+        width: 62
+        height: 64
+      alignment: 9
+      pivot: {x: 0.55491537, y: 0.51322997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58060863b7970384f923a08a472b99eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7ceee142ef149e44e886505988e3b6f5
     vertices: []
     indices: 
     edges: []

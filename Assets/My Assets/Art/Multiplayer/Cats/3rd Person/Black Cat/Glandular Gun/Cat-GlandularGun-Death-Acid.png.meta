@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: 1c350c60655080f40bc523c7cbf82844
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Cat-GlandularGun-Death-Acid_0
+    21300002: Cat-GlandularGun-Death-Acid_1
+    21300004: Cat-GlandularGun-Death-Acid_2
+    21300006: Cat-GlandularGun-Death-Acid_3
+    21300008: Cat-GlandularGun-Death-Acid_4
+    21300010: Cat-GlandularGun-Death-Acid_5
+    21300012: Cat-GlandularGun-Death-Acid_6
+    21300014: Cat-GlandularGun-Death-Acid_7
+    21300016: Cat-GlandularGun-Death-Acid_8
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cat-GlandularGun-Death-Acid_0
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f763c4d51e7a64448f54655941959e4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GlandularGun-Death-Acid_1
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 1
+        width: 76
+        height: 70
+      alignment: 9
+      pivot: {x: 0.5804351, y: 0.485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0ec7332b5600e4fb89d20996d63e5d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GlandularGun-Death-Acid_2
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 1
+        width: 67
+        height: 74
+      alignment: 9
+      pivot: {x: 0.6129624, y: 0.465}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03430049be9fa9342a05cac1b4ce60f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GlandularGun-Death-Acid_3
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 1
+        width: 73
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5618085, y: 0.485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99671be2c2964eb4eb65e5d5c962c10c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GlandularGun-Death-Acid_4
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 1
+        width: 75
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5721094, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb6b6c16a7f18f49accf66af13458d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GlandularGun-Death-Acid_5
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 1
+        width: 68
+        height: 67
+      alignment: 9
+      pivot: {x: 0.6306583, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dcb4ec08f7d2384f8c2a72688bf8405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GlandularGun-Death-Acid_6
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 0
+        width: 68
+        height: 67
+      alignment: 9
+      pivot: {x: 0.6306583, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10367158ee32a854d8387649bb7ddb0f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GlandularGun-Death-Acid_7
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1
+        width: 67
+        height: 67
+      alignment: 9
+      pivot: {x: 0.60954624, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f865be3962493eb48976921d085c346f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-GlandularGun-Death-Acid_8
+      rect:
+        serializedVersion: 2
+        x: 2318
+        y: 1
+        width: 67
+        height: 67
+      alignment: 9
+      pivot: {x: 0.60954624, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef67292f1363abc47b640749d9d00eb3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1421dc890129b8547ba67e0679d7c282
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
